@@ -242,6 +242,7 @@ document.addEventListener('DOMContentLoaded', function() {
     dotType1.addEventListener('click', function() {
         personalityText.innerHTML = 'My Personality';
         type.innerHTML = 'Architect (INTJ-A)';
+        imageIntj.src = '';
         imageIntj.src = 'Image/intj.png';
         textINTJ.innerHTML = 'Architects are imaginative and strategic thinkers, with a plan for everything. These thoughtful tacticians love perfecting the details of life, applying creativity and rationality.'
         dotType1.style.backgroundColor = '#4298b4';
@@ -252,6 +253,7 @@ document.addEventListener('DOMContentLoaded', function() {
     dotType2.addEventListener('click', function() {
         personalityText.innerHTML = 'My Role';
         type.innerHTML = 'Analysts';
+        imageIntj.src = '';
         imageIntj.src = 'Image/intj-2.png';
         textINTJ.innerHTML = 'Analysts embrace rationality and impartiality, excelling in intellectual debates and scientific or technological fields. They are fiercely independent, open-minded, and strong-willed.'
         dotType1.style.backgroundColor = '';
@@ -262,6 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
     dotType3.addEventListener('click', function() {
         personalityText.innerHTML = 'My Strategy';
         type.innerHTML = 'Confident Individualism';
+        imageIntj.src = '';
         imageIntj.src = 'Image/intj-3.png';
         textINTJ.innerHTML = 'Those who prefer the Confident Individualism Strategy like doing things alone, choosing to rely on their own skills and instincts instead of seeking contact with other people.'
         dotType1.style.backgroundColor = '';
@@ -270,5 +273,45 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+});
+
+
+
+
+
+
+
+const OtherElementOne = document.getElementById('other-one');
+const OtherElementTwo = document.getElementById('other-two');
+const OtherElementThree = document.getElementById('other-three');
+const ElementOne = document.getElementById('elementOne');
+const ElementTwo = document.getElementById('elementTwo');
+const ElementThree = document.getElementById('elementThree');
+const dotOne = document.getElementById('dotOne');
+const dotTwo = document.getElementById('dotTwo');
+
+OtherElementOne.style.display = 'none';
+OtherElementTwo.style.display = 'none';
+OtherElementThree.style.display = 'none';
+dotOne.style.backgroundColor = '#4298b4';
+dotOne.addEventListener('click', function() {
+    OtherElementOne.style.display = 'none';
+    OtherElementTwo.style.display = 'none';
+    OtherElementThree.style.display = 'none';
+    ElementOne.style.display = 'flex';
+    ElementTwo.style.display = 'flex';
+    ElementThree.style.display = 'flex';
+    dotOne.style.backgroundColor = '#4298b4';
+    dotTwo.style.backgroundColor = '';
+});
+dotTwo.addEventListener('click', function() {
+    OtherElementOne.style.display = 'flex';
+    OtherElementTwo.style.display = 'flex';
+    OtherElementThree.style.display = 'flex';
+    ElementOne.style.display = 'none';
+    ElementTwo.style.display = 'none';
+    ElementThree.style.display = 'none';
+    dotOne.style.backgroundColor = '';
+    dotTwo.style.backgroundColor = '#4298b4';
 });
 

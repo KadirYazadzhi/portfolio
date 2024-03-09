@@ -1390,6 +1390,13 @@ footer .wave#wave4
     flex-direction: row;
     display: flex;
 }
+.dot-other {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
 
 
@@ -1635,4 +1642,19 @@ footer .wave#wave4
 
 .activeDot {
     color: red;
+}
+.prev-btn {
+    margin-left: 15%;
+    left: 0;
+}
+.next-btn {
+    margin-right: 17%;
+    right: 0;
+}
+.prev-btn, .next-btn {
+    position: absolute;
+    font-size: 34px;
+    cursor: pointer;
+    color: rgb(0, 13, 166);
+    transition: color 0.3s ease 0s;
 }
