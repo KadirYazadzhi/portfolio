@@ -18,19 +18,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body >
-
 <!-- pre loader  -->
 <div id="preloader"></div>
 <nav class="navbar">
     <div class="max-width">
         <div class="logo"><a href="#">Key<span>Yaz.</span></a></div>
         <ul class="menu">
-            <li><a href="#home" class="menu-btn">Home</a></li>
-            <li><a href="#about" class="menu-btn">About</a></li>
-            <li><a href="#services" class="menu-btn">Services</a></li>
-            <li><a href="#skills" class="menu-btn">Skills</a></li>
-            <li><a href="#teams" class="menu-btn">Projects</a></li>
-            <li><a href="#contact" class="menu-btn">Contact</a></li>
+            <li><a id="navbar-home" href="#home" class="menu-btn">Home</a></li>
+            <li><a id="navbar-about" href="#about" class="menu-btn">About me</a></li>
+            <li><a id="navbar-services" href="#services" class="menu-btn">Services</a></li>
+            <li><a id="navbar-skills" href="#skills" class="menu-btn">Skills</a></li>
+            <li><a id="navbar-certificate" href="Certificate.html" class="menu-btn">Certificates</a></li>
+            <li><a id="navbar-projects" href="#teams" class="menu-btn">Projects</a></li>
+            <li><a id="navbar-contact" href="#contact" class="menu-btn">Contact</a></li>
         </ul>
         <div class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -42,11 +42,11 @@
 <section class="home" id="home">
     <div class="max-width">
         <div class="home-content">
-            <div class="text-1">Hello, my name is</div>
-            <div class="text-2">Kadir Yazadzhi</div>
-            <div class="text-3">And I'm a <span class="typing"></span></div>
+            <div id="homeTextOne" class="text-1">Hello, my name is</div>
+            <div id="homeName" class="text-2">Kadir Yazadzhi</div>
+            <div style="display: flex; flex-direction: row;flex-wrap: wrap;" class="text-3"><p id="homeTextTwo">And I'm a</p>&ensp;<span class="typing"></span></div>
             <div class="classbox">
-                <a href="#contact">Hire me</a>
+                <a id="homeTextThree" href="#contact">Hire me</a>
             </div>
         </div>
     </div>
@@ -60,23 +60,22 @@
 <!-- about section start -->
 <section class="about" id="about">
     <div class="max-width">
-        <h2 class="title">About me</h2>
+        <h2 id="aboutMeTitle" class="title">About me</h2>
 
         <div class="about-content">
             <div class="column left">
                 <img src="Image/Home-page-image.png" alt="img">
             </div>
             <div class="column right">
-                <div class="text">I'm Kadir Yazadzhi and I am <span class="typing-2"></span></div>
-                <p> I am 16 years  young boy with  dynamic and enthusiastic person looking for the job Web Design and Development mostly specializing in front end development. A firm believer in my own abilities, I am also a
-                    team player who thrives in a challenging environment.I am a fresher with new and dynamics project ideas. Well-versed in numerous programming languages including HTML, CSS, JavaScript, TypeScript, MySQL, PostgreSQL, Python, C++ and strong background in project management and customer relations.  </p>
-                <a href="#" download="cv/sample.pdf">Download CV</a>
+                <div style="display: flex; flex-direction: row;flex-wrap: wrap;" class="text"><p id="aboutMeTextOne">I'm Kadir Yazadzhi and I am</p>&ensp;<span class="typing-2"></span></div>
+                <p id="aboutMeTextTwo"> I'm 17 years old, dynamic and enthusiastic boy looking for a job as Web Designer and Developer, mostly specific in front end development. I believe in my own abilities and if you do too, you won't regret it. I am also a team player who thrives in a challenging environment. My project ideas are innovative and fresh with big sense of taste. I am well-versed in numerous of programming languages including HTML, CSS, JavaScript, TypeScript, MySQL, PostgreSQL, Python, C++ and I have strong background in project management and customer relations.</p>
+                <a id="aboutMeCV" href="#" download="cv/sample.pdf">Download CV</a>
             </div>
         </div>
     </div>
 </section>
 <section class="services">
-    <h2 class="title">Project you can offer me</h2>
+    <h2 id="servicesTitle" class="title">Projects you can offer me</h2>
     <div class="provide-small">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
@@ -89,13 +88,8 @@
             </svg>
 
         </div>
-        <p>Web Development</p>
+        <p id="cardOneText">Web Development</p>
     </a>
-
-
-
-
-
 
     <a id="card2" style="background: rgb(237,255,244);background: linear-gradient(45deg, rgba(237,255,244,1) 0%, rgba(222,255,236,1) 50%, rgba(207,255,227,1) 100%);" href="#" class="card credentialing">
         <div class="overlay"></div>
@@ -109,14 +103,6 @@
         <p id="spm">Database Development</p>
     </a>
 
-
-
-
-
-
-
-
-
     <a id="card3" style="background: rgb(243,236,255);background: linear-gradient(45deg, rgba(243,236,255,1) 0%, rgba(236,225,255,1) 50%, rgba(226,208,255,1) 100%);" href="#" class="card wallet">
         <div class="overlay"></div>
         <div class="circle">
@@ -127,16 +113,8 @@
             </svg>
 
         </div>
-        <p>Design Development</p>
+        <p id="cardThreeText">Design Development</p>
     </a>
-
-
-
-
-
-
-
-
 
 
     <a id="card4" style="background: rgb(237,244,255);background: linear-gradient(45deg, rgba(237,244,255,1) 0%, rgba(230,238,254,1) 50%, rgba(219,233,255,1) 100%);" href="#" class="card human-resources">
@@ -149,8 +127,9 @@
             </svg>
 
         </div>
-        <p>Code Development</p>
+        <p id="cardFourText">Code Development</p>
     </a>
+
     </div>
     <div id="dots" class="carousel-dots">
         <span id="dot1" class="dot"></span>
@@ -163,67 +142,68 @@
 <!-- services section start -->
 <section class="about" id="personality">
 
-    <h2 class="titleSpecial">My MBTI type</h2>
+    <h2 id="mbtiTitle" class="titleSpecial">My MBTI type</h2>
     <div class="cardmbti">
         <div class="leftcard">
             <p id="personalityText" class="personality">My Personality</p>
             <h2 id="type" class="type">Architect (INTJ-A)</h2>
             <img id="imageIntj" class="intj" src="Image/intj.png">
             <p id="textINTJ" class="textIntj">Architects are imaginative and strategic thinkers, with a plan for everything. These thoughtful tacticians love perfecting the details of life, applying creativity and rationality.</p>
-            <button class="button-34" role="button">Learn more &rarr;</button>
+            <button id="mbtiButtonText" class="button-34" role="button">Learn more &rarr;</button>
             <div class="carousel-dots">
                 <span id="dotType1" class="dot"></span>
                 <span id="dotType2" class="dot"></span>
                 <span id="dotType3" class="dot"></span>
             </div>
+            <p id="hiddentext"></p>
         </div>
         <div class="rightcard">
             <div class="titleLeftCard">
-                <p class="titleLeft">My Traits</p>
+                <p id="leftTitleMBTI" class="titleLeft">My Traits</p>
             </div>
             <div class="procentBar">
                 <div id="bar1" class="cardBar">
                     <div id="progressOne" class="progresNew">
-                        <p style="left: 2%" class="progresText"><span style="font-weight: 650; color: #0cadba">85%</span> Introverted</p>
+                        <p style="left: 2%; display: flex; flex-direction: row;" class="progresText"><span style="font-weight: 650; color: #0cadba">85%</span>&ensp;<span id="progressOneTextOfficial">Introverted</span></p>
                         <div style="background: #0cadba; box-shadow: 1px 1px 8px #0cadba" class="progressbar"><div style="right: 85%" class="bardot"></div></div>
-                        <p class="barTextOne">Extraverted</p>
-                        <p class="barTextOneNew">Introverted</p>
+                        <p id="progressOneTextOne" class="barTextOne">Introverted</p>
+                        <p id="progressOneTextTwo" class="barTextOneNew">Extraverted</p>
                     </div>
                 </div>
 
                 <div id="bar2" class="cardBar">
                     <div id="progressTwo" class="progresNew">
-                        <p style="left: 65%" class="progresText"><span style="font-weight: 650; color: #e4ae3a">79%</span> Intuitive</p>
+                        <p style="left: 60%; display: flex; flex-direction: row;" class="progresText"><span style="font-weight: 650; color: #e4ae3a">79%</span>&ensp;<span id="progressTwoTextOfficial">Intuitive</span></p>
                         <div style="background: #e4ae3a; box-shadow: 1px 1px 8px #e4ae3a" class="progressbar"><div style="left: 79%;" class="bardot"></div></div>
-                        <p class="bartextTwo">Intuitive</p>
-                        <p class="bartextTwoNew">Observant</p>
+                        <p id="progressTwoTextOne" class="bartextTwo">Observant</p>
+                        <p id="progressTwoTextTwo" class="bartextTwoNew">Intuitive</p>
                     </div>
                 </div>
 
                 <div id="bar3" class="cardBar">
                     <div id="progressThree" class="progresNew">
-                        <p style="left: 16%" class="progresText"><span style="font-weight: 650; color: #33a474">71%</span> Thinking</p>
+                        <p style="left: 16%; display: flex; flex-direction: row;" class="progresText"><span style="font-weight: 650; color: #33a474">71%</span>&ensp;<span id="progressThreeTextOfficial">Thinking</span></p>
                         <div style="background: #33a474; box-shadow: 1px 1px 8px #33a474" class="progressbar"><div style="right: 71%;" class="bardot"></div></div>
-                        <p class="bartextTwo">Thinking</p>
-                        <p class="bartextTwoNew">Feeling</p>
+                        <p id="progressThreeTextOne" class="bartextTwo">Thinking</p>
+                        <p id="progressThreeTextTwo" class="bartextTwoNew">Feeling</p>
                     </div>
                 </div>
 
                 <div id="bar4" class="cardBar">
                     <div id="progressFour" class="progresNew">
-                        <p style="left: 8%" class="progresText"><span style="font-weight: 650; color: #88619a">78%</span> Judging</p>
+                        <p style="left: 8%; display: flex; flex-direction: row;" class="progresText"><span style="font-weight: 650; color: #88619a">78%</span>&ensp;<span id="progressFourTextOfficial">Judging</span></p>
                         <div style="background: #88619a; box-shadow: 1px 1px 8px #88619a" class="progressbar"><div style="right: 78%;" class="bardot"></div></div>
-                        <p class="bartextTwo">Judging</p>
-                        <p class="bartextTwoNew">Prospecting</p>
+                        <p id="progressFourTextOne" class="bartextTwo">Judging</p>
+                        <p id="progressFourTextTwo" class="bartextTwoNew">Prospecting</p>
                     </div>
                 </div>
 
                 <div id="bar5" class="cardBar">
                     <div id="progressFive" class="progresNew">
-                        <p style="left: 26%" class="progresText"><span style="font-weight: 650; color: #f25e62">59%</span> Assertive</p>
+                        <p style="left: 26%" class="progresText"><span style="font-weight: 650; color: #f25e62">59%</span>&ensp;<span id="progressFiveTextOfficial">Assertive</span></p>
                         <div style="background: #f25e62; box-shadow: 1px 1px 8px #f25e62" class="progressbar"><div style="right: 59%;" class="bardot"></div></div>
-                        <p class="bartextTwo">Assertive</p>
-                        <p class="bartextTwoNew">Turbulent</p>
+                        <p id="progressFiveTextOne" class="bartextTwo">Assertive</p>
+                        <p id="progressFiveTextTwo" class="bartextTwoNew">Turbulent</p>
                     </div>
                 </div>
             </div>
@@ -242,7 +222,7 @@
 <!-- services section start -->
 <section class="services" id="services">
     <div class="max-width">
-        <h2 class="title">My services</h2>
+        <h2 id="servicesTitleNew" class="title">My services</h2>
         <div class="serv-content">
         </div>
     </div>
@@ -250,43 +230,43 @@
         <div class="box">
             <span id="first"> </span>
             <div class="content">
-                <h2>Designer</h2>
-                <p>I am a Fresher web designer. I have make different design with different ideas. I today's rat race new fresher have more mind blowing ideas with more expoloring ideas.</p>
+                <h2 id="firstBoxFromServicesTitle">Designer</h2>
+                <p id="firstBoxFromServicesText">I am fresh designer with huge sense of taste. I have made different designs that are one of a kind, just like my ideas. I can easily give life to my customers wishes and needs.</p>
             </div>
         </div>
         <div class="box">
             <span id="second"></span>
             <div class="content">
-                <h2>Development</h2>
-                <p>In this digital world. I help people in build there business and brand digitally which helps in the many thing like:Brand building, more seling etc.</p>
+                <h2 id="secondBoxFromServicesTitle">Development</h2>
+                <p id="secondBoxFromServicesText">In this digital world I help people in building their business and brand digitally, which is one of the biggest market weapons. </p>
             </div>
         </div>
         <div class="box">
             <span id="third"></span>
             <div class="content">
-                <h2>SEO</h2>
-                <p>I provide SEO in every business for getting there business in first ,which helps people to make stand there business in google search first.</p>
+                <h2 id="thirdBoxFromServicesTitle">SEO</h2>
+                <p id="thirdBoxFromServicesText">I provide SEO in every business for getting it in first places, which help people to boost it in google search first.</p>
             </div>
         </div>
         <div class="box">
             <span id="fourth"></span>
             <div class="content">
-                <h2>video Editing</h2>
-                <p>In this competitive world video editing is necessary in any of the digital platform. Most of the eCommerce website needs video in there which which make there customer attractive.</p>
+                <h2 id="fourBoxFromServicesTitle">Video Editing</h2>
+                <p id="fourBoxFromServicesText">In this competitive world video editing is necessary in any digital platform. Most of the eCommerce websites need a good-looking videos as an advertisement method, that catches the customer's eye.</p>
             </div>
         </div>
         <div class="box">
             <span id="fifth"></span>
             <div class="content">
-                <h2>Digital Marketing</h2>
-                <p>Digital Marketing is the only tools which helps people to build advertised there business digitally which make people more attracted to there products and there business.</p>
+                <h2 id="fiveBoxFromServicesTitle">Digital Marketing</h2>
+                <p id="fiveBoxFromServicesText">Digital Marketing is directly connected and really important tool, that helps people to be advertised digitally which makes people more attracted to their business.</p>
             </div>
         </div>
         <div class="box">
             <span id="sixth"></span>
             <div class="content">
-                <h2>App Development</h2>
-                <p>Apps helps to those people who are not mostly friendly towards the website.Apps helps people in user interface which make them easier.</p>
+                <h2 id="sixBoxFromServicesTitle">App Development</h2>
+                <p id="sixBoxFromServicesText">Apps are easy to use and well-structured for all the people that prefers them over websites. They also help people in user interface .</p>
             </div>
         </div>
     </div>
@@ -295,20 +275,19 @@
 <!-- skills section start -->
 <section class="skills" id="skills">
     <div class="max-width">
-        <h2 class="title">My skills</h2>
+        <h2 id="skillsTitle" class="title">My skills</h2>
         <div class="skills-content">
             <div class="column left">
-                <div class="text">My creative skills & experiences.</div>
-                <p>Driven by a passion for innovation, I thrive on the dynamic challenges of web development. My dedication to staying current with emerging technologies ensures that I deliver cutting-edge solutions tailored to your needs. Let's collaborate to turn your ideas into captivating digital experiences that leave a lasting impact.
+                <div id="skillsTitleText" class="text">My creative skills & experiences.</div>
+                <p id="skillsText">Driven by a passion for innovation, I thrive on the dynamic challenges of web development. My dedication is to stay on a current emerging technologies ensures that I deliver cutting-edge solutions tailored to your needs. Let's collaborate to turn your ideas into captivating digital experiences that leave a lasting impact.
                     <br><br>
                     I am proficient in web programming, database management, and more. With several successful web projects under my belt, I specialize in crafting animations, web applications, responsive designs, and extensive projects packed with functionalities. My skill set includes mastery of HTML, CSS, JavaScript, TypeScript, MySQL, PostgreSQL, C++, Python, and more. Let me bring your digital visions to life with creativity, expertise, and precision.
                     <br><br>
-                    I also have full-stack developer experience with popular open-source CMS like (WordPress, bubble.io and others) .
+                    I also have full-stack developer experience with popular open-source CMS like (WordPress, bubble.io and others).
                     <br>
                     Visit my<a href="#" target="-blank" id="link">Facebook</a>for more details<a href="#contact" id="link">contact</a>me.
-
                 </p>
-                <a href="Certificate.html">Learn more</a>
+                <a id="skillsButtonText" href="Certificate.html">Learn more</a>
             </div>
             <div class="column right">
                 <div class="bars">
@@ -388,7 +367,7 @@
 
 <section class="teams" id="teams">
     <div class="max-width">
-        <h2 class="title">My Projects</h2>
+        <h2 id="projectsTitle" class="title">My Projects</h2>
         <div class="max-width-project">
         <a href="https://thetrackone.github.io/thetrack/"  target="_blank">
 
@@ -458,55 +437,55 @@
 <!-- contact section start -->
 <section class="contact" id="contact">
     <div class="max-width">
-        <h2 class="title">Contact me</h2>
+        <h2 id="contactTitle" class="title">Contact me</h2>
         <div class="contact-content">
             <div class="column left">
-                <div class="text">Get in Touch</div>
-                <p>If you are interested in working together? Please fill out the form aside with some info about your project and I will get back to you as soon as I can. Please allow a couple days for me to respond.</p>
+                <div id="contactTextOne" class="text">Get in Touch</div>
+                <p id="contactTextTwo">If you are interested in working together? Please fill out the form aside with some info about your project and I will get back to you as soon as I can. Please allow a couple days for me to respond.</p>
                 <div class="icons">
                     <div class="row">
                         <i class="fas fa-user"></i>
                         <div class="info">
-                            <div class="head">Name</div>
-                            <div class="sub-title">Kadir Yusein Yazadzhi</div>
+                            <div id="contactInfoUserTitle" class="head">Name</div>
+                            <div id="contactInfoUserText" class="sub-title">Kadir Yusein Yazadzhi</div>
                         </div>
                     </div>
                     <div class="row">
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="info">
-                            <div class="head">Address</div>
-                            <div class="sub-title">Bulgaria</div>
+                            <div id="contactInfoAddressTitle" class="head">Address</div>
+                            <div id="contactInfoAddressText" class="sub-title">Bulgaria</div>
                         </div>
                     </div>
                     <div class="row">
                         <i class="fas fa-envelope"></i>
                         <div class="info">
-                            <div class="head">Email</div>
-                            <div class="sub-title">kyuya_2020g@pgiblg.com</div>
+                            <div id="contactInfoEmailTitle" class="head">Email</div>
+                            <div id="contactInfoEmailText" class="sub-title">kyuya_2020g@pgiblg.com</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="column right">
-                <div class="text">Message me</div>
+                <div id="messageText" class="text">Message me</div>
                 <form  action="https://formspree.io/f/mpzvdnbn"
                        method="POST">
                     <div class="fields">
                         <div class="field name">
-                            <input name="name" type="name" placeholder="Name" required>
+                            <input id="nameInputFromContact" name="name" type="name" placeholder="Name" required>
                         </div>
                         <div class="field email">
-                            <input name="email" type="email" placeholder="Email" required>
+                            <input id="emailInputFromContact" name="email" type="email" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="field">
-                        <input name="subject" type="text" placeholder="Subject" required>
+                        <input id="subjectInputFromContact" name="subject" type="text" placeholder="Subject" required>
                     </div>
                     <div class="field textarea">
-                        <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
+                        <textarea id="messageInputFromContact" name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
                     </div>
                     <div class="button-area">
-                        <button type="submit">Send message</button>
+                        <button id="buttonSendMessage" type="submit">Send message</button>
                     </div>
                 </form>
             </div>
@@ -527,20 +506,20 @@
     <ul id="media">
         <!-- facebook  -->
         <li style="--clr:#0011ff;">
-            <a href="#" target="-blank"><i class="fa-brands fa-facebook-f"></i>
+            <a href="https://www.facebook.com/kadir.yazadji.1" target="-blank"><i class="fa-brands fa-facebook-f"></i>
             </a>
         </li>
-        <!-- youtube  -->
-        <li style="--clr:#ff0000;">
-            <a href="#" target="-blank"><i class="fa-brands fa-youtube"></i></a>
+        <!-- github  -->
+        <li style="--clr:#818181;">
+            <a href="https://github.com/KadirYazadzhi" target="-blank"><i class="fa-brands fa-github"></i></a>
         </li>
         <!-- Instagram  -->
         <li style="--clr:#e73f0c;">
-            <a href="#" target="-blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/_qzadji_?igsh=bGx3djFjeHhheTFm" target="-blank"><i class="fa-brands fa-instagram"></i></a>
         </li>
     </ul>
 
-    <p><a href="" target="_blank"></a>Copyright &copy; 2024 - <a href="" target="_blank"></a> All Rights Reserved || Designed By: Kadir Yazadzhi</p>
+    <p id="copyright">Copyright &copy; 2024 - All Rights Reserved || Designed By: Kadir Yazadzhi</p>
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -554,6 +533,7 @@
 </script>
 </body>
 <script rel="script" src="Script/Translate.js"></script>
+<script rel="script" src="Script/Home.js"></script>
 <script rel="script" src="Script/Script.js"></script>
 <script rel="script" src="Script/Scroll%20bar.js"></script>
 </html>

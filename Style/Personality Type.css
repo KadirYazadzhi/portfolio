@@ -11,8 +11,8 @@
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(254,244,255,1) 25%, rgba(251,199,255,1) 100%);
     width: 22%; /* По-малка ширина */
     height: 100%; /* Променяме височината на автоматично, за да се побере съдържанието */
-    max-height: 550px;
-    min-height: 550px;
+    max-height: 580px;
+    min-height: 580px;
     border: 1px solid #a8a8a8;
     border-radius: 15px; /* Леко по-малък border-radius */
     overflow: hidden;
@@ -30,8 +30,8 @@
     top: 0;
     width: 50%;
     height: 100%;
-    max-height: 550px;
-    min-height: 550px;
+    max-height: 580px;
+    min-height: 580px;
 }
 .rightcard, .leftcard {
     display: inline-block; /* Позволява на двете div елемента да стоят един до друг */
@@ -113,7 +113,7 @@
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     width: 99%;
-    height: 75px;
+    height: 80px;
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 10px;
@@ -174,7 +174,7 @@
 
 }
 .titleLeftCard {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 100%;
     border-bottom: 1px solid #b4b4b4;
 }
@@ -196,8 +196,8 @@
     margin-top: 10px;
     display: inline-block;
     float: left;
-    max-height: 415px;
-    min-height: 415px;
+    max-height: 440px;
+    min-height: 440px;
     width: 36%;
     height: 100%;
     background-color: #eaeaea;
@@ -213,15 +213,16 @@
     display: block;
     margin: 0 auto;
     width: 78%;
-    margin-bottom: 10px;
 }
 .textSP {
     font-size: 16px;
     text-align: left;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 .SPlink {
+    bottom: 10%;
+    position: absolute;
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 20px;

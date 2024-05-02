@@ -41,8 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const certificateCybersecurity = document.getElementById('certificate-Cubersecurity');
     const certificateOther = document.getElementById('certificate-Other');
 
-
-
+function hideCertificate() {
     certificateHTML.style.display = 'none';
     certificateCSS.style.display = 'none';
     certificateBootstrap.style.display = 'none';
@@ -63,465 +62,99 @@ document.addEventListener('DOMContentLoaded', function() {
     certificateCrypto.style.display = 'none';
     certificateCybersecurity.style.display = 'none';
     certificateOther.style.display = 'none';
+}
+
+let isCertificateVisible = false;
+function showCertificate(certificate) {
+        if (isCertificateVisible) {
+            hideCertificate();
+        } else {
+            certificate.style.display = 'flex';
+        }
+        isCertificateVisible = !isCertificateVisible;
+}
+
+    hideCertificate();
+
 
     cardHTMl.addEventListener('click', function() {
-        certificateHTML.style.display = 'flex';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+      showCertificate(certificateHTML);
     });
 
     cardCSS.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'flex';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateCSS);
     });
 
     cardBootstrap.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'flex';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateBootstrap);
     });
 
     cardJS.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'flex';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateJS);
     });
 
     cardTS.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'flex';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateTS);
     });
 
     cardSQL.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'flex';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateSQL);
     });
 
     cardMySQL.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'flex';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateMySQL);
     });
 
     cardPostgreSQL.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'flex';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificatePostgreSQL);
     });
 
     cardPython.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'flex';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificatePython);
     });
 
     cardCPlus.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'flex';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateCPlus);
     });
 
     cardGoogle.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'flex';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateGoogle);
     });
 
     cardMicrosoft.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'flex';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateMicrosoft);
     });
 
     cardDatabase.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'flex';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateDatabase);
     });
 
     cardFrontEnd.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'flex';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateFrontEnd);
     });
 
     cardReact.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'flex';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateReact);
     });
 
     cardAngular.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'flex';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateAngular);
     });
 
     cardWeb.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'flex';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateWeb);
     });
 
     cardCrypto.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'flex';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateCrypto);
     });
 
     cardCybersecurity.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'flex';
-        certificateOther.style.display = 'none';
+        showCertificate(certificateCybersecurity);
     });
 
     cardOther.addEventListener('click', function() {
-        certificateHTML.style.display = 'none';
-        certificateCSS.style.display = 'none';
-        certificateBootstrap.style.display = 'none';
-        certificateJS.style.display = 'none';
-        certificateTS.style.display = 'none';
-        certificateSQL.style.display = 'none';
-        certificateMySQL.style.display = 'none';
-        certificatePostgreSQL.style.display = 'none';
-        certificatePython.style.display = 'none';
-        certificateCPlus.style.display = 'none';
-        certificateGoogle.style.display = 'none';
-        certificateMicrosoft.style.display = 'none';
-        certificateDatabase.style.display = 'none';
-        certificateFrontEnd.style.display = 'none';
-        certificateReact.style.display = 'none';
-        certificateAngular.style.display = 'none';
-        certificateWeb.style.display = 'none';
-        certificateCrypto.style.display = 'none';
-        certificateCybersecurity.style.display = 'none';
-        certificateOther.style.display = 'flex';
+        showCertificate(certificateOther);
     });
 
 
