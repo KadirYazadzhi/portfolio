@@ -1,0 +1,130 @@
+.about, .skills, .contact {
+    background-color: #171717;
+    color: #FFFFFF;
+}
+section .title::before, section .title::before, section .titleSpecial::before {
+    background: #ffffff !important;
+}
+.skills .title::after, .contact .title::after, .about .title::after {
+    background: #171717;
+}
+.contact .contact-content .info .sub-title {
+    color: #FFFFFF;
+}
+.contact .right form .field input, .contact .right form .textarea textarea {
+    background: #ffffff0d!important;
+    border: rgba(0, 0, 0, 0.5);
+}
+.contact .right form .field input:focus, .contact .right form .textarea textarea:focus {
+    background: rgba(61, 61, 61, 0.1) !important;
+}
+.right form .button-area button {
+    color: #FFFFFF !important;
+    background: #002188 !important;
+    box-shadow: 1px 1px 10px #002188;
+}
+.right form .button-area button:hover {
+    background: none !important;
+    box-shadow: 1px 1px 20px #002188;
+}
+.about .title::after, .services .title::after, .teams .title::after, .skills .title::after, .contact .title::after {
+    color: #0079ff;
+}
+.skills .skills-content .left p #link {
+    color: #0081ff!important;
+}
+#skillsButtonText {
+    background: #002188;
+    box-shadow: 1px 1px 10px #002188;
+    color: #FFFFFF;
+}
+#skillsButtonText:hover {
+    background: none;
+    box-shadow: 1px 1px 20px #002188;
+    color: #0996e8;
+}
+.about .about-content .right a {
+    background: linear-gradient(45deg, rgba(255,36,79,1) 0%, rgba(227,13,56,1) 50%, rgba(224,22,62,1) 100%);
+    color: #FFFFFF!important;
+    box-shadow: 1px 1px 10px crimson;
+    animation: 1s;
+    font-weight: 550!important;
+}
+.about .about-content .right a:hover {
+    box-shadow: 2px 2px 20px crimson;
+    background: none!important;
+    color: #e0163e !important;
+}
+.leftcard, .rightcard {
+    background: #ffffff05!important;
+}
+.specialBar {
+    background: rgba(40, 40, 40, 0.9) !important;
+}
+.cardBar:hover {
+    background: rgba(40, 40, 40, 0.9) !important;
+}
+.personality, .specialcardtitlenew {
+    color: #FFFFFF!important;
+}
+.barTextOne, .barTextOneNew, .bartextTwo, .bartextTwoNew {
+    color: #FFFFFF!important;
+}
+.button-34:hover {
+    background: none;
+    box-shadow: 1px 1px 10px #5E5DF0 !important;
+}
+footer {
+    background: linear-gradient(45deg, rgb(10, 0, 37) 0%, rgb(0, 3, 33) 50%, rgb(0, 15, 37) 100%)!important;
+}
+.big-box {
+    background: #292929;
+    box-shadow: 1px 1px 10px #292929;
+}
+.left-box-circle {
+    background: radial-gradient(circle, rgb(30, 30, 30) 0%, rgb(66, 66, 66) 100%);
+}
+#bottone1 {
+    box-shadow: none;
+}
+#bottone1:hover {
+    box-shadow: 7px 5px 56px -14px #C3D900;
+}
+#bottone1:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #C3D900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#all-section {
+    background: #111!important;
+    color: #FFFFFF;
+}
+#all-section .card {
+    background: rgba(40, 40, 40, 0.6) !important;
+    box-shadow: 1px 1px 15px rgba(56, 56, 56, 0.6);
+}
+
+#all-section .card p{
+    color: #FFFFFF!important;
+}
+
+
+
+
+
+
+
+
+

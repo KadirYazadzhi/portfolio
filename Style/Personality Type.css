@@ -73,11 +73,11 @@
     line-height: 20px;
     opacity: 1;
     outline: none;
-    padding: 10px 20px;
+    padding: 8px 20px;
     display: block;
     width: fit-content;
-    border: 0;
     transition: all 0.3s ease;
+    border: 3px solid #5E5DF0;
 }
 .button-34:hover {
     transform: translateY(-2px);
@@ -117,6 +117,7 @@
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 10px;
+    cursor: pointer;
 }
 .cardBar:hover {
     background-color: #eaeaea;
