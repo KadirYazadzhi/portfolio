@@ -59,7 +59,7 @@ An enthusiast and an open-minded person who adores reading and has a passion for
 
 
 ## 🔨 Built With
-This project was built using these technologies.
+This project was built using these technologies:
 - HTML5
 - CSS3
 - Javascript
