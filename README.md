@@ -30,7 +30,7 @@
 </h3>
 
 ## 📖 Introduction
-In my portfolio, you can learn more about me and my personality, all my skills, knowledge, and projects. You can explore the certificates I hold and read some of my interesting posts with useful information for programmers. If you find my skills suitable, feel free to contact me for collaboration via my email: kadiryazadzhi@gmail.com or in contact section in my website.
+In my portfolio, you can learn more about me and my personality, all my skills, knowledge, and projects. You can explore the certificates I have and read some of my interesting posts with useful information for programmers. If you find my skills suitable, feel free to contact me for collaboration via my email: kadiryazadzhi@gmail.com or in contact section in my website.
 
 
 ## 🙂 About Me
