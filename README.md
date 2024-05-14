@@ -34,7 +34,7 @@ In my portfolio, you can learn more about me and my personality, all my skills, 
 
 
 ## 🙂 About Me
-An enthusiast and an open-minded person who adores reading and has a passion for technology - particularly programming.
+Talented Software Engineer with a passion for innovation and problem-solving. Proven track record in developing cutting-edge software solutions. Dedicated to enhancing company efficiency through technology.
 - 🌱 I am currently studying at a Professional high school of economics, majoring in "Economic Informatics".
 - 📚 And I am studying Software Engineering with C# in Software University.
 - 🤔 I’m looking for job as a programmer.
