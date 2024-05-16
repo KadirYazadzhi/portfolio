@@ -363,7 +363,9 @@ section .title::after{
     background: #111;
     content: "what i provide";
 }
-
+#blogTitle::after {
+    content:"best information";
+}
 .container
 {
     display: flex;

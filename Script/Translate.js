@@ -25,7 +25,7 @@ function setSelectedLocale(locale) {
         }).of(otherIntlLocale.language);
 
         const listEl = document.createElement("li");
-        listEl.innerHTML = `${otherLangName}<img src="${getFlagSrc(
+        listEl.innerHTML = `${otherLangName}<img alt="img" src="${getFlagSrc(
             otherIntlLocale.region
         )}" />`;
         listEl.value = otherLocale;
