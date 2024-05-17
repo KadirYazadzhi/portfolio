@@ -968,6 +968,9 @@ input,textarea
     color: white;
     background: #002188;
 }
+#storeTitle::after {
+    content: "work price";
+}
 /* footer section styling */
 
 footer
@@ -1137,20 +1140,6 @@ footer .wave#wave4
     }
 }
 
-/* pr loader design  */
-#preloader
-{
-    background:url("img/e3a.gif") no-repeat center ;
-    background-size: 15%;
-    filter: invert(100%);
-    background-color: #fff;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    cursor: pointer;
-    z-index: 1000;
-    /* border-radius: 12px; */
-}
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -1579,8 +1568,8 @@ footer .wave#wave4
     display: flex;
     flex-direction: row;
     gap: 50px;
-    justify-content: center; /* Центрираме по хоризонтала */
-    align-items: center; /* Центрираме по вертикала */
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -1593,7 +1582,7 @@ footer .wave#wave4
     }
     .card {
         width: 100%;
-        max-width: 280px; /* При нужда ограничаваме максималната ширина */
+        max-width: 280px;
         min-height: 400px;
         height: 100%;
         margin: 0 auto;
@@ -1603,15 +1592,15 @@ footer .wave#wave4
         width: 171px;
         height: 171px;
 
-        transform: translate(31%, 57%); /* Центрираме точно по средата */
+        transform: translate(31%, 57%);
     }
 
     .circle:after {
         width: 158px;
         height: 158px;
-        top: 50%; /* Променяме позицията за центриране */
-        left: 50%; /* Променяме позицията за центриране */
-        transform: translate(-48%, -50%); /* Центрираме точно по средата */
+        top: 50%;
+        left: 50%;
+        transform: translate(-48%, -50%);
 
     }
     .card p {
@@ -1628,9 +1617,9 @@ footer .wave#wave4
         height: 158px;
         border-radius: 50%;
         background: var(--bg-color);
-        top: 45%; /* Променяме позицията за центриране */
-        left: 50%; /* Променяме позицията за центриране */
-        transform: translate(-50%, -50%); /* Центрираме точно по средата */
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 0;
         transition: transform 0.3s ease-out;
     }

@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (darkThemeEnabled === 'true') {
         checkbox.checked = true;
         link.href = 'Style/Dark%20theme.css';
-    } else {
+    }
+    else {
         checkbox.checked = false;
         link.href = '';
     }
@@ -15,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (this.checked) {
             link.href = 'Style/Dark%20theme.css';
             localStorage.setItem('darkThemeEnabled', 'true');
-        } else {
+        }
+        else {
             link.href = '';
             localStorage.removeItem('darkThemeEnabled');
         }

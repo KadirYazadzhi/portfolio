@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" type="text/css" href="Style/Style.css">
     <link rel="stylesheet" type="text/css" href="Style/Translate.css">
+    <link rel="stylesheet" type="text/css" href="Style/Price.css">
     <link rel="stylesheet" type="text/css" href="Style/Personality%20Type.css">
     <link rel="stylesheet" type="text/css" href="Style/Light-And-Dark-Switch.css">
     <link rel="stylesheet" type="text/css" href="Style/Menu-with-button.css">
@@ -26,9 +27,6 @@
 </head>
 <body >
 
-<style>
-
-</style>
 
 <nav class="navbar">
     <div class="max-width">
@@ -47,6 +45,25 @@
         </div>
     </div>
 </nav>
+
+
+<div id="input-box" class="input-box">
+    <a id="closeBox" class="close-btn"></a>
+    <div class="input">
+        <form action="https://formspree.io/f/mpzvdnbn" method="POST">
+            <div class="small" >
+                <input id="contact-name" class="field-contact name" name="name" type="name" placeholder="Name" required>
+                <input id="contact-email" class="field-contact email" name="email" type="email" placeholder="Email" required>
+            </div>
+            <input id="contact-subject" class="subject" name="subject" type="subject" placeholder="Subject" required>
+            <textarea id="contact-message" class="field-contact more-about" name="message" placeholder="Message.." required></textarea>
+
+            <div class="button-area">
+                <button id="contact-submit" class="button-submit-form" type="submit">Send message</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 <!-- home section start -->
 <section class="home" id="home">
@@ -315,7 +332,7 @@
             <div class="blog-card-header">
                 <img src="Image/javascript-blog.jpg" alt="rover" />
             </div>
-            <span id="blog-card-one-topic" class="tag tag-teal">Coding</span>
+            <span id="blog-card-one-topic" class="tag tag-blue">Coding</span>
             <div class="blog-card-body">
                     <h4 id="blog-one-title"> Why Javascript is so popular? </h4>
                 <p id="blog-one-text">
@@ -323,19 +340,20 @@
                 </p>
             </div>
         </div>
+
         <div class="blog-card">
             <div class="blog-card-header">
                 <img src="Image/javascriptVStypescript-blog.png" alt="rover" />
             </div>
             <span id="blog-card-two-topic" class="tag tag-teal">Coding</span>
             <div class="blog-card-body">
-                <h4 id="blog-two-text"> JavaScript vs TypeScript </h4>
-                <p>
-
+                <h4 id="blog-two-title"> JavaScript vs TypeScript </h4>
+                <p id="blog-two-text">
                     JavaScript is a dynamic scripting language, while TypeScript is a superset of JavaScript with optional static typing, providing enhanced code maintainability and scalability.
                 </p>
             </div>
         </div>
+
         <div class="blog-card">
             <div class="blog-card-header">
                 <img src="Image/C%23-blog.png" alt="ballons" />
@@ -348,6 +366,7 @@
                 </p>
             </div>
         </div>
+
         <div class="blog-card">
             <div class="blog-card-header">
                 <img src="Image/OOP-blog.png" alt="city" />
@@ -366,9 +385,60 @@
 </section>
 <section class="teams" id="certificate">
     <div class="max-width">
+        <h2 id="storeTitle" class="title">My Store</h2>
+        <div class="container-price-cards">
+            <div id="priceCardOne" class="price-card">
+                <div class="price-card-header">
+                    <img class="price-card-image" src="Image/price-card-one.png">
+                </div>
+                <span class="card-price">$150</span>
+                <div class="price-card-body">
+                    <h4 id="price-card-one-title" class="price-card-title">
+                        One Page Website
+                    </h4>
 
+                    <p id="price-card-one-text" class="price-card-text">
+                        With HTMl, CSS and Javascript
+                    </p>
+
+                </div>
+            </div>
+
+            <div id="priceCardTwo" class="price-card">
+                <div class="price-card-header">
+                    <img class="price-card-image" src="Image/price-card-two.jpg">
+                </div>
+                <span class="card-price">$250</span>
+                <div class="price-card-body">
+                    <h4 id="price-card-two-title" class="price-card-title">
+                        One Page Website
+                    </h4>
+
+                    <p id="price-card-two-text" class="price-card-text">
+                        With React or Angular
+                    </p>
+                </div>
+            </div>
+
+            <div id="priceCardThree" class="price-card-sp">
+                <div class="price-card-header">
+                    <img class="price-card-image" src="Image/price-card-three.jpg">
+                </div>
+                <span class="card-price">$500</span>
+                <div class="price-card-body">
+                    <h4 id="price-card-three-title" class="price-card-title">
+                        Custom Multi-Page Website
+                    </h4>
+
+                    <p id="price-card-three-text" class="price-card-text">
+                        With all language and frameworks
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
 <!-- skills section start -->
 <section class="skills" id="skills">
     <div class="max-width">
@@ -630,6 +700,7 @@
 </script>
 </body>
 <script rel="script" src="Script/Translate.js"></script>
+<script rel="script" src="Script/Price.js"></script>
 <script rel="script" src="Script/Home.js"></script>
 <script rel="script" src="Script/Script.js"></script>
 <script rel="script" src="Script/Scroll%20bar.js"></script>

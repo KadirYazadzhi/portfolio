@@ -106,6 +106,33 @@ function setSelectedLocale(locale) {
     const sixBoxFromServicesTitle = document.getElementById('sixBoxFromServicesTitle');
     const sixBoxFromServicesText = document.getElementById('sixBoxFromServicesText');
 
+    const blogTitle = document.getElementById('blogTitle');
+    const blogCardOneTopic = document.getElementById('blog-card-one-topic');
+    const blogOneTitle = document.getElementById('blog-one-title');
+    const blogOneText = document.getElementById('blog-one-text');
+
+    const blogCardTwoTopic = document.getElementById('blog-card-two-topic');
+    const blogTwoTitle = document.getElementById('blog-two-title');
+    const blogTwoText = document.getElementById('blog-two-text');
+
+    const blogCardThreeTopic = document.getElementById('blog-card-three-topic');
+    const blogThreeTitle = document.getElementById('blog-three-title');
+    const blogThreeText = document.getElementById('blog-three-text');
+
+    const blogCardFourTopic = document.getElementById('blog-card-four-topic');
+    const blogFourTitle = document.getElementById('blog-four-title');
+    const blogFourText = document.getElementById('blog-four-text');
+
+    const priceTitle = document.getElementById('storeTitle');
+    const priceCardOneTitle = document.getElementById('price-card-one-title');
+    const priceCardOneText = document.getElementById('price-card-one-text');
+
+    const priceCardTwoTitle = document.getElementById('price-card-two-title');
+    const priceCardTwoText = document.getElementById('price-card-two-text');
+
+    const priceCardThreeTitle = document.getElementById('price-card-three-title');
+    const priceCardThreeText = document.getElementById('price-card-three-text');
+
     const skillsTitle = document.getElementById('skillsTitle');
     const skillsTitleText = document.getElementById('skillsTitleText');
     const skillsText = document.getElementById('skillsText');
@@ -229,6 +256,33 @@ function translateToBulgarian() {
     sixBoxFromServicesTitle.innerHTML = "Разработка на приложения";
     sixBoxFromServicesText.innerHTML = "Приложенията са лесни за използване и добре структурирани за всички, които предпочитат тях пред уебсайтове. Те също помагат на хората в интерфейса на потребителя.";
 
+    blogTitle.innerHTML = "Моят Блог";
+    blogCardOneTopic.innerHTML = "ПРОГРАМИРАНЕ";
+    blogOneTitle.innerHTML = "Защо JavaScript е толкова популярен?";
+    blogOneText.innerHTML = "Популярността на JavaScript произтича от неговата гъвкавост както в клиентското, така и в сървърното разработване, подкрепена от огромна екосистема от библиотеки и фреймуъркове.";
+
+    blogCardTwoTopic.innerHTML = "ПРОГРАМИРАНЕ";
+    blogTwoTitle.innerHTML = "JavaScript срещу TypeScript";
+    blogTwoText.innerHTML = "JavaScript е динамичен скриптов език, докато TypeScript е надмножество на JavaScript с опционално статично типизиране, което осигурява по-добра поддръжка и мащабируемост на кода.";
+
+    blogCardThreeTopic.innerHTML = "ПРОГРАМИРАНЕ";
+    blogThreeTitle.innerHTML = "Най-често задавани въпроси на интервю за C#";
+    blogThreeText.innerHTML = "Обичайните въпроси за интервю на C# обхващат теми като абстрактни класове срещу интерфейси, управление на паметта, манипулация на стрингове и други.";
+
+    blogCardFourTopic.innerHTML = "ПРОГРАМИРАНЕ";
+    blogFourTitle.innerHTML = "Основи на обектно-ориентираното програмиране";
+    blogFourText.innerHTML = "Разбирането на основите на обектно-ориентираното програмиране е от решаващо значение за изграждането на мащабируеми и лесни за поддръжка софтуерни системи.";
+
+    priceTitle.innerHTML = "Моят Магазин";
+    priceCardOneTitle.innerHTML = "Уебсайт с една страница";
+    priceCardOneText.innerHTML = "Със HTML, CSS и Javascript";
+
+    priceCardTwoTitle.innerHTML = "Уебсайт с една страница";
+    priceCardTwoText.innerHTML = "Със React или Angular";
+
+    priceCardThreeTitle.innerHTML = "Персонализиран уебсайт с няколко страници";
+    priceCardThreeText.innerHTML = "С всички езици и фреймуъркове";
+
     skillsTitle.innerHTML = "Моите умения";
     skillsTitleText.innerHTML = "Моите креативни умения и опит.";
     skillsText.innerHTML = "<p id=\"skillsText\">Вдъхновен от страстта към иновациите, се развивам в динамичните предизвикателства на уеб разработката. Моята преданост към актуалните нови технологии гарантира, че предлагам революционни решения, персонализирани специално за вас. Нека сътрудничим, за да превърнем вашите идеи в зашеметяващи цифрови преживявания, оставящи дълбоко впечатление.\n" +
@@ -336,6 +390,33 @@ function translateToEnglish() {
 
     sixBoxFromServicesTitle.innerHTML = "App Development";
     sixBoxFromServicesText.innerHTML = "Apps are easy to use and well-structured for all the people that prefers them over websites. They also help people in user interface .";
+
+    blogTitle.innerHTML = "My Blog";
+    blogCardOneTopic.innerHTML = "CODING";
+    blogOneTitle.innerHTML = "Why Javascript is so popular?";
+    blogOneText.innerHTML = "JavaScript's popularity stems from its versatility in both client and server-side development, supported by a vast ecosystem of libraries and frameworks.";
+
+    blogCardTwoTopic.innerHTML = "CODING";
+    blogTwoTitle.innerHTML = "JavaScript vs TypeScript";
+    blogTwoText.innerHTML = "JavaScript is a dynamic scripting language, while TypeScript is a superset of JavaScript with optional static typing, providing enhanced code maintainability and scalability.";
+
+    blogCardThreeTopic.innerHTML = "CODING";
+    blogThreeTitle.innerHTML = "Most commonly asked interview questions for C#";
+    blogThreeText.innerHTML = "Common C# interview questions cover topics like abstract classes vs. interfaces, memory management, string manipulation and more.";
+
+    blogCardFourTopic.innerHTML = "CODING";
+    blogFourTitle.innerHTML = "Fundamentals of Object-Oriented Programming";
+    blogFourText.innerHTML = "Understanding the fundamentals of Object-Oriented Programming is crucial for building scalable and maintainable software systems.";
+
+    priceTitle.innerHTML = "My Store";
+    priceCardOneTitle.innerHTML = "One Page Website";
+    priceCardOneText.innerHTML = "With HTMl, CSS and Javascript";
+
+    priceCardTwoTitle.innerHTML = "One Page Website";
+    priceCardTwoText.innerHTML = "With React or Angular";
+
+    priceCardThreeTitle.innerHTML = "Custom Multi-Page Website";
+    priceCardThreeText.innerHTML = "With all language and frameworks";
 
     skillsTitle.innerHTML = "My skills";
     skillsTitleText.innerHTML = "My creative skills & experiences.";
@@ -446,6 +527,33 @@ function translateToGerman() {
     sixBoxFromServicesTitle.innerHTML = "App-Entwicklung";
     sixBoxFromServicesText.innerHTML = "Apps sind benutzerfreundlich und gut strukturiert für all diejenigen, die sie Websites vorziehen. Sie helfen auch den Menschen bei der Benutzeroberfläche.";
 
+    blogTitle.innerHTML = "Mein Blog";
+    blogCardOneTopic.innerHTML = "CODING";
+    blogOneTitle.innerHTML = "Warum ist JavaScript so beliebt?";
+    blogOneText.innerHTML = "Die Beliebtheit von JavaScript ergibt sich aus seiner Vielseitigkeit sowohl in der Client- als auch in der Server-Entwicklung, unterstützt durch ein umfangreiches Ökosystem von Bibliotheken und Frameworks";
+
+    blogCardTwoTopic.innerHTML = "CODING";
+    blogTwoTitle.innerHTML = "JavaScript vs TypeScript";
+    blogTwoText.innerHTML = "JavaScript ist eine dynamische Skriptsprache, während TypeScript eine Obermenge von JavaScript mit optionaler statischer Typisierung ist, die eine verbesserte Code-Wartbarkeit und Skalierbarkeit bietet.";
+
+    blogCardThreeTopic.innerHTML = "CODING";
+    blogThreeTitle.innerHTML = "Häufig gestellte Interviewfragen zu C#";
+    blogThreeText.innerHTML = "Häufige Interviewfragen zu C# umfassen Themen wie abstrakte Klassen vs. Schnittstellen, Speicherverwaltung, Zeichenkettenmanipulation und mehr.";
+
+    blogCardFourTopic.innerHTML = "CODING";
+    blogFourTitle.innerHTML = "Grundlagen der objektorientierten Programmierung";
+    blogFourText.innerHTML = "Das Verständnis der Grundlagen der objektorientierten Programmierung ist entscheidend für den Aufbau skalierbarer und wartbarer Softwaresysteme.";
+
+    priceTitle.innerHTML = "Mein Geschäft";
+    priceCardOneTitle.innerHTML = "Einseitige Website";
+    priceCardOneText.innerHTML = "Mit HTML, CSS und JavaScript";
+
+    priceCardTwoTitle.innerHTML = "Einseitige Website";
+    priceCardTwoText.innerHTML = "Mit React oder Angular";
+
+    priceCardThreeTitle.innerHTML = "Angepasste Mehrseitige Webseite";
+    priceCardThreeText.innerHTML = "Mit allen Sprachen und Frameworks";
+
     skillsTitle.innerHTML = "Meine Fähigkeiten";
     skillsTitleText.innerHTML = "Meine kreativen Fähigkeiten und Erfahrungen.";
     skillsText.innerHTML = "<p id=\"skillsText\">Getrieben von Leidenschaft für Innovationen, gedeihe ich in den dynamischen Herausforderungen der Webentwicklung. Meine Hingabe, stets auf dem neuesten Stand der aufkommenden Technologien zu bleiben, stellt sicher, dass ich maßgeschneiderte Lösungen liefere, die Ihren Bedürfnissen entsprechen. Lassen Sie uns zusammenarbeiten, um Ihre Ideen in fesselnde digitale Erlebnisse umzusetzen, die einen bleibenden Eindruck hinterlassen.\n" +
@@ -553,6 +661,33 @@ function translateToRussian() {
 
     sixBoxFromServicesTitle.innerHTML = "Разработка приложений";
     sixBoxFromServicesText.innerHTML = "Приложения легко использовать и хорошо структурированы для всех, кто предпочитает их сайтам. Они также помогают пользователям в интерфейсе.";
+
+    blogTitle.innerHTML = "Мой блог";
+    blogCardOneTopic.innerHTML = "ПРОГРАММИРОВАНИЕ";
+    blogOneTitle.innerHTML = "Почему JavaScript такой популярный?";
+    blogOneText.innerHTML = "Популярность JavaScript проистекает из его гибкости как в клиентской, так и в серверной разработке, поддержанной огромной экосистемой библиотек и фреймворков";
+
+    blogCardTwoTopic.innerHTML = "ПРОГРАММИРОВАНИЕ";
+    blogTwoTitle.innerHTML = "JavaScript против TypeScript";
+    blogTwoText.innerHTML = "JavaScript — это динамический скриптовый язык, в то время как TypeScript — это надмножество JavaScript с опциональной статической типизацией, обеспечивающей улучшенное сопровождение и масштабируемость кода.";
+
+    blogCardThreeTopic.innerHTML = "ПРОГРАММИРОВАНИЕ";
+    blogThreeTitle.innerHTML = "Наиболее часто задаваемые вопросы на интервью по C#";
+    blogThreeText.innerHTML = "Обычные вопросы на интервью по C# охватывают такие темы, как абстрактные классы против интерфейсов, управление памятью, манипуляция строками и многое другое.";
+
+    blogCardFourTopic.innerHTML = "ПРОГРАММИРОВАНИЕ";
+    blogFourTitle.innerHTML = "Основы объектно-ориентированного программирования";
+    blogFourText.innerHTML = "Понимание основ объектно-ориентированного программирования имеет решающее значение для создания масштабируемых и поддерживаемых программных систем.";
+
+    priceTitle.innerHTML = "Мой магазин";
+    priceCardOneTitle.innerHTML = "Одностраничный сайт";
+    priceCardOneText.innerHTML = "С HTML, CSS и JavaScript";
+
+    priceCardTwoTitle.innerHTML = "Одностраничный сайт";
+    priceCardTwoText.innerHTML = "С React или Angular";
+
+    priceCardThreeTitle.innerHTML = "Персонализированный Многостраничный Сайт";
+    priceCardThreeText.innerHTML = "Со всеми языками и фреймворками";
 
     skillsTitle.innerHTML = "Мои навыки";
     skillsTitleText.innerHTML = "Мои творческие навыки и опыт.";
