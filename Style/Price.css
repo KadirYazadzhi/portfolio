@@ -156,8 +156,8 @@
 
 .close-btn {
     position: absolute;
-    top: 27%;
-    right: 33%;
+    top: -5%;
+    right: -5%;
     box-sizing: border-box;
     width: 1.5em;
     height: 1.5em;
@@ -199,9 +199,5 @@
     .input {
         width: 90%;
         height: 360px;
-    }
-    .close-btn {
-        right: 1%;
-        top: 28%;
     }
 }
