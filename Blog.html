@@ -3,8 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <title>Blog</title>
+
+    <link rel="stylesheet" type="text/css" href="Style/Translate.css">
+    <link rel="stylesheet" type="text/css" href="Style/Light-And-Dark-Switch.css">
+    <link rel="stylesheet" type="text/css" href="Style/Menu-with-button.css">
+    <link rel="stylesheet" type="text/css" href="Style/Important%20Style.css">
+    <link rel="stylesheet" type="text/css" href="Style/Scroll%20Bar.css">
+    <link rel="stylesheet" type="text/css" href="Style/Blog-Page.css">
+    <link rel="stylesheet" type="text/css" href="Style/Navbar.css">
+    <link rel="stylesheet" type="text/css" href="Style/Style.css">
+    <link rel="stylesheet" type="text/css" href="Style/Blog.css">
+
+
+    <link id="specialLinkForDarkTheme" rel="stylesheet" type="text/css" href="">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
+<nav class="navbar">
+    <div class="max-width">
+        <div class="logo"><a href="#">Key<span>Yaz.</span></a></div>
+        <ul class="menu">
+            <li><a id="navbar-home" href="index.html#home" class="menu-btn">Home</a></li>
+            <li><a id="navbar-about" href="index.html#about" class="menu-btn">About me</a></li>
+            <li><a id="navbar-services" href="index.html#services" class="menu-btn">Services</a></li>
+            <li><a id="navbar-skills" href="index.html#skills" class="menu-btn">Skills</a></li>
+            <li><a id="navbar-certificate" href="Certificate.html" class="menu-btn">Certificates</a></li>
+            <li><a id="navbar-projects" href="index.html#teams" class="menu-btn">Projects</a></li>
+            <li><a id="navbar-contact" href="index.html#contact" class="menu-btn">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<section class="header-section">
+    <h1 class="title-header">Welcome to My Blog</h1>
+    <p class="text-header">This is the place where you can enhance your programming skills and learn about things you never even imagined.</p>
+    <p class="small-text-header">Learn more &rarr;</p>
+</section>
+
+
+
+<div class="language">
+    <div class="dropdown" tab-index="0">
+        <button id="dropdown-btn"></button>
+        <ul class="dropdown-content" id="dropdown-content"></ul>
+    </div>
+</div>
+
+
+<div class="box-for-other-button">
+    <div class="big-box">
+        <div class="left-box-for-circle">
+            <div class="left-box-circle">
+                <a aria-label="Read more about Seminole tax hike" href="index.html"><i class="fas fa-regular fa-house"></i></a>
+            </div>
+            <div class="left-box-circle">
+                <i class="fas fa-regular fa-bag-shopping"></i>
+            </div>
+            <div class="left-box-circle">
+                <i class="fas fa-regular fa-newspaper"></i>
+            </div>
+            <div class="divider"></div>
+        </div>
+        <div class="right-button-box">
+            <button id="bottone1">
+                <img alt="buy-me-a-coffee" style="width: 15px; vertical-align: middle;" src="Image/buy-me-a-coffee-review.png">
+                <strong style="vertical-align: middle;"><a style="color: #000000" href="https://www.buymeacoffee.com/kadiryazadzhi">Buy me a cofee❤️</a></strong>
+            </button>
+        </div>
+    </div>
+</div>
+
+<label class="switch">
+    <input type="checkbox">
+    <span class="slider"></span>
+</label>
+
+<section class="blog-section">
+    <div class="left-section">
+        <h2 class="left-title">Recent Post</h2>
+        <div class="left-card">
+            <img class="left-card-image" src="Image/javascript-blog.jpg">
+            <div class="left-card-text-container">
+                <p class="left-card-text">Why JavaScript is so popular?</p>
+                <p class="left-card-small-text">Learn more &rarr;</p>
+            </div>
+        </div>
+
+        <div class="left-card">
+            <img class="left-card-image" src="Image/javascriptVStypescript-blog.png">
+            <div class="left-card-text-container">
+                <p class="left-card-text">JavaScript vs TypeScript</p>
+                <p class="left-card-small-text">Learn more &rarr;</p>
+            </div>
+        </div>
+
+        <div class="left-card">
+            <img class="left-card-image" src="Image/C%23-blog.png">
+            <div class="left-card-text-container">
+                <p class="left-card-text">Most commonly asked interview questions for C#</p>
+                <p class="left-card-small-text">Learn more &rarr;</p>
+            </div>
+        </div>
+
+        <div class="left-card">
+            <img class="left-card-image" src="Image/OOP-blog.png">
+            <div class="left-card-text-container">
+                <p class="left-card-text">Fundamentals of Object-Oriented Programming</p>
+                <p class="left-card-small-text">Learn more &rarr;</p>
+            </div>
+        </div>
+
+        <div class="left-card">
+            <img class="left-card-image" src="Image/javascript-blog.jpg">
+            <div class="left-card-text-container">
+                <p class="left-card-text"></p>
+                <p class="left-card-small-text">Learn more &rarr;</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-section">
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="Image/javascript-blog.jpg" alt="rover" />
+            </div>
+            <span id="blog-card-one-topic" class="tag tag-blue">Coding</span>
+            <div class="blog-card-body">
+                <h4 id="blog-one-title"> Why Javascript is so popular? </h4>
+                <p id="blog-one-text">
+                    JavaScript's popularity stems from its versatility in both client and server-side development, supported by a vast ecosystem of libraries and frameworks
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="Image/javascriptVStypescript-blog.png" alt="rover" />
+            </div>
+            <span id="blog-card-two-topic" class="tag tag-teal">Coding</span>
+            <div class="blog-card-body">
+                <h4 id="blog-two-title"> JavaScript vs TypeScript </h4>
+                <p id="blog-two-text">
+                    JavaScript is a dynamic scripting language, while TypeScript is a superset of JavaScript with optional static typing, providing enhanced code maintainability and scalability.
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="Image/C%23-blog.png" alt="ballons" />
+            </div>
+            <span id="blog-card-three-topic" class="tag tag-purple">Coding</span>
+            <div class="blog-card-body">
+                <h4 id="blog-three-title"> Most commonly asked interview questions for C# </h4>
+                <p id="blog-three-text">
+                    Common C# interview questions cover topics like abstract classes vs. interfaces, memory management, string manipulation and more.
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="Image/OOP-blog.png" alt="city" />
+            </div>
+            <span id="blog-card-four-topic" class="tag tag-pink">Coding</span>
+            <div class="blog-card-body">
+                <h4 id="blog-four-title"> Fundamentals of Object-Oriented Programming </h4>
+                <p id="blog-four-text">
+                    Understanding the fundamentals of Object-Oriented Programming is crucial for building scalable and maintainable software systems.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
 </body>
+
+<script rel="script" src="Script/Script.js"></script>
+<script rel="script" src="Script/Translate.js"></script>
 </html>
