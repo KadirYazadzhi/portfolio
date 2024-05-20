@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my portfolio, you can learn more about me and my personality, all my skills, knowledge, and projects. You can explore the certificates I have and read some of my interesting posts with useful information for programmers.">
+
     <title>Blog</title>
 
     <link rel="stylesheet" type="text/css" href="Style/Translate.css">
@@ -20,7 +23,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body>
+<body class="blog-page">
 <nav class="navbar">
     <div class="max-width">
         <div class="logo"><a href="#">Key<span>Yaz.</span></a></div>
@@ -83,46 +86,94 @@
     <span class="slider"></span>
 </label>
 
+<button id="hidden-button" class="hidden-button">Open menu &rarr;</button>
+
 <section class="blog-section">
-    <div class="left-section">
-        <h2 class="left-title">Recent Post</h2>
-        <div class="left-card">
-            <img class="left-card-image" src="Image/javascript-blog.jpg">
-            <div class="left-card-text-container">
-                <p class="left-card-text">Why JavaScript is so popular?</p>
-                <p class="left-card-small-text">Learn more &rarr;</p>
+    <div id="left-section" class="left-section">
+        <div class="section-one-recent-post">
+            <p id="hide-section" class="hide-section">&larr;</p>
+            <h2 class="left-title">Recent Post</h2>
+            <div class="left-card">
+                <img class="left-card-image" src="Image/Machine-Learning-blog.jfif">
+                <div class="left-card-text-container">
+                    <p class="left-card-text">Introduction to Machine Learning with Python</p>
+                    <p class="left-card-small-text">Learn more &rarr;</p>
+                </div>
+            </div>
+
+            <div class="left-card">
+                <img class="left-card-image" src="Image/Git-blog.jpg">
+                <div class="left-card-text-container">
+                    <p class="left-card-text">10 Essential Git Commands for Every Developer</p>
+                    <p class="left-card-small-text">Learn more &rarr;</p>
+                </div>
+            </div>
+
+            <div class="left-card">
+                <img class="left-card-image" src="Image/C%23-blog.png">
+                <div class="left-card-text-container">
+                    <p class="left-card-text">Most commonly asked interview questions for C#</p>
+                    <p class="left-card-small-text">Learn more &rarr;</p>
+                </div>
+            </div>
+
+            <div class="left-card">
+                <img class="left-card-image" src="Image/OOP-blog.png">
+                <div class="left-card-text-container">
+                    <p class="left-card-text">Fundamentals of Object-Oriented Programming</p>
+                    <p class="left-card-small-text">Learn more &rarr;</p>
+                </div>
+            </div>
+
+            <div class="left-card">
+                <img class="left-card-image" src="Image/javascript-blog.jpg">
+                <div class="left-card-text-container">
+                    <p class="left-card-text"></p>
+                    <p class="left-card-small-text">Learn more &rarr;</p>
+                </div>
             </div>
         </div>
 
-        <div class="left-card">
-            <img class="left-card-image" src="Image/javascriptVStypescript-blog.png">
-            <div class="left-card-text-container">
-                <p class="left-card-text">JavaScript vs TypeScript</p>
-                <p class="left-card-small-text">Learn more &rarr;</p>
+        <div class="section-two-recent-post">
+            <h2 class="left-title">News</h2>
+            <div class="left-card">
+                <img class="left-card-image" src="Image/javascript-blog.jpg">
+                <div class="left-card-text-container">
+                    <p class="left-card-text">Why JavaScript is so popular?</p>
+                    <p class="left-card-small-text">Learn more &rarr;</p>
+                </div>
             </div>
-        </div>
 
-        <div class="left-card">
-            <img class="left-card-image" src="Image/C%23-blog.png">
-            <div class="left-card-text-container">
-                <p class="left-card-text">Most commonly asked interview questions for C#</p>
-                <p class="left-card-small-text">Learn more &rarr;</p>
+            <div class="left-card">
+                <img class="left-card-image" src="Image/javascriptVStypescript-blog.png">
+                <div class="left-card-text-container">
+                    <p class="left-card-text">JavaScript vs TypeScript</p>
+                    <p class="left-card-small-text">Learn more &rarr;</p>
+                </div>
             </div>
-        </div>
 
-        <div class="left-card">
-            <img class="left-card-image" src="Image/OOP-blog.png">
-            <div class="left-card-text-container">
-                <p class="left-card-text">Fundamentals of Object-Oriented Programming</p>
-                <p class="left-card-small-text">Learn more &rarr;</p>
+            <div class="left-card">
+                <img class="left-card-image" src="Image/C%23-blog.png">
+                <div class="left-card-text-container">
+                    <p class="left-card-text">Most commonly asked interview questions for C#</p>
+                    <p class="left-card-small-text">Learn more &rarr;</p>
+                </div>
             </div>
-        </div>
 
-        <div class="left-card">
-            <img class="left-card-image" src="Image/javascript-blog.jpg">
-            <div class="left-card-text-container">
-                <p class="left-card-text"></p>
-                <p class="left-card-small-text">Learn more &rarr;</p>
+            <div class="left-card">
+                <img class="left-card-image" src="Image/OOP-blog.png">
+                <div class="left-card-text-container">
+                    <p class="left-card-text">Fundamentals of Object-Oriented Programming</p>
+                    <p class="left-card-small-text">Learn more &rarr;</p>
+                </div>
+            </div>
+
+            <div class="left-card">
+                <img class="left-card-image" src="Image/javascript-blog.jpg">
+                <div class="left-card-text-container">
+                    <p class="left-card-text"></p>
+                    <p class="left-card-small-text">Learn more &rarr;</p>
+                </div>
             </div>
         </div>
     </div>
@@ -179,11 +230,106 @@
                 </p>
             </div>
         </div>
+
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="Image/Javascript-2-blog.jpg" alt="city" />
+            </div>
+            <span id="blog-card-five-topic" class="tag tag-pink">Coding</span>
+            <div class="blog-card-body">
+                <h4 id="blog-five-title"> Understanding Asynchronous Programming in JavaScript </h4>
+                <p id="blog-five-text">
+                    Asynchronous programming in JavaScript enables non-blocking operations, allowing for more efficient code execution.
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="Image/Python-vs-Ruby-blog.jpg" alt="city" />
+            </div>
+            <span id="blog-card-six-topic" class="tag tag-pink">Coding</span>
+            <div class="blog-card-body">
+                <h4 id="blog-six-title"> Python vs. Ruby: Which Language Should You Learn? </h4>
+                <p id="blog-six-text">
+                    Python and Ruby are both powerful, high-level programming languages. This article compares their features, strengths and more.
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="Image/Git-blog.jpg" alt="city" />
+            </div>
+            <span id="blog-card-seven-topic" class="tag tag-pink">Coding</span>
+            <div class="blog-card-body">
+                <h4 id="blog-seven-title"> 10 Essential Git Commands for Every Developer </h4>
+                <p id="blog-seven-text">
+                    Mastering Git is crucial for modern development. This article covers the ten most essential Git commands, providing explanations and examples to enhance your version control skills.
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="Image/CSharp-blog.png" alt="city" />
+            </div>
+            <span id="blog-card-eight-topic" class="tag tag-pink">Coding</span>
+            <div class="blog-card-body">
+                <h4 id="blog-eight-title"> Exploring New Features in the Latest Version of C# </h4>
+                <p id="blog-eight-text">
+                    This article reviews these updates and demonstrates how to leverage them in your projects to improve your coding efficiency.
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-card-header">
+                <img src="Image/Machine-Learning-blog.jfif" alt="city" />
+            </div>
+            <span id="blog-card-nine-topic" class="tag tag-pink">Coding</span>
+            <div class="blog-card-body">
+                <h4 id="blog-nine-title"> Introduction to Machine Learning with Python </h4>
+                <p id="blog-nine-text">
+                    Machine learning is a rapidly growing field with diverse applications. This article introduces the basics of machine learning using Python.
+                </p>
+            </div>
+        </div>
+
     </div>
 </section>
 
+
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <h2><span class="typing-3"></span></h2>
+    <ul id="media">
+        <!-- facebook  -->
+        <li style="--clr:#0011ff;">
+            <a href="https://www.facebook.com/kadir.yazadji.1" target="-blank"><i class="fa-brands fa-facebook-f"></i>
+            </a>
+        </li>
+        <!-- github  -->
+        <li style="--clr:#818181;">
+            <a href="https://github.com/KadirYazadzhi" target="-blank"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <!-- Instagram  -->
+        <li style="--clr:#e73f0c;">
+            <a href="https://www.instagram.com/_qzadji_?igsh=bGx3djFjeHhheTFm" target="-blank"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+    </ul>
+
+    <p id="copyright">Copyright &copy; 2024 - All Rights Reserved || Designed By: Kadir Yazadzhi</p>
+</footer>
 </body>
 
+<script rel="script" src="Script/Blog%20Page.js"></script>
+<script rel="script" src="Script/Light-And-Dark-switch.js"></script>
 <script rel="script" src="Script/Script.js"></script>
 <script rel="script" src="Script/Translate.js"></script>
 </html>
