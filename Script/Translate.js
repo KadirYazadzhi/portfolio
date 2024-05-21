@@ -1005,8 +1005,6 @@ function setSelectedLocale(locale) {
             specialBar.style.borderBottomLeftRadius = '12px';
         });
 
-
-        dropdownBtn.innerHTML = `<img src="${getFlagSrc(intlLocale.region)}" />${langName}<span class="arrow-down"></span>`;
     }
     else if (path === "/portfolio/Certificate.html") {
         const navbarHome = document.getElementById('navbar-home');
@@ -1116,12 +1114,12 @@ function setSelectedLocale(locale) {
             translateToRussianForCertificatesPage();
         }
 
-        dropdownBtn.innerHTML = `<img src="${getFlagSrc(intlLocale.region)}" />${langName}<span class="arrow-down"></span>`;
     }
     else if (path === "/portfolio/Blog.html") {
-        console.log("test");
+
     }
 
+    dropdownBtn.innerHTML = `<img src="${getFlagSrc(intlLocale.region)}" />${langName}<span class="arrow-down"></span>`;
 }
 
 setSelectedLocale(locales[0]);

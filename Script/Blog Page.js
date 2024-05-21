@@ -7,7 +7,7 @@ hiddenButtonToShowSection.addEventListener('click', function () {
 });
 
 arrowToHideSection.addEventListener('click', function () {
-    leftSection.style.left = '-95%';
+    leftSection.style.left = '-100%';
 });
 
 

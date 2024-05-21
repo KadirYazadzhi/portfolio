@@ -1,0 +1,63 @@
+.header-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #171717;
+    padding-top: 140px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    min-height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-header {
+    font-size: 2.9em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.text-header {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    width: 50%;
+}
+
+.small-text-header, .link-to-blog {
+    font-weight: 500;
+    font-size: 1em;
+    color: #676767;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.small-text-header:hover, .link-to-blog:hover {
+    color: #949494;
+}
+
+.price-card, .price-card-sp {
+    min-height: 300px;
+}
+.price-card {
+    min-width: 400px;
+    margin: 15px;
+}
+.price-card-sp {
+    min-width: 460px;
+}
+#priceCardFour, #priceCardFive {
+    min-width: 520px;
+}
+@media (max-width: 768px) {
+    #priceCardFour, #priceCardFive {
+        width: 100%!important;
+    }
+}
+.price-card, .price-card-sp {
+    box-shadow: 1px 1px 10px #383838;
+}
+.price-card:hover, .price-card-sp:hover {
+    box-shadow: 1px 1px 15px #444444;
+}

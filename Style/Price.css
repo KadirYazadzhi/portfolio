@@ -16,7 +16,7 @@
     }
 }
 .price-card, .price-card-sp {
-    min-height: 280px;
+    height: 290px;
     background: rgba(255, 255, 255, 0.04);
     border-radius: 30px;
     box-shadow: 1px 1px 10px #2f2f2f;
@@ -82,7 +82,7 @@
     height: 100%;
     background: rgba(54, 54, 54, 0.8);
     position: fixed;
-    z-index: 10;
+    z-index: 10000;
 }
 
 .input {

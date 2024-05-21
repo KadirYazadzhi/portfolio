@@ -111,6 +111,8 @@ Form.init();
 new Card('priceCardOne', 'One Page Website - HTML, CSS, JS');
 new Card('priceCardTwo', 'One Page Website - React or Angular');
 new Card('priceCardThree', 'Custom Multi-Page Website');
+new Card('priceCardFour', 'Website - WordPress or Weebly');
+new Card('priceCardFive', 'Working About - ');
 
 document.addEventListener('DOMContentLoaded', () => {
     const inputs = document.querySelectorAll('.field-contact');
