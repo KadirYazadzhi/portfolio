@@ -80,3 +80,15 @@
     margin: 0 0 40px;
 }
 
+
+
+@media (min-width: 1700px) {
+    .containerNew {
+        justify-content: center;
+    }
+
+    .blog-card {
+        margin: 0 20px;
+    }
+}
+

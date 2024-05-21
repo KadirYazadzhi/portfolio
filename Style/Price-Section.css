@@ -54,10 +54,24 @@
     #priceCardFour, #priceCardFive {
         width: 100%!important;
     }
+    .text-header {
+        width: 100%;
+    }
 }
 .price-card, .price-card-sp {
     box-shadow: 1px 1px 10px #383838;
 }
 .price-card:hover, .price-card-sp:hover {
     box-shadow: 1px 1px 15px #444444;
+}
+
+
+.price-card-title {
+     color: black;
+ }
+.card-price {
+    color: white;
+}
+.price-card-text {
+    color: #626262;
 }

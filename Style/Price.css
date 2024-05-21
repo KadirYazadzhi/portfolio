@@ -201,3 +201,13 @@
         height: 360px;
     }
 }
+
+@media (min-width: 1700px) {
+    .price-card {
+        min-width: 380px;
+    }
+
+    .price-card-sp {
+        min-width: 460px;
+    }
+}

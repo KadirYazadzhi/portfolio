@@ -1576,6 +1576,16 @@ footer .wave#wave4
     transition: color 0.3s ease 0s;
 }
 
+@media (min-width: 1700px) {
+    .imageCard {
+        margin: 0;
+        position: absolute;
+    }
+
+    .max-width {
+        max-width: 1600px;
+    }
+}
 
 
 

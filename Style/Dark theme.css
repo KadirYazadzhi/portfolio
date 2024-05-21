@@ -159,6 +159,12 @@ footer {
 .left-section {
     background: #000000 !important;
 }
+.price-card-title {
+    color: #ffffff !important;
+}
+.price-card-text {
+    color: #595959 !important;
+}
 
 
 
