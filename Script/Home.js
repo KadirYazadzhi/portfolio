@@ -100,8 +100,17 @@ OtherElementOne.style.display = 'none';
 OtherElementTwo.style.display = 'none';
 OtherElementThree.style.display = 'none';
 dotOne.style.backgroundColor = '#4298b4';
+
+
+var biggestScreen = 1700;
 dotOne.addEventListener('click', function() {
-    OtherElementOne.style.display = 'none';
+    if (window.innerWidth >= biggestScreen) {
+        OtherElementOne.style.display = 'flex';
+    }
+    else {
+        OtherElementOne.style.display = 'none';
+    }
+
     OtherElementTwo.style.display = 'none';
     OtherElementThree.style.display = 'none';
     ElementOne.style.display = 'flex';
@@ -111,12 +120,18 @@ dotOne.addEventListener('click', function() {
     dotTwo.style.backgroundColor = '';
 });
 dotTwo.addEventListener('click', function() {
+    if (window.innerWidth >= biggestScreen) {
+        ElementThree.style.display = 'flex';
+    }
+    else {
+        ElementThree.style.display = 'none';
+    }
+
     OtherElementOne.style.display = 'flex';
     OtherElementTwo.style.display = 'flex';
     OtherElementThree.style.display = 'flex';
     ElementOne.style.display = 'none';
     ElementTwo.style.display = 'none';
-    ElementThree.style.display = 'none';
     dotOne.style.backgroundColor = '';
     dotTwo.style.backgroundColor = '#4298b4';
 });
