@@ -1,4 +1,5 @@
 const locales = ["en-GB","de-DE","bg-BG","ru-RU", ];
+console.log(123);
 
 function getFlagSrc(countryCode) {
     return /^[A-Z]{2}$/.test(countryCode)
