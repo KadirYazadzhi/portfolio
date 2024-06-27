@@ -166,6 +166,27 @@ footer {
     color: #595959 !important;
 }
 
+.card-mbti-iq {
+    background: rgba(94, 94, 94, 0.3);
+}
+
+.card-mbti-iq:hover::before,
+.card-mbti-iq:hover:after {
+    background: rgba(246, 221, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+.card-mbti-iq:hover:after {
+    color: #f188fa;
+    text-shadow: 0 2px 16px rgba(225, 174, 242, 0.24);
+    background: linear-gradient(0deg, #f289ff 0, #db6ef5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 
 
