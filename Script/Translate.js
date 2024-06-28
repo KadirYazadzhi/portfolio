@@ -1116,9 +1116,7 @@ function setSelectedLocale(locale) {
         }
 
     }
-    else if (path === "/portfolio/Blog.html") {
 
-    }
 
     dropdownBtn.innerHTML = `<img src="${getFlagSrc(intlLocale.region)}" />${langName}<span class="arrow-down"></span>`;
 }
