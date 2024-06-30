@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         const path = window.location.pathname;
-        if (path === "/" || path === "" || path === "/portfolio/index.html" || path === "https://kadiryazadzhi.github.io/portfolio/") {
+        if (path === "/" || path === "" || path === "/portfolio/index.html" || path === "/portfolio/") {
             const navbarHome = document.getElementById('navbar-home');
             const navbarAbout = document.getElementById('navbar-about');
             const navbarServices = document.getElementById('navbar-services');
