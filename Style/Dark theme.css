@@ -187,6 +187,10 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
+.blog-card a {
+    color: #ffffff;
+}
+
 
 
 
