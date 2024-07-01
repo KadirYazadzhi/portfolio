@@ -29,8 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let blogImageEleven = document.getElementById('blog-image-11');
     let blogImageTwelve = document.getElementById('blog-image-12');
 
-    smallTextHeader.innerHTML = "Learn more &rarr;";
-
     function findClickedCard() {
         const blogCards = document.querySelectorAll('.blog-card');
 
@@ -39,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const blogId = this.getAttribute('data-blog-id');
 
                 localStorage.setItem('lastClickedBlogId', blogId);
-
+                console.log(localStorage.getItem('lastClickedBlogId'));
             });
         });
     }
@@ -51,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('lastClickedBlogId') === "1") {
         titleHeader.innerHTML = "Why Javascript is so popular?";
         textHeaderOne.innerHTML = "JavaScript is popular because it is versatile, ubiquitous in web development, supported by a vast ecosystem and community, and backed by major tech companies.";
+        smallTextHeader.innerHTML = "Learn more &rarr;";
         blogTextOne.innerHTML = "JavaScript is one of the most popular programming languages in the world, and its popularity can be attributed to several key factors:";
         blogTitleOne.innerHTML = "1. Ubiquity in Web Development";
         blogTextSecond.innerHTML = "JavaScript is the only programming language that can run natively in web browsers, making it indispensable for front-end development. Every major web browser supports JavaScript, which allows developers to create dynamic, interactive user experiences. This widespread support has cemented JavaScript as a fundamental technology of the web.";
@@ -82,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         titleHeader.innerHTML = "JavaScript Vs TypeScript";
         textHeaderOne.innerHTML = "JavaScript is a dynamic scripting language, while TypeScript is a superset of JavaScript with optional static typing, providing enhanced code maintainability and scalability.";
         blogTextOne.innerHTML = "JavaScript and TypeScript are two closely related languages used in web development, each with its own strengths and use cases:";
-
+        smallTextHeader.innerHTML = "Learn more &rarr;";
         blogTitleOne.innerHTML = "1. Nature of the Language";
         blogTextSecond.innerHTML = "JavaScript is a dynamically typed scripting language that executes directly in web browsers. Its dynamic nature allows for rapid prototyping and flexibility in coding. TypeScript, on the other hand, is a statically typed superset of JavaScript. It includes all JavaScript features but adds optional static typing, which can catch errors at compile time and improve code quality.";
         blogTitleSecond.innerHTML = "2. Type Safety";
