@@ -108,10 +108,38 @@ document.addEventListener('DOMContentLoaded', () => {
         blogImageTwelve.src = "https://cursin.net/wp-content/uploads/2023/10/curso-gratis-microsoft-typescript.jpg.webp";
     }
     else if (localStorage.getItem('lastClickedBlogId') === "3") {
+        titleHeader.innerHTML = "Most commonly asked interview questions for C#";
+        textHeaderOne.innerHTML = "Common C# interview questions cover topics like abstract classes vs. interfaces, memory management, string manipulation, and more.";
+        smallTextHeader.innerHTML = "Learn more &rarr;";
+        blogTextOne.innerHTML = "C# is a versatile and powerful language, often used in enterprise environments. When preparing for a C# interview, it's crucial to understand various key concepts and be ready to discuss them in detail:";
+        blogTitleOne.innerHTML = "1. Abstract Classes vs. Interfaces";
+        blogTextSecond.innerHTML = "Understanding the differences between abstract classes and interfaces is fundamental. Abstract classes can provide default behavior (methods with implementation), while interfaces can only declare methods without implementation. Abstract classes are used when classes share a common base and interfaces are used to define a contract that multiple classes can implement.";
+        blogTitleSecond.innerHTML = "2. Memory Management";
+        blogTextThird.innerHTML = "Memory management in C# involves understanding garbage collection and how memory is allocated and deallocated. Interviewees should be able to explain the basics of garbage collection, managed and unmanaged resources, and the use of IDisposable interface to manage resource cleanup.";
+        blogTitleThird.innerHTML = "3. String Manipulation";
+        blogTextFour.innerHTML = "String manipulation questions often involve tasks like reversing a string, checking for palindromes, or comparing strings. Knowing the performance implications of using StringBuilder vs. string for concatenation and the immutability of strings in C# is also important.";
+        blogTitleFour.innerHTML = "4. LINQ (Language Integrated Query)";
+        blogTextFive.innerHTML = "LINQ is a powerful feature in C#. Questions may involve writing queries to filter, project, and aggregate data. Understanding the differences between LINQ to Objects, LINQ to SQL, and LINQ to XML, and being able to write complex queries is essential.";
+        blogTitleFive.innerHTML = "5. Exception Handling";
+        blogTextSix.innerHTML = "Exception handling is a crucial part of robust application development. Be prepared to discuss try-catch blocks, custom exceptions, and the best practices for handling exceptions. Understanding how to use finally and using statements to manage resources is also important.";
+        blogTitleSix.innerHTML = "6. Threading and Asynchronous Programming";
+        blogTextSeven.innerHTML = "With the rise of multi-core processors, understanding threading and asynchronous programming is vital. Expect questions on the Task Parallel Library (TPL), async and await keywords, and how to manage synchronization and avoid deadlocks.";
 
+        blogImageOne.src = "https://res.cloudinary.com/practicaldev/image/fetch/s--2XdEnCAM--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://raw.githubusercontent.com/sandeepkumar17/td-dev.to/di-collection-posts/assets/blog-cover/c-sharp.png";
+        blogImageTwo.src = "https://code.visualstudio.com/assets/docs/languages/csharp/editingevolved.png";
+        blogImageThree.src = "https://qph.cf2.quoracdn.net/main-qimg-0b74b9ee3d4afcb8e77acd0d5acc3e40-lq";
+        blogImageFour.src = "https://media.licdn.com/dms/image/C4E12AQFmaz7Uzy5P0g/article-cover_image-shrink_720_1280/0/1630821952261?e=2147483647&v=beta&t=2gZSuoU9xotgWWpaUz-I1wM57GulRs68uWTF9PWP-T8";
+        blogImageFive.src = "https://miro.medium.com/v2/resize:fit:1400/1*sMgShS-u_Udtx_1-6Up6Gw.jpeg";
+        blogImageSix.src = "https://miro.medium.com/v2/resize:fit:1400/1*0-oYZDVMwwlBSTlkbB0pXA.png";
+        blogImageSeven.src = "https://global.discourse-cdn.com/uipath/original/3X/5/a/5a667eb62c575ef918966a4214c05afba9a9c6b9.png";
+        blogImageEight.src = "https://miro.medium.com/v2/resize:fit:1400/1*PXI-ZqiCWv1-USovYM5lFw.png";
+        blogImageNine.src = "https://www.tutlane.com/images/linq/linq-architecture-diagram.png";
+        blogImageTen.src = "https://www.programiz.com/sites/tutorial2program/files/csharp-finally-block.png";
+        blogImageEleven.src = "https://www.c-sharpcorner.com/article/thread-behaviour-in-synchronous-and-asynchronous-method/Images/image-20211224112443-6.png";
+        blogImageTwelve.src = "https://miro.medium.com/v2/resize:fit:1080/1*EEaxmVKhFJabxN2bC1h75Q.jpeg";
     }
     else if (localStorage.getItem('lastClickedBlogId') === "4") {
-
+        return false;
     }
     else if (localStorage.getItem('lastClickedBlogId') === "5") {
 
