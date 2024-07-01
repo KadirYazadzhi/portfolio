@@ -35,9 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
         blogCards.forEach(card => {
             card.addEventListener('click', function() {
                 const blogId = this.getAttribute('data-blog-id');
-
                 localStorage.setItem('lastClickedBlogId', blogId);
-                console.log(localStorage.getItem('lastClickedBlogId'));
+                window.location.href = "Blogs.html";
             });
         });
     }
@@ -95,18 +94,18 @@ document.addEventListener('DOMContentLoaded', () => {
         blogTitleSix.innerHTML = "6. Community and Adoption";
         blogTextSeven.innerHTML = "JavaScript has a massive community and is supported by all major browsers, making it an essential technology for web development. TypeScript, backed by Microsoft, has seen growing adoption due to its advantages in large-scale applications. Many popular frameworks like Angular are built with TypeScript, and its community continues to expand.";
 
-        blogImageOne.src = "Image/Javascript-blogs-one.webp";
-        blogImageTwo.src = "Image/Javascript-blogs-two.webp";
-        blogImageThree.src = "Image/javascript-blogs-three.jpg";
-        blogImageFour.src = "Image/javascript-blogs-five.jpeg";
-        blogImageFive.src = "Image/javascript-blogs-six.webp";
-        blogImageSix.src = "Image/Nodejs-Architecture.png";
-        blogImageSeven.src = "Image/javascript-blogs-eight.jpg";
-        blogImageEight.src = "https://www.devprojournal.com/wp-content/uploads/2024/01/enterprise-software-e1704812530184.jpg";
-        blogImageNine.src = "https://strandmanagement.com/assets/images/professional-web-app-development-nj.jpg";
-        blogImageTen.src = "Image/javascript-blogs-ten.png";
-        blogImageEleven.src = "https://i0.wp.com/juniorhabla.com/wp-content/uploads/2018/05/Responsive-Websites-on-Devices.jpg?fit=3508%2C2480";
-        blogImageTwelve.src = "https://quickonline.ma/wp-content/uploads/2023/11/Design-sans-titre-5.jpg";
+        blogImageOne.src = "https://cyberhoot.com/wp-content/uploads/2020/07/Free-Courses-to-learn-JavaScript.jpg";
+        blogImageTwo.src = "https://community-cdn-digitalocean-com.global.ssl.fastly.net/CvetkR1AVTA4LvzC5cjPnm4J";
+        blogImageThree.src = "https://ithelp.ithome.com.tw/upload/images/20220930/20148825QXeOJjMEHU.png";
+        blogImageFour.src = "https://tsh.io/wp-content/uploads/2022/07/typescript-new-features-lead.png";
+        blogImageFive.src = "https://media.geeksforgeeks.org/wp-content/uploads/20220831220305/kneklfn-660x270.PNG";
+        blogImageSix.src = "https://cdn-media-1.freecodecamp.org/images/1*0o35DC9HRHPhjwYMHwbz_g.jpeg";
+        blogImageSeven.src = "https://media.licdn.com/dms/image/D5612AQFtUtgVbfeUQA/article-cover_image-shrink_600_2000/0/1698676067516?e=2147483647&v=beta&t=d1rzPkK3KMFdB-Oo27i-PIm8XUhcV-3l0sNZQfF-QfE";
+        blogImageEight.src = "https://miro.medium.com/v2/resize:fit:1400/1*3vOvKvhf_YC5XzU6oFWRhw.png";
+        blogImageNine.src = "https://miro.medium.com/v2/resize:fit:1400/1*4cFhtuq6zRDqJ6p4s2pQ6g.jpeg";
+        blogImageTen.src = "https://blog.shiftasia.com/content/images/2023/05/MicrosoftTeams-image--49-.png";
+        blogImageEleven.src = "https://wpengine.com/wp-content/uploads/2021/07/jsheader.png";
+        blogImageTwelve.src = "https://cursin.net/wp-content/uploads/2023/10/curso-gratis-microsoft-typescript.jpg.webp";
     }
     else if (localStorage.getItem('lastClickedBlogId') === "3") {
 
