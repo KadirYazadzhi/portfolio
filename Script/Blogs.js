@@ -139,7 +139,35 @@ document.addEventListener('DOMContentLoaded', () => {
         blogImageTwelve.src = "https://miro.medium.com/v2/resize:fit:1080/1*EEaxmVKhFJabxN2bC1h75Q.jpeg";
     }
     else if (localStorage.getItem('lastClickedBlogId') === "4") {
-        return false;
+        titleHeader.innerHTML = "Most commonly asked interview questions for C#";
+        textHeaderOne.innerHTML = "Common C# interview questions cover topics like abstract classes vs. interfaces, memory management, string manipulation, and more.";
+        smallTextHeader.innerHTML = "Learn more &rarr;";
+        blogTextOne.innerHTML = "C# is a versatile and powerful language, often used in enterprise environments. When preparing for a C# interview, it's crucial to understand various key concepts and be ready to discuss them in detail:";
+        blogTitleOne.innerHTML = "1. Abstract Classes vs. Interfaces";
+        blogTextSecond.innerHTML = "Understanding the differences between abstract classes and interfaces is fundamental. Abstract classes can provide default behavior (methods with implementation), while interfaces can only declare methods without implementation. Abstract classes are used when classes share a common base and interfaces are used to define a contract that multiple classes can implement.";
+        blogTitleSecond.innerHTML = "2. Memory Management";
+        blogTextThird.innerHTML = "Memory management in C# involves understanding garbage collection and how memory is allocated and deallocated. Interviewees should be able to explain the basics of garbage collection, managed and unmanaged resources, and the use of IDisposable interface to manage resource cleanup.";
+        blogTitleThird.innerHTML = "3. String Manipulation";
+        blogTextFour.innerHTML = "String manipulation questions often involve tasks like reversing a string, checking for palindromes, or comparing strings. Knowing the performance implications of using StringBuilder vs. string for concatenation and the immutability of strings in C# is also important.";
+        blogTitleFour.innerHTML = "4. LINQ (Language Integrated Query)";
+        blogTextFive.innerHTML = "LINQ is a powerful feature in C#. Questions may involve writing queries to filter, project, and aggregate data. Understanding the differences between LINQ to Objects, LINQ to SQL, and LINQ to XML, and being able to write complex queries is essential.";
+        blogTitleFive.innerHTML = "5. Exception Handling";
+        blogTextSix.innerHTML = "Exception handling is a crucial part of robust application development. Be prepared to discuss try-catch blocks, custom exceptions, and the best practices for handling exceptions. Understanding how to use finally and using statements to manage resources is also important.";
+        blogTitleSix.innerHTML = "6. Threading and Asynchronous Programming";
+        blogTextSeven.innerHTML = "With the rise of multi-core processors, understanding threading and asynchronous programming is vital. Expect questions on the Task Parallel Library (TPL), async and await keywords, and how to manage synchronization and avoid deadlocks.";
+
+        blogImageOne.src = "";
+        blogImageTwo.src = "";
+        blogImageThree.src = "";
+        blogImageFour.src = "";
+        blogImageFive.src = "";
+        blogImageSix.src = "";
+        blogImageSeven.src = "";
+        blogImageEight.src = "";
+        blogImageNine.src = "";
+        blogImageTen.src = "";
+        blogImageEleven.src = "";
+        blogImageTwelve.src = "";
     }
     else if (localStorage.getItem('lastClickedBlogId') === "5") {
 
