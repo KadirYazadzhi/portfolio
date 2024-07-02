@@ -234,18 +234,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     "6. Making Your Choice"
                 ],
                 images: [
-                    "https://miro.medium.com/v2/resize:fit:1400/1*sULRARqq30XNgm4Vnhm73Q.png",
-                    "https://miro.medium.com/v2/resize:fit:900/0*7dF2bOXk0-jlPnIp.png",
-                    "https://www.koyeb.com/static/images/blog/sync-vs-async-schema.png",
-                    "https://miro.medium.com/v2/resize:fit:900/1*BEG16I2lkBlymL8dsNriMg.jpeg",
-                    "https://miro.medium.com/v2/resize:fit:1182/1*0qLKSkNOyN7-6hG5jZPVew.jpeg",
-                    "https://khalilstemmler.com/img/callback1.png",
-                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/promises.png",
-                    "https://miro.medium.com/v2/resize:fit:1200/1*KrZ5kP7rTCFzEDYB1kzlqw.png",
-                    "https://cdn-images-1.medium.com/max/1026/1*-JQKo_gKJvErqJBOeI9JcA.png",
-                    "https://miro.medium.com/v2/resize:fit:1400/1*1o0qd3BFcx2VuQJYAgOOzg.png",
-                    "https://media.licdn.com/dms/image/D4D12AQGlxDCFBMsAtg/article-inline_image-shrink_1000_1488/0/1714228423232?e=1724889600&v=beta&t=lEnxDGTc7Pt_h72KSQ925w9D36Vo6BTGttS4Ukc5x58",
-                    "https://www.datocms-assets.com/48294/1699274734-sync-vs-async-programming-1.png?auto=format"
+                    "https://learnersgalaxy.ai/wp-content/uploads/2024/01/Python-Symbol.png",
+                    "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190902124355/ruby-programming-language.png",
+                    "https://miro.medium.com/v2/resize:fit:1400/1*4wCtg4R7_gfbRr47oA6A3w.png",
+                    "https://cdn-media-1.freecodecamp.org/images/1*yk9cvq3T5pHUsObH3XiA1Q.png",
+                    "https://miro.medium.com/v2/resize:fit:1004/1*or54Fol_IfIKwJwef--zkQ.png",
+                    "https://www.testingdocs.com/wp-content/uploads/Features-of-Python.png",
+                    "https://blog.geekster.in/wp-content/uploads/2022/01/pros-and-cons-of-ruby-programming-language-blog-image-1024x512.png",
+                    "https://res.cloudinary.com/practicaldev/image/fetch/s--YhHXMCNr--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/ykx1n1e49o9haiu5khwi.jpg",
+                    "https://nuventureconnect.com/blog/wp-content/uploads/2019/12/ruby-on-rails-1.jpg",
+                    "https://miro.medium.com/v2/resize:fit:1400/1*2P7SkH82wg6FwC2aXDqFeQ.jpeg",
+                    "https://d2i2xyh28mr8fx.cloudfront.net/wp-content/uploads/2023/07/04125036/Code-examples-of-Ruby-and-Python.png",
+                    "https://distantjob.com/wp-content/uploads/2021/07/27th-July-DJ-Banner-Ruby-vs-Python-The-Differences-You-Should-Know.jpg"
                 ]
             },
         };
