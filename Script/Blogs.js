@@ -176,6 +176,78 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://i0.wp.com/blogs.embarcadero.com/wp-content/uploads/2022/06/OOP-1511511.jpg?resize=512%2C393&ssl=1"
                 ]
             },
+            5: {
+                title: "Understanding Asynchronous Programming in JavaScript",
+                textHeader: "Asynchronous programming in JavaScript enables non-blocking operations, allowing for more efficient code execution.",
+                smallText: "Learn more &rarr;",
+                texts: [
+                    "Asynchronous programming in JavaScript is essential for building responsive web applications. It allows JavaScript to execute multiple operations simultaneously, without blocking the execution thread.",
+                    "The primary mechanism for achieving asynchrony in JavaScript is through callbacks, promises, and async/await syntax introduced in ES6 and beyond.",
+                    "Callbacks are functions passed as arguments to another function to be executed later. They are a traditional approach to handle asynchronous operations but can lead to callback hell when nested deeply.",
+                    "Promises are objects that represent the eventual completion (or failure) of an asynchronous operation and allow chaining multiple asynchronous operations together. They provide a cleaner alternative to callbacks and improve code readability.",
+                    "Async functions, introduced in ES8, offer a more concise and readable way to write asynchronous code. They allow developers to write promise-based asynchronous code as if it were synchronous, using the async keyword and await operator.",
+                    "Understanding event loop and how JavaScript handles asynchronous tasks is crucial. The event loop is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.",
+                    "Common use cases for asynchronous programming include fetching data from a remote server, handling user input events without blocking the UI thread, and executing time-consuming operations without freezing the application."
+                ],
+                titles: [
+                    "1. Introduction to Asynchronous Programming",
+                    "2. Callbacks",
+                    "3. Promises",
+                    "4. Async/Await",
+                    "5. Event Loop",
+                    "6. Use Cases"
+                ],
+                images: [
+                    "https://miro.medium.com/v2/resize:fit:1400/1*sULRARqq30XNgm4Vnhm73Q.png",
+                    "https://miro.medium.com/v2/resize:fit:900/0*7dF2bOXk0-jlPnIp.png",
+                    "https://www.koyeb.com/static/images/blog/sync-vs-async-schema.png",
+                    "https://miro.medium.com/v2/resize:fit:900/1*BEG16I2lkBlymL8dsNriMg.jpeg",
+                    "https://miro.medium.com/v2/resize:fit:1182/1*0qLKSkNOyN7-6hG5jZPVew.jpeg",
+                    "https://khalilstemmler.com/img/callback1.png",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/promises.png",
+                    "https://miro.medium.com/v2/resize:fit:1200/1*KrZ5kP7rTCFzEDYB1kzlqw.png",
+                    "https://cdn-images-1.medium.com/max/1026/1*-JQKo_gKJvErqJBOeI9JcA.png",
+                    "https://miro.medium.com/v2/resize:fit:1400/1*1o0qd3BFcx2VuQJYAgOOzg.png",
+                    "https://media.licdn.com/dms/image/D4D12AQGlxDCFBMsAtg/article-inline_image-shrink_1000_1488/0/1714228423232?e=1724889600&v=beta&t=lEnxDGTc7Pt_h72KSQ925w9D36Vo6BTGttS4Ukc5x58",
+                    "https://www.datocms-assets.com/48294/1699274734-sync-vs-async-programming-1.png?auto=format"
+                ]
+            },
+            6: {
+                title: "Python vs. Ruby: Which Language Should You Learn?",
+                textHeader: "Python and Ruby are both powerful, high-level programming languages. This article compares their features, strengths and more.",
+                smallText: "Read more &rarr;",
+                texts: [
+                    "Python and Ruby are both dynamically typed, high-level programming languages known for their simplicity and readability, making them popular choices among developers.",
+                    "&#9679; Python emphasizes readability and simplicity, making it suitable for a wide range of applications including web development, data analysis, scientific computing, and automation. Its syntax is designed to be clear and expressive. <br><br> &#9679; Ruby: Ruby focuses on developer happiness and productivity with an emphasis on elegant and concise code. It prioritizes convention over configuration, particularly favored in web development with Ruby on Rails.",
+                    "Python is favored for its simplicity and ease of learning, which contributes to its widespread adoption by both beginners and experienced developers alike.",
+                    "Ruby emphasizes programmer happiness and boasts an elegant syntax designed to enhance developer productivity and satisfaction.",
+                    "Ruby gained popularity primarily due to the Ruby on Rails framework, celebrated for its capability to facilitate rapid development of web applications.",
+                    "Both Python and Ruby have vibrant communities and offer rich ecosystems of libraries and frameworks, supporting developers in building robust and scalable applications.",
+                    "Choosing between Python and Ruby often hinges on specific project requirements, team preferences, and career aspirations, reflecting their respective strengths and advantages."
+                ],
+                titles: [
+                    "1. Introduction to Python and Ruby",
+                    "2. Python: Simplicity and Versatility",
+                    "3. Ruby: Programmer Happiness",
+                    "4. Popular Use Cases",
+                    "5. Communities and Ecosystems",
+                    "6. Making Your Choice"
+                ],
+                images: [
+                    "https://miro.medium.com/v2/resize:fit:1400/1*sULRARqq30XNgm4Vnhm73Q.png",
+                    "https://miro.medium.com/v2/resize:fit:900/0*7dF2bOXk0-jlPnIp.png",
+                    "https://www.koyeb.com/static/images/blog/sync-vs-async-schema.png",
+                    "https://miro.medium.com/v2/resize:fit:900/1*BEG16I2lkBlymL8dsNriMg.jpeg",
+                    "https://miro.medium.com/v2/resize:fit:1182/1*0qLKSkNOyN7-6hG5jZPVew.jpeg",
+                    "https://khalilstemmler.com/img/callback1.png",
+                    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/promises.png",
+                    "https://miro.medium.com/v2/resize:fit:1200/1*KrZ5kP7rTCFzEDYB1kzlqw.png",
+                    "https://cdn-images-1.medium.com/max/1026/1*-JQKo_gKJvErqJBOeI9JcA.png",
+                    "https://miro.medium.com/v2/resize:fit:1400/1*1o0qd3BFcx2VuQJYAgOOzg.png",
+                    "https://media.licdn.com/dms/image/D4D12AQGlxDCFBMsAtg/article-inline_image-shrink_1000_1488/0/1714228423232?e=1724889600&v=beta&t=lEnxDGTc7Pt_h72KSQ925w9D36Vo6BTGttS4Ukc5x58",
+                    "https://www.datocms-assets.com/48294/1699274734-sync-vs-async-programming-1.png?auto=format"
+                ]
+            },
         };
 
         const selectedContent = content[blogId];
