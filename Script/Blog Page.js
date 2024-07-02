@@ -11,4 +11,3 @@ arrowToHideSection.addEventListener('click', function () {
 });
 
 
-
