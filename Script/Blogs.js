@@ -312,12 +312,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://cdn.bulldogjob.com/system/readables/covers/000/004/156/max_res/171123_what's_new_in_C__12.png",
                     "https://blog.jetbrains.com/wp-content/uploads/2020/11/init-props-make-mutable.png",
                     "https://miro.medium.com/v2/resize:fit:1400/1*sA6N_SQ28IvEm7o1Szj1cQ.png",
-                    "https://static.javatpoint.com/tutorial/git/images/git-status2.png",
-                    "https://miro.medium.com/v2/resize:fit:1400/1*E4povWZ5H-K3OaguFQJ0IQ.png",
-                    "https://cdn.sparkfun.com/assets/0/c/b/8/4/51e6afb0ce395fba6b000000.png",
-                    "https://leanpub.com/site_images/git-flow/git-workflow-release-cycle-2feature.png",
-                    "https://media.geeksforgeeks.org/wp-content/uploads/20190902190824/edit1.png",
-                    "https://media.geeksforgeeks.org/wp-content/uploads/20190902190259/detach.png"
+                    "https://www.jenx.si/wp-content/uploads/2020/09/vscode-top-level-statements-example1-decompile.png",
+                    "https://miro.medium.com/v2/resize:fit:1400/1*p-LYdlHINp4_uQeLQUPfhQ.png",
+                    "https://media.licdn.com/dms/image/D5612AQE2ah-4OnUrWQ/article-cover_image-shrink_600_2000/0/1705297984358?e=2147483647&v=beta&t=krC3_snq9pY_moZU0psQHeblHkZNysdiGMpvX4jiISw",
+                    "https://blog.ndepend.com/wp-content/uploads/Pattern-Matching-Compiler-Warning-Value-Unhandled.png",
+                    "https://media.licdn.com/dms/image/C4E12AQH0RObgIwDmYw/article-cover_image-shrink_600_2000/0/1620123064566?e=2147483647&v=beta&t=XNHDtfO9U49V1NHH8vehQLdOjWpqC4mNk6g3a22zdkA",
+                    "https://www.syncfusion.com/blogs/wp-content/uploads/2020/08/Shield-Your-ASP.NET-MVC-Web-Applications-with-Content-Security-Policy-CSP.png"
                 ]
             },
         };
