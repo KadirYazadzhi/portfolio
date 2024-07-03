@@ -320,6 +320,42 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://www.syncfusion.com/blogs/wp-content/uploads/2020/08/Shield-Your-ASP.NET-MVC-Web-Applications-with-Content-Security-Policy-CSP.png"
                 ]
             },
+            9: {
+                title: "Introduction to Machine Learning with Python",
+                textHeader: "Machine learning is a rapidly growing field with diverse applications. This article introduces the basics of machine learning using Python.",
+                smallText: "Read more &rarr;",
+                texts: [
+                    "Machine learning (ML) is a subset of artificial intelligence that focuses on building systems that learn from data and improve their performance over time. Python is a popular language for ML due to its simplicity and extensive libraries.",
+                    "Python's rich ecosystem of libraries and tools makes it an ideal choice for developing and deploying machine learning models, from preprocessing data to evaluating and improving model performance.",
+                    "&#9679; <b>Scikit-learn</b>: A powerful library for ML, providing simple and efficient tools for data mining and data analysis. <br><br> &#9679; <b>Pandas</b>: A library offering data structures and data analysis tools, crucial for data preprocessing in ML.",
+                    "&#9679; <b>NumPy</b>: Provides support for large multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays. <br><br> &#9679; <b>Matplotlib</b>: A plotting library used for creating static, animated, and interactive visualizations in Python.",
+                    "&#9679> <b>Data Preprocessing</b>: Involves cleaning and transforming raw data into a suitable format for analysis. Techniques include handling missing values, normalization, and encoding categorical variables.",
+                    "&#9679; <b>Model Training</b>: The process of feeding data into an ML algorithm to learn patterns and make predictions. <br><br> &#9679; <b>Model Evaluation</b>: Assessing the performance of an ML model using metrics like accuracy, precision, recall, and F1-score.",
+                    "&#9679; <b>Deep Learning</b>: A subset of ML that uses neural networks with many layers to model complex patterns in data. Popular frameworks include TensorFlow and Keras."
+                ],
+                titles: [
+                    "1. Introduction to Machine Learning",
+                    "2. Essential Libraries: Scikit-learn and Pandas",
+                    "3. NumPy and Matplotlib for Data Handling and Visualization",
+                    "4. Data Preprocessing Techniques",
+                    "5. Model Training and Evaluation",
+                    "6. Deep Learning with Python"
+                ],
+                images: [
+                    "https://cdn-ckjba.nitrocdn.com/XvHIXtRQMUYzLjoXbfBpiwAcydcSSOVj/assets/images/optimized/rev-d85625b/www.ciat.edu/wp-content/uploads/2022/12/c-sharp-blog.jpeg",
+                    "https://www.syncfusion.com/blogs/wp-content/uploads/2019/11/csharp-using-declaration.png",
+                    "https://images.theengineeringprojects.com/image/main/2016/05/5-scaled.jpg",
+                    "https://cdn.bulldogjob.com/system/readables/covers/000/004/156/max_res/171123_what's_new_in_C__12.png",
+                    "https://blog.jetbrains.com/wp-content/uploads/2020/11/init-props-make-mutable.png",
+                    "https://miro.medium.com/v2/resize:fit:1400/1*sA6N_SQ28IvEm7o1Szj1cQ.png",
+                    "https://www.jenx.si/wp-content/uploads/2020/09/vscode-top-level-statements-example1-decompile.png",
+                    "https://miro.medium.com/v2/resize:fit:1400/1*p-LYdlHINp4_uQeLQUPfhQ.png",
+                    "https://media.licdn.com/dms/image/D5612AQE2ah-4OnUrWQ/article-cover_image-shrink_600_2000/0/1705297984358?e=2147483647&v=beta&t=krC3_snq9pY_moZU0psQHeblHkZNysdiGMpvX4jiISw",
+                    "https://blog.ndepend.com/wp-content/uploads/Pattern-Matching-Compiler-Warning-Value-Unhandled.png",
+                    "https://media.licdn.com/dms/image/C4E12AQH0RObgIwDmYw/article-cover_image-shrink_600_2000/0/1620123064566?e=2147483647&v=beta&t=XNHDtfO9U49V1NHH8vehQLdOjWpqC4mNk6g3a22zdkA",
+                    "https://www.syncfusion.com/blogs/wp-content/uploads/2020/08/Shield-Your-ASP.NET-MVC-Web-Applications-with-Content-Security-Policy-CSP.png"
+                ]
+            }
         };
 
         const selectedContent = content[blogId];
