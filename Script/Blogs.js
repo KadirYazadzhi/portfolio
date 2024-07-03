@@ -284,6 +284,42 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://media.geeksforgeeks.org/wp-content/uploads/20190902190259/detach.png"
                 ]
             },
+            8: {
+                title: "Exploring New Features in the Latest Version of C#",
+                textHeader: "This article reviews these updates and demonstrates how to leverage them in your projects to improve your coding efficiency.",
+                smallText: "Read more &rarr;",
+                texts: [
+                    "The latest version of C# introduces several powerful features that enhance developer productivity and code efficiency. Understanding these new features is essential for modern C# development.",
+                    "New features like <b>Record Types</b>, <b>Init-Only Setters</b>, and <b>Enhanced Pattern Matching</b> significantly improve C# coding practices, allowing developers to write cleaner, more efficient, and maintainable code.",
+                    "&#9679; <b>Record Types</b>: Simplifies the creation of immutable data objects with concise syntax, enhancing data management. <br><br> &#9679; <b>Init-Only Setters</b>: Provides a way to set properties during object initialization, improving code safety.",
+                    "&#9679; <b>Top-level Statements</b>: Reduces boilerplate code by allowing statements directly in the namespace, making scripts and simple programs more concise. <br><br> &#9679; <b>Pattern Matching Enhancements</b>: Extends pattern matching capabilities to improve control flow and data manipulation.",
+                    "&#9679; <b>Records with Value Equality</b>: Ensures that two records with the same data are considered equal, facilitating comparison and testing.",
+                    "&#9679; <b>Init-Only Properties</b>: Allows setting of properties only during object construction, enhancing immutability. <br><br> &#9679; <b>Enhanced Pattern Matching</b>: Offers more sophisticated ways to deconstruct and analyze data.",
+                    "&#9679; <b>Improved Performance</b>: Various optimizations in the runtime and libraries lead to better performance and resource management."
+                ],
+                titles: [
+                    "1. Introduction to New Features",
+                    "2. Record Types and Init-Only Setters",
+                    "3. Top-level Statements and Pattern Matching Enhancements",
+                    "4. Value Equality in Records",
+                    "5. Init-Only Properties and Enhanced Pattern Matching",
+                    "6. Performance Improvements and Conclusion"
+                ],
+                images: [
+                    "https://cdn-ckjba.nitrocdn.com/XvHIXtRQMUYzLjoXbfBpiwAcydcSSOVj/assets/images/optimized/rev-d85625b/www.ciat.edu/wp-content/uploads/2022/12/c-sharp-blog.jpeg",
+                    "https://www.syncfusion.com/blogs/wp-content/uploads/2019/11/csharp-using-declaration.png",
+                    "https://images.theengineeringprojects.com/image/main/2016/05/5-scaled.jpg",
+                    "https://cdn.bulldogjob.com/system/readables/covers/000/004/156/max_res/171123_what's_new_in_C__12.png",
+                    "https://blog.jetbrains.com/wp-content/uploads/2020/11/init-props-make-mutable.png",
+                    "https://miro.medium.com/v2/resize:fit:1400/1*sA6N_SQ28IvEm7o1Szj1cQ.png",
+                    "https://static.javatpoint.com/tutorial/git/images/git-status2.png",
+                    "https://miro.medium.com/v2/resize:fit:1400/1*E4povWZ5H-K3OaguFQJ0IQ.png",
+                    "https://cdn.sparkfun.com/assets/0/c/b/8/4/51e6afb0ce395fba6b000000.png",
+                    "https://leanpub.com/site_images/git-flow/git-workflow-release-cycle-2feature.png",
+                    "https://media.geeksforgeeks.org/wp-content/uploads/20190902190824/edit1.png",
+                    "https://media.geeksforgeeks.org/wp-content/uploads/20190902190259/detach.png"
+                ]
+            },
         };
 
         const selectedContent = content[blogId];
