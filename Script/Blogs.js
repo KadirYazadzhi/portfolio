@@ -248,6 +248,42 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://distantjob.com/wp-content/uploads/2021/07/27th-July-DJ-Banner-Ruby-vs-Python-The-Differences-You-Should-Know.jpg"
                 ]
             },
+            7: {
+                title: "10 Essential Git Commands for Every Developer",
+                textHeader: "Mastering Git is crucial for modern development. This article covers the ten most essential Git commands, providing explanations and examples to enhance your version control.",
+                smallText: "Read more &rarr;",
+                texts: [
+                    "Git is a powerful version control system that helps developers manage their codebase. Understanding essential Git commands is key to efficient workflow.",
+                    "&#9679; <b>git init</b>: Initializes a new Git repository. This command creates a .git directory in the project root. <br><br> &#9679; <b>git clone</b>: Clones an existing repository into a new directory, allowing you to work on a project with a copy of the repository.",
+                    "&#9679; <b>git add</b>: Adds changes in the working directory to the staging area, preparing them to be included in the next commit. <br><br> &#9679; <b>git commit</b>: Records changes to the repository with a message describing what has been changed.",
+                    "&#9679; <b>git status</b>: Shows the working directory status, indicating which changes have been staged, which haven't, and files that aren't being tracked by Git.",
+                    "&#9679; <b>git pull</b>: Fetches and integrates changes from a remote repository to the local repository. <br><br> &#9679; <b>git push</b>: Uploads local repository content to a remote repository, enabling collaboration with other developers.",
+                    "&#9679; <b>git branch</b>: Lists all branches in the repository, and lets you create, rename, or delete branches.",
+                    "Both <b>git merge</b> and <b>git checkout</b> are essential for combining changes from different branches and switching branches or restoring working tree files, respectively. <b>git log</b> shows the commit history, providing details of each commit including author, date, and message."
+                ],
+                titles: [
+                    "1. Initializing and Cloning Repositories",
+                    "2. Adding and Committing Changes",
+                    "3. Checking Status",
+                    "4. Pushing and Pulling Changes",
+                    "5. Managing Branches",
+                    "6. Merging, Checking Out, and Viewing History"
+                ],
+                images: [
+                    "https://ecosystemdashboard.linaro.org/assets/images/projects/libraries/git/logo.png",
+                    "https://media.dev.to/cdn-cgi/image/width=1280,height=720,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Frixan4h4z8y94eq89som.png",
+                    "https://www.w3docs.com/uploads/media/default/0001/03/48bf04268538a4f24e79ed04eac23953fafed3cd.png",
+                    "https://miro.medium.com/v2/resize:fit:1150/1*YfJx3COyGQ2g9Z3yfaxQeQ.png",
+                    "https://raw.githubusercontent.com/NEONScience/NEON-Data-Skills/dev-aten/graphics/reproducible-science/git-add-commit.png",
+                    "https://media.geeksforgeeks.org/wp-content/uploads/20220915182823/GitAdd1.jpg",
+                    "https://static.javatpoint.com/tutorial/git/images/git-status2.png",
+                    "https://miro.medium.com/v2/resize:fit:1400/1*E4povWZ5H-K3OaguFQJ0IQ.png",
+                    "https://cdn.sparkfun.com/assets/0/c/b/8/4/51e6afb0ce395fba6b000000.png",
+                    "https://leanpub.com/site_images/git-flow/git-workflow-release-cycle-2feature.png",
+                    "https://media.geeksforgeeks.org/wp-content/uploads/20190902190824/edit1.png",
+                    "https://media.geeksforgeeks.org/wp-content/uploads/20190902190259/detach.png"
+                ]
+            },
         };
 
         const selectedContent = content[blogId];
