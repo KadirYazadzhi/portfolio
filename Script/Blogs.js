@@ -342,18 +342,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     "6. Deep Learning with Python"
                 ],
                 images: [
-                    "https://cdn-ckjba.nitrocdn.com/XvHIXtRQMUYzLjoXbfBpiwAcydcSSOVj/assets/images/optimized/rev-d85625b/www.ciat.edu/wp-content/uploads/2022/12/c-sharp-blog.jpeg",
-                    "https://www.syncfusion.com/blogs/wp-content/uploads/2019/11/csharp-using-declaration.png",
-                    "https://images.theengineeringprojects.com/image/main/2016/05/5-scaled.jpg",
-                    "https://cdn.bulldogjob.com/system/readables/covers/000/004/156/max_res/171123_what's_new_in_C__12.png",
-                    "https://blog.jetbrains.com/wp-content/uploads/2020/11/init-props-make-mutable.png",
-                    "https://miro.medium.com/v2/resize:fit:1400/1*sA6N_SQ28IvEm7o1Szj1cQ.png",
-                    "https://www.jenx.si/wp-content/uploads/2020/09/vscode-top-level-statements-example1-decompile.png",
-                    "https://miro.medium.com/v2/resize:fit:1400/1*p-LYdlHINp4_uQeLQUPfhQ.png",
-                    "https://media.licdn.com/dms/image/D5612AQE2ah-4OnUrWQ/article-cover_image-shrink_600_2000/0/1705297984358?e=2147483647&v=beta&t=krC3_snq9pY_moZU0psQHeblHkZNysdiGMpvX4jiISw",
-                    "https://blog.ndepend.com/wp-content/uploads/Pattern-Matching-Compiler-Warning-Value-Unhandled.png",
-                    "https://media.licdn.com/dms/image/C4E12AQH0RObgIwDmYw/article-cover_image-shrink_600_2000/0/1620123064566?e=2147483647&v=beta&t=XNHDtfO9U49V1NHH8vehQLdOjWpqC4mNk6g3a22zdkA",
-                    "https://www.syncfusion.com/blogs/wp-content/uploads/2020/08/Shield-Your-ASP.NET-MVC-Web-Applications-with-Content-Security-Policy-CSP.png"
+                    "https://th.bing.com/th/id/R.2fd77d0015c1abe019f18af2c4f9cd7a?rik=N7RqVpGNtWh9zA&pid=ImgRaw&r=0",
+                    "https://imageio.forbes.com/specials-images/dam/imageserve/966248982/960x0.jpg?height=456&width=711&fit=bounds",
+                    "https://miro.medium.com/v2/resize:fit:1400/1*Svotyx0l6yvGOIc7wa8VQA.png",
+                    "https://media.licdn.com/dms/image/D5612AQHBNYw1ZbJ5EA/article-cover_image-shrink_720_1280/0/1680002118727?e=2147483647&v=beta&t=XZjyKk4Gex-9_o8crXjr2gCA2TmwM4MSabae81arRng",
+                    "https://miro.medium.com/v2/resize:fit:1382/1*zsx4y2Uuqn-T3Q9eYnPodg.png",
+                    "https://www.ntuclearninghub.com/documents/39367/4216797/Python-Symbol.png/369e410e-a90f-f887-c2dc-61f7ef761476/",
+                    "https://miro.medium.com/v2/resize:fit:633/1*Y2v3PrF1rUQRUHwOcXJznA.png",
+                    "https://cdn.prod.website-files.com/5d7b77b063a9066d83e1209c/627d122b8fdb884d672952bf_61f7bfab94334458028eec7d_data-preprocessing-cover.png",
+                    "https://cdn-blog.scalablepath.com/uploads/2023/09/data-preprocessing-techiniques-data-transformation-1-edited.png",
+                    "https://miro.medium.com/v2/resize:fit:1122/0*vjN9YEPPy-FhLVXg.jpg",
+                    "https://miro.medium.com/v2/resize:fit:1400/1*RIrPOCyMFwFC-XULbja3rw.png",
+                    "https://img-c.udemycdn.com/course/750x422/1887240_a926_6.jpg"
                 ]
             }
         };
