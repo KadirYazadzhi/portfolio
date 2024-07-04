@@ -16,7 +16,20 @@ document.addEventListener('DOMContentLoaded', () => {
         blogTextFive: document.getElementById('blog-text-five'),
         blogTextSix: document.getElementById('blog-text-six'),
         blogTextSeven: document.getElementById('blog-text-seven'),
-        blogImages: Array.from({ length: 12 }, (_, i) => document.getElementById(`blog-image-${i + 1}`))
+        blogImages: Array.from({ length: 12 }, (_, i) => document.getElementById(`blog-image-${i + 1}`)),
+        otherBlogImage: Array.from({ length: 4 }, (_, i) => document.getElementById(`blog-plus-card-image-${i + 1}`)),
+        PlusCardTitleOne: document.getElementById('blog-title-plus-card-one'),
+        PlusCardTitleTwo: document.getElementById('blog-title-plus-card-two'),
+        PlusCardTitleThree: document.getElementById('blog-title-plus-card-three'),
+        PlusCardTitleFour: document.getElementById('blog-title-plus-card-four'),
+        PlusCardTextOne: document.getElementById('blog-text-plus-card-one'),
+        PlusCardTextTwo: document.getElementById('blog-text-plus-card-two'),
+        PlusCardTextThree: document.getElementById('blog-text-plus-card-three'),
+        PlusCardTextFour: document.getElementById('blog-text-plus-card-four'),
+        PlusCardButtonOne: document.getElementById('blog-button-plus-card-one'),
+        PlusCardButtonTwo: document.getElementById('blog-button-plus-card-two'),
+        PlusCardButtonThree: document.getElementById('blog-button-plus-card-three'),
+        PlusCardButtonFour: document.getElementById('blog-button-plus-card-four')
     };
 
     function findClickedCard() {
@@ -65,6 +78,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     "Image/javascript-blogs-ten.png",
                     "https://i0.wp.com/juniorhabla.com/wp-content/uploads/2018/05/Responsive-Websites-on-Devices.jpg?fit=3508%2C2480",
                     "https://quickonline.ma/wp-content/uploads/2023/11/Design-sans-titre-5.jpg"
+                ],
+                PlusTitles: [
+                    "Introduction to Machine Learning with Python",
+                    "10 Essential Git Commands for Every Developer",
+                    "Fundamentals of Object-Oriented Programming",
+                    "Most commonly asked interview questions for C#"
+                ],
+                PlusTexts: [
+                    "Machine learning is a rapidly growing field with diverse applications. This article introduces the basics of machine learning using Python.",
+                    "Mastering Git is crucial for modern development. This article covers the ten most essential Git commands, providing explanations and examples to enhance your version control skills.",
+                    "Understanding the fundamentals of Object-Oriented Programming is crucial for building scalable and maintainable software systems.",
+                    "Common C# interview questions cover topics like abstract classes vs. interfaces, memory management, string manipulation and more."
+                ],
+                PlusImages: [
+                    "Image/Machine-Learning-blog.jfif",
+                    "Image/Git-blog.jpg",
+                    "Image/OOP-blog.png",
+                    "Image/C%23-blog.png"
                 ]
             },
             2: {
@@ -101,6 +132,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://blog.shiftasia.com/content/images/2023/05/MicrosoftTeams-image--49-.png",
                     "https://wpengine.com/wp-content/uploads/2021/07/jsheader.png",
                     "https://cursin.net/wp-content/uploads/2023/10/curso-gratis-microsoft-typescript.jpg.webp"
+                ],
+                PlusTitles: [
+                    "Exploring New Features in the Latest Version of C#",
+                    "10 Essential Git Commands for Every Developer",
+                    "Python vs. Ruby: Which Language Should You Learn?",
+                    "Understanding Asynchronous Programming in JavaScript"
+                ],
+                PlusTexts: [
+                    "This article reviews these updates and demonstrates how to leverage them in your projects to improve your coding efficiency.",
+                    "Mastering Git is crucial for modern development. This article covers the ten most essential Git commands, providing explanations and examples to enhance your version control skills.",
+                    "Python and Ruby are both powerful, high-level programming languages. This article compares their features, strengths and more.",
+                    "Asynchronous programming in JavaScript enables non-blocking operations, allowing for more efficient code execution."
+                ],
+                PlusImages: [
+                    "Image/CSharp-blog.png",
+                    "Image/Git-blog.jpg",
+                    "Image/Python-vs-Ruby-blog.jpg",
+                    "Image/Javascript-2-blog.jpg"
                 ]
             },
             3: {
@@ -138,6 +187,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://www.programiz.com/sites/tutorial2program/files/csharp-finally-block.png",
                     "https://www.c-sharpcorner.com/article/thread-behaviour-in-synchronous-and-asynchronous-method/Images/image-20211224112443-6.png",
                     "https://miro.medium.com/v2/resize:fit:1080/1*EEaxmVKhFJabxN2bC1h75Q.jpeg"
+                ],
+                PlusTitles: [
+                    "Why Javascript is so popular?",
+                    "Fundamentals of Object-Oriented Programming",
+                    "Exploring New Features in the Latest Version of C#",
+                    "JavaScript vs TypeScript"
+                ],
+                PlusTexts: [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                PlusImages: [
+                    "",
+                    "",
+                    "",
+                    ""
                 ]
             },
             4: {
@@ -174,6 +241,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://architectelevator.com/assets/img/stacktrace_abstraction_compiler.png",
                     "https://miro.medium.com/v2/resize:fit:960/1*WsgqKRktqOYvAJvFuXwT_g.jpeg",
                     "https://i0.wp.com/blogs.embarcadero.com/wp-content/uploads/2022/06/OOP-1511511.jpg?resize=512%2C393&ssl=1"
+                ],
+                PlusTitles: [
+                    "Most commonly asked interview questions for C#",
+                    "Python vs. Ruby: Which Language Should You Learn?",
+                    "JavaScript vs TypeScript",
+                    "Understanding Asynchronous Programming in JavaScript"
+                ],
+                PlusTexts: [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                PlusImages: [
+                    "",
+                    "",
+                    "",
+                    ""
                 ]
             },
             5: {
@@ -210,6 +295,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://miro.medium.com/v2/resize:fit:1400/1*1o0qd3BFcx2VuQJYAgOOzg.png",
                     "https://media.licdn.com/dms/image/D4D12AQGlxDCFBMsAtg/article-inline_image-shrink_1000_1488/0/1714228423232?e=1724889600&v=beta&t=lEnxDGTc7Pt_h72KSQ925w9D36Vo6BTGttS4Ukc5x58",
                     "https://www.datocms-assets.com/48294/1699274734-sync-vs-async-programming-1.png?auto=format"
+                ],
+                PlusTitles: [
+                    "Most commonly asked interview questions for C#",
+                    "Python vs. Ruby: Which Language Should You Learn?",
+                    "JavaScript vs TypeScript",
+                    "Understanding Asynchronous Programming in JavaScript"
+                ],
+                PlusTexts: [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                PlusImages: [
+                    "",
+                    "",
+                    "",
+                    ""
                 ]
             },
             6: {
@@ -246,6 +349,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://miro.medium.com/v2/resize:fit:1400/1*2P7SkH82wg6FwC2aXDqFeQ.jpeg",
                     "https://d2i2xyh28mr8fx.cloudfront.net/wp-content/uploads/2023/07/04125036/Code-examples-of-Ruby-and-Python.png",
                     "https://distantjob.com/wp-content/uploads/2021/07/27th-July-DJ-Banner-Ruby-vs-Python-The-Differences-You-Should-Know.jpg"
+                ],
+                PlusTitles: [
+                    "Most commonly asked interview questions for C#",
+                    "Python vs. Ruby: Which Language Should You Learn?",
+                    "JavaScript vs TypeScript",
+                    "Understanding Asynchronous Programming in JavaScript"
+                ],
+                PlusTexts: [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                PlusImages: [
+                    "",
+                    "",
+                    "",
+                    ""
                 ]
             },
             7: {
@@ -282,6 +403,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://leanpub.com/site_images/git-flow/git-workflow-release-cycle-2feature.png",
                     "https://media.geeksforgeeks.org/wp-content/uploads/20190902190824/edit1.png",
                     "https://media.geeksforgeeks.org/wp-content/uploads/20190902190259/detach.png"
+                ],
+                PlusTitles: [
+                    "Most commonly asked interview questions for C#",
+                    "Python vs. Ruby: Which Language Should You Learn?",
+                    "JavaScript vs TypeScript",
+                    "Understanding Asynchronous Programming in JavaScript"
+                ],
+                PlusTexts: [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                PlusImages: [
+                    "",
+                    "",
+                    "",
+                    ""
                 ]
             },
             8: {
@@ -318,6 +457,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://blog.ndepend.com/wp-content/uploads/Pattern-Matching-Compiler-Warning-Value-Unhandled.png",
                     "https://media.licdn.com/dms/image/C4E12AQH0RObgIwDmYw/article-cover_image-shrink_600_2000/0/1620123064566?e=2147483647&v=beta&t=XNHDtfO9U49V1NHH8vehQLdOjWpqC4mNk6g3a22zdkA",
                     "https://www.syncfusion.com/blogs/wp-content/uploads/2020/08/Shield-Your-ASP.NET-MVC-Web-Applications-with-Content-Security-Policy-CSP.png"
+                ],
+                PlusTitles: [
+                    "Most commonly asked interview questions for C#",
+                    "Python vs. Ruby: Which Language Should You Learn?",
+                    "JavaScript vs TypeScript",
+                    "Understanding Asynchronous Programming in JavaScript"
+                ],
+                PlusTexts: [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                PlusImages: [
+                    "",
+                    "",
+                    "",
+                    ""
                 ]
             },
             9: {
@@ -354,6 +511,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://miro.medium.com/v2/resize:fit:1122/0*vjN9YEPPy-FhLVXg.jpg",
                     "https://miro.medium.com/v2/resize:fit:1400/1*RIrPOCyMFwFC-XULbja3rw.png",
                     "https://img-c.udemycdn.com/course/750x422/1887240_a926_6.jpg"
+                ],
+                PlusTitles: [
+                    "Most commonly asked interview questions for C#",
+                    "Python vs. Ruby: Which Language Should You Learn?",
+                    "JavaScript vs TypeScript",
+                    "Understanding Asynchronous Programming in JavaScript"
+                ],
+                PlusTexts: [
+                    "Common C# interview questions cover topics like abstract classes vs. interfaces, memory management, string manipulation and more.",
+                    "Python and Ruby are both powerful, high-level programming languages. This article compares their features, strengths and more.",
+                    "JavaScript is a dynamic scripting language, while TypeScript is a superset of JavaScript with optional static typing, providing enhanced code maintainability and scalability.",
+                    "Asynchronous programming in JavaScript enables non-blocking operations, allowing for more efficient code execution."
+                ],
+                PlusImages: [
+                    "Image/C%23-blog.png",
+                    "Image/Python-vs-Ruby-blog.jpg",
+                    "Image/javascriptVStypescript-blog.png",
+                    "Image/Javascript-2-blog.jpg"
                 ]
             }
         };
@@ -377,8 +552,21 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.blogTitleFive.innerHTML = selectedContent.titles[4];
             elements.blogTitleSix.innerHTML = selectedContent.titles[5];
 
+            elements.PlusCardTitleOne.innerHTML = selectedContent.PlusTitles[0];
+            elements.PlusCardTitleTwo.innerHTML = selectedContent.PlusTitles[1];
+            elements.PlusCardTitleThree.innerHTML = selectedContent.PlusTitles[2];
+            elements.PlusCardTitleFour.innerHTML = selectedContent.PlusTitles[3];
+            elements.PlusCardTextOne.innerHTML = selectedContent.PlusTexts[0];
+            elements.PlusCardTextTwo.innerHTML = selectedContent.PlusTexts[1];
+            elements.PlusCardTextThree.innerHTML = selectedContent.PlusTexts[2];
+            elements.PlusCardTextFour.innerHTML = selectedContent.PlusTexts[3];
+
             selectedContent.images.forEach((src, index) => {
                 elements.blogImages[index].src = src;
+            });
+
+            selectedContent.PlusImages.forEach((src, index) => {
+                elements.otherBlogImage[index].src = src;
             });
         }
     }
