@@ -494,7 +494,56 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
         else if (path === "/portfolio/Shop.html") {
+            let shopTitle = document.getElementById('shopTitle');
+            let shopText = document.getElementById('shopText');
+            let shopSmallText = document.getElementById('shopSmallText');
 
+            let priceCardOneTitle = document.getElementById('price-card-one-title');
+            let priceCardOneText = document.getElementById('price-card-one-text');
+
+            let priceCardTwoTitle = document.getElementById('price-card-two-title');
+            let priceCardTwoText = document.getElementById('price-card-two-text');
+
+            let priceCardThreeTitle = document.getElementById('price-card-three-title');
+            let priceCardThreeText = document.getElementById('price-card-three-text');
+
+            let priceCardFourTitle = document.getElementById('price-card-four-title');
+            let priceCardFourText = document.getElementById('price-card-four-text');
+
+            let priceCardFiveTitle = document.getElementById('price-card-five-title');
+            let priceCardFiveText = document.getElementById('price-card-five-text');
+
+            if (locale === "bg-BG") {
+                translateToBulgarianForShopPage();
+            }
+            else if (locale === "en-GB") {
+
+            }
+            else if (locale === "de-DE") {
+
+            }
+            else if (locale === "ru-RU") {
+
+            }
+
+            function translateToBulgarianForShopPage() {
+                shopTitle.innerHTML = 'Добре дошли в моя магазин'
+
+                priceCardOneTitle.innerHTML = 'Уебсайт с една страница';
+                priceCardOneText.innerHTML = 'С HTML, CSS и JavaScript';
+
+                priceCardTwoTitle.innerHTML = 'Уебсайт с една страница';
+                priceCardTwoText.innerHTML = 'С React или Angular';
+
+                priceCardThreeTitle.innerHTML = 'Персонализиран уебсайт с няколко страници';
+                priceCardThreeText.innerHTML = 'С всички езици и рамки';
+
+                priceCardFourTitle.innerHTML = 'Уебсайт с няколко страници';
+                priceCardFourText.innerHTML = 'С WordPress или Weebly';
+
+                priceCardFiveTitle.innerHTML = 'Да работя за вас';
+                priceCardFiveText.innerHTML = 'На проекти ориентирани към уеб или конзолна разработка';
+            }
         }
         else {
             const navbarHome = document.getElementById('navbar-home');
