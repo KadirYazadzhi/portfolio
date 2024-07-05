@@ -195,16 +195,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     "JavaScript vs TypeScript"
                 ],
                 PlusTexts: [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "JavaScript's popularity stems from its versatility in both client and server-side development, supported by a vast ecosystem of libraries and frameworks",
+                    "Understanding the fundamentals of Object-Oriented Programming is crucial for building scalable and maintainable software systems.",
+                    "This article reviews these updates and demonstrates how to leverage them in your projects to improve your coding efficiency.",
+                    "JavaScript is a dynamic scripting language, while TypeScript is a superset of JavaScript with optional static typing, providing enhanced code maintainability and scalability."
                 ],
                 PlusImages: [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Image/javascript-blog.jpg",
+                    "Image/OOP-blog.png",
+                    "Image/CSharp-blog.png",
+                    "Image/javascriptVStypescript-blog.png"
                 ]
             },
             4: {
@@ -249,16 +249,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     "Understanding Asynchronous Programming in JavaScript"
                 ],
                 PlusTexts: [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Common C# interview questions cover topics like abstract classes vs. interfaces, memory management, string manipulation and more.",
+                    "Python and Ruby are both powerful, high-level programming languages. This article compares their features, strengths and more.",
+                    "JavaScript is a dynamic scripting language, while TypeScript is a superset of JavaScript with optional static typing, providing enhanced code maintainability and scalability.",
+                    "Asynchronous programming in JavaScript enables non-blocking operations, allowing for more efficient code execution."
                 ],
                 PlusImages: [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Image/C%23-blog.png",
+                    "Image/Python-vs-Ruby-blog.jpg",
+                    "Image/javascriptVStypescript-blog.png",
+                    "Image/Javascript-2-blog.jpg"
                 ]
             },
             5: {
@@ -297,22 +297,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://www.datocms-assets.com/48294/1699274734-sync-vs-async-programming-1.png?auto=format"
                 ],
                 PlusTitles: [
-                    "Most commonly asked interview questions for C#",
                     "Python vs. Ruby: Which Language Should You Learn?",
+                    "Introduction to Machine Learning with Python",
                     "JavaScript vs TypeScript",
-                    "Understanding Asynchronous Programming in JavaScript"
+                    "Fundamentals of Object-Oriented Programming"
                 ],
                 PlusTexts: [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Python and Ruby are both powerful, high-level programming languages. This article compares their features, strengths and more.",
+                    "Machine learning is a rapidly growing field with diverse applications. This article introduces the basics of machine learning using Python.",
+                    "JavaScript is a dynamic scripting language, while TypeScript is a superset of JavaScript with optional static typing, providing enhanced code maintainability and scalability.",
+                    "Understanding the fundamentals of Object-Oriented Programming is crucial for building scalable and maintainable software systems."
                 ],
                 PlusImages: [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Image/Python-vs-Ruby-blog.jpg",
+                    "Image/Machine-Learning-blog.jfif",
+                    "Image/javascriptVStypescript-blog.png",
+                    "Image/OOP-blog.png"
                 ]
             },
             6: {
@@ -351,22 +351,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://distantjob.com/wp-content/uploads/2021/07/27th-July-DJ-Banner-Ruby-vs-Python-The-Differences-You-Should-Know.jpg"
                 ],
                 PlusTitles: [
-                    "Most commonly asked interview questions for C#",
-                    "Python vs. Ruby: Which Language Should You Learn?",
-                    "JavaScript vs TypeScript",
-                    "Understanding Asynchronous Programming in JavaScript"
+                    "Why Javascript is so popular?",
+                    "Fundamentals of Object-Oriented Programming",
+                    "Exploring New Features in the Latest Version of C#",
+                    "JavaScript vs TypeScript"
                 ],
                 PlusTexts: [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "JavaScript's popularity stems from its versatility in both client and server-side development, supported by a vast ecosystem of libraries and frameworks",
+                    "Understanding the fundamentals of Object-Oriented Programming is crucial for building scalable and maintainable software systems.",
+                    "This article reviews these updates and demonstrates how to leverage them in your projects to improve your coding efficiency.",
+                    "JavaScript is a dynamic scripting language, while TypeScript is a superset of JavaScript with optional static typing, providing enhanced code maintainability and scalability."
                 ],
                 PlusImages: [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Image/javascript-blog.jpg",
+                    "Image/OOP-blog.png",
+                    "Image/CSharp-blog.png",
+                    "Image/javascriptVStypescript-blog.png"
                 ]
             },
             7: {
@@ -405,22 +405,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     "https://media.geeksforgeeks.org/wp-content/uploads/20190902190259/detach.png"
                 ],
                 PlusTitles: [
-                    "Most commonly asked interview questions for C#",
                     "Python vs. Ruby: Which Language Should You Learn?",
+                    "Introduction to Machine Learning with Python",
                     "JavaScript vs TypeScript",
-                    "Understanding Asynchronous Programming in JavaScript"
+                    "Fundamentals of Object-Oriented Programming"
                 ],
                 PlusTexts: [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Python and Ruby are both powerful, high-level programming languages. This article compares their features, strengths and more.",
+                    "Machine learning is a rapidly growing field with diverse applications. This article introduces the basics of machine learning using Python.",
+                    "JavaScript is a dynamic scripting language, while TypeScript is a superset of JavaScript with optional static typing, providing enhanced code maintainability and scalability.",
+                    "Understanding the fundamentals of Object-Oriented Programming is crucial for building scalable and maintainable software systems."
                 ],
                 PlusImages: [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Image/Python-vs-Ruby-blog.jpg",
+                    "Image/Machine-Learning-blog.jfif",
+                    "Image/javascriptVStypescript-blog.png",
+                    "Image/OOP-blog.png"
                 ]
             },
             8: {
@@ -465,16 +465,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     "Understanding Asynchronous Programming in JavaScript"
                 ],
                 PlusTexts: [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Common C# interview questions cover topics like abstract classes vs. interfaces, memory management, string manipulation and more.",
+                    "Python and Ruby are both powerful, high-level programming languages. This article compares their features, strengths and more.",
+                    "JavaScript is a dynamic scripting language, while TypeScript is a superset of JavaScript with optional static typing, providing enhanced code maintainability and scalability.",
+                    "Asynchronous programming in JavaScript enables non-blocking operations, allowing for more efficient code execution."
                 ],
                 PlusImages: [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "Image/C%23-blog.png",
+                    "Image/Python-vs-Ruby-blog.jpg",
+                    "Image/javascriptVStypescript-blog.png",
+                    "Image/Javascript-2-blog.jpg"
                 ]
             },
             9: {
@@ -533,6 +533,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
+
         const selectedContent = content[blogId];
         if (selectedContent) {
             elements.titleHeader.innerHTML = selectedContent.title;
@@ -570,6 +571,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    function changePageLocationAndSaveToLocalStorage(button, id) {
+        button.addEventListener('click', function() {
+            localStorage.setItem('lastClickedBlogId', id);
+            window.location.href = "Blogs.html";
+        });
+    }
+
+
 
     findClickedCard();
     updateContentForBlogId(localStorage.getItem('lastClickedBlogId'));
