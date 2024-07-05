@@ -42,21 +42,21 @@ document.addEventListener('DOMContentLoaded', function () {
         const path = window.location.pathname;
 
         if (path === "/portfolio/Certificate.html") {
-            const navbarHome = document.getElementById('navbar-home');
-            const navbarAbout = document.getElementById('navbar-about');
-            const navbarServices = document.getElementById('navbar-services');
-            const navbarSkills = document.getElementById('navbar-skills');
-            const navbarCertificate = document.getElementById('navbar-certificate');
-            const navbarProjects = document.getElementById('navbar-projects');
-            const navbarContact = document.getElementById('navbar-contact');
+            let navbarHome = document.getElementById('navbar-home');
+            let navbarAbout = document.getElementById('navbar-about');
+            let navbarServices = document.getElementById('navbar-services');
+            let navbarSkills = document.getElementById('navbar-skills');
+            let navbarCertificate = document.getElementById('navbar-certificate');
+            let navbarProjects = document.getElementById('navbar-projects');
+            let navbarContact = document.getElementById('navbar-contact');
 
-            const homeTextOne = document.getElementById('homeTextOne');
-            const homeTextTwo = document.getElementById('homeTextTwo');
-            const homeButtonText = document.getElementById('homeButtonText');
+            let homeTextOne = document.getElementById('homeTextOne');
+            let homeTextTwo = document.getElementById('homeTextTwo');
+            let homeButtonText = document.getElementById('homeButtonText');
 
-            const cards = document.querySelectorAll(".card-excerpt");
+            let cards = document.querySelectorAll(".card-excerpt");
 
-            const copyright = document.getElementById('copyright');
+            let copyright = document.getElementById('copyright');
 
             function translateToBulgarianForCertificatesPage() {
                 navbarHome.innerHTML = "Начало";
@@ -149,6 +149,327 @@ document.addEventListener('DOMContentLoaded', function () {
                 translateToRussianForCertificatesPage();
             }
 
+        }
+        else if (path === "/portfolio/Blog.html") {
+            let navbarHome = document.getElementById('navbar-home');
+            let navbarAbout = document.getElementById('navbar-about');
+            let navbarServices = document.getElementById('navbar-services');
+            let navbarSkills = document.getElementById('navbar-skills');
+            let navbarCertificate = document.getElementById('navbar-certificate');
+            let navbarProjects = document.getElementById('navbar-projects');
+            let navbarContact = document.getElementById('navbar-contact');
+
+            let titleHeader = document.getElementById('blog-page-title-header');
+            let textHeader = document.getElementById('blog-page-text-header');
+            let smallText = document.getElementById('blog-page-small-text');
+
+            let hiddenButtonText = document.getElementById('hidden-button');
+
+            let hideSection = document.getElementById('hide-section');
+            let recentPostTitle = document.getElementById('recent-post-title');
+            let machineLearningTitle = document.getElementById('machine-learning-title');
+            let machineLearningLink = document.getElementById('machine-learning-link');
+            let gitTitle = document.getElementById('git-title');
+            let gitLink = document.getElementById('git-link');
+            let interviewTitle = document.getElementById('interview-title');
+            let interviewLink = document.getElementById('interview-link');
+            let oopTitle = document.getElementById('oop-title');
+            let oopLink = document.getElementById('oop-link');
+            let newsTitle = document.getElementById('news-title');
+            let javascriptTitle = document.getElementById('javascript-title');
+            let javascriptLink = document.getElementById('javascript-link');
+            let javascriptTypescriptTitle = document.getElementById('javascript-typescript-title');
+            let javascriptTypescriptLink = document.getElementById('javascript-typescript-link');
+            let pythonRubyTitle = document.getElementById('python-ruby-title');
+            let pythonRubyLink = document.getElementById('python-ruby-link');
+            let csharpFeaturesTitle = document.getElementById('csharp-features-title');
+            let csharpFeaturesLink = document.getElementById('csharp-features-link');
+
+            let blogCardOneTopic = document.getElementById('blog-card-one-topic');
+            let blogOneTitle = document.getElementById('blog-one-title');
+            let blogOneText = document.getElementById('blog-one-text');
+            let blogCardTwoTopic = document.getElementById('blog-card-two-topic');
+            let blogTwoTitle = document.getElementById('blog-two-title');
+            let blogTwoText = document.getElementById('blog-two-text');
+            let blogCardThreeTopic = document.getElementById('blog-card-three-topic');
+            let blogThreeTitle = document.getElementById('blog-three-title');
+            let blogThreeText = document.getElementById('blog-three-text');
+            let blogCardFourTopic = document.getElementById('blog-card-four-topic');
+            let blogFourTitle = document.getElementById('blog-four-title');
+            let blogFourText = document.getElementById('blog-four-text');
+            let blogCardFiveTopic = document.getElementById('blog-card-five-topic');
+            let blogFiveTitle = document.getElementById('blog-five-title');
+            let blogFiveText = document.getElementById('blog-five-text');
+            let blogCardSixTopic = document.getElementById('blog-card-six-topic');
+            let blogSixTitle = document.getElementById('blog-six-title');
+            let blogSixText = document.getElementById('blog-six-text');
+            let blogCardSevenTopic = document.getElementById('blog-card-seven-topic');
+            let blogSevenTitle = document.getElementById('blog-seven-title');
+            let blogSevenText = document.getElementById('blog-seven-text');
+            let blogCardEightTopic = document.getElementById('blog-card-eight-topic');
+            let blogEightTitle = document.getElementById('blog-eight-title');
+            let blogEightText = document.getElementById('blog-eight-text');
+            let blogCardNineTopic = document.getElementById('blog-card-nine-topic');
+            let blogNineTitle = document.getElementById('blog-nine-title');
+            let blogNineText = document.getElementById('blog-nine-text');
+
+            if (locale === "bg-BG") {
+                translateToBulgarianForBlogPage();
+            }
+            else if (locale === "en-GB") {
+                translateToEnglishForBlogPage();
+            }
+            else if (locale === "de-DE") {
+                translateToGermanForBlogPage();
+            }
+            else if (locale === "ru-RU") {
+                translateToRussianForBlogPage();
+            }
+
+
+            function translateToBulgarianForBlogPage() {
+                navbarHome.innerHTML = "Начало";
+                navbarAbout.innerHTML = "За мен";
+                navbarServices.innerHTML = "Услуги";
+                navbarSkills.innerHTML = "Умения";
+                navbarCertificate.innerHTML = "Сертификати";
+                navbarProjects.innerHTML = "Проекти";
+                navbarContact.innerHTML = "Контакти";
+
+                titleHeader.innerHTML = 'Добре дошли в моя блог';
+                textHeader.innerHTML = 'Това е мястото, където можете да подобрите уменията си по програмиране и да научите неща, за които дори не сте си представяли.';
+                smallText.innerHTML = 'Научете повече &rarr;';
+
+                hiddenButtonText.innerHTML = 'Отвори меню &rarr;';
+
+                hideSection.innerHTML = '&larr;';
+                recentPostTitle.innerHTML = 'Последни публикации';
+                machineLearningTitle.innerHTML = 'Въведение в машинното обучение с Python';
+                machineLearningLink.innerHTML = 'Научете повече &rarr;';
+                gitTitle.innerHTML = '10 основни Git команди за всеки разработчик';
+                gitLink.innerHTML = 'Научете повече &rarr;';
+                interviewTitle.innerHTML = 'Най-често задаваните въпроси за интервю за C#';
+                interviewLink.innerHTML = 'Научете повече &rarr;';
+                oopTitle.innerHTML = 'Основи на обектно-ориентираното програмиране';
+                oopLink.innerHTML = 'Научете повече &rarr;';
+                newsTitle.innerHTML = 'Новини';
+                javascriptTitle.innerHTML = 'Защо JavaScript е толкова популярен?';
+                javascriptLink.innerHTML = 'Научете повече &rarr;';
+                javascriptTypescriptTitle.innerHTML = 'JavaScript срещу TypeScript';
+                javascriptTypescriptLink.innerHTML = 'Научете повече &rarr;';
+                pythonRubyTitle.innerHTML = 'Python срещу Ruby: Кой език да научите?';
+                pythonRubyLink.innerHTML = 'Научете повече &rarr;';
+                csharpFeaturesTitle.innerHTML = 'Разглеждане на нови функции в последната версия на C#';
+                csharpFeaturesLink.innerHTML = 'Научете повече &rarr;';
+
+                blogCardOneTopic.innerHTML = 'Кодиране';
+                blogOneTitle.innerHTML = 'Защо JavaScript е толкова популярен?';
+                blogOneText.innerHTML = 'Популярността на JavaScript произтича от неговата гъвкавост както в клиентското, така и в сървърното разработване, подкрепена от огромна екосистема от библиотеки и рамки.';
+                blogCardTwoTopic.innerHTML = 'Кодиране';
+                blogTwoTitle.innerHTML = 'JavaScript срещу TypeScript';
+                blogTwoText.innerHTML = 'JavaScript е динамичен скриптов език, докато TypeScript е надмножество на JavaScript с опционално статично типизиране, осигуряващо по-добра поддръжка и мащабируемост на кода.';
+                blogCardThreeTopic.innerHTML = 'Кодиране';
+                blogThreeTitle.innerHTML = 'Най-често задаваните въпроси за интервю за C#';
+                blogThreeText.innerHTML = 'Често срещаните въпроси за интервю за C# обхващат теми като абстрактни класове срещу интерфейси, управление на паметта, манипулация на низове и други.';
+                blogCardFourTopic.innerHTML = 'Кодиране';
+                blogFourTitle.innerHTML = 'Основи на обектно-ориентираното програмиране';
+                blogFourText.innerHTML = 'Разбирането на основите на обектно-ориентираното програмиране е от съществено значение за създаването на мащабируеми и поддържани софтуерни системи.';
+                blogCardFiveTopic.innerHTML = 'Кодиране';
+                blogFiveTitle.innerHTML = 'Разбиране на асинхронното програмиране в JavaScript';
+                blogFiveText.innerHTML = 'Асинхронното програмиране в JavaScript позволява неблокиращи операции, осигурявайки по-ефективно изпълнение на кода.';
+                blogCardSixTopic.innerHTML = 'Кодиране';
+                blogSixTitle.innerHTML = 'Python срещу Ruby: Кой език да научите?';
+                blogSixText.innerHTML = 'Python и Ruby са мощни, високо ниво програмни езици. Тази статия сравнява техните характеристики, силни страни и други.';
+                blogCardSevenTopic.innerHTML = 'Кодиране';
+                blogSevenTitle.innerHTML = '10 основни Git команди за всеки разработчик';
+                blogSevenText.innerHTML = 'Овладяването на Git е от съществено значение за съвременната разработка. Тази статия обхваща десетте най-важни Git команди, предоставяйки обяснения и примери за подобряване на вашите умения за контрол на версиите.';
+                blogCardEightTopic.innerHTML = 'Кодиране';
+                blogEightTitle.innerHTML = 'Разглеждане на нови функции в последната версия на C#';
+                blogEightText.innerHTML = 'Тази статия преглежда тези актуализации и демонстрира как да ги използвате във вашите проекти за подобряване на ефективността на кодирането.';
+                blogCardNineTopic.innerHTML = 'Кодиране';
+                blogNineTitle.innerHTML = 'Въведение в машинното обучение с Python';
+                blogNineText.innerHTML = 'Машинното обучение е бързо развиваща се област с разнообразни приложения. Тази статия представя основите на машинното обучение с помощта на Python.';
+
+            }
+
+            function translateToGermanForBlogPage() {
+                navbarHome.innerHTML = "Startseite";
+                navbarAbout.innerHTML = "Über mich";
+                navbarServices.innerHTML = "Dienstleistungen";
+                navbarSkills.innerHTML = "Fähigkeiten";
+                navbarCertificate.innerHTML = "Zertifikate";
+                navbarProjects.innerHTML = "Projekte";
+                navbarContact.innerHTML = "Kontakt";
+
+                titleHeader.innerHTML = 'Willkommen in meinem Blog';
+                textHeader.innerHTML = 'Dies ist der Ort, an dem Sie Ihre Programmierkenntnisse verbessern und Dinge lernen können, die Sie sich nie vorgestellt haben.';
+                smallText.innerHTML = 'Erfahren Sie mehr &rarr;';
+
+                hiddenButtonText.innerHTML = 'Menü öffnen &rarr;';
+
+                hideSection.innerHTML = '&larr;';
+                recentPostTitle.innerHTML = 'Neueste Beiträge';
+                machineLearningTitle.innerHTML = 'Einführung in Machine Learning mit Python';
+                machineLearningLink.innerHTML = 'Erfahren Sie mehr &rarr;';
+                gitTitle.innerHTML = '10 wesentliche Git-Befehle für jeden Entwickler';
+                gitLink.innerHTML = 'Erfahren Sie mehr &rarr;';
+                interviewTitle.innerHTML = 'Die häufigsten Interviewfragen für C#';
+                interviewLink.innerHTML = 'Erfahren Sie mehr &rarr;';
+                oopTitle.innerHTML = 'Grundlagen der objektorientierten Programmierung';
+                oopLink.innerHTML = 'Erfahren Sie mehr &rarr;';
+                newsTitle.innerHTML = 'Nachrichten';
+                javascriptTitle.innerHTML = 'Warum ist JavaScript so beliebt?';
+                javascriptLink.innerHTML = 'Erfahren Sie mehr &rarr;';
+                javascriptTypescriptTitle.innerHTML = 'JavaScript vs. TypeScript';
+                javascriptTypescriptLink.innerHTML = 'Erfahren Sie mehr &rarr;';
+                pythonRubyTitle.innerHTML = 'Python vs. Ruby: Welche Sprache sollten Sie lernen?';
+                pythonRubyLink.innerHTML = 'Erfahren Sie mehr &rarr;';
+                csharpFeaturesTitle.innerHTML = 'Erkunden der neuen Funktionen in der neuesten Version von C#';
+                csharpFeaturesLink.innerHTML = 'Erfahren Sie mehr &rarr;';
+
+                blogCardOneTopic.innerHTML = 'Codierung';
+                blogOneTitle.innerHTML = 'Warum ist JavaScript so beliebt?';
+                blogOneText.innerHTML = 'Die Beliebtheit von JavaScript ergibt sich aus seiner Vielseitigkeit in der Client- und Serverentwicklung, unterstützt durch ein riesiges Ökosystem von Bibliotheken und Frameworks.';
+                blogCardTwoTopic.innerHTML = 'Codierung';
+                blogTwoTitle.innerHTML = 'JavaScript vs. TypeScript';
+                blogTwoText.innerHTML = 'JavaScript ist eine dynamische Skriptsprache, während TypeScript eine Obermenge von JavaScript mit optionaler statischer Typisierung ist, die eine verbesserte Wartbarkeit und Skalierbarkeit des Codes bietet.';
+                blogCardThreeTopic.innerHTML = 'Codierung';
+                blogThreeTitle.innerHTML = 'Die häufigsten Interviewfragen für C#';
+                blogThreeText.innerHTML = 'Häufig gestellte Interviewfragen zu C# decken Themen wie abstrakte Klassen vs. Schnittstellen, Speicherverwaltung, Zeichenfolgenmanipulation und mehr ab.';
+                blogCardFourTopic.innerHTML = 'Codierung';
+                blogFourTitle.innerHTML = 'Grundlagen der objektorientierten Programmierung';
+                blogFourText.innerHTML = 'Das Verständnis der Grundlagen der objektorientierten Programmierung ist entscheidend für den Aufbau skalierbarer und wartbarer Softwaresysteme.';
+                blogCardFiveTopic.innerHTML = 'Codierung';
+                blogFiveTitle.innerHTML = 'Verständnis der asynchronen Programmierung in JavaScript';
+                blogFiveText.innerHTML = 'Asynchrone Programmierung in JavaScript ermöglicht nicht blockierende Operationen und sorgt so für eine effizientere Codeausführung.';
+                blogCardSixTopic.innerHTML = 'Codierung';
+                blogSixTitle.innerHTML = 'Python vs. Ruby: Welche Sprache sollten Sie lernen?';
+                blogSixText.innerHTML = 'Python und Ruby sind beide leistungsstarke Programmiersprachen auf hohem Niveau. Dieser Artikel vergleicht ihre Merkmale, Stärken und mehr.';
+                blogCardSevenTopic.innerHTML = 'Codierung';
+                blogSevenTitle.innerHTML = '10 wesentliche Git-Befehle für jeden Entwickler';
+                blogSevenText.innerHTML = 'Das Beherrschen von Git ist für die moderne Entwicklung unerlässlich. Dieser Artikel behandelt die zehn wichtigsten Git-Befehle und bietet Erklärungen und Beispiele zur Verbesserung Ihrer Versionskontrollfähigkeiten.';
+                blogCardEightTopic.innerHTML = 'Codierung';
+                blogEightTitle.innerHTML = 'Erkunden der neuen Funktionen in der neuesten Version von C#';
+                blogEightText.innerHTML = 'Dieser Artikel überprüft diese Updates und zeigt, wie man sie in Ihren Projekten nutzt, um die Effizienz des Codierens zu verbessern.';
+                blogCardNineTopic.innerHTML = 'Codierung';
+                blogNineTitle.innerHTML = 'Einführung in Machine Learning mit Python';
+                blogNineText.innerHTML = 'Machine Learning ist ein schnell wachsendes Gebiet mit vielfältigen Anwendungen. Dieser Artikel führt in die Grundlagen des Machine Learning mit Python ein.';
+
+            }
+
+            function translateToRussianForBlogPage() {
+                titleHeader.innerHTML = 'Добро пожаловать в мой блог';
+                textHeader.innerHTML = 'Это место, где вы можете улучшить свои навыки программирования и узнать о вещах, о которых вы даже не могли себе представить.';
+                smallText.innerHTML = 'Узнать больше &rarr;';
+
+                hiddenButtonText.innerHTML = 'Открыть меню &rarr;';
+
+                hideSection.innerHTML = '&larr;';
+                recentPostTitle.innerHTML = 'Последние публикации';
+                machineLearningTitle.innerHTML = 'Введение в машинное обучение с Python';
+                machineLearningLink.innerHTML = 'Узнать больше &rarr;';
+                gitTitle.innerHTML = '10 основных команд Git для каждого разработчика';
+                gitLink.innerHTML = 'Узнать больше &rarr;';
+                interviewTitle.innerHTML = 'Самые распространенные вопросы на собеседовании по C#';
+                interviewLink.innerHTML = 'Узнать больше &rarr;';
+                oopTitle.innerHTML = 'Основы объектно-ориентированного программирования';
+                oopLink.innerHTML = 'Узнать больше &rarr;';
+                newsTitle.innerHTML = 'Новости';
+                javascriptTitle.innerHTML = 'Почему JavaScript так популярен?';
+                javascriptLink.innerHTML = 'Узнать больше &rarr;';
+                javascriptTypescriptTitle.innerHTML = 'JavaScript против TypeScript';
+                javascriptTypescriptLink.innerHTML = 'Узнать больше &rarr;';
+                pythonRubyTitle.innerHTML = 'Python против Ruby: Какой язык вам стоит изучить?';
+                pythonRubyLink.innerHTML = 'Узнать больше &rarr;';
+                csharpFeaturesTitle.innerHTML = 'Изучение новых возможностей последней версии C#';
+                csharpFeaturesLink.innerHTML = 'Узнать больше &rarr;';
+
+                blogCardOneTopic.innerHTML = 'Кодирование';
+                blogOneTitle.innerHTML = 'Почему JavaScript так популярен?';
+                blogOneText.innerHTML = 'Популярность JavaScript объясняется его универсальностью как в клиентской, так и в серверной разработке, поддерживаемой огромной экосистемой библиотек и фреймворков.';
+                blogCardTwoTopic.innerHTML = 'Кодирование';
+                blogTwoTitle.innerHTML = 'JavaScript против TypeScript';
+                blogTwoText.innerHTML = 'JavaScript - это динамический скриптовый язык, а TypeScript - надмножество JavaScript с опциональной статической типизацией, обеспечивающее улучшенное обслуживание и масштабируемость кода.';
+                blogCardThreeTopic.innerHTML = 'Кодирование';
+                blogThreeTitle.innerHTML = 'Самые распространенные вопросы на собеседовании по C#';
+                blogThreeText.innerHTML = 'Типичные вопросы на собеседовании по C# включают темы, такие как абстрактные классы против интерфейсов, управление памятью, манипуляция строками и многое другое.';
+                blogCardFourTopic.innerHTML = 'Кодирование';
+                blogFourTitle.innerHTML = 'Основы объектно-ориентированного программирования';
+                blogFourText.innerHTML = 'Понимание основ объектно-ориентированного программирования имеет важное значение для создания масштабируемых и поддерживаемых программных систем.';
+                blogCardFiveTopic.innerHTML = 'Кодирование';
+                blogFiveTitle.innerHTML = 'Понимание асинхронного программирования в JavaScript';
+                blogFiveText.innerHTML = 'Асинхронное программирование в JavaScript позволяет выполнять неблокирующие операции, обеспечивая более эффективное выполнение кода.';
+                blogCardSixTopic.innerHTML = 'Кодирование';
+                blogSixTitle.innerHTML = 'Python против Ruby: Какой язык вам стоит изучить?';
+                blogSixText.innerHTML = 'Python и Ruby - оба мощные, высокоуровневые языки программирования. В этой статье сравниваются их особенности, сильные стороны и многое другое.';
+                blogCardSevenTopic.innerHTML = 'Кодирование';
+                blogSevenTitle.innerHTML = '10 основных команд Git для каждого разработчика';
+                blogSevenText.innerHTML = 'Овладение Git имеет важное значение для современной разработки. В этой статье рассматриваются десять самых важных команд Git, предоставляются объяснения и примеры для улучшения ваших навыков управления версиями.';
+                blogCardEightTopic.innerHTML = 'Кодирование';
+                blogEightTitle.innerHTML = 'Изучение новых возможностей последней версии C#';
+                blogEightText.innerHTML = 'В этой статье рассматриваются обновления и показывается, как использовать их в ваших проектах для повышения эффективности кодирования.';
+                blogCardNineTopic.innerHTML = 'Кодирование';
+                blogNineTitle.innerHTML = 'Введение в машинное обучение с Python';
+                blogNineText.innerHTML = 'Машинное обучение - это быстро развивающаяся область с разнообразными приложениями. В этой статье представлены основы машинного обучения с использованием Python.';
+
+            }
+
+            function translateToEnglishForBlogPage() {
+                titleHeader.innerHTML = 'Welcome to My Blog';
+                textHeader.innerHTML = 'This is the place where you can enhance your programming skills and learn about things you never even imagined.';
+                smallText.innerHTML = 'Learn more &rarr;';
+
+                hiddenButtonText.innerHTML = 'Open menu &rarr;';
+
+                hideSection.innerHTML = '&larr;';
+                recentPostTitle.innerHTML = 'Recent Posts';
+                machineLearningTitle.innerHTML = 'Introduction to Machine Learning with Python';
+                machineLearningLink.innerHTML = 'Learn more &rarr;';
+                gitTitle.innerHTML = '10 Essential Git Commands for Every Developer';
+                gitLink.innerHTML = 'Learn more &rarr;';
+                interviewTitle.innerHTML = 'Most Commonly Asked Interview Questions for C#';
+                interviewLink.innerHTML = 'Learn more &rarr;';
+                oopTitle.innerHTML = 'Fundamentals of Object-Oriented Programming';
+                oopLink.innerHTML = 'Learn more &rarr;';
+                newsTitle.innerHTML = 'News';
+                javascriptTitle.innerHTML = 'Why JavaScript is So Popular?';
+                javascriptLink.innerHTML = 'Learn more &rarr;';
+                javascriptTypescriptTitle.innerHTML = 'JavaScript vs TypeScript';
+                javascriptTypescriptLink.innerHTML = 'Learn more &rarr;';
+                pythonRubyTitle.innerHTML = 'Python vs Ruby: Which Language Should You Learn?';
+                pythonRubyLink.innerHTML = 'Learn more &rarr;';
+                csharpFeaturesTitle.innerHTML = 'Exploring New Features in the Latest Version of C#';
+                csharpFeaturesLink.innerHTML = 'Learn more &rarr;';
+
+                blogCardOneTopic.innerHTML = 'Coding';
+                blogOneTitle.innerHTML = 'Why JavaScript is So Popular?';
+                blogOneText.innerHTML = 'JavaScript\'s popularity stems from its versatility in both client and server-side development, supported by a vast ecosystem of libraries and frameworks.';
+                blogCardTwoTopic.innerHTML = 'Coding';
+                blogTwoTitle.innerHTML = 'JavaScript vs TypeScript';
+                blogTwoText.innerHTML = 'JavaScript is a dynamic scripting language, while TypeScript is a superset of JavaScript with optional static typing, providing enhanced code maintainability and scalability.';
+                blogCardThreeTopic.innerHTML = 'Coding';
+                blogThreeTitle.innerHTML = 'Most Commonly Asked Interview Questions for C#';
+                blogThreeText.innerHTML = 'Common C# interview questions cover topics like abstract classes vs. interfaces, memory management, string manipulation and more.';
+                blogCardFourTopic.innerHTML = 'Coding';
+                blogFourTitle.innerHTML = 'Fundamentals of Object-Oriented Programming';
+                blogFourText.innerHTML = 'Understanding the fundamentals of Object-Oriented Programming is crucial for building scalable and maintainable software systems.';
+                blogCardFiveTopic.innerHTML = 'Coding';
+                blogFiveTitle.innerHTML = 'Understanding Asynchronous Programming in JavaScript';
+                blogFiveText.innerHTML = 'Asynchronous programming in JavaScript enables non-blocking operations, allowing for more efficient code execution.';
+                blogCardSixTopic.innerHTML = 'Coding';
+                blogSixTitle.innerHTML = 'Python vs Ruby: Which Language Should You Learn?';
+                blogSixText.innerHTML = 'Python and Ruby are both powerful, high-level programming languages. This article compares their features, strengths, and more.';
+                blogCardSevenTopic.innerHTML = 'Coding';
+                blogSevenTitle.innerHTML = '10 Essential Git Commands for Every Developer';
+                blogSevenText.innerHTML = 'Mastering Git is crucial for modern development. This article covers the ten most essential Git commands, providing explanations and examples to enhance your version control skills.';
+                blogCardEightTopic.innerHTML = 'Coding';
+                blogEightTitle.innerHTML = 'Exploring New Features in the Latest Version of C#';
+                blogEightText.innerHTML = 'This article reviews these updates and demonstrates how to leverage them in your projects to improve your coding efficiency.';
+                blogCardNineTopic.innerHTML = 'Coding';
+                blogNineTitle.innerHTML = 'Introduction to Machine Learning with Python';
+                blogNineText.innerHTML = 'Machine learning is a rapidly growing field with diverse applications. This article introduces the basics of machine learning using Python.';
+
+            }
         }
         else {
             const navbarHome = document.getElementById('navbar-home');
