@@ -213,6 +213,8 @@ document.addEventListener('DOMContentLoaded', function () {
             let blogNineTitle = document.getElementById('blog-nine-title');
             let blogNineText = document.getElementById('blog-nine-text');
 
+            let copyright = document.getElementById('copyright');
+
             if (locale === "bg-BG") {
                 translateToBulgarianForBlogPage();
             }
@@ -290,6 +292,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 blogNineTitle.innerHTML = 'Въведение в машинното обучение с Python';
                 blogNineText.innerHTML = 'Машинното обучение е бързо развиваща се област с разнообразни приложения. Тази статия представя основите на машинното обучение с помощта на Python.';
 
+                copyright.innerHTML = "Авторско право © 2024 - Всички права запазени || Дизайн от: Кадир Язаджи";
             }
 
             function translateToGermanForBlogPage() {
@@ -355,9 +358,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 blogNineTitle.innerHTML = 'Einführung in Machine Learning mit Python';
                 blogNineText.innerHTML = 'Machine Learning ist ein schnell wachsendes Gebiet mit vielfältigen Anwendungen. Dieser Artikel führt in die Grundlagen des Machine Learning mit Python ein.';
 
+                copyright.innerHTML = "Urheberrecht © 2024 - Alle Rechte vorbehalten || Gestaltet von: Kadir Yazadzhi";
             }
 
             function translateToRussianForBlogPage() {
+                navbarHome.innerHTML = "Домашняя";
+                navbarAbout.innerHTML = "Обо мне";
+                navbarServices.innerHTML = "Услуги";
+                navbarSkills.innerHTML = "Навыки";
+                navbarCertificate.innerHTML = "Сертификаты";
+                navbarProjects.innerHTML = "Проекты";
+                navbarContact.innerHTML = "Контакт";
+
                 titleHeader.innerHTML = 'Добро пожаловать в мой блог';
                 textHeader.innerHTML = 'Это место, где вы можете улучшить свои навыки программирования и узнать о вещах, о которых вы даже не могли себе представить.';
                 smallText.innerHTML = 'Узнать больше &rarr;';
@@ -412,9 +424,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 blogNineTitle.innerHTML = 'Введение в машинное обучение с Python';
                 blogNineText.innerHTML = 'Машинное обучение - это быстро развивающаяся область с разнообразными приложениями. В этой статье представлены основы машинного обучения с использованием Python.';
 
+                copyright.innerHTML = "Авторские права © 2024 - Все права защищены || Дизайн: Кадир Язаджи";
             }
 
             function translateToEnglishForBlogPage() {
+                navbarHome.innerHTML = "Home";
+                navbarAbout.innerHTML = "About me";
+                navbarServices.innerHTML = "Services";
+                navbarSkills.innerHTML = "Skills";
+                navbarCertificate.innerHTML = "Certificates";
+                navbarProjects.innerHTML = "Projects";
+                navbarContact.innerHTML = "Contact";
+
                 titleHeader.innerHTML = 'Welcome to My Blog';
                 textHeader.innerHTML = 'This is the place where you can enhance your programming skills and learn about things you never even imagined.';
                 smallText.innerHTML = 'Learn more &rarr;';
@@ -469,7 +490,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 blogNineTitle.innerHTML = 'Introduction to Machine Learning with Python';
                 blogNineText.innerHTML = 'Machine learning is a rapidly growing field with diverse applications. This article introduces the basics of machine learning using Python.';
 
+                copyright.innerHTML = "Copyright &copy; 2024 - All Rights Reserved || Designed By: Kadir Yazadzhi";
             }
+        }
+        else if (path === "/portfolio/Shop.html") {
+
         }
         else {
             const navbarHome = document.getElementById('navbar-home');
