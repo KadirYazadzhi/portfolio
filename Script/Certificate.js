@@ -64,15 +64,16 @@ function hideCertificate() {
     certificateOther.style.display = 'none';
 }
 
-let isCertificateVisible = false;
-function showCertificate(certificate) {
+    let isCertificateVisible = false;
+    function showCertificate(certificate) {
         if (isCertificateVisible) {
             hideCertificate();
-        } else {
+        }
+        else {
             certificate.style.display = 'flex';
         }
         isCertificateVisible = !isCertificateVisible;
-}
+    }
 
     hideCertificate();
 

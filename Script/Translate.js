@@ -494,6 +494,14 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
         else if (path === "/portfolio/Shop.html") {
+            let navbarHome = document.getElementById('navbar-home');
+            let navbarAbout = document.getElementById('navbar-about');
+            let navbarServices = document.getElementById('navbar-services');
+            let navbarSkills = document.getElementById('navbar-skills');
+            let navbarCertificate = document.getElementById('navbar-certificate');
+            let navbarProjects = document.getElementById('navbar-projects');
+            let navbarContact = document.getElementById('navbar-contact');
+
             let shopTitle = document.getElementById('shopTitle');
             let shopText = document.getElementById('shopText');
             let shopSmallText = document.getElementById('shopSmallText');
@@ -513,21 +521,33 @@ document.addEventListener('DOMContentLoaded', function () {
             let priceCardFiveTitle = document.getElementById('price-card-five-title');
             let priceCardFiveText = document.getElementById('price-card-five-text');
 
+            let copyright = document.getElementById('copyright');
+
             if (locale === "bg-BG") {
                 translateToBulgarianForShopPage();
             }
             else if (locale === "en-GB") {
-
+                translateToEnglishForShopPage();
             }
             else if (locale === "de-DE") {
-
+                translateToGermanForShopPage();
             }
             else if (locale === "ru-RU") {
-
+                translateToRussianForShopPage();
             }
 
             function translateToBulgarianForShopPage() {
-                shopTitle.innerHTML = 'Добре дошли в моя магазин'
+                navbarHome.innerHTML = "Начало";
+                navbarAbout.innerHTML = "За мен";
+                navbarServices.innerHTML = "Услуги";
+                navbarSkills.innerHTML = "Умения";
+                navbarCertificate.innerHTML = "Сертификати";
+                navbarProjects.innerHTML = "Проекти";
+                navbarContact.innerHTML = "Контакти";
+
+                shopTitle.innerHTML = 'Добре дошли в моя магазин';
+                shopText.innerHTML = 'Разгледайте моите услуги, където предлагам професионални решения за уеб разработка и софтуерно инженерство, съобразени с вашите нужди.';
+                shopSmallText.innerHTML = 'Научете повече &rarr;';
 
                 priceCardOneTitle.innerHTML = 'Уебсайт с една страница';
                 priceCardOneText.innerHTML = 'С HTML, CSS и JavaScript';
@@ -543,6 +563,101 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 priceCardFiveTitle.innerHTML = 'Да работя за вас';
                 priceCardFiveText.innerHTML = 'На проекти ориентирани към уеб или конзолна разработка';
+
+                copyright.innerHTML = "Авторско право © 2024 - Всички права запазени || Дизайн от: Кадир Язаджи";
+            }
+
+            function translateToGermanForShopPage() {
+                navbarHome.innerHTML = "Startseite";
+                navbarAbout.innerHTML = "Über mich";
+                navbarServices.innerHTML = "Dienstleistungen";
+                navbarSkills.innerHTML = "Fähigkeiten";
+                navbarCertificate.innerHTML = "Zertifikate";
+                navbarProjects.innerHTML = "Projekte";
+                navbarContact.innerHTML = "Kontakt";
+
+                shopTitle.innerHTML = 'Willkommen in meinem Shop';
+                shopText.innerHTML = 'Entdecken Sie meine Dienstleistungen, bei denen ich professionelle Lösungen für Webentwicklung und Software-Engineering anbiete, die auf Ihre Bedürfnisse zugeschnitten sind.';
+                shopSmallText.innerHTML = 'Erfahren Sie mehr &rarr;';
+
+                priceCardOneTitle.innerHTML = 'Einseitige Website';
+                priceCardOneText.innerHTML = 'Mit HTML, CSS und JavaScript';
+
+                priceCardTwoTitle.innerHTML = 'Einseitige Website';
+                priceCardTwoText.innerHTML = 'Mit React oder Angular';
+
+                priceCardThreeTitle.innerHTML = 'Angepasste mehrseitige Website';
+                priceCardThreeText.innerHTML = 'Mit allen Sprachen und Frameworks';
+
+                priceCardFourTitle.innerHTML = 'Mehrseitige Website';
+                priceCardFourText.innerHTML = 'Mit WordPress oder Weebly';
+
+                priceCardFiveTitle.innerHTML = 'Für Sie arbeiten';
+                priceCardFiveText.innerHTML = 'An web- oder konsolenorientierten Projekten';
+
+                copyright.innerHTML = "Urheberrecht © 2024 - Alle Rechte vorbehalten || Gestaltet von: Kadir Yazadzhi";
+            }
+
+            function translateToEnglishForShopPage() {
+                navbarHome.innerHTML = "Home";
+                navbarAbout.innerHTML = "About me";
+                navbarServices.innerHTML = "Services";
+                navbarSkills.innerHTML = "Skills";
+                navbarCertificate.innerHTML = "Certificates";
+                navbarProjects.innerHTML = "Projects";
+                navbarContact.innerHTML = "Contact";
+
+                shopTitle.innerHTML = 'Welcome to my Shop';
+                shopText.innerHTML = 'Explore my services, where I offer professional web development and software engineering solutions tailored to your needs.';
+                shopSmallText.innerHTML = 'Learn more &rarr;';
+
+                priceCardOneTitle.innerHTML = 'One Page Website';
+                priceCardOneText.innerHTML = 'With HTML, CSS, and JavaScript';
+
+                priceCardTwoTitle.innerHTML = 'One Page Website';
+                priceCardTwoText.innerHTML = 'With React or Angular';
+
+                priceCardThreeTitle.innerHTML = 'Custom Multi-Page Website';
+                priceCardThreeText.innerHTML = 'With all languages and frameworks';
+
+                priceCardFourTitle.innerHTML = 'Multi-Page Website';
+                priceCardFourText.innerHTML = 'With WordPress or Weebly';
+
+                priceCardFiveTitle.innerHTML = 'Working for You';
+                priceCardFiveText.innerHTML = 'On web or console-oriented projects';
+
+                copyright.innerHTML = "Copyright &copy; 2024 - All Rights Reserved || Designed By: Kadir Yazadzhi";
+            }
+
+            function translateToRussianForShopPage() {
+                navbarHome.innerHTML = "Домашняя";
+                navbarAbout.innerHTML = "Обо мне";
+                navbarServices.innerHTML = "Услуги";
+                navbarSkills.innerHTML = "Навыки";
+                navbarCertificate.innerHTML = "Сертификаты";
+                navbarProjects.innerHTML = "Проекты";
+                navbarContact.innerHTML = "Контакт";
+
+                shopTitle.innerHTML = 'Добро пожаловать в мой магазин';
+                shopText.innerHTML = 'Изучите мои услуги, где я предлагаю профессиональные решения для веб-разработки и программной инженерии, адаптированные под ваши нужды.';
+                shopSmallText.innerHTML = 'Узнать больше &rarr;';
+
+                priceCardOneTitle.innerHTML = 'Одностраничный сайт';
+                priceCardOneText.innerHTML = 'С HTML, CSS и JavaScript';
+
+                priceCardTwoTitle.innerHTML = 'Одностраничный сайт';
+                priceCardTwoText.innerHTML = 'С React или Angular';
+
+                priceCardThreeTitle.innerHTML = 'Кастомный многостраничный сайт';
+                priceCardThreeText.innerHTML = 'С использованием всех языков и фреймворков';
+
+                priceCardFourTitle.innerHTML = 'Многостраничный сайт';
+                priceCardFourText.innerHTML = 'С WordPress или Weebly';
+
+                priceCardFiveTitle.innerHTML = 'Работать для вас';
+                priceCardFiveText.innerHTML = 'На проектах, ориентированных на веб или консоль';
+
+                copyright.innerHTML = "Авторские права © 2024 - Все права защищены || Дизайн: Кадир Язаджи";
             }
         }
         else {
