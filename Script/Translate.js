@@ -660,6 +660,215 @@ document.addEventListener('DOMContentLoaded', function () {
                 copyright.innerHTML = "Авторские права © 2024 - Все права защищены || Дизайн: Кадир Язаджи";
             }
         }
+        else if (path === "/portfolio/Blogs.html") {
+            let titleHeader = document.getElementById('title-header');
+            let textHeaderOne = document.getElementById('text-header-one');
+            let smallTextHeader = document.getElementById('small-text-header');
+            let blogTextOne = document.getElementById('blog-text-one');
+            let blogTextSecond = document.getElementById('blog-text-second');
+            let blogTitleOne = document.getElementById('blog-title-one');
+            let blogTitleSecond = document.getElementById('blog-title-second');
+            let blogTitleThird = document.getElementById('blog-title-third');
+            let blogTitleFour = document.getElementById('blog-title-four');
+            let blogTitleFive = document.getElementById('blog-title-five');
+            let blogTitleSix = document.getElementById('blog-title-six');
+            let blogTextThird = document.getElementById('blog-text-third');
+            let blogTextFour = document.getElementById('blog-text-four');
+            let blogTextFive = document.getElementById('blog-text-five');
+            let blogTextSix = document.getElementById('blog-text-six');
+            let blogTextSeven = document.getElementById('blog-text-seven');
+            let PlusCardTitleOne = document.getElementById('blog-title-plus-card-one');
+            let PlusCardTitleTwo = document.getElementById('blog-title-plus-card-two');
+            let PlusCardTitleThree = document.getElementById('blog-title-plus-card-three');
+            let PlusCardTitleFour = document.getElementById('blog-title-plus-card-four');
+            let PlusCardTextOne = document.getElementById('blog-text-plus-card-one');
+            let PlusCardTextTwo = document.getElementById('blog-text-plus-card-two');
+            let PlusCardTextThree = document.getElementById('blog-text-plus-card-three');
+            let PlusCardTextFour = document.getElementById('blog-text-plus-card-four');
+            let PlusCardButtonOne = document.getElementById('blog-button-plus-card-one');
+            let PlusCardButtonTwo = document.getElementById('blog-button-plus-card-two');
+            let PlusCardButtonThree = document.getElementById('blog-button-plus-card-three');
+            let PlusCardButtonFour = document.getElementById('blog-button-plus-card-four');
+
+            function elements(data) {
+                titleHeader.innerHTML = data.titleHeader;
+                textHeaderOne.innerHTML = data.textHeaderOne;
+                smallTextHeader.innerHTML = data.smallTextHeader;
+                blogTextOne.innerHTML = data.blogTextOne;
+                blogTextSecond.innerHTML = data.blogTextSecond;
+                blogTitleOne.innerHTML = data.blogTitleOne;
+                blogTitleSecond.innerHTML = data.blogTitleSecond;
+                blogTitleThird.innerHTML = data.blogTitleThird;
+                blogTitleFour.innerHTML = data.blogTitleFour;
+                blogTitleFive.innerHTML = data.blogTitleFive;
+                blogTitleSix.innerHTML = data.blogTitleSix;
+                blogTextThird.innerHTML = data.blogTextThird;
+                blogTextFour.innerHTML = data.blogTextFour;
+                blogTextFive.innerHTML = data.blogTextFive;
+                blogTextSix.innerHTML = data.blogTextSix;
+                blogTextSeven.innerHTML = data.blogTextSeven;
+                PlusCardTitleOne.innerHTML = data.PlusCardTitleOne;
+                PlusCardTitleTwo.innerHTML = data.PlusCardTitleTwo;
+                PlusCardTitleThree.innerHTML = data.PlusCardTitleThree;
+                PlusCardTitleFour.innerHTML = data.PlusCardTitleFour;
+                PlusCardTextOne.innerHTML = data.PlusCardTextOne;
+                PlusCardTextTwo.innerHTML = data.PlusCardTextTwo;
+                PlusCardTextThree.innerHTML = data.PlusCardTextThree;
+                PlusCardTextFour.innerHTML = data.PlusCardTextFour;
+                PlusCardButtonOne.innerHTML = data.PlusCardButtonOne;
+                PlusCardButtonTwo.innerHTML = data.PlusCardButtonTwo;
+                PlusCardButtonThree.innerHTML = data.PlusCardButtonThree;
+                PlusCardButtonFour.innerHTML = data.PlusCardButtonFour;
+            }
+
+            if (checkLocalStorage("1")) {
+                if (locale === "bg-BG") {
+                    tranlateBlogsOneToBulgarian();
+                }
+                else if (locale === "en-GB") {
+                    tranlateBlogsOneToEnglish();
+                }
+                else if (locale === "de-DE") {
+                    tranlateBlogsOneToGerman();
+                }
+                else if (locale === "ru-RU") {
+                    tranlateBlogsOneToRussian();
+                }
+
+                function tranlateBlogsOneToBulgarian() {
+                    const data = {
+                        titleHeader: "Защо JavaScript е толкова популярен?",
+                        textHeaderOne: "JavaScript е популярен, защото е универсален, присъстващ навсякъде в уеб разработката, поддържан от обширна екосистема и общност и подкрепен от водещи технологични компании.",
+                        smallTextHeader: "Научи повече &rarr;",
+                        blogTextOne: "JavaScript е един от най-популярните програмни езици в света, и неговата популярност може да се обясни с няколко ключови фактора:",
+                        blogTextSecond: "JavaScript е единственият програмен език, който може да се изпълнява нативно в уеб браузърите, което го прави незаменим за разработка на фронтенд. Всеки голям уеб браузър поддържа JavaScript, което позволява на разработчиците да създават динамични и интерактивни потребителски изживявания. Тази широко разпространена поддръжка укрепва JavaScript като основна технология на уеба.",
+                        blogTitleOne: "1. Всеобхватност в уеб разработката",
+                        blogTitleSecond: "2. Универсалност",
+                        blogTitleThird: "3. Голям екосистем и общност",
+                        blogTitleFour: "4. Постоянно развитие",
+                        blogTitleFive: "5. Крос-платформено разработване",
+                        blogTitleSix: "6. Нужда от специалисти на пазара на труда",
+                        blogTextThird: "JavaScript не е ограничен само до разработка на фронтенд; той може да се използва и на страната на сървъра с такива среди като Node.js. Тази универсалност позволява на разработчиците да използват един език за разработка както на клиентската, така и на сървърната страна, което оптимизира процеса на разработка и управлението на кодовите бази.",
+                        blogTextFour: "JavaScript разполага с обширен екосистем от библиотеки и рамки като React, Angular и Vue.js, които значително улесняват и ускоряват разработката на сложни приложения. Освен това голямата и активна общност продължава да допринася за растежа на езика, предоставяйки поддръжка, инструменти и ресурси за разработчици на всички нива на умения.",
+                        blogTextFive: "JavaScript е значително еволюирал от своето възникване. Въвеждането на стандартите на ECMAScript доведе до модерни функции и подобрения в езика, което го направи по-мощен и по-лесен за употреба. Редовните актуализации гарантират, че JavaScript остава актуален и отговаря на изискванията на съвременната уеб разработка.",
+                        blogTextSix: "С инструменти като Electron JavaScript може да се използва за създаване на крос-платформени настолни приложения. Това позволява на разработчиците да използват своите умения по JavaScript за създаване на приложения, които работят на Windows, macOS и Linux, допълнително разширявайки приложимостта на езика.",
+                        blogTextSeven: "Търсенето на JavaScript разработчици е постоянно високо. Поради нуждата на бизнесите от създаване на ангажиращи и отзивчиви уеб приложения, търсенето на квалифицирани JavaScript разработчици продължава да нараства. Това се превръща в множество възможности за работа и привлекателни заплати за тези, които владеят езика.",
+                        PlusCardTitleOne: "Въведение в машинното обучение с Python",
+                        PlusCardTitleTwo: "10 основни Git команди за всеки разработчик",
+                        PlusCardTitleThree: "Основи на обектно-ориентираното програмиране",
+                        PlusCardTitleFour: "Най-често задавани въпроси при интервюта за C#",
+                        PlusCardTextOne: "Машинното обучение е бързо развиваща се област с разнообразни приложения. Този материал въвежда основите на машинното обучение с използване на Python.",
+                        PlusCardTextTwo: "Овладяването на Git е от съществено значение за съвременната разработка. Тази статия разглежда десетте най-важни команди в Git, предоставяйки обяснения и примери за подобряване на уменията за управление на версиите.",
+                        PlusCardTextThree: "Разбирането на основите на обектно-ориентираното програмиране е от ключово значение за изграждането на мащабируеми и лесно поддържаеми софтуерни системи.",
+                        PlusCardTextFour: "Често задаваните въпроси на интервюта за C# обхващат теми като абстрактни класове срещу интерфейси, управление на паметта, обработка на низове и други.",
+                        PlusCardButtonOne: "Повече информация",
+                        PlusCardButtonTwo: "Повече информация",
+                        PlusCardButtonThree: "Повече информация",
+                        PlusCardButtonFour: "Повече информация"
+                    };
+                    elements(data);
+                }
+
+                function tranlateBlogsOneToGerman () {
+                    const data = {
+                        titleHeader: "Warum JavaScript so beliebt ist?",
+                        textHeaderOne: "JavaScript ist beliebt, weil es vielseitig einsetzbar ist, in der Webentwicklung allgegenwärtig ist, von einem umfangreichen Ökosystem und einer Gemeinschaft unterstützt wird und von führenden Technologieunternehmen unterstützt wird.",
+                        smallTextHeader: "Erfahren Sie mehr &rarr;",
+                        blogTextOne: "JavaScript ist eine der beliebtesten Programmiersprachen der Welt, und seine Popularität lässt sich auf mehrere Schlüsselfaktoren zurückführen:",
+                        blogTextSecond: "JavaScript ist die einzige Programmiersprache, die nativ in Webbrowsern ausgeführt werden kann, was es für die Front-End-Entwicklung unverzichtbar macht. Jeder große Webbrowser unterstützt JavaScript, was Entwicklern ermöglicht, dynamische und interaktive Benutzererlebnisse zu schaffen. Diese weit verbreitete Unterstützung hat JavaScript als eine grundlegende Technologie des Webs etabliert.",
+                        blogTitleOne: "1. Allgegenwärtigkeit in der Webentwicklung",
+                        blogTitleSecond: "2. Vielseitigkeit",
+                        blogTitleThird: "3. Großes Ökosystem und Gemeinschaft",
+                        blogTitleFour: "4. Kontinuierliche Weiterentwicklung",
+                        blogTitleFive: "5. Cross-Platform-Entwicklung",
+                        blogTitleSix: "6. Nachfrage auf dem Arbeitsmarkt",
+                        blogTextThird: "JavaScript ist nicht nur auf die Front-End-Entwicklung beschränkt; es kann auch auf der Serverseite mit Umgebungen wie Node.js verwendet werden. Diese Vielseitigkeit ermöglicht es Entwicklern, eine einzige Sprache für die Entwicklung sowohl auf der Client- als auch auf der Serverseite zu verwenden, was den Entwicklungsprozess optimiert und das Management von Codebasen erleichtert.",
+                        blogTextFour: "JavaScript verfügt über ein umfangreiches Ökosystem von Bibliotheken und Frameworks wie React, Angular und Vue.js, die die Entwicklung komplexer Anwendungen erheblich vereinfachen und beschleunigen. Darüber hinaus trägt die große und aktive Gemeinschaft kontinuierlich zum Wachstum der Sprache bei, indem sie Unterstützung, Tools und Ressourcen für Entwickler aller Skill-Level bereitstellt.",
+                        blogTextFive: "JavaScript hat sich seit seiner Einführung erheblich weiterentwickelt. Die Einführung der ECMAScript-Standards hat moderne Funktionen und Verbesserungen in die Sprache gebracht, wodurch sie leistungsfähiger und einfacher zu verwenden ist. Regelmäßige Updates stellen sicher, dass JavaScript relevant bleibt und den Anforderungen der modernen Webentwicklung gerecht wird.",
+                        blogTextSix: "Mit Tools wie Electron kann JavaScript verwendet werden, um plattformübergreifende Desktop-Anwendungen zu erstellen. Entwickler können ihre JavaScript-Kenntnisse nutzen, um Anwendungen zu erstellen, die auf Windows, macOS und Linux laufen, was die Anwendbarkeit der Sprache weiter erhöht.",
+                        blogTextSeven: "Die Nachfrage nach JavaScript-Entwicklern ist kontinuierlich hoch. Da Unternehmen bemüht sind, ansprechende und reaktionsfähige Webanwendungen zu erstellen, wächst der Bedarf an qualifizierten JavaScript-Entwicklern weiter. Diese Nachfrage führt zu zahlreichen Arbeitsmöglichkeiten und attraktiven Gehältern für diejenigen, die die Sprache beherrschen.",
+                        PlusCardTitleOne: "Einführung in maschinelles Lernen mit Python",
+                        PlusCardTitleTwo: "10 wesentliche Git-Befehle für jeden Entwickler",
+                        PlusCardTitleThree: "Grundlagen der objektorientierten Programmierung",
+                        PlusCardTitleFour: "Am häufigsten gestellte Fragen bei C#-Interviews",
+                        PlusCardTextOne: "Maschinelles Lernen ist ein schnell wachsendes Feld mit vielfältigen Anwendungen. Dieser Artikel führt in die Grundlagen des maschinellen Lernens mit Python ein.",
+                        PlusCardTextTwo: "Die Beherrschung von Git ist für die moderne Entwicklung von entscheidender Bedeutung. Dieser Artikel behandelt die zehn wichtigsten Git-Befehle, bietet Erklärungen und Beispiele zur Verbesserung der Versionskontrollfähigkeiten.",
+                        PlusCardTextThree: "Das Verständnis der Grundlagen der objektorientierten Programmierung ist entscheidend für den Aufbau skalierbarer und wartbarer Softwaresysteme.",
+                        PlusCardTextFour: "Häufig gestellte Fragen zu C#-Interviews behandeln Themen wie abstrakte Klassen gegenüber Schnittstellen, Speicherverwaltung, Zeichenkettenbearbeitung und mehr.",
+                        PlusCardButtonOne: "Weitere Informationen",
+                        PlusCardButtonTwo: "Weitere Informationen",
+                        PlusCardButtonThree: "Weitere Informationen",
+                        PlusCardButtonFour: "Weitere Informationen"
+                    };
+                    elements(data);
+                }
+
+                function tranlateBlogsOneToRussian() {
+                    const data = {
+                        titleHeader: "Почему JavaScript так популярен?",
+                        textHeaderOne: "JavaScript популярен благодаря своей универсальности, широкому распространению в веб-разработке, поддержке обширной экосистемы и сообщества, а также поддержке крупными технологическими компаниями.",
+                        smallTextHeader: "Узнать больше &rarr;",
+                        blogTextOne: "JavaScript является одним из самых популярных языков программирования в мире, и его популярность можно объяснить несколькими ключевыми факторами:",
+                        blogTextSecond: "JavaScript - единственный язык программирования, который может выполняться нативно в веб-браузерах, что делает его неотъемлемым элементом разработки фронтенда. Все основные веб-браузеры поддерживают JavaScript, что позволяет разработчикам создавать динамичные и интерактивные пользовательские интерфейсы. Это широкое распространение закрепило JavaScript как основную технологию веба.",
+                        blogTitleOne: "1. Широкое распространение в веб-разработке",
+                        blogTitleSecond: "2. Универсальность",
+                        blogTitleThird: "3. Большая экосистема и сообщество",
+                        blogTitleFour: "4. Постоянное развитие",
+                        blogTitleFive: "5. Кросс-платформенная разработка",
+                        blogTitleSix: "6. Востребованность на рынке труда",
+                        blogTextThird: "JavaScript не ограничивается только разработкой фронтенда; его можно использовать и на серверной стороне с такими средами, как Node.js. Эта универсальность позволяет разработчикам использовать один язык как для клиентской, так и для серверной разработки, что оптимизирует процесс разработки и управления кодовыми базами.",
+                        blogTextFour: "JavaScript имеет обширную экосистему библиотек и фреймворков, таких как React, Angular и Vue.js, которые значительно упрощают и ускоряют разработку сложных приложений. Кроме того, большое и активное сообщество продолжает способствовать росту языка, предоставляя поддержку, инструменты и ресурсы для разработчиков всех уровней.",
+                        blogTextFive: "JavaScript значительно эволюционировал с момента своего появления. Введение стандартов ECMAScript принесло в язык современные функции и улучшения, делая его более мощным и удобным в использовании. Регулярные обновления гарантируют, что JavaScript остается актуальным и отвечает требованиям современной веб-разработки.",
+                        blogTextSix: "С помощью инструментов, таких как Electron, JavaScript можно использовать для создания кросс-платформенных настольных приложений. Это позволяет разработчикам использовать свои навыки JavaScript для создания приложений, работающих на Windows, macOS и Linux, расширяя применение языка.",
+                        blogTextSeven: "Спрос на разработчиков JavaScript постоянно высок. Поскольку компании стремятся создавать привлекательные и отзывчивые веб-приложения, растет потребность в квалифицированных разработчиках JavaScript. Этот спрос переводится в множество рабочих возможностей и привлекательные зарплаты для тех, кто владеет этим языком.",
+                        PlusCardTitleOne: "Введение в машинное обучение с использованием Python",
+                        PlusCardTitleTwo: "10 важных команд Git для каждого разработчика",
+                        PlusCardTitleThree: "Основы объектно-ориентированного программирования",
+                        PlusCardTitleFour: "Часто задаваемые вопросы на собеседованиях по C#",
+                        PlusCardTextOne: "Машинное обучение - быстроразвивающаяся область с разнообразными применениями. Эта статья знакомит с основами машинного обучения с использованием Python.",
+                        PlusCardTextTwo: "Владение Git критично для современной разработки. Эта статья рассматривает десять наиболее важных команд Git, предоставляя объяснения и примеры для улучшения навыков управления версиями.",
+                        PlusCardTextThree: "Понимание основ объектно-ориентированного программирования крайне важно для создания масштабируемых и поддерживаемых программных систем.",
+                        PlusCardTextFour: "Часто задаваемые вопросы на собеседованиях по C# охватывают темы, такие как абстрактные классы против интерфейсов, управление памятью, обработка строк и другие.",
+                        PlusCardButtonOne: "Узнать больше",
+                        PlusCardButtonTwo: "Узнать больше",
+                        PlusCardButtonThree: "Узнать больше",
+                        PlusCardButtonFour: "Узнать больше"
+                    };
+                    elements(data);
+                }
+
+                function tranlateBlogsOneToEnglish() {
+                    const data = {
+                        titleHeader: "Why JavaScript is so popular?",
+                        textHeaderOne: "JavaScript is popular because it is versatile, ubiquitous in web development, supported by a vast ecosystem and community, and backed by major tech companies.",
+                        smallTextHeader: "Learn more &rarr;",
+                        blogTextOne: "JavaScript is one of the most popular programming languages in the world, and its popularity can be attributed to several key factors:",
+                        blogTextSecond: "JavaScript is the only programming language that can run natively in web browsers, making it indispensable for front-end development. Every major web browser supports JavaScript, which allows developers to create dynamic, interactive user experiences. This widespread support has cemented JavaScript as a fundamental technology of the web.",
+                        blogTitleOne: "1. Ubiquity in Web Development",
+                        blogTitleSecond: "2. Versatility",
+                        blogTitleThird: "3. Large Ecosystem and Community",
+                        blogTitleFour: "4. Continuous Evolution",
+                        blogTitleFive: "5. Cross-Platform Development",
+                        blogTitleSix: "6. Job Market Demand",
+                        blogTextThird: "JavaScript is not limited to front-end development; it can also be used on the server side with environments like Node.js. This versatility allows developers to use a single language for both client-side and server-side development, streamlining the development process and making it easier to manage codebases.",
+                        blogTextFour: "JavaScript has a vast ecosystem of libraries and frameworks such as React, Angular, and Vue.js, which significantly simplify and accelerate the development of complex applications. Additionally, the large and active community continuously contributes to the language's growth, providing support, tools, and resources for developers of all skill levels.",
+                        blogTextFive: "JavaScript has evolved significantly since its inception. The introduction of ECMAScript standards has brought modern features and improvements to the language, making it more powerful and easier to use. Regular updates ensure that JavaScript remains relevant and continues to meet the demands of modern web development.",
+                        blogTextSix: "With tools like Electron, JavaScript can be used to build cross-platform desktop applications. This means developers can use their JavaScript skills to create applications that run on Windows, macOS, and Linux, further broadening the language's applicability.",
+                        blogTextSeven: "The demand for JavaScript developers is consistently high. As businesses seek to create engaging and responsive web applications, the need for skilled JavaScript developers continues to grow. This demand translates into numerous job opportunities and attractive salaries for those proficient in the language.",
+                        PlusCardTitleOne: "Introduction to Machine Learning with Python",
+                        PlusCardTitleTwo: "10 Essential Git Commands for Every Developer",
+                        PlusCardTitleThree: "Fundamentals of Object-Oriented Programming",
+                        PlusCardTitleFour: "Most commonly asked interview questions for C#",
+                        PlusCardTextOne: "Machine learning is a rapidly growing field with diverse applications. This article introduces the basics of machine learning using Python.",
+                        PlusCardTextTwo: "Mastering Git is crucial for modern development. This article covers the ten most essential Git commands, providing explanations and examples to enhance your version control skills.",
+                        PlusCardTextThree: "Understanding the fundamentals of Object-Oriented Programming is crucial for building scalable and maintainable software systems.",
+                        PlusCardTextFour: "Common C# interview questions cover topics like abstract classes vs. interfaces, memory management, string manipulation, and more."
+                    };
+                    elements(data);
+                }
+            }
+
+        }
         else {
             const navbarHome = document.getElementById('navbar-home');
             const navbarAbout = document.getElementById('navbar-about');
@@ -1639,6 +1848,14 @@ document.addEventListener('DOMContentLoaded', function () {
         if (localeLang === browserLang) {
             setSelectedLocale(locale);
         }
+    }
+
+
+    function checkLocalStorage(id) {
+        if (localStorage.getItem('lastClickedBlogId') === id) {
+            return true;
+        }
+        return false;
     }
 
 });
