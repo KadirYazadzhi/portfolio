@@ -572,16 +572,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function changePageLocationAndSaveToLocalStorage(button, id) {
-        button.addEventListener('click', function() {
-            localStorage.setItem('lastClickedBlogId', id);
-            window.location.href = "Blogs.html";
-        });
-    }
-
-
-
     findClickedCard();
     updateContentForBlogId(localStorage.getItem('lastClickedBlogId'));
+    
 });
 
