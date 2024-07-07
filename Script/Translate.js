@@ -661,6 +661,14 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
         else if (path === "/portfolio/Blogs.html") {
+            let navbarHome = document.getElementById('navbar-home');
+            let navbarAbout = document.getElementById('navbar-about');
+            let navbarServices = document.getElementById('navbar-services');
+            let navbarSkills = document.getElementById('navbar-skills');
+            let navbarCertificate = document.getElementById('navbar-certificate');
+            let navbarProjects = document.getElementById('navbar-projects');
+            let navbarContact = document.getElementById('navbar-contact');
+
             let titleHeader = document.getElementById('title-header');
             let textHeaderOne = document.getElementById('text-header-one');
             let smallTextHeader = document.getElementById('small-text-header');
@@ -689,6 +697,66 @@ document.addEventListener('DOMContentLoaded', function () {
             let PlusCardButtonTwo = document.getElementById('blog-button-plus-card-two');
             let PlusCardButtonThree = document.getElementById('blog-button-plus-card-three');
             let PlusCardButtonFour = document.getElementById('blog-button-plus-card-four');
+
+            let copyright = document.getElementById('copyright');
+
+            if (locale === "bg-BG") {
+                translateBlogsToBulgarian();
+            }
+            else if (locale === "en-GB") {
+                translateBlogsToEnglish();
+            }
+            else if (locale === "de-DE") {
+                translateBlogsToGerman();
+            }
+            else if (locale === "ru-RU") {
+                translateBlogsToRussian();
+            }
+
+            function translateBlogsToBulgarian() {
+                navbarHome.innerHTML = "Начало";
+                navbarAbout.innerHTML = "За мен";
+                navbarServices.innerHTML = "Услуги";
+                navbarSkills.innerHTML = "Умения";
+                navbarCertificate.innerHTML = "Сертификати";
+                navbarProjects.innerHTML = "Проекти";
+                navbarContact.innerHTML = "Контакти";
+
+                copyright.innerHTML = "Авторско право © 2024 - Всички права запазени || Дизайн от: Кадир Язаджи";
+            }
+            function translateBlogsToEnglish() {
+                navbarHome.innerHTML = "Home";
+                navbarAbout.innerHTML = "About me";
+                navbarServices.innerHTML = "Services";
+                navbarSkills.innerHTML = "Skills";
+                navbarCertificate.innerHTML = "Certificates";
+                navbarProjects.innerHTML = "Projects";
+                navbarContact.innerHTML = "Contact";
+
+                copyright.innerHTML = "Copyright &copy; 2024 - All Rights Reserved || Designed By: Kadir Yazadzhi";
+            }
+            function translateBlogsToGerman() {
+                navbarHome.innerHTML = "Startseite";
+                navbarAbout.innerHTML = "Über mich";
+                navbarServices.innerHTML = "Dienstleistungen";
+                navbarSkills.innerHTML = "Fähigkeiten";
+                navbarCertificate.innerHTML = "Zertifikate";
+                navbarProjects.innerHTML = "Projekte";
+                navbarContact.innerHTML = "Kontakt";
+
+                copyright.innerHTML = "Urheberrecht © 2024 - Alle Rechte vorbehalten || Gestaltet von: Kadir Yazadzhi";
+            }
+            function translateBlogsToRussian() {
+                navbarHome.innerHTML = "Домашняя";
+                navbarAbout.innerHTML = "Обо мне";
+                navbarServices.innerHTML = "Услуги";
+                navbarSkills.innerHTML = "Навыки";
+                navbarCertificate.innerHTML = "Сертификаты";
+                navbarProjects.innerHTML = "Проекты";
+                navbarContact.innerHTML = "Контакт";
+
+                copyright.innerHTML = "Авторские права © 2024 - Все права защищены || Дизайн: Кадир Язаджи";
+            }
 
             function elements(data) {
                 titleHeader.innerHTML = data.titleHeader;
@@ -2037,30 +2105,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 function tranlateBlogsNineToBulgarian() {
                     const data = {
-                        titleHeader: "Изследване на новите функции в последната версия на C#",
-                        textHeaderOne: "Тази статия преглежда тези актуализации и демонстрира как да ги използвате в проектите си, за да подобрите ефективността на кодирането.",
+                        titleHeader: "Въведение в машинното обучение с Python",
+                        textHeaderOne: "Машинното обучение е бързоразвиваща се област с разнообразни приложения. Тази статия представя основите на машинното обучение с използване на Python.",
                         smallTextHeader: "Прочети още &rarr;",
-                        blogTextOne: "Най-новата версия на C# въвежда няколко мощни функции, които подобряват продуктивността на разработчика и ефективността на кода. Разбирането на тези нови функции е от съществено значение за модерното развитие на C#.",
-                        blogTextSecond: "&#9679; <b>Типове записи (Record Types)</b>: Опростява създаването на неизменяеми обекти с кратък синтаксис, подобрява управлението на данните. <br><br> &#9679; <b>Инициализатори само по време на създаване (Init-Only Setters)</b>: Позволява задаването на свойства по време на инициализация на обект, подобрявайки безопасността на кода.",
-                        blogTextThird: "&#9679; <b>Изявления на върхно ниво (Top-level Statements)</b>: Намалява кода за излишни действия, като позволява изявления директно в пространството имена, правейки скриптове и прости програми по-кратки. <br><br> &#9679; <b>Подобрения в шаблонното съвпадение (Pattern Matching Enhancements)</b>: Разширява възможностите на шаблонното съвпадение за подобряване на контрола на потока и манипулирането на данните.",
-                        blogTextFour: "&#9679; <b>Записи с равенство на стойността (Records with Value Equality)</b>: Осигурява, че две записи с еднакви данни се считат за равни, улеснявайки сравнението и тестването.",
-                        blogTextFive: "&#9679; <b>Инициализатори само по време на създаване (Init-Only Properties)</b>: Позволява задаването на свойства само по време на конструиране на обект, подобрявайки неизменяемостта. <br><br> &#9679; <b>Подобрено шаблонно съвпадение (Enhanced Pattern Matching)</b>: Предлага по-сложни начини за разглобяване и анализ на данни.",
-                        blogTextSix: "&#9679; <b>Инициализатори само по време на създаване (Init-Only Properties)</b>: Позволява задаването на свойства само по време на конструиране на обект, подобрявайки неизменяемостта. <br><br> &#9679; <b>Подобрено шаблонно съвпадение (Enhanced Pattern Matching)</b>: Предлага по-сложни начини за разглобяване и анализ на данни.",
-                        blogTextSeven: "&#9679; <b>Подобрение на производителността (Improved Performance)</b>: Различни оптимизации във времето за изпълнение и библиотеките водят до по-добра производителност и управление на ресурсите.",
-                        blogTitleOne: "1. Въведение в новите функции",
-                        blogTitleSecond: "2. Типове записи и инициализатори само по време на създаване",
-                        blogTitleThird: "3. Изявления на върхно ниво и подобрения в шаблонното съвпадение",
-                        blogTitleFour: "4. Равенство на стойността в записите",
-                        blogTitleFive: "5. Инициализатори само по време на създаване и подобрено шаблонно съвпадение",
-                        blogTitleSix: "6. Подобрения в производителността и заключение",
-                        PlusCardTitleOne: "Най-често задавани интервю въпроси за C#",
-                        PlusCardTitleTwo: "Python срещу Ruby: Кой език следва да научите?",
+                        blogTextOne: "Машинното обучение (ML) е подмножество на изкуствен интелект, което се фокусира върху създаването на системи, които учат от данни и подобряват своите умения с времето. Python е популярен език за ML благодарение на своята простота и обширни библиотеки.",
+                        blogTextSecond: "&#9679; <b>Scikit-learn</b>: Мощна библиотека за ML, предоставяща прости и ефективни инструменти за извличане и анализ на данни. <br><br> &#9679; <b>Pandas</b>: Библиотека, предлагаща структури за данни и инструменти за анализ, от решаващо значение за предобработката на данни в ML.",
+                        blogTextThird: "&#9679; <b>NumPy</b>: Поддържа големи многомерни масиви и матрици, заедно с колекция от математически функции за работа с тези масиви. <br><br> &#9679; <b>Matplotlib</b>: Библиотека за създаване на статични, анимирани и интерактивни визуализации в Python.",
+                        blogTextFour: "&#9679> <b>Предобработка на данни</b>: Включва почистване и трансформиране на сурови данни в подходящ формат за анализ. Техниките включват обработка на липсващи стойности, нормализация и кодиране на категорийни променливи.",
+                        blogTextFive: "&#9679; <b>Обучение на модела</b>: Процесът на подаване на данни в ML алгоритъм за изучаване на модели и правене на прогнози. <br><br> &#9679; <b>Оценка на модела</b>: Оценяване на производителността на ML модела с използване на метрики като точност, прецизност, отзив и F1-мера.",
+                        blogTextSix: "&#9679; <b>Дълбоко обучение</b>: Подмножество на ML, което използва невронни мрежи с много слоеве за моделиране на сложни шаблони в данни. Популярни рамки включват TensorFlow и Keras.",
+                        blogTextSeven: "&#9679; <b>Дълбоко обучение</b>: Подмножество на ML, което използва невронни мрежи с много слоеве за моделиране на сложни шаблони в данни. Популярни рамки включват TensorFlow и Keras.",
+                        blogTitleOne: "1. Въведение в машинното обучение",
+                        blogTitleSecond: "2. Основни библиотеки: Scikit-learn и Pandas",
+                        blogTitleThird: "3. NumPy и Matplotlib за обработка на данни и визуализация",
+                        blogTitleFour: "4. Техники за предобработка на данни",
+                        blogTitleFive: "5. Обучение и оценка на модела",
+                        blogTitleSix: "6. Дълбоко обучение с Python",
+                        PlusCardTitleOne: "Най-често задавани въпроси на интервюта за C#",
+                        PlusCardTitleTwo: "Python срещу Ruby: Кой език да научите?",
                         PlusCardTitleThree: "JavaScript срещу TypeScript",
                         PlusCardTitleFour: "Разбиране на асинхронното програмиране в JavaScript",
-                        PlusCardTextOne: "Общите въпроси за интервюта на C# обхващат теми като абстрактни класове срещу интерфейси, управление на паметта, манипулиране на низове и други.",
-                        PlusCardTextTwo: "Python и Ruby са два мощни, високо нивови езика за програмиране. Тази статия сравнява техните функции, силните страни и други.",
-                        PlusCardTextThree: "JavaScript е динамичен скриптов език, докато TypeScript е надмножество на JavaScript с опционално статично типизиране, което осигурява подобрено поддържане и скалируемост на кода.",
-                        PlusCardTextFour: "Асинхронното програмиране в JavaScript позволява не-блокиращи операции, което води до по-ефективно изпълнение на кода.",
+                        PlusCardTextOne: "Често задаваните въпроси на интервюта за C# обхващат теми като абстрактни класове срещу интерфейси, управление на паметта, манипулация на низове и други.",
+                        PlusCardTextTwo: "Python и Ruby са и двата мощни, високо ниво програмни езици. Тази статия сравнява техните функции, силни страни и други.",
+                        PlusCardTextThree: "JavaScript е динамичен скриптов език, докато TypeScript е надмножество на JavaScript със статично типизиране, което осигурява подобрена поддръжка и скалируемост на кода.",
+                        PlusCardTextFour: "Асинхронното програмиране в JavaScript позволява изпълнението на неблокиращи операции, което води до по-ефективно изпълнение на кода.",
                         PlusCardButtonOne: "Научете повече",
                         PlusCardButtonTwo: "Научете повече",
                         PlusCardButtonThree: "Научете повече",
