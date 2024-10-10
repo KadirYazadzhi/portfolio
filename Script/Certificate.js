@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const cardPostgreSQL = document.getElementById('cardPostgreSQL');
     const cardPython = document.getElementById('cardPython');
     const cardCPlus = document.getElementById('cardCPlus');
+    const cardCSharp = document.getElementById('cardCSharp');
     const cardGoogle = document.getElementById('cardGoogle');
     const cardMicrosoft = document.getElementById('cardMicrosoft');
     const cardDatabase = document.getElementById('cardDataBase');
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const certificatePostgreSQL = document.getElementById('certificate-PostgreSQL');
     const certificatePython = document.getElementById('certificate-Python');
     const certificateCPlus = document.getElementById('certificate-CPlus');
+    const certificateCSharp = document.getElementById('certificate-CSharp');
     const certificateGoogle = document.getElementById('certificate-Google');
     const certificateMicrosoft = document.getElementById('certificate-Microsoft');
     const certificateDatabase = document.getElementById('certificate-DataBase');
@@ -52,6 +54,7 @@ function hideCertificate() {
     certificatePostgreSQL.style.display = 'none';
     certificatePython.style.display = 'none';
     certificateCPlus.style.display = 'none';
+    certificateCSharp.style.display = 'none';
     certificateGoogle.style.display = 'none';
     certificateMicrosoft.style.display = 'none';
     certificateDatabase.style.display = 'none';
@@ -116,6 +119,10 @@ function hideCertificate() {
 
     cardCPlus.addEventListener('click', function() {
         showCertificate(certificateCPlus);
+    });
+
+    cardCSharp.addEventListener('click', function() {
+        showCertificate(certificateCSharp);
     });
 
     cardGoogle.addEventListener('click', function() {
