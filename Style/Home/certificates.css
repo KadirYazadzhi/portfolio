@@ -17,7 +17,7 @@
 }
 
 .certificate-box:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05);
 }
 
 .certificate-box img {
@@ -25,7 +25,49 @@
     max-width: 20rem;
     height: auto;
     border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow-medium);
+}
+
+.certificate-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--half-opacity-color);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.3s ease-out;
+}
+
+.certificate-modal.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.certificate-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    box-shadow: var(--shadow-medium);
+    border-radius: 6px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    color: var(--text-color-second);
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1200px) {
