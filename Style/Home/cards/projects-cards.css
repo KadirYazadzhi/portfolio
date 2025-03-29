@@ -28,6 +28,13 @@
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+    .project-card-right-section-bottom {
+        gap: 1rem;
+    }
 }
 
 .project-language {
