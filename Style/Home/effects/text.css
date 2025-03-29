@@ -1,0 +1,40 @@
+/*
+  these type the CSS variable as color
+  unlocking the ability for the browser
+  to animate just that portion
+*/
+@property --＠color-1 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(213, 94%, 68%);
+}
+
+@property --＠color-2 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(217, 91%, 60%);
+}
+
+/* keyframes that change the color variable */
+@keyframes gradient-change {
+    to {
+        --＠color-1: hsl(217, 91%, 60%);
+        --＠color-2: hsl(213, 94%, 68%);
+    }
+}
+
+.special-text {
+    animation: gradient-change 2s linear infinite alternate;
+    background: linear-gradient(to right in oklch, var(--＠color-1), var(--＠color-2));
+
+    /* old browser support */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* modern browser version */
+    background-clip: text;
+    color: transparent;
+}
+
+
+

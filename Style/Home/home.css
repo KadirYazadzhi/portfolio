@@ -1,0 +1,48 @@
+.section { padding: 50px 20px; }
+
+.main-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .main-modal { flex-direction: column; }
+}
+
+.left-modal {
+    flex: 1;
+}
+
+.left-modal-content {
+    margin-bottom: 2rem;
+}
+
+.left-modal p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.right-modal {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-modal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-modal { width: 100%; }

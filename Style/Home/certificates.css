@@ -1,0 +1,47 @@
+.certificates-container {
+    display: flex;
+    overflow: visible; /* Променено от hidden на visible */
+    width: 100%;
+    will-change: transform;
+    gap: 1rem;
+    padding: 1rem 0; /* Добавен вертикален padding */
+    margin: 0 2rem; /* Добавен хоризонтален маржин */
+}
+
+.certificate-box {
+    flex: 0 0 auto;
+    width: 30%;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.certificate-box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.certificate-box img {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 1200px) {
+    .certificate-box {
+        flex: 0 0 calc(25% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .certificate-box {
+        flex: 0 0 calc(33.333% - 1rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .certificate-box {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}

@@ -1,0 +1,31 @@
+.slider {
+    gap: 1rem;
+    transition: var(--transition);
+    flex-direction: row;
+}
+
+.slider .card {
+    flex: 0 0 16%;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.slider .card i {
+    font-size: 6rem;
+}
+
+.buttons {
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.slider-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+    .slider .card { flex:  0 0 20%!important; }
+}
