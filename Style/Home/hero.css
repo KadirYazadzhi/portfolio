@@ -20,6 +20,8 @@
     --small-gap: 1rem;
     --hover-color-blue-200: hsla(213, 97%, 87%, 0.1);
     --hover-color-black-200: hsla(213, 23%, 8%, 0.1);
+    --color-white-200-half-opacity: hsla(200, 6%, 90%, 0.5);
+    --color-black-500-half-opacity: hsl(216, 22%, 4%, 0.5);
 }
 
 
