@@ -22,6 +22,7 @@
     --search-bar: var(--color-white-200);
     --search-text: var(--color-black-200);
     --card-hover-color: var(--hover-color-black-200);
+    --half-opacity-color: var(--color-white-200-half-opacity);
 }
 
 body {
@@ -36,6 +37,7 @@ body.dark {
     --text-color-second: var(--color-blue-200);
     --search-bar: var(--color-black-200);
     --card-hover-color: var(--hover-color-blue-200);
+    --half-opacity-color: var(--color-black-500-half-opacity);
 }
 
 nav {
