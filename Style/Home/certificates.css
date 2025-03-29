@@ -1,11 +1,11 @@
 .certificates-container {
     display: flex;
-    overflow: visible; /* Променено от hidden на visible */
+    overflow: visible;
     width: 100%;
     will-change: transform;
     gap: 1rem;
-    padding: 1rem 0; /* Добавен вертикален padding */
-    margin: 0 2rem; /* Добавен хоризонтален маржин */
+    padding: 1rem 0;
+    margin: 0 2rem;
 }
 
 .certificate-box {
@@ -42,6 +42,6 @@
 
 @media (max-width: 576px) {
     .certificate-box {
-        flex: 0 0 calc(50% - 1rem);
+        flex: 0 0 calc(80% - 1rem);
     }
 }
