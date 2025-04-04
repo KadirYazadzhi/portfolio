@@ -4,10 +4,10 @@ class Header extends HTMLElement {
             <nav>
                 <div class="nav-bar">
                     <i class='bx bx-menu sidebarOpen' ></i>
-                    <span class="logo navLogo"><a href="#">CodingLab</a></span>
+                    <span class="logo navLogo"><a href="#">KadirYazadzhi</a></span>
                     <div class="menu">
                         <div class="logo-toggle">
-                            <span class="logo"><a href="#">CodingLab</a></span>
+                            <span class="logo"><a href="#">KadirYazadzhi</a></span>
                             <i class="fa-solid fa-xmark siderbarClose"></i>
                         </div>
                         <ul class="nav-links">
@@ -21,8 +21,8 @@ class Header extends HTMLElement {
                     </div>
                     <div class="darkLight-searchBox">
                         <div class="dark-light">
-                            <i class='bx bx-moon moon'></i>
                             <i class='bx bx-sun sun'></i>
+                            <i class='bx bx-moon moon'></i>
                         </div>
                         <div class="searchBox">
                             <div class="searchToggle">
@@ -30,7 +30,7 @@ class Header extends HTMLElement {
                                 <i class='bx bx-search search'></i>
                             </div>
                             <div class="search-field">
-                                <input type="text" placeholder="Search...">
+                                <input type="text" id="sectionSearch" placeholder="Search...">
                                 <i class='bx bx-search'></i>
                                 <div class="autocomplete-dropdown"></div>
                             </div>
