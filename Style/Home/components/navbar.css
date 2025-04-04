@@ -20,7 +20,6 @@
     --text-color: var(--color-black-200);
     --text-color-second: var(--color-black-100);
     --search-bar: var(--color-white-200);
-    --search-text: var(--color-black-200);
     --card-hover-color: var(--hover-color-black-200);
     --half-opacity-color: var(--color-white-200-half-opacity);
 }
@@ -193,7 +192,6 @@ nav .nav-bar .logo a {
     border-radius: 4px;
     font-size: 14px;
     font-weight: 400;
-    color: var(--search-text);
     background-color: var(--search-bar);
 }
 
