@@ -1,0 +1,456 @@
+
+{
+  "cards": [
+    {
+      "id": "cardHTML",
+      "image": "Image/HTML.png",
+      "title": "HTML",
+      "certificates": [
+        {
+          "image": "Image/Certificate/HTML/Front%20End%20Development%20-%20HTML.jpg",
+          "title": "Front End Development-HTML"
+        },
+        {
+          "image": "Image/Certificate/HTML/HTML%20Attributes%20and%20Tags.jpg",
+          "title": "HTML Attributes and Tags"
+        },
+        {
+          "image": "Image/Certificate/HTML/Responsive%20Web%20Design.png",
+          "title": "Responsive Web Design"
+        },
+        {
+          "image": "Image/Certificate/HTML/Program%20in%20HTML,%20CSS%20and%20JavaScript%20for%20Web%20Development.jpg",
+          "title": "Program in HTML, CSS and JavaScript for Web Development"
+        }
+      ]
+    },
+    {
+      "id": "cardCSS",
+      "image": "Image/CSS.png",
+      "title": "CSS",
+      "certificates": [
+        {
+          "image": "Image/Certificate/CSS/CSS%20(Basic).png",
+          "title": "CSS (Basic)"
+        },
+        {
+          "image": "Image/Certificate/CSS/CSS%20Properties.jpg",
+          "title": "CSS Properties"
+        },
+        {
+          "image": "Image/Certificate/CSS/CSS%20Tutorial.jpg",
+          "title": "CSS Tutorial"
+        },
+        {
+          "image": "Image/Certificate/CSS/Front%20End%20Development%20-%20CSS.jpg",
+          "title": "Front End Development-CSS"
+        }
+      ]
+    },
+    {
+      "id": "cardBootstrap",
+      "image": "Image/Bootstrap.png",
+      "title": "Bootstrap",
+      "certificates": [
+        {
+          "image": "Image/Certificate/Bootstrap/Bootstrap.jpeg",
+          "title": "Bootstrap 4"
+        }
+      ]
+    },
+    {
+      "id": "cardJavaScript",
+      "image": "Image/JS.png",
+      "title": "Javascript",
+      "certificates": [
+        {
+          "image": "Image/Certificate/JavaScript/JavaScript%20(Basic).png",
+          "title": "JavaScript (Basic)"
+        },
+        {
+          "image": "Image/Certificate/JavaScript/JavaScript%20Algorithms%20and%20Data%20Structures%20(Beta).png",
+          "title": "JavaScript Algorithms and Data Structures (Beta)"
+        },
+        {
+          "image": "Image/Certificate/JavaScript/JavaScript%20Algorithms%20and%20Data%20Structures.png",
+          "title": "JavaScript Algorithms and Data Structures"
+        },
+        {
+          "image": "Image/Certificate/JavaScript/Introduction%20to%20JavaScript.jpg",
+          "title": "Introduction to JavaScript"
+        },
+        {
+          "image": "Image/Certificate/JavaScript/Javascript%20(Intermediate).png",
+          "title": "JavaScript (Intermediate)"
+        },
+        {
+          "image": "Image/Certificate/JavaScript/Javascript%20Tutorial.jpeg",
+          "title": "Javascript Tutorial"
+        }
+      ]
+    },
+    {
+      "id": "cardTS",
+      "image": "Image/TS.png",
+      "title": "Typescript",
+      "certificates": [
+        {
+          "image": "Image/Certificate/TypeScript/TypeScript%20-%20SoftUni.png",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "id": "cardSQL",
+      "image": "Image/SQL(Logo).png",
+      "title": "SQL",
+      "certificates": [
+        {
+          "image": "Image/Certificate/SQL/SQL%20(Basic).png",
+          "title": "SQL (Basic)"
+        },
+        {
+          "image": "Image/Certificate/SQL/Introduction%20to%20Database%20and%20SQL.jpg",
+          "title": "Introduction to Database and SQL"
+        },
+        {
+          "image": "Image/Certificate/SQL/Joins%20in%20SQL.jpg",
+          "title": "Joins in SQL"
+        },
+        {
+          "image": "Image/Certificate/SQL/What%20is%20SQL%20Triggers.jpg",
+          "title": "What is the SQL Triggers"
+        },
+        {
+          "image": "Image/Certificate/SQL/SQL%20Projects%20for%20Beginners.jpg",
+          "title": "SQL Projects for Beginners"
+        },
+        {
+          "image": "Image/Certificate/SQL/Advanced%20SQL.jpg",
+          "title": "SQL (Advanced)"
+        },
+        {
+          "image": "Image/Certificate/SQL/SQL%20(Intermediate).png",
+          "title": "SQL (Intermediate)"
+        },
+        {
+          "image": "Image/Certificate/SQL/SQL%20for%20Data%20Science.jpg",
+          "title": "SQL for Data Science"
+        }
+      ]
+    },
+    {
+      "id": "cardMySQL",
+      "image": "Image/MySQL%20(2).png",
+      "title": "MySQL",
+      "certificates": [
+        {
+          "image": "Image/Certificate/SQL/MySQL%20-%20SoftUni.jpg",
+          "title": "MySQL"
+        },
+        {
+          "image": "Image/Certificate/SQL/Operators%20in%20MySQL.jpg",
+          "title": "Operators in MySQL"
+        }
+      ]
+    },
+    {
+      "id": "cardPostgreSQL",
+      "image": "Image/PostgreSQL.png",
+      "title": "PostgreSQL",
+      "certificates": [
+        {
+          "image": "",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "id": "cardPython",
+      "image": "Image/Python.png",
+      "title": "Python",
+      "certificates": [
+        {
+          "image": "Image/Certificate/Python/Functions%20in%20Python.jpg",
+          "title": "Function in Python"
+        },
+        {
+          "image": "Image/Certificate/Python/Python%20MySQL.jpg",
+          "title": "Python MySQL"
+        },
+        {
+          "image": "Image/Certificate/Python/QR%20code%20in%20Python.jpg",
+          "title": "QR code in Python"
+        },
+        {
+          "image": "Image/Certificate/Python/Web%20Scraping%20with%20Python.jpg",
+          "title": "Web Scraping with Python"
+        },
+        {
+          "image": "Image/Certificate/Python/Python-Basic.png",
+          "title": "Python Basic"
+        },
+        {
+          "image": "Image/Certificate/Python/Programming%20Basics%20-%20Python.png",
+          "title": "Python Basic"
+        }
+      ]
+    },
+    {
+      "id": "cardCPlus",
+      "image": "Image/C++.png",
+      "title": "C++",
+      "certificates": [
+        {
+          "image": "Image/Certificate/C++/C++%20Basic.png",
+          "title": "C++ Basic"
+        },
+        {
+          "image": "Image/Certificate/C++/C++%20Fundamentals.png",
+          "title": "C++ Fundamentals"
+        },
+        {
+          "image": "Image/Certificate/C++/CPlus-Advanced.png",
+          "title": "C++ Advanced"
+        },
+        {
+          "image": "Image/Certificate/C++/C++%20OOP.png",
+          "title": "C++ OOP"
+        }
+      ]
+    },
+    {
+      "id": "cardCSharp",
+      "image": "Image/C%23.svg",
+      "title": "C#",
+      "certificates": [
+        {
+          "image": "Image/Certificate/C%23/Programming%20Basics%20with%20C%23.png",
+          "title": "C# Basic"
+        }
+      ]
+    },
+    {
+      "id": "cardGoogle",
+      "image": "Image/Google_logo.png",
+      "title": "Google",
+      "certificates": [
+        {
+          "image": "Image/Certificate/Google/Google%20Analytics%20for%20Beginners.png",
+          "title": "Google Analytics for Beginners"
+        },
+        {
+          "image": "Image/Certificate/Google/Advanced%20Google%20Analytics.png",
+          "title": "Advanced Google Analytics"
+        },
+        {
+          "image": "Image/Certificate/Google/Introduction%20to%20Data%20Studio.png",
+          "title": "Introduction to Data Studio"
+        },
+        {
+          "image": "Image/Certificate/Google/Google%20Tag%20Manager%20Fundamentals.jpg",
+          "title": "Google Tag Manager Fundamentals"
+        },
+        {
+          "image": "Image/Certificate/Google/Google%20Analytics%20for%20Power%20Users.jpg",
+          "title": "Google Analytics for Power Users"
+        },
+        {
+          "image": "Image/Certificate/Google/Getting%20Started%20With%20Google%20Analytics%20360.jpg",
+          "title": "Getting Started With Google Analytics 360"
+        },
+        {
+          "image": "Image/Certificate/Google/Google%20Analytics%20Certification.png",
+          "title": "Google Analytics Certification"
+        }
+      ]
+    },
+    {
+      "id": "cardMicrosoft",
+      "image": "Image/Microsoft.png",
+      "title": "Microsoft",
+      "certificates": [
+        {
+          "image": "Image/Certificate/Microsoft/Office%20Excel%202016.png",
+          "title": "Office Excel 2016"
+        },
+        {
+          "image": "Image/Certificate/Microsoft/Microsoft%20Cognitive%20Toolkit.png",
+          "title": "Microsoft Cognitive Toolkit"
+        }
+      ]
+    },
+    {
+      "id": "cardDataBase",
+      "image": "Image/DataBase.png",
+      "title": "DataBase",
+      "certificates": [
+        {
+          "image": "Image/Certificate/Database/Data%20Visualization.png",
+          "title": "Data Visualization"
+        },
+        {
+          "image": "Image/Certificate/Database/Database%20Management%20System.jpg",
+          "title": "Database Management System"
+        },
+        {
+          "image": "Image/Certificate/Database/Database%20Normalization.jpg",
+          "title": "Database Normalization"
+        }
+      ]
+    },
+    {
+      "id": "cardFrontEnd",
+      "image": "Image/Front%20end.png",
+      "title": "Front End Libraries",
+      "certificates": [
+        {
+          "image": "Image/Certificate/Frond%20End%20Libraries/Front%20End%20Development%20Libraries.png",
+          "title": "Front End Development Libraries"
+        }
+      ]
+    },
+    {
+      "id": "cardReact",
+      "image": "Image/React.png",
+      "title": "React",
+      "certificates": [
+        {
+          "image": "Image/Certificate/React/React%20JS.jpg",
+          "title": "React JS"
+        }
+      ]
+    },
+    {
+      "id": "cardAngular",
+      "image": "Image/Angular%20(1).png",
+      "title": "Angular",
+      "certificates": [
+        {
+          "image": "",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "id": "cardWebDevelopment",
+      "image": "Image/web%20development.png",
+      "title": "Web Development and Design",
+      "certificates": [
+        {
+          "image": "Image/Certificate/Web%20Development/Program%20in%20Web%20Development%20With%20jQuery,%20Ajax%20and%20JSON.jpg",
+          "title": "Program in Web Development With jQuery, Ajax and JSON"
+        },
+        {
+          "image": "Image/Certificate/Web%20Development/Web%20Designing.jpg",
+          "title": "Web Designing"
+        },
+        {
+          "image": "Image/Certificate/Web%20Development/Web%20Development.jpg",
+          "title": "Web Development"
+        }
+      ]
+    },
+    {
+      "id": "cardCrypto",
+      "image": "Image/Crypto.png",
+      "title": "Crypto",
+      "certificates": [
+        {
+          "image": "Image/Certificate/Crypto%20Currency/Bitcoin%20for%20Beginners.jpg",
+          "title": "Bitcoin for Beginners"
+        }
+      ]
+    },
+    {
+      "id": "cardCybersecurity",
+      "image": "Image/cybersecurity.png",
+      "title": "Cybersecurity",
+      "certificates": [
+        {
+          "image": "Image/Certificate/Security%20and%20Hacking/Cybersecurity%20Specialist.jpg",
+          "title": "Cybersecurity Specialist"
+        },
+        {
+          "image": "Image/Certificate/Security%20and%20Hacking/Database%20Security.jpg",
+          "title": "Database Security"
+        },
+        {
+          "image": "Image/Certificate/Security%20and%20Hacking/Ethical%20Hacking.jpg",
+          "title": "Ethical Hacking"
+        }
+      ]
+    },
+    {
+      "id": "cardOther",
+      "image": "Image/other.png",
+      "title": "Other",
+      "certificates": [
+        {
+          "image": "Image/Certificate/Other/Software%20Engineer%20Intern.jpg",
+          "title": "Software Engineer Intern"
+        },
+        {
+          "image": "Image/Certificate/Other/Problem%20Solving%20(Basic).jpg",
+          "title": "Problem Solving (Basic)"
+        },
+        {
+          "image": "Image/Certificate/Other/Linux%20Tutorial.jpg",
+          "title": "Linux Tutorial"
+        },
+        {
+          "image": "Image/Certificate/Other/NFT%20Domains.jpg",
+          "title": "NFT Domains"
+        },
+        {
+          "image": "Image/Certificate/Other/PyCharm%20for%20Beginners.jpg",
+          "title": "PyCharm for Beginners"
+        },
+        {
+          "image": "Image/Certificate/Other/Visual%20Studio%20Online.jpg",
+          "title": "Visual Studio Online"
+        },
+        {
+          "image": "Image/Certificate/Other/Certificate%20of%20programming%20with%20Visual%20Basic.NET.png",
+          "title": "Programming with Visual Basic.NET"
+        },
+        {
+          "image": "Image/Certificate/Other/Digital%20Competence%20Assessment.png",
+          "title": "Digital Competence Assessment"
+        },
+        {
+          "image": "Image/Certificate/Other/Diploma%20for%20contribution%20to%20raising%20the%20authority%20of%20the%20school.png",
+          "title": "Diploma for contribution to raising the authority of the school"
+        },
+        {
+          "image": "Image/Certificate/Other/Global%20Entrepreneurship%20Week.png",
+          "title": "Global Entrepreneurship Week"
+        },
+        {
+          "image": "Image/Certificate/Other/Khan%20Academy%20-%20Certificate.png",
+          "title": "Khan Academy"
+        },
+        {
+          "image": "Image/Certificate/Other/Web%20Programming%2016+%20-%20Certificate.png",
+          "title": "Web Programming 16+"
+        },
+        {
+          "image": "Image/Certificate/Other/SWU%20Neofit%20Rilski%20-%20certificate.png",
+          "title": "SWU Neofit Rilski - Blagoevgrad"
+        },
+        {
+          "image": "Image/Certificate/Other/CODE@BURGAS%20-%20Certificate%20(PNG).png",
+          "title": "CODE@BURGAS 2024 - Certificate"
+        },
+        {
+          "image": "Image/Certificate/Other/CODE@BURGAS%20-%20Diploma%20(PNG).png",
+          "title": "CODE@BURGAS 2024 - Diploma"
+        },
+        {
+          "image": "Image/Certificate/Other/European%20Statistics%20Olympiad.png",
+          "title": "European Statistics Olympiad"
+        }
+      ]
+    }
+  ]
+}
