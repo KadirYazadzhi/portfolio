@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Certificate</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Description Meta Tag -->
+    <meta name="description" content="Welcome to Kadir Yazadzhi's portfolio website, showcasing projects in programming.">
+
+    <!-- Keywords Meta Tag -->
+    <meta name="keywords" content="portfolio, programming, web development, Kadir Yazadzhi, software development">
+
+    <!-- Author Meta Tag -->
+    <meta name="author" content="Kadir Yazadzhi">
+
+    <!-- Robots Meta Tag (for search engines) -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Language Meta Tag -->
+    <meta http-equiv="Content-Language" content="en">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <link rel="stylesheet" href="Style/Components/navbar.css">
+    <link rel="stylesheet" href="Style/Components/footer.css">
+    <link rel="stylesheet" href="Style/base.css">
+    <link rel="stylesheet" href="Style/Home/cards/cards.css">
+    <link rel="stylesheet" href="Style/Certificates/certificates.css">
+</head>
+<body class="dark">
+
+<my-header></my-header>
+
+<section id="certificates" class="section">
+    <div class="container center">
+        <h2 class="heading-sm">Certificates</h2>
+
+        <main class="main-modal">
+            <div class="certificates-modal section" id="certificatesModal">
+                <div class="modal-content container">
+                    <span class="close-modal">&times;</span>
+                    <h2 class="modal-title heading-sm" id="modalTitle"></h2>
+                    <div class="certificates-grid" id="certificatesGrid"></div>
+                </div>
+            </div>
+
+            <div class="certificates-cards-modal">
+                <div class="certificates-card card">
+                    <i class="devicon-html5-plain colored"></i>
+                    <p class="paragraph">HTML</p>
+                </div>
+
+                <div class="certificates-card card">
+                    <i class="devicon-css3-plain colored"></i>
+                    <p class="paragraph">CSS</p>
+                </div>
+
+                <div class="certificates-card card">
+                    <i class="devicon-bootstrap-plain colored"></i>
+                    <p class="paragraph">Bootstrap</p>
+                </div>
+
+                <div class="certificates-card card">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <p class="paragraph">Javascript</p>
+                </div>
+
+                <div class="certificates-card card">
+                    <i class="devicon-typescript-plain colored"></i>
+                    <p class="paragraph">Typescript</p>
+                </div>
+
+                <div class="certificates-card card">
+                    <i class="devicon-cplusplus-plain colored"></i>
+                    <p class="paragraph">C++</p>
+                </div>
+
+                <div class="certificates-card card">
+                    <i class="devicon-csharp-plain colored"></i>
+                    <p class="paragraph">C#</p>
+                </div>
+
+                <div class="certificates-card card">
+                    <i class="devicon-python-plain colored"></i>
+                    <p class="paragraph">Python</p>
+                </div>
+
+                <div class="certificates-card card">
+                    <i class="devicon-azuresqldatabase-plain colored"></i>
+                    <p class="paragraph">SQL</p>
+                </div>
+
+                <div class="certificates-card card">
+                    <i class="devicon-google-plain colored"></i>
+                    <p class="paragraph">Google</p>
+                </div>
+
+                <div class="certificates-card card">
+                    <i class="fa-brands fa-microsoft"></i>
+                    <p class="paragraph">Microsoft</p>
+                </div>
+
+                <div class="certificates-card card">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <p class="paragraph">Other</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</section>
+
+<my-footer></my-footer>
+
+</body>
+
+<script src="Script/Components/header.js"></script>
+<script src="Script/Components/footer.js"></script>
+<script src="Script/navbar.js"></script>
+<script src="Script/Certificates/certificate-modal.js"></script>
+</html>
