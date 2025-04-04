@@ -1,0 +1,46 @@
+{
+  "1": {
+    "image": "Image/Home/Certificates/CPlusPlus/CPlusPlus Basic.webp",
+    "name": "Programming Basics with C++"
+  },
+  "2": {
+    "image": "Image/Home/Certificates/CSharp/Programming Basics with CSharp.webp",
+    "name": "Programming Basics with C#"
+  },
+  "3": {
+    "image": "Image/Home/Certificates/Python/Programming Basics - Python.webp",
+    "name": "Programming Basics with Python"
+  },
+  "4": {
+    "image": "Image/Home/Certificates/CPlusPlus/CPlusPlus Fundamentals.webp",
+    "name": "C++ Fundamentals"
+  },
+  "5": {
+    "image": "Image/Home/Certificates/CSharp/Programming Fundamentals with CSharp.webp",
+    "name": "C# Fundamentals"
+  },
+  "6": {
+    "image": "Image/Home/Certificates/CPlusPlus/CPlusPlus Advanced.webp",
+    "name": "C++ Advanced"
+  },
+  "7": {
+    "image": "Image/Home/Certificates/CSharp/CSharp Advanced.webp",
+    "name": "C# Advanced"
+  },
+  "8": {
+    "image": "Image/Home/Certificates/CPlusPlus/CPlusPlus OOP.webp",
+    "name": "C++ OOP"
+  },
+  "9": {
+    "image": "Image/C# OOP.png",
+    "name": "C# OOP"
+  },
+  "10": {
+    "image": "Image/Home/Certificates/Typescript/TypeScript - SoftUni.webp",
+    "name": "Typescript"
+  },
+  "11": {
+    "image": "Image/Home/Certificates/MySQL/MySQL - SoftUni.webp",
+    "name": "MySQL"
+  }
+}

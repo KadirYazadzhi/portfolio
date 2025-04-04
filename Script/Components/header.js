@@ -11,12 +11,12 @@ class Header extends HTMLElement {
                             <i class="fa-solid fa-xmark siderbarClose"></i>
                         </div>
                         <ul class="nav-links">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#aboutme">About me</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#certificates">Certificates</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="index.html#">Home</a></li>
+                            <li><a href="index.html#aboutme">About me</a></li>
+                            <li><a href="index.html#projects">Projects</a></li>
+                            <li><a href="index.html#certificates">Certificates</a></li>
+                            <li><a href="index.html#skills">Skills</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="darkLight-searchBox">
