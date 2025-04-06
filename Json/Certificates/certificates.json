@@ -2,7 +2,6 @@
   "cards": [
     {
       "id": "cardHTML",
-      "image": "Image/HTML.png",
       "title": "HTML",
       "certificates": [
         {
@@ -25,7 +24,6 @@
     },
     {
       "id": "cardCSS",
-      "image": "Image/CSS.png",
       "title": "CSS",
       "certificates": [
         {
@@ -48,7 +46,6 @@
     },
     {
       "id": "cardBootstrap",
-      "image": "Image/Bootstrap.webp",
       "title": "Bootstrap",
       "certificates": [
         {
@@ -59,7 +56,6 @@
     },
     {
       "id": "cardJavaScript",
-      "image": "Image/JS.png",
       "title": "Javascript",
       "certificates": [
         {
@@ -90,7 +86,6 @@
     },
     {
       "id": "cardTS",
-      "image": "Image/TS.png",
       "title": "Typescript",
       "certificates": [
         {
@@ -101,7 +96,6 @@
     },
     {
       "id": "cardSQL",
-      "image": "Image/SQL(Logo).png",
       "title": "SQL",
       "certificates": [
         {
@@ -140,7 +134,6 @@
     },
     {
       "id": "cardMySQL",
-      "image": "Image/MySQL%20(2).png",
       "title": "MySQL",
       "certificates": [
         {
@@ -155,7 +148,6 @@
     },
     {
       "id": "cardPostgreSQL",
-      "image": "Image/PostgreSQL.png",
       "title": "PostgreSQL",
       "certificates": [
         {
@@ -166,7 +158,6 @@
     },
     {
       "id": "cardPython",
-      "image": "Image/Python.png",
       "title": "Python",
       "certificates": [
         {
@@ -197,7 +188,6 @@
     },
     {
       "id": "cardCPlus",
-      "image": "Image/C++.png",
       "title": "C++",
       "certificates": [
         {
@@ -220,7 +210,6 @@
     },
     {
       "id": "cardCSharp",
-      "image": "Image/C%23.svg",
       "title": "C#",
       "certificates": [
         {
@@ -231,7 +220,6 @@
     },
     {
       "id": "cardGoogle",
-      "image": "Image/Google_logo.png",
       "title": "Google",
       "certificates": [
         {
@@ -266,7 +254,6 @@
     },
     {
       "id": "cardMicrosoft",
-      "image": "Image/Microsoft.png",
       "title": "Microsoft",
       "certificates": [
         {
@@ -281,7 +268,6 @@
     },
     {
       "id": "cardDataBase",
-      "image": "Image/DataBase.png",
       "title": "DataBase",
       "certificates": [
         {
@@ -300,7 +286,6 @@
     },
     {
       "id": "cardFrontEnd",
-      "image": "Image/Front%20end.png",
       "title": "Front End Libraries",
       "certificates": [
         {
@@ -311,7 +296,6 @@
     },
     {
       "id": "cardReact",
-      "image": "Image/React.png",
       "title": "React",
       "certificates": [
         {
@@ -322,7 +306,6 @@
     },
     {
       "id": "cardAngular",
-      "image": "Image/Angular%20(1).png",
       "title": "Angular",
       "certificates": [
         {
@@ -333,7 +316,6 @@
     },
     {
       "id": "cardWebDevelopment",
-      "image": "Image/web%20development.png",
       "title": "Web Development and Design",
       "certificates": [
         {
@@ -352,7 +334,6 @@
     },
     {
       "id": "cardCrypto",
-      "image": "Image/Crypto.png",
       "title": "Crypto",
       "certificates": [
         {
@@ -382,7 +363,6 @@
     },
     {
       "id": "cardOther",
-      "image": "Image/other.png",
       "title": "Other",
       "certificates": [
         {
@@ -434,6 +414,18 @@
           "title": "Web Programming 16+"
         },
         {
+          "image": "Image/Certificate/Other/Certificate of Participation in the National Information Technology Competition.webp",
+          "title": "Certificate of Participation in the National Information Technology Competition"
+        },
+        {
+          "image": "Image/Certificate/Other/Certificate of Participation in the National Information Technology Competition - UNIBIT.webp",
+          "title": "Certificate of Participation in the National Information Technology Competition - UniBIT"
+        },
+        {
+          "image": "",
+          "title": "TU VARNA"
+        },
+        {
           "image": "Image/Certificate/Other/SWU%20Neofit%20Rilski%20-%20certificate.webp",
           "title": "SWU Neofit Rilski - Blagoevgrad"
         },
@@ -448,6 +440,18 @@
         {
           "image": "Image/Certificate/Other/European%20Statistics%20Olympiad.webp",
           "title": "European Statistics Olympiad"
+        },
+        {
+          "image": "Image/Certificate/Other/Certificate for First Place in the National Information Technology Competition - Website Category.webp",
+          "title": "Certificate for First Place in the National Information Technology Competition - Website Category"
+        },
+        {
+          "image": "Image/Certificate/Other/Certificate of Participation in the National Information Technology Competition - SWU - 1.webp",
+          "title": "Certificate of Participation in the National Information Technology Competition - SWU"
+        },
+        {
+          "image": "Image/Certificate/Other/Certificate of Participation in the National Information Technology Competition - SWU - 2.webp",
+          "title": "Certificate of Participation in the National Information Technology Competition - SWU"
         }
       ]
     }
