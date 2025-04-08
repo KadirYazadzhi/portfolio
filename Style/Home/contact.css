@@ -31,3 +31,8 @@
     color: var(--text-color-second);
 }
 
+@media (max-width: 500px) {
+    .top-inputs input { width: 100%; }
+    .top-inputs { flex-direction: column; }
+    .left-modal, .right-modal { width: 100%; }
+}
