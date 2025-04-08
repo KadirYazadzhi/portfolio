@@ -32,14 +32,10 @@
     "name": "C++ OOP"
   },
   "9": {
-    "image": "Image/C# OOP.png",
-    "name": "C# OOP"
-  },
-  "10": {
     "image": "Image/Home/Certificates/Typescript/TypeScript - SoftUni.webp",
     "name": "Typescript"
   },
-  "11": {
+  "10": {
     "image": "Image/Home/Certificates/MySQL/MySQL - SoftUni.webp",
     "name": "MySQL"
   }

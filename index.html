@@ -87,7 +87,7 @@
 <main id="hero" class="main">
     <section class="section banner banner-section">
         <div class="container banner-column">
-            <img class="banner-image" src="Image/Home/hero-section.gif" alt="banner" loading="lazy">
+            <canvas width="500" height="500" class="banner-image" id="hero-section-animation"></canvas>
 
             <div class="banner-inner">
                 <h1 class="heading-xl">Kadir Yazadzhi</h1>
@@ -142,7 +142,7 @@
             </div>
 
             <div class="right-modal">
-                <img src="Image/Home/about-me-section-image.webp" alt="img" loading="lazy">
+                <img src="Image/Home/about-me-section-image.webp" alt="img">
             </div>
         </main>
     </div>
@@ -271,7 +271,7 @@
                     </div>
 
                     <div class="project-card-right-section">
-                        <h4>JudgeX</h4>
+                        <h3>JudgeX</h3>
                         <p class="paragraph">JudgeX appears to be an interactive platform designed for mastering coding challenges through a comprehensive set of features.</p>
 
                         <span class="project-card-right-section-bottom">
@@ -299,7 +299,7 @@
                     </div>
 
                     <div class="project-card-right-section">
-                        <h4>WebIDE</h4>
+                        <h3>WebIDE</h3>
                         <p class="paragraph">WebIDE is a lightweight, web-based IDE for writing, running, and testing code in multiple programming languages.</p>
 
                         <span class="project-card-right-section-bottom">
@@ -332,7 +332,7 @@
                     </div>
 
                     <div class="project-card-right-section">
-                        <h4>Document Converter</h4>
+                        <h3>Document Converter</h3>
                         <p class="paragraph">The Document Converter is a console tool that extracts text and images from documents and converts them to Markdown.</p>
 
                         <span class="project-card-right-section-bottom">
@@ -350,7 +350,7 @@
                     </div>
 
                     <div class="project-card-right-section">
-                        <h4>ArtSync</h4>
+                        <h3>ArtSync</h3>
                         <p class="paragraph">ArtSync is a platform where artists share music, photos, and films, connecting with fans through exclusive content and subscriptions.</p>
 
                         <span class="project-card-right-section-bottom">
@@ -670,16 +670,18 @@
 
 </body>
 
-<script src="Script/Components/header.js"></script>
-<script src="Script/Components/footer.js"></script>
-<script src="Script/navbar.js"></script>
-<script src="Script/Home/slider.js"></script>
-<script src="Script/Home/typing.js"></script>
-<script src="Script/Home/certificates.js"></script>
-<script src="Script/Home/certificates-slider.js"></script>
-<script src="Script/Home/certificates-image-click.js"></script>
-<script src="Script/search.js"></script>
-<script src="Script/Home/contact.js"></script>
+<script type="application/javascript" src="Script/Components/header.js"></script>
+<script type="application/javascript" src="Script/Components/footer.js"></script>
+<script type="application/javascript" src="Script/navbar.js"></script>
+<script type="application/javascript" src="Script/Home/slider.js"></script>
+<script type="application/javascript" src="Script/Home/typing.js"></script>
+<script type="application/javascript" src="Script/Home/certificates.js"></script>
+<script type="application/javascript" src="Script/Home/certificates-slider.js"></script>
+<script type="application/javascript" src="Script/Home/certificates-image-click.js"></script>
+<script type="application/javascript" src="Script/search.js"></script>
+<script type="application/javascript" src="Script/Home/contact.js"></script>
+
+<script type="module" src="Script/Certificates/Animation/hero-section.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 </html>
