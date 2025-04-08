@@ -5,6 +5,18 @@
     gap: 1rem;
 }
 
+@media (max-width: 768px) {
+    .achievements-modal {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .achievements-modal {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
 /* Style for each card */
 .achievement {
     flex-direction: column;
