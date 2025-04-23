@@ -65,6 +65,7 @@ class Footer extends HTMLElement {
                                 <a href="#" target="_blank" class="paragraph">The Importance of Cryptography in Modern Security</a>
                             </div>
                         </div>
+                        </div>
                 </section>
             
                 <div class="plus-part">
