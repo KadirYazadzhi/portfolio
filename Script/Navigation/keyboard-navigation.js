@@ -2,27 +2,48 @@ class KeyboardNavigator {
     constructor() {
         this.config = {
             activeClass: 'active-element',
-            focusableElements: 'h1, h2, h3, h4, h5, h6, .paragraph, a, button, .card, .bx',
+            focusableElements: 'h1, h2, h3, h4, h5, h6, .paragraph, a, button, .card, .bx, input:not([disabled]), textarea:not([disabled]), select:not([disabled])',
             scrollBehavior: 'smooth',
-            scrollOffset: 100, // Увеличаваме отстъпа
-            scrollBlock: 'center' // Променяме на 'center' за по-добра видимост
+            scrollOffset: 100,
+            scrollBlock: 'center'
         };
 
         this.allFocusableElements = [];
         this.currentActiveIndex = -1;
         this.isUserScrolling = false;
         this.scrollTimeout = null;
+        this.isActive = false; // Добавяме флаг за активност
 
-        this.init();
-        this.setupScrollListener();
+        this.setupInitialEventListeners(); // Слушатели за първо натискане на стрелка или Esc
     }
 
     init() {
         this.cacheElements();
-        this.setupEventListeners();
         this.addCustomStyles();
-        if (this.allFocusableElements.length > 0) {
+        if (this.allFocusableElements.length > 0 && this.isActive) { // Активираме само ако е активно
             this.activateElement(0);
+        }
+    }
+
+    setupInitialEventListeners() {
+        document.addEventListener('keydown', this.handleInitialKeyDown.bind(this), { once: true }); // Слушаме само веднъж
+    }
+
+    setupEventListeners() {
+        document.addEventListener('keydown', this.handleKeyDown.bind(this));
+    }
+
+    removeEventListeners() {
+        document.removeEventListener('keydown', this.handleKeyDown.bind(this));
+    }
+
+    handleInitialKeyDown(event) {
+        if (['ArrowRight', 'ArrowLeft'].includes(event.key)) {
+            this.isActive = true;
+            this.setupEventListeners(); // След първо натискане на стрелка, добавяме основните слушатели
+            this.init(); // Инициализираме навигацията
+        } else if (event.key === 'Escape') {
+            this.deactivate(); // Деактивираме при натискане на Esc още в началото
         }
     }
 
@@ -30,15 +51,12 @@ class KeyboardNavigator {
         let lastScrollPosition = window.scrollY;
 
         window.addEventListener('scroll', () => {
-            // Маркираме, че потребителят скролва
             this.isUserScrolling = true;
             clearTimeout(this.scrollTimeout);
 
             this.scrollTimeout = setTimeout(() => {
                 this.isUserScrolling = false;
-            }, 100);
-
-            lastScrollPosition = window.scrollY;
+            }, 150);
         });
     }
 
@@ -46,29 +64,34 @@ class KeyboardNavigator {
         this.allFocusableElements = Array.from(
             document.querySelectorAll(this.config.focusableElements)
         ).filter(el => {
-            return !el.hasAttribute('disabled') && this.isElementVisible(el);
+            return this.isElementReallyVisible(el);
         });
     }
 
-    isElementVisible(el) {
+    isElementReallyVisible(el) {
         const rect = el.getBoundingClientRect();
+        const style = getComputedStyle(el);
         return (
             rect.width > 0 &&
             rect.height > 0 &&
             rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.bottom >= 0
+            rect.bottom >= 0 &&
+            style.opacity !== '0' &&
+            style.visibility !== 'hidden' &&
+            style.display !== 'none'
         );
     }
 
-    setupEventListeners() {
-        document.addEventListener('keydown', this.handleKeyDown.bind(this));
-    }
-
     handleKeyDown(event) {
+        if (event.key === 'Escape') {
+            this.deactivate();
+            return;
+        }
+
         if (['ArrowRight', 'ArrowLeft'].includes(event.key)) {
             event.preventDefault();
 
-            if (this.isUserScrolling) return;
+            if (this.isUserScrolling || !this.isActive) return; // Проверяваме дали е активен
 
             const direction = event.key === 'ArrowRight' ? 1 : -1;
             this.navigate(direction);
@@ -78,7 +101,6 @@ class KeyboardNavigator {
     navigate(direction) {
         let nextIndex = this.currentActiveIndex + direction;
 
-        // Ако сме извън границите, не правим нищо
         if (nextIndex < 0 || nextIndex >= this.allFocusableElements.length) {
             return;
         }
@@ -99,9 +121,10 @@ class KeyboardNavigator {
     }
 
     removeActiveStateFromAll() {
-        this.allFocusableElements.forEach(el =>
-            el.classList.remove(this.config.activeClass)
-        );
+        this.allFocusableElements.forEach(el => {
+            el.classList.remove(this.config.activeClass);
+            el.removeAttribute('aria-current');
+        });
     }
 
     isValidIndex(index) {
@@ -111,13 +134,10 @@ class KeyboardNavigator {
     applyActiveState(element) {
         element.classList.add(this.config.activeClass);
         element.focus({ preventScroll: true });
-
-        // Добавяме ARIA атрибути за достъпност
         element.setAttribute('aria-current', 'true');
     }
 
     scrollToElement(element) {
-        // Проверка дали елемента е изцяло видим
         const elementRect = element.getBoundingClientRect();
         const isFullyVisible = (
             elementRect.top >= 0 &&
@@ -131,7 +151,6 @@ class KeyboardNavigator {
                 inline: 'nearest'
             });
 
-            // Допълнителен отстъп за по-добра видимост
             window.scrollBy({
                 top: -this.config.scrollOffset,
                 behavior: this.config.scrollBehavior
@@ -167,25 +186,28 @@ class KeyboardNavigator {
                 z-index: 1001;
             }
 
-            /* Анимация за внимание */
             @keyframes pulse {
                 0% { box-shadow: 0 0 0 0 rgba(58, 134, 255, 0.7); }
                 70% { box-shadow: 0 0 0 10px rgba(58, 134, 255, 0); }
                 100% { box-shadow: 0 0 0 0 rgba(58, 134, 255, 0); }
             }
-            
+
             .${this.config.activeClass} {
                 animation: pulse 1.5s ease-out;
             }
         `;
         document.head.appendChild(style);
     }
+
+    deactivate() {
+        this.isActive = false;
+        this.removeEventListeners();
+        this.removeActiveStateFromAll();
+        this.currentActiveIndex = -1;
+    }
 }
 
-// Инициализация
 document.addEventListener('DOMContentLoaded', () => {
     const navigator = new KeyboardNavigator();
-
-    // Опционално: логване за дебъг
     window.debugNavigator = navigator;
 });
