@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7eab9ed-8e03-4524-b9e0-53f84511936a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Script/Certificates/certificate-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script/Certificates/certificate-modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/Certificate/C#/CSharp-Advanced.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/Certificate/C#/CSharp-Fundamentals.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/Certificate/C#/CSharp-OOP.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/Certificate/C++/CPlusPlus-Development.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/Certificate/MSSQL/MSSQL-SoftUni.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image/Certificate/SQL/MySQL - SoftUni.webp" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Certificate/MySQL/MySQL - SoftUni.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image/Certificate/SQL/Operators in MySQL.webp" beforeDir="false" afterPath="$PROJECT_DIR$/Image/Certificate/MySQL/Operators in MySQL.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Json/Certificates/certificates.json" beforeDir="false" afterPath="$PROJECT_DIR$/Json/Certificates/certificates.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/certificates.html" beforeDir="false" afterPath="$PROJECT_DIR$/certificates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/anonymous/Documents/GitHub/portfolio",
+    "last_opened_file_path": "/home/anonymous/Documents/GitHub/portfolio/Image/Certificate/MSSQL",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -81,17 +91,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Image/Certificate/MSSQL" />
+      <recent name="$PROJECT_DIR$/Image/Certificate/C++" />
+      <recent name="$PROJECT_DIR$/Image/Certificate/C#" />
       <recent name="$PROJECT_DIR$/Animation" />
       <recent name="$PROJECT_DIR$/Image" />
-      <recent name="$PROJECT_DIR$/Json/Certificates" />
-      <recent name="$PROJECT_DIR$/Json" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Image/Certificate/MySQL" />
       <recent name="$PROJECT_DIR$/Script/Home" />
       <recent name="$PROJECT_DIR$/Style" />
       <recent name="$PROJECT_DIR$/Json/Home" />
       <recent name="$PROJECT_DIR$/Style/Home/components" />
-      <recent name="$PROJECT_DIR$/Image/Certificates" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -119,6 +130,7 @@
       <workItem from="1744702422535" duration="11948000" />
       <workItem from="1746304407754" duration="4963000" />
       <workItem from="1762309570227" duration="601000" />
+      <workItem from="1762310189535" duration="10359000" />
     </task>
     <servers />
   </component>

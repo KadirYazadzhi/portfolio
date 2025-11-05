@@ -137,22 +137,22 @@
       "title": "MySQL",
       "certificates": [
         {
-          "image": "Image/Certificate/SQL/MySQL%20-%20SoftUni.webp",
+          "image": "Image/Certificate/MySQL/MySQL%20-%20SoftUni.webp",
           "title": "MySQL"
         },
         {
-          "image": "Image/Certificate/SQL/Operators%20in%20MySQL.webp",
+          "image": "Image/Certificate/MySQL/Operators%20in%20MySQL.webp",
           "title": "Operators in MySQL"
         }
       ]
     },
     {
-      "id": "cardPostgreSQL",
-      "title": "PostgreSQL",
+      "id": "cardMSSQL",
+      "title": "MSSQL",
       "certificates": [
         {
-          "image": "",
-          "title": ""
+          "image": "Image/Certificate/MSSQL/MSSQL-SoftUni.webp",
+          "title": "MS SQL"
         }
       ]
     },
@@ -205,6 +205,10 @@
         {
           "image": "Image/Certificate/C++/C++%20OOP.webp",
           "title": "C++ OOP"
+        },
+        {
+          "image": "Image/Certificate/C++/CPlusPlus-Development.webp",
+          "title": "C++ Development"
         }
       ]
     },
@@ -214,6 +218,18 @@
       "certificates": [
         {
           "image": "Image/Certificate/C%23/Programming%20Basics%20with%20C%23.webp",
+          "title": "C# Basic"
+        },
+        {
+          "image": "Image/Certificate/C%23/CSharp-Fundamentals.webp",
+          "title": "Programming Fundamentals with C#"
+        },
+        {
+          "image": "Image/Certificate/C%23/CSharp-Advanced.webp",
+          "title": "C# Advanced"
+        },
+        {
+          "image": "Image/Certificate/C%23/CSharp-OOP.webp",
           "title": "C# Basic"
         }
       ]
@@ -285,32 +301,12 @@
       ]
     },
     {
-      "id": "cardFrontEnd",
-      "title": "Front End Libraries",
-      "certificates": [
-        {
-          "image": "Image/Certificate/Frond%20End%20Libraries/Front%20End%20Development%20Libraries.webp",
-          "title": "Front End Development Libraries"
-        }
-      ]
-    },
-    {
       "id": "cardReact",
       "title": "React",
       "certificates": [
         {
           "image": "Image/Certificate/React/React%20JS.webp",
           "title": "React JS"
-        }
-      ]
-    },
-    {
-      "id": "cardAngular",
-      "title": "Angular",
-      "certificates": [
-        {
-          "image": "",
-          "title": ""
         }
       ]
     },
@@ -329,6 +325,10 @@
         {
           "image": "Image/Certificate/Web%20Development/Web%20Development.webp",
           "title": "Web Development"
+        },
+        {
+          "image": "Image/Certificate/Frond%20End%20Libraries/Front%20End%20Development%20Libraries.webp",
+          "title": "Front End Development Libraries"
         }
       ]
     },
