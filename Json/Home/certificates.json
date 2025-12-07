@@ -32,11 +32,27 @@
     "name": "C++ OOP"
   },
   "9": {
+    "image": "Image/Certificate/C++/CPlusPlus-Development.webp",
+    "name": "C++ Development"
+  },
+  "10": {
+    "image": "Image/Certificate/C%23/CSharp-OOP.webp",
+    "name": "C# OOP"
+  },
+  "11": {
+    "image": "Image/Certificate/C%23/Entity-Framework-Core.webp",
+    "name": "Entity Framework Core"
+  },
+  "12": {
     "image": "Image/Home/Certificates/Typescript/TypeScript - SoftUni.webp",
     "name": "Typescript"
   },
-  "10": {
+  "13": {
     "image": "Image/Home/Certificates/MySQL/MySQL - SoftUni.webp",
     "name": "MySQL"
+  },
+  "14": {
+    "image": "Image/Certificate/MSSQL/MSSQL-SoftUni.webp",
+    "name": "MS SQL"
   }
 }

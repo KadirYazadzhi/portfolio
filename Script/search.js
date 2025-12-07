@@ -1,53 +1,79 @@
-function initSearch() {
-    const searchInput = document.getElementById('sectionSearch');
-    if (!searchInput) {
-        setTimeout(initSearch, 100);
-        return;
+class SearchManager {
+    constructor() {
+        this.checkCount = 0;
+        this.maxChecks = 10;
+        this.checkInterval = null;
+        this.searchInput = null;
+        this.dropdown = null;
+        this.sectionTitles = [];
+        
+        this.waitForInput();
     }
 
-    const dropdown = document.querySelector('.autocomplete-dropdown');
+    // Wait for the search input to be present in the DOM
+    waitForInput() {
+        this.checkInterval = setInterval(() => {
+            this.searchInput = document.getElementById('sectionSearch');
+            if (this.searchInput || this.checkCount >= this.maxChecks) {
+                clearInterval(this.checkInterval);
+                if (this.searchInput) {
+                    this.init();
+                }
+            }
+            this.checkCount++;
+        }, 200);
+    }
 
-    // Събираме всички видими заглавия на секции
-    const sectionTitles = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6'))
-        .filter(heading => {
-            // Намираме най-близката секция родител
-            const section = heading.closest('section');
-            return section && section.id;
-        })
-        .map(heading => {
-            const section = heading.closest('section');
-            return {
-                id: section.id,
-                text: heading.textContent.trim(),
-                element: section
-            };
-        })
-        .filter(item => item.text.length > 0);
+    init() {
+        this.dropdown = document.querySelector('.autocomplete-dropdown');
+        if (!this.dropdown) return;
 
-    // Функция за търсене
-    function searchSections(query) {
-        if (query.length < 3) return []; // Минимум 3 символа
+        this.indexSections();
+        this.setupEventListeners();
+    }
+
+    // Index all headings within sections for search
+    indexSections() {
+        this.sectionTitles = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6'))
+            .filter(heading => {
+                const section = heading.closest('section');
+                return section && section.id;
+            })
+            .map(heading => {
+                const section = heading.closest('section');
+                return {
+                    id: section.id,
+                    text: heading.textContent.trim(),
+                    element: section
+                };
+            })
+            .filter(item => item.text.length > 0);
+    }
+
+    // Filter sections based on query
+    searchSections(query) {
+        if (query.length < 3) return [];
 
         const lowerQuery = query.toLowerCase();
-        return sectionTitles.filter(section =>
+        return this.sectionTitles.filter(section =>
             section.text.toLowerCase().includes(lowerQuery))
             .sort((a, b) => {
-                // Първо секции, чиито заглавия започват с търсения текст
                 const aStartsWith = a.text.toLowerCase().startsWith(lowerQuery);
                 const bStartsWith = b.text.toLowerCase().startsWith(lowerQuery);
+
                 if (aStartsWith && !bStartsWith) return -1;
                 if (!aStartsWith && bStartsWith) return 1;
-                // След това по дължина на заглавието
+
                 return a.text.length - b.text.length;
             });
     }
 
-    // Показване на резултатите
-    function showResults(results) {
-        dropdown.innerHTML = '';
+    // Display search results in the dropdown
+    showResults(results) {
+        this.dropdown.innerHTML = '';
 
         if (results.length === 0) {
-            dropdown.style.display = 'none';
+            this.dropdown.style.display = 'none';
             return;
         }
 
@@ -56,18 +82,18 @@ function initSearch() {
             item.className = 'autocomplete-item';
             item.textContent = result.text;
             item.addEventListener('click', () => {
-                scrollToSection(result.element);
-                searchInput.value = result.text;
-                dropdown.style.display = 'none';
+                this.scrollToSection(result.element);
+                this.searchInput.value = result.text;
+                this.dropdown.style.display = 'none';
             });
-            dropdown.appendChild(item);
+            this.dropdown.appendChild(item);
         });
 
-        dropdown.style.display = 'block';
+        this.dropdown.style.display = 'block';
     }
 
-    // Скрол до секция
-    function scrollToSection(element) {
+    // Scroll to the selected section and highlight it
+    scrollToSection(element) {
         element.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
@@ -79,42 +105,33 @@ function initSearch() {
         }, 2000);
     }
 
-    // Event listeners
-    searchInput.addEventListener('input', function() {
-        const query = this.value.trim();
-        if (query.length >= 3) {
-            const results = searchSections(query);
-            showResults(results);
-        } else {
-            dropdown.style.display = 'none';
-        }
-    });
+    setupEventListeners() {
+        this.searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.trim();
+            if (query.length >= 3) {
+                const results = this.searchSections(query);
+                this.showResults(results);
+            } else {
+                this.dropdown.style.display = 'none';
+            }
+        });
 
-    document.addEventListener('click', function(e) {
-        if (!searchInput.contains(e.target) && !dropdown.contains(e.target)) {
-            dropdown.style.display = 'none';
-        }
-    });
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!this.searchInput.contains(e.target) && !this.dropdown.contains(e.target)) {
+                this.dropdown.style.display = 'none';
+            }
+        });
 
-    // Затваряне при натискане на Escape
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            dropdown.style.display = 'none';
-        }
-    });
+        // Close dropdown on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                this.dropdown.style.display = 'none';
+            }
+        });
+    }
 }
 
-// Стартиране
-document.addEventListener('DOMContentLoaded', initSearch);
-
-// Проверка за динамично зареждане
-let checkCount = 0;
-const maxChecks = 10;
-const checkInterval = setInterval(() => {
-    const searchInput = document.getElementById('sectionSearch');
-    if (searchInput || checkCount >= maxChecks) {
-        clearInterval(checkInterval);
-        if (searchInput) initSearch();
-    }
-    checkCount++;
-}, 200);
+document.addEventListener('DOMContentLoaded', () => {
+    new SearchManager();
+});

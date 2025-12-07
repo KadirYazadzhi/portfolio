@@ -12,21 +12,21 @@ class KeyboardNavigator {
         this.currentActiveIndex = -1;
         this.isUserScrolling = false;
         this.scrollTimeout = null;
-        this.isActive = false; // Добавяме флаг за активност
+        this.isActive = false; // Flag to track if keyboard navigation is active
 
-        this.setupInitialEventListeners(); // Слушатели за първо натискане на стрелка или Esc
+        this.setupInitialEventListeners(); // Listeners for the first arrow key press or Esc
     }
 
     init() {
         this.cacheElements();
         this.addCustomStyles();
-        if (this.allFocusableElements.length > 0 && this.isActive) { // Активираме само ако е активно
+        if (this.allFocusableElements.length > 0 && this.isActive) { // Activate only if active
             this.activateElement(0);
         }
     }
 
     setupInitialEventListeners() {
-        document.addEventListener('keydown', this.handleInitialKeyDown.bind(this), { once: true }); // Слушаме само веднъж
+        document.addEventListener('keydown', this.handleInitialKeyDown.bind(this), { once: true }); // Listen only once
     }
 
     setupEventListeners() {
@@ -40,10 +40,10 @@ class KeyboardNavigator {
     handleInitialKeyDown(event) {
         if (['ArrowRight', 'ArrowLeft'].includes(event.key)) {
             this.isActive = true;
-            this.setupEventListeners(); // След първо натискане на стрелка, добавяме основните слушатели
-            this.init(); // Инициализираме навигацията
+            this.setupEventListeners(); // Add main listeners after first arrow key press
+            this.init(); // Initialize navigation
         } else if (event.key === 'Escape') {
-            this.deactivate(); // Деактивираме при натискане на Esc още в началото
+            this.deactivate(); // Deactivate immediately if Esc is pressed
         }
     }
 
@@ -91,7 +91,7 @@ class KeyboardNavigator {
         if (['ArrowRight', 'ArrowLeft'].includes(event.key)) {
             event.preventDefault();
 
-            if (this.isUserScrolling || !this.isActive) return; // Проверяваме дали е активен
+            if (this.isUserScrolling || !this.isActive) return; // Check if active
 
             const direction = event.key === 'ArrowRight' ? 1 : -1;
             this.navigate(direction);

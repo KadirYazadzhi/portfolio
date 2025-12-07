@@ -230,7 +230,11 @@
         },
         {
           "image": "Image/Certificate/C%23/CSharp-OOP.webp",
-          "title": "C# Basic"
+          "title": "C# OOP"
+        },
+        {
+          "image": "Image/Certificate/C%23/Entity-Framework-Core.webp",
+          "title": "Entity Framework Core"
         }
       ]
     },

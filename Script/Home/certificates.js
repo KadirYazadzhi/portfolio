@@ -7,7 +7,7 @@ class CertificateManager {
     async init() {
         try {
             await this.loadCertificates();
-            return true; // Връщаме успех при завършване
+            return true; // Return success upon completion
         } catch (error) {
             console.error("Error initializing CertificateManager:", error);
             return false;
@@ -19,7 +19,7 @@ class CertificateManager {
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
         const data = await response.json();
-        this.container.innerHTML = ''; // Изчистваме контейнера преди добавяне
+        this.container.innerHTML = ''; // Clear container before adding
 
         Object.values(data).forEach(certData => {
             const certBox = this.createCertificateBox(certData);
@@ -48,11 +48,11 @@ class CertificateManager {
 
 document.addEventListener("DOMContentLoaded", async () => {
     const certManager = new CertificateManager(".certificates-container", "Json/Home/certificates.json");
-    await certManager.init(); // Изчакваме зареждането
+    await certManager.init(); // Wait for loading to complete
 
-    // Инициализираме слайдъра след зареждане на сертификатите
+    // Initialize slider after certificates are loaded
     const slider = new CertificateSlider();
 
-    // Инициализираме модала
+    // Initialize modal
     const certificateModal = new CertificateModal();
 });
