@@ -42,6 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 categoriesContainer.appendChild(catCard);
+
+                // Set 'Programming' as default active category
+                if (category === 'Programming') {
+                    catCard.classList.add('active');
+                    renderProjects(category);
+                }
             });
         })
         .catch(error => console.error('Error loading projects:', error));
