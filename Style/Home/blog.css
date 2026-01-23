@@ -1,4 +1,3 @@
-
 .blog-slider-window {
     overflow: hidden;
     width: 100%;
@@ -7,21 +6,36 @@
 
 .blogs-container {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping for slider */
-    gap: 1.5rem; /* Increased gap slightly */
+    flex-wrap: nowrap !important; /* Force single row */
+    flex-direction: row !important; /* Force row direction */
+    gap: 1.5rem;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .blog {
-    /* Fixed width logic for slider: 3 items visible */
-    /* Calculation: (100% - (2 * gap)) / 3 */
-    /* But simplified: flex: 0 0 calc(33.333% - 1rem); */
+    /* Layout for slider */
     flex: 0 0 calc(33.333% - 1rem);
+    
+    /* Visual Card Styles (Mirrored from cards.css) */
     box-sizing: border-box;
-    padding: 1rem;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.05); /* Optional: card background */
+    padding: 20px;
+    border: 1px solid var(--text-color-second);
     border-radius: 12px;
+    box-shadow: var(--shadow-medium);
+    backdrop-filter: blur(25px) saturate(119%);
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease; /* Adjusted transition */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: transparent; /* Default */
+}
+
+.blog:hover {
+    background-color: var(--card-hover-color);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--text-color);
 }
 
 @media (max-width: 900px) {
@@ -50,7 +64,7 @@
     flex-direction: column;
     gap: var(--small-gap);
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .blog-icons {
@@ -60,6 +74,7 @@
     flex-direction: row;
     width: 100%;
     margin-top: auto; /* Push to bottom if height varies */
+    padding-top: 1rem;
 }
 
 .blog-icon {
@@ -78,19 +93,19 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
-    color: var(--text-color); /* Lighter than second */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .nav-arrow i {
-    color: inherit; /* Ensure icon takes parent color */
+    color: inherit;
     font-size: 1.2rem;
 }
 
 .nav-arrow:hover {
-    background-color: var(--color-blue-500); /* Use a valid blue variable */
-    color: #fff; /* White text on blue bg */
+    background-color: var(--color-blue-500);
+    color: #fff;
     transform: scale(1.1);
 }
