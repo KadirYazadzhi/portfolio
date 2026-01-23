@@ -126,7 +126,7 @@ function createProjectCard(project) {
     card.appendChild(rightSection);
 
     card.addEventListener('click', () => {
-        window.open(`project-details.html?repo=${project.repo}`, '_blank');
+        window.open(`https://github.com/KadirYazadzhi/${project.repo}`, '_blank');
     });
 
     return card;
