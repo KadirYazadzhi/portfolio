@@ -1,13 +1,28 @@
 .projects-cards {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns as requested */
+    gap: 2rem;
+    width: 100%;
+    /* Ensure full width */
+}
+
+@media (max-width: 900px) {
+    .projects-cards {
+        grid-template-columns: 1fr;
+        /* Single column on mobile */
+    }
 }
 
 .project-card {
-    flex: 0 0 48%;
-    box-sizing: border-box;
+    /* Flex is handled by grid logic now regarding width, but we keep flex col for internal layout */
     display: flex;
     flex-direction: row;
+    /* Keep content side-by-side */
     gap: 2rem;
+    height: 100%;
+    /* Important for equal height */
+    box-sizing: border-box;
 }
 
 .project-card-left-section {
@@ -27,13 +42,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
+    margin-top: auto;
+    /* Push to bottom if we want */
 }
 
 @media (max-width: 800px) {
     .project-card-right-section-bottom {
         gap: 1rem;
+    }
+
+    .project-card {
+        flex-direction: column;
+        /* Stack internally on small screens */
     }
 }
 
@@ -45,10 +67,30 @@
     gap: 0.5rem;
 }
 
-.html { background-color: #E34F26; }
-.css { background-color: #1572B6; }
-.js { background-color: #F7DF1E; }
-.ts { background-color: #3178C6; }
-.cplus { background-color: #00599C; }
-.csharp { background-color: #239120; }
-.python { background-color: #3776AB; }
+.html {
+    background-color: #E34F26;
+}
+
+.css {
+    background-color: #1572B6;
+}
+
+.js {
+    background-color: #F7DF1E;
+}
+
+.ts {
+    background-color: #3178C6;
+}
+
+.cplus {
+    background-color: #00599C;
+}
+
+.csharp {
+    background-color: #239120;
+}
+
+.python {
+    background-color: #3776AB;
+}

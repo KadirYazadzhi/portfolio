@@ -1,0 +1,150 @@
+[
+    {
+        "title": "puppeteer",
+        "description": "A sophisticated Linux framework for binary instrumentation and process orchestration, featuring safe memory manipulation and advanced RPC communication channels.",
+        "repo": "puppeteer",
+        "languages": [
+            "cplus"
+        ],
+        "category": "Cybersecurity"
+    },
+    {
+        "title": "ZCracker",
+        "description": "ZCracker is an ultra-high performance archive cracker utilizing AVX2 SIMD, GPU acceleration, and zero-allocation for extreme speed.",
+        "repo": "ZCracker",
+        "languages": [
+            "csharp"
+        ],
+        "category": "Cybersecurity"
+    },
+    {
+        "title": "Home-Lab-Infrastructure",
+        "description": "A dedicated DevOps archive for managing a secure, production-grade home lab with automated services and strict private access.",
+        "repo": "Home-Lab-Infrastructure",
+        "languages": [],
+        "category": "DevOps & Self-hosting"
+    },
+    {
+        "title": "Informatics-Olympiad-Topics",
+        "description": "A comprehensive collection of programming topics and key concepts to prepare for informatics competitions and challenges!",
+        "repo": "Informatics-Olympiad-Topics",
+        "languages": [
+            "cplus",
+            "html"
+        ],
+        "category": "Education"
+    },
+    {
+        "title": "SoftUni",
+        "description": "This repository tracks my SoftUni journey through algorithms, data structures, backend architecture, and database management.",
+        "repo": "SoftUni",
+        "languages": [
+            "js",
+            "css",
+            "python",
+            "html",
+            "ts",
+            "csharp"
+        ],
+        "category": "Education"
+    },
+    {
+        "title": "CODE-BURGAS-Archive",
+        "description": "This repository contains solutions for all CODE@BURGAS competition problems from 2019 to 2025.",
+        "repo": "CODE-BURGAS-Archive",
+        "languages": [
+            "cplus"
+        ],
+        "category": "Education"
+    },
+    {
+        "title": "University-Project-Real-Estate-Agency",
+        "description": "This console-based Real Estate Agency Information System provides comprehensive property management with robust data persistence.",
+        "repo": "University-Project-Real-Estate-Agency",
+        "languages": [
+            "cplus"
+        ],
+        "category": "Education"
+    },
+    {
+        "title": "Digital-Garden",
+        "description": "A living digital garden and personal archive dedicated to exploring the depths of programming, cybersecurity, and technology.",
+        "repo": "Digital-Garden",
+        "languages": [
+            "html"
+        ],
+        "category": "Education"
+    },
+    {
+        "title": "TU-Varna-PO-2025",
+        "description": "Resources for my participation in the National University Online Programming Olympiad 2025.",
+        "repo": "TU-Varna-PO-2025",
+        "languages": [
+            "python",
+            "csharp",
+            "cplus"
+        ],
+        "category": "Education"
+    },
+    {
+        "title": "WebIDE",
+        "description": "A modern, web-based IDE for seamless coding directly in your browser.",
+        "repo": "WebIDE",
+        "languages": [
+            "js",
+            "css",
+            "html",
+            "csharp"
+        ],
+        "category": "Programming"
+    },
+    {
+        "title": "portfolio",
+        "description": "A modern and interactive portfolio showcasing my skills, projects, and professional journey in web development and software engineering!",
+        "repo": "portfolio",
+        "languages": [
+            "js",
+            "css",
+            "html"
+        ],
+        "category": "Programming"
+    },
+    {
+        "title": "UniversitySystem",
+        "description": "A comprehensive, architectural-grade console application for managing academic, financial, and administrative university operations.",
+        "repo": "UniversitySystem",
+        "languages": [
+            "csharp"
+        ],
+        "category": "Programming"
+    },
+    {
+        "title": "JudgeX",
+        "description": "JudgeX appears to be an interactive platform designed for mastering coding challenges through a comprehensive set of features.",
+        "repo": "JudgeX",
+        "languages": [
+            "js",
+            "html",
+            "css"
+        ],
+        "category": "Programming"
+    },
+    {
+        "title": "P2PShare",
+        "description": "P2PShare is a fast, secure, and fully decentralized peer-to-peer file sharing system built in modern C++20, powered by DHT-based discovery and encrypted connections.",
+        "repo": "P2PShare",
+        "languages": [
+            "cplus"
+        ],
+        "category": "Programming"
+    },
+    {
+        "title": "DocumentConverter",
+        "description": "The Document Converter is a robust console-based tool that effortlessly extracts text and images from multiple document formats, transforming them into well-structured Markdown (.md) files.",
+        "repo": "DocumentConverter",
+        "languages": [
+            "csharp"
+        ],
+        "category": "Programming"
+    }
+]
