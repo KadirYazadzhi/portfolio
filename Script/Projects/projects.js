@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let allProjects = [];
 
-    fetch('projects.json')
+    fetch('Json/Projects/projects.json')
         .then(response => response.json())
         .then(projects => {
             allProjects = projects;
