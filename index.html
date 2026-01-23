@@ -650,77 +650,153 @@
     </div>
 </section>
 
-<section id="skills" class="section">
+<section id="blogs" class="section">
     <div class="container center">
-        <h2>Blogs</h2>
+        <div class="section-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 2rem;">
+            <h2>Blogs</h2>
+            <div class="blog-nav-buttons" style="display: flex; gap: 1rem;">
+                <span id="blog-prev" class="nav-arrow" style="cursor: pointer; font-size: 1.5rem;"><i class="fa-solid fa-arrow-left"></i></span>
+                <span id="blog-next" class="nav-arrow" style="cursor: pointer; font-size: 1.5rem;"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+        </div>
 
         <main class="main-modal">
-            <div class="blogs-container cards">
+            <div class="blog-slider-window" style="overflow: hidden; width: 100%;">
+                <div class="blogs-container cards" id="blog-track">
 
-                <div class="blog">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F6680%2F1*bWgWxQzsTy7T7bMdklDZzg.png&f=1&nofb=1&ipt=e124078393097ccadfff48cae8131606708b7c015c7140f68a5ec4bfe67defc0">
-                    <div class="blog-content">
-                        <h4>How to Make a Lightweight Kubernetes Cluster with K3s</h4>
-                        <p class="paragraph">
-                            K3s is a lightweight, production-grade Kubernetes distribution that is easy to install and requires minimal resources.
-                        </p>
+                    <div class="blog">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F6680%2F1*bWgWxQzsTy7T7bMdklDZzg.png&f=1&nofb=1&ipt=e124078393097ccadfff48cae8131606708b7c015c7140f68a5ec4bfe67defc0">
+                        <div class="blog-content">
+                            <h4>How to Make a Lightweight Kubernetes Cluster with K3s</h4>
+                            <p class="paragraph">
+                                K3s is a lightweight, production-grade Kubernetes distribution that is easy to install and requires minimal resources.
+                            </p>
 
-                        <div class="blog-icons">
-                            <span class="blog-icon">
-                                <i class="fa-regular fa-clock"></i>
-                                <p class="paragraph">5 min read</p>
-                            </span>
+                            <div class="blog-icons">
+                                <span class="blog-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p class="paragraph">5 min read</p>
+                                </span>
 
-                            <span class="blog-icon">
-                                <i class="fa-regular fa-folder"></i>
-                                <p class="paragraph">Programming, DevOps, Kubernetes</p>
-                            </span>
+                                <span class="blog-icon">
+                                    <i class="fa-regular fa-folder"></i>
+                                    <p class="paragraph">Programming, DevOps, Kubernetes</p>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="blog">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
-                    <div class="blog-content">
-                        <h4>Building Secure Systems with Linux and Docker</h4>
-                        <p class="paragraph">
-                            A practical guide to hardening Linux servers and containerized applications using Docker security best practices.
-                        </p>
+                    <div class="blog">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
+                        <div class="blog-content">
+                            <h4>Building Secure Systems with Linux and Docker</h4>
+                            <p class="paragraph">
+                                A practical guide to hardening Linux servers and containerized applications using Docker security best practices.
+                            </p>
 
-                        <div class="blog-icons">
-                            <span class="blog-icon">
-                                <i class="fa-regular fa-clock"></i>
-                                <p class="paragraph">6 min read</p>
-                            </span>
+                            <div class="blog-icons">
+                                <span class="blog-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p class="paragraph">6 min read</p>
+                                </span>
 
-                            <span class="blog-icon">
-                                <i class="fa-regular fa-folder"></i>
-                                <p class="paragraph">Linux, Security, Docker</p>
-                            </span>
+                                <span class="blog-icon">
+                                    <i class="fa-regular fa-folder"></i>
+                                    <p class="paragraph">Linux, Security, Docker</p>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="blog">
-                    <img src="https://cdn.prod.website-files.com/65c0cd3f2acb33427e35b1f6/6756d0137cc6ec18153ab706_Understanding%2520the%2520Basics%2520and%2520Benefits%201.jpg">
-                    <div class="blog-content">
-                        <h4>How Peer-to-Peer Networks Work</h4>
-                        <p class="paragraph">
-                            An introduction to decentralized architectures and how peer-to-peer systems enable fast and resilient data sharing.
-                        </p>
+                    <div class="blog">
+                        <img src="https://cdn.prod.website-files.com/65c0cd3f2acb33427e35b1f6/6756d0137cc6ec18153ab706_Understanding%2520the%2520Basics%2520and%2520Benefits%201.jpg">
+                        <div class="blog-content">
+                            <h4>How Peer-to-Peer Networks Work</h4>
+                            <p class="paragraph">
+                                An introduction to decentralized architectures and how peer-to-peer systems enable fast and resilient data sharing.
+                            </p>
 
-                        <div class="blog-icons">
-                            <span class="blog-icon">
-                                <i class="fa-regular fa-clock"></i>
-                                <p class="paragraph">4 min read</p>
-                            </span>
+                            <div class="blog-icons">
+                                <span class="blog-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p class="paragraph">4 min read</p>
+                                </span>
 
-                            <span class="blog-icon">
-                                <i class="fa-regular fa-folder"></i>
-                                <p class="paragraph">Networking, P2P, Distributed Systems</p>
-                            </span>
+                                <span class="blog-icon">
+                                    <i class="fa-regular fa-folder"></i>
+                                    <p class="paragraph">Networking, P2P, Distributed Systems</p>
+                                </span>
+                            </div>
                         </div>
                     </div>
+                    
+                     <!-- Duplicates for slider functionality -->
+                    <div class="blog">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F6680%2F1*bWgWxQzsTy7T7bMdklDZzg.png&f=1&nofb=1&ipt=e124078393097ccadfff48cae8131606708b7c015c7140f68a5ec4bfe67defc0">
+                        <div class="blog-content">
+                            <h4>How to Make a Lightweight Kubernetes Cluster with K3s</h4>
+                            <p class="paragraph">
+                                K3s is a lightweight, production-grade Kubernetes distribution that is easy to install and requires minimal resources.
+                            </p>
+
+                            <div class="blog-icons">
+                                <span class="blog-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p class="paragraph">5 min read</p>
+                                </span>
+
+                                <span class="blog-icon">
+                                    <i class="fa-regular fa-folder"></i>
+                                    <p class="paragraph">Programming, DevOps, Kubernetes</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
+                        <div class="blog-content">
+                            <h4>Building Secure Systems with Linux and Docker</h4>
+                            <p class="paragraph">
+                                A practical guide to hardening Linux servers and containerized applications using Docker security best practices.
+                            </p>
+
+                            <div class="blog-icons">
+                                <span class="blog-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p class="paragraph">6 min read</p>
+                                </span>
+
+                                <span class="blog-icon">
+                                    <i class="fa-regular fa-folder"></i>
+                                    <p class="paragraph">Linux, Security, Docker</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <img src="https://cdn.prod.website-files.com/65c0cd3f2acb33427e35b1f6/6756d0137cc6ec18153ab706_Understanding%2520the%2520Basics%2520and%2520Benefits%201.jpg">
+                        <div class="blog-content">
+                            <h4>How Peer-to-Peer Networks Work</h4>
+                            <p class="paragraph">
+                                An introduction to decentralized architectures and how peer-to-peer systems enable fast and resilient data sharing.
+                            </p>
+
+                            <div class="blog-icons">
+                                <span class="blog-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <p class="paragraph">4 min read</p>
+                                </span>
+
+                                <span class="blog-icon">
+                                    <i class="fa-regular fa-folder"></i>
+                                    <p class="paragraph">Networking, P2P, Distributed Systems</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </main>
@@ -797,6 +873,7 @@
 <script type="application/javascript" src="Script/search.js"></script>
 <script type="application/javascript" src="Script/Home/contact.js"></script>
 <script type="application/javascript" src="Script/Home/achievements-cards.js"></script>
+<script type="application/javascript" src="Script/Home/blog-slider.js"></script>
 
 <script type="module" src="Script/Home/Animation/hero-section.js"></script>
 <script type="application/javascript" src="Script/Navigation/keyboard-navigation.js"></script>
