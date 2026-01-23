@@ -1,0 +1,108 @@
+/* Category Cards */
+.category-card {
+    cursor: pointer;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    min-width: 22.5%;
+    transition: all 0.3s ease;
+    border-color: var(--text-color-second);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-width: 1px; /* Assuming cards have borders based on JS logic */
+    border-style: solid;
+}
+
+.category-card.active {
+    border-color: var(--first-color);
+    background-color: var(--container-color);
+}
+
+.category-card i {
+    font-size: 2.5rem;
+    color: var(--first-color);
+}
+
+.category-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Projects Grid */
+.projects-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    opacity: 0;
+    animation: fadeUp 0.5s forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .projects-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Project Card */
+.project-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    .project-card {
+        flex-direction: column;
+    }
+}
+
+.project-card-left-section {
+    font-size: 3rem;
+}
+
+.project-card-right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-right-section-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: auto;
+}
+
+/* Project Language Tags */
+.project-language {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-language .language-icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.project-language .language-name {
+    margin: 0;
+}

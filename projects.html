@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="Style/Home/cards/cards.css">
     <link rel="stylesheet" href="Style/Home/cards/projects-cards.css">
     <link rel="stylesheet" href="Style/Home/cards/skills-cards.css">
+    <link rel="stylesheet" href="Style/Projects/projects.css">
 </head>
 
 <body class="dark">
@@ -47,8 +48,16 @@
             <h2>Projects</h2>
 
             <main class="main-modal">
-                <div class="cards projects-cards" id="projects-container">
-                    <!-- Projects will be dynamically inserted here -->
+                <!-- Category Cards Section -->
+                <div class="cards categories-cards" id="categories-container"
+                    style="justify-content: center; margin-bottom: 2rem;">
+                    <!-- Categories will be dynamically inserted here -->
+                </div>
+
+                <!-- Projects Display Section -->
+                <div id="projects-display-area" style="width: 100%; min-height: 200px;">
+                    <p style="text-align: center; color: var(--text-color-second);">Select a category to view projects.
+                    </p>
                 </div>
             </main>
         </div>
@@ -60,6 +69,6 @@
 
 <script src="Script/Components/header.js"></script>
 <script src="Script/Components/footer.js"></script>
-<script src="Script/projects.js"></script>
+<script src="Script/Projects/projects.js"></script>
 
 </html>
