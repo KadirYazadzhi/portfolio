@@ -1,6 +1,8 @@
+
 .blog-slider-window {
     overflow: hidden;
     width: 100%;
+    padding: 10px 0; /* Vertical padding */
 }
 
 .blogs-container {
@@ -8,7 +10,6 @@
     flex-wrap: nowrap; /* Prevent wrapping for slider */
     gap: 1.5rem; /* Increased gap slightly */
     transition: transform 0.5s ease-in-out;
-    padding: 10px 0; /* Vertical padding */
 }
 
 .blog {
@@ -71,10 +72,25 @@
 }
 
 .nav-arrow {
-    color: var(--text-color-second);
-    transition: color 0.3s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background */
+    color: var(--text-color); /* Lighter than second */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-arrow i {
+    color: inherit; /* Ensure icon takes parent color */
+    font-size: 1.2rem;
 }
 
 .nav-arrow:hover {
-    color: var(--first-color);
+    background-color: var(--color-blue-500); /* Use a valid blue variable */
+    color: #fff; /* White text on blue bg */
+    transform: scale(1.1);
 }
