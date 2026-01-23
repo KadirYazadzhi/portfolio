@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Cybersecurity': 'fa-solid fa-user-secret',
         'DevOps & Self-hosting': 'fa-solid fa-server',
         'Education': 'fa-solid fa-graduation-cap',
-        'Programming': 'fa-solid fa-code'
+        'Programming': 'fa-solid fa-code',
+        'All': 'fa-solid fa-layer-group'
     };
 
     let allProjects = [];
@@ -20,27 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Render Category Cards
             uniqueCategories.forEach(category => {
-                const catCard = document.createElement('div');
-                catCard.classList.add('card', 'category-card');
-
-                const iconClass = categoryIcons[category] || 'fa-solid fa-folder';
-                catCard.innerHTML = `
-                    <i class="${iconClass}"></i>
-                    <h3>${category}</h3>
-                `;
-
-                catCard.addEventListener('click', () => {
-                    // Remove active class from all
-                    document.querySelectorAll('.category-card').forEach(c => {
-                        c.classList.remove('active');
-                    });
-
-                    // Add active class to current
-                    catCard.classList.add('active');
-
-                    renderProjects(category);
-                });
-
+                const catCard = createCategoryCard(category);
                 categoriesContainer.appendChild(catCard);
 
                 // Set 'Programming' as default active category
@@ -49,14 +30,50 @@ document.addEventListener('DOMContentLoaded', () => {
                     renderProjects(category);
                 }
             });
+
+            // Add 'All' category card at the end
+            const allCard = createCategoryCard('All');
+            allCard.classList.add('all-projects');
+            categoriesContainer.appendChild(allCard);
+
         })
         .catch(error => console.error('Error loading projects:', error));
+
+    function createCategoryCard(category) {
+        const catCard = document.createElement('div');
+        catCard.classList.add('card', 'category-card');
+
+        const iconClass = categoryIcons[category] || 'fa-solid fa-folder';
+        catCard.innerHTML = `
+            <i class="${iconClass}"></i>
+            <h3>${category}</h3>
+        `;
+
+        catCard.addEventListener('click', () => {
+            // Remove active class from all
+            document.querySelectorAll('.category-card').forEach(c => {
+                c.classList.remove('active');
+            });
+
+            // Add active class to current
+            catCard.classList.add('active');
+
+            renderProjects(category);
+        });
+
+        return catCard;
+    }
 
     function renderProjects(category) {
         projectsDisplayArea.innerHTML = ''; // Clear current
 
         // Filter projects
-        const filteredProjects = allProjects.filter(p => p.category === category);
+        let filteredProjects;
+        if (category === 'All') {
+            filteredProjects = allProjects;
+        } else {
+            filteredProjects = allProjects.filter(p => p.category === category);
+        }
 
         // Create Grid Container
         const grid = document.createElement('div');
