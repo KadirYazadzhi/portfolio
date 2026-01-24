@@ -4,10 +4,10 @@ class Header extends HTMLElement {
             <nav>
                 <div class="nav-bar">
                     <i class='bx bx-menu sidebarOpen' ></i>
-                    <span class="logo navLogo"><a href="#">KadirYazadzhi</a></span>
+                    <span class="logo navLogo"><a href="index.html#">KadirYazadzhi</a></span>
                     <div class="menu">
                         <div class="logo-toggle">
-                            <span class="logo"><a href="#">KadirYazadzhi</a></span>
+                            <span class="logo"><a href="index.html#">KadirYazadzhi</a></span>
                             <i class="fa-solid fa-xmark siderbarClose"></i>
                         </div>
                         <ul class="nav-links">
