@@ -139,10 +139,22 @@
         "category": "Programming"
     },
     {
-        "title": "DocumentConverter",
+        "title": "Document Converter",
         "description": "The Document Converter is a robust console-based tool that effortlessly extracts text and images from multiple document formats, transforming them into well-structured Markdown (.md) files.",
         "repo": "DocumentConverter",
         "languages": [
+            "csharp"
+        ],
+        "category": "Programming"
+    },
+    {
+        "title": "ArtSync",
+        "description": "ArtSync is a platform where artists share music, photos, and films, connecting with fans through exclusive content and subscriptions.",
+        "repo": "ArtSync",
+        "languages": [
+            "html",
+            "css",
+            "js",
             "csharp"
         ],
         "category": "Programming"
