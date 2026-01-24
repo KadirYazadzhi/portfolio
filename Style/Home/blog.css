@@ -23,25 +23,8 @@
     /* My previous calc was (33.333% - 1rem). That assumes gap is 1.5rem * 2 / 3 = 1rem per item effectively? */
     /* Let's try to be slightly smaller to avoid overflow issues if subpixel. */
     flex: 0 0 calc(33.333% - 1.1rem);
-    
-    /* Visuals */
-    box-sizing: border-box;
-    padding: 20px;
-    border: 1px solid var(--text-color-second);
-    border-radius: 12px;
-    box-shadow: var(--shadow-medium);
-    backdrop-filter: blur(25px) saturate(119%);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
     cursor: pointer;
-    background-color: transparent;
-}
 
-.blog:hover {
-    background-color: var(--card-hover-color);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--text-color);
 }
 
 @media (max-width: 900px) {
@@ -96,8 +79,10 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--text-color);
+    border: 1px solid var(--text-color-second);
+    background-color: var(--body-color);
+    color: var(--text-color-second);
+    opacity: 0.8;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -108,7 +93,7 @@
 }
 
 .nav-arrow:hover {
-    background-color: var(--color-blue-500);
-    color: #fff;
-    transform: scale(1.1);
+    background-color: var(--text-color-second);
+    color: var(--body-color);
+    opacity: 1;
 }
