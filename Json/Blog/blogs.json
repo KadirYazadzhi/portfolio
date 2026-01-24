@@ -5,8 +5,7 @@
     "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F6680%2F1*bWgWxQzsTy7T7bMdklDZzg.png&f=1&nofb=1&ipt=e124078393097ccadfff48cae8131606708b7c015c7140f68a5ec4bfe67defc0",
     "date": "2025-01-10",
     "readTime": "5 min read",
-    "tags": ["Programming", "DevOps", "Kubernetes"],
-    "content": "<p class=\"paragraph\">Kubernetes has become the standard for container orchestration, but running a full cluster can be resource-intensive. Enter <strong>K3s</strong>, a lightweight Kubernetes distribution built for IoT and Edge computing.</p><h3>Why K3s?</h3><p class=\"paragraph\">K3s is packaged as a single binary of less than 40MB. It removes legacy plugins and non-default features, making it perfect for development environments, Raspberry Pis, and low-resource VPS instances.</p><h3>Installation</h3><p class=\"paragraph\">Installing K3s is incredibly simple. You can run the following command:</p><code class=\"code-block\">curl -sfL https://get.k3s.io | sh -</code><p class=\"paragraph\">This script installs the binary, configures the systemd service, and sets up the necessary tools like kubectl.</p><h3>Conclusion</h3><p class=\"paragraph\">K3s democratizes Kubernetes, making it accessible for home labs and small projects without the overhead of standard K8s.</p>"
+    "tags": ["Programming", "DevOps", "Kubernetes"]
   },
   {
     "id": "linux-security",
@@ -14,8 +13,7 @@
     "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
     "date": "2025-01-15",
     "readTime": "6 min read",
-    "tags": ["Linux", "Security", "Docker"],
-    "content": "<p class=\"paragraph\">Security is not a product, but a process. When deploying applications in containers, the underlying Linux host security is just as critical as the container configuration.</p><h3>Hardening the Host</h3><p class=\"paragraph\">Start by minimizing the attack surface. Disable unnecessary services, configure <strong>UFW</strong> (Uncomplicated Firewall), and use <strong>Fail2Ban</strong> to prevent brute-force attacks.</p><h3>Docker Security Best Practices</h3><ul><li class=\"paragraph\">Do not run containers as root.</li><li class=\"paragraph\">Use multi-stage builds to keep images small.</li><li class=\"paragraph\">Limit resources (CPU/RAM) to prevent DoS attacks.</li></ul><p class=\"paragraph\">By combining Linux hardening with strict Docker policies, you create a defense-in-depth strategy that protects your infrastructure.</p>"
+    "tags": ["Linux", "Security", "Docker"]
   },
   {
     "id": "p2p-networks",
@@ -23,8 +21,7 @@
     "image": "https://cdn.prod.website-files.com/65c0cd3f2acb33427e35b1f6/6756d0137cc6ec18153ab706_Understanding%2520the%2520Basics%2520and%2520Benefits%201.jpg",
     "date": "2025-01-18",
     "readTime": "4 min read",
-    "tags": ["Networking", "P2P", "Distributed Systems"],
-    "content": "<p class=\"paragraph\">Peer-to-Peer (P2P) networks revolutionize how we share data by removing the central server. Instead of a client-server model, every node acts as both a client and a server.</p><h3>The Architecture</h3><p class=\"paragraph\">In a pure P2P network, nodes discover each other via a distributed protocol. File sharing systems often use a <strong>DHT (Distributed Hash Table)</strong> to locate content across the swarm efficiently.</p><h3>Challenges</h3><p class=\"paragraph\">While resilient, P2P networks face challenges in consistency, security, and NAT traversal. Modern protocols use technique like hole punching to establish direct connections between peers behind firewalls.</p>"
+    "tags": ["Networking", "P2P", "Distributed Systems"]
   },
   {
     "id": "binary-instrumentation",
@@ -32,8 +29,7 @@
     "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1000&auto=format&fit=crop",
     "date": "2025-01-20",
     "readTime": "7 min read",
-    "tags": ["C++", "Linux", "Security"],
-    "content": "<p class=\"paragraph\">Binary instrumentation is the technique of inserting code into a binary executable to analyze its behavior. It is a fundamental tool for security researchers and reverse engineers.</p><h3>Static vs Dynamic</h3><p class=\"paragraph\"><strong>Static instrumentation</strong> modifies the binary on disk, while <strong>dynamic binary instrumentation (DBI)</strong> injects code at runtime. Frameworks like Frida or Intel PIN allow for powerful runtime analysis.</p><h3>Process Orchestration</h3><p class=\"paragraph\">Using C++, we can attach to running processes via the <code>ptrace</code> system call in Linux. This allows us to inspect memory, intercept syscalls, and modify register states on the fly.</p>"
+    "tags": ["C++", "Linux", "Security"]
   },
   {
     "id": "avx2-optimization",
@@ -41,8 +37,7 @@
     "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop",
     "date": "2025-01-21",
     "readTime": "6 min read",
-    "tags": ["Performance", "C#", "Hardware"],
-    "content": "<p class=\"paragraph\">Modern CPUs are capable of performing the same operation on multiple data points simultaneously. This is known as <strong>SIMD (Single Instruction, Multiple Data)</strong>.</p><h3>Understanding AVX2</h3><p class=\"paragraph\">Advanced Vector Extensions 2 (AVX2) expands most integer commands to 256 bits. This means you can process 8 integers (32-bit) in a single clock cycle.</p><h3>Implementation in C#</h3><p class=\"paragraph\">With .NET Core and newer versions, the <code>System.Runtime.Intrinsics</code> namespace provides direct access to these hardware instructions. By vectorizing loop operations, we can achieve speedups of 4x to 8x for data-heavy tasks like image processing or cryptographic cracking.</p>"
+    "tags": ["Performance", "C#", "Hardware"]
   },
   {
     "id": "competitive-programming",
@@ -50,7 +45,6 @@
     "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop",
     "date": "2025-01-22",
     "readTime": "5 min read",
-    "tags": ["Algorithms", "Education", "Logic"],
-    "content": "<p class=\"paragraph\">Competitive programming is more than just writing code fast; it is about pattern recognition and algorithmic efficiency.</p><h3>Key Patterns</h3><p class=\"paragraph\">Most problems fall into specific categories: Graph Theory (BFS/DFS), Dynamic Programming, Greedy algorithms, or Number Theory.</p><h3>The Mindset</h3><p class=\"paragraph\">1. <strong>Read constraints carefully:</strong> They tell you the required time complexity (O(n) vs O(n^2)).<br>2. <strong>Edge cases:</strong> Always consider 0, negative numbers, or maximum limits.<br>3. <strong>Practice:</strong> Platforms like JudgeX or Codeforces are essential for building muscle memory.</p>"
+    "tags": ["Algorithms", "Education", "Logic"]
   }
 ]

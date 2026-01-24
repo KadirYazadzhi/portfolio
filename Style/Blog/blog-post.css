@@ -1,4 +1,4 @@
-/* Inherit variables from base.css, but add specific blog styling */
+/* Inherit variables from base.css */
 
 /* Main layout container */
 .blog-post-section {
@@ -6,32 +6,37 @@
     min-height: 80vh;
 }
 
+/* Updated Container to match base.css .container width (75rem) */
 .blog-container {
-    max-width: 800px;
+    max-width: 75rem; 
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 1.25rem; /* Standard padding */
+    box-sizing: border-box;
 }
 
 /* Header Section */
 .blog-header {
     margin-bottom: 2rem;
     text-align: left;
+    max-width: 900px; /* Keep title measure readable */
 }
 
 .blog-title {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive typography */
     color: var(--text-color);
     margin-bottom: 1rem;
     line-height: 1.2;
+    font-weight: 700;
 }
 
 .blog-meta {
     display: flex;
     gap: 1.5rem;
     color: var(--text-color-second);
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .blog-meta span {
@@ -43,39 +48,60 @@
 .blog-tags {
     display: flex;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .blog-tag {
     background-color: var(--card-hover-color);
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--first-color);
     border: 1px solid var(--text-color-second);
+    transition: all 0.3s ease;
+}
+
+.blog-tag:hover {
+    background-color: var(--first-color);
+    color: var(--body-color);
+    border-color: var(--first-color);
 }
 
 /* Featured Image */
 .blog-hero-image {
     width: 100%;
-    height: 400px;
+    height: auto;
+    max-height: 500px;
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 12px;
     margin-bottom: 3rem;
     box-shadow: var(--shadow-medium);
+    border: 1px solid var(--text-color-second);
 }
 
 /* Content */
 .blog-content {
     color: var(--text-color-second);
-    font-size: 1.1rem;
+    font-size: 1.125rem; /* 18px */
     line-height: 1.8;
+    max-width: 900px; /* Optimal reading width */
+    margin-bottom: 4rem;
 }
 
-/* Styles for injected HTML content */
+/* Markdown Generated Styles */
+.blog-content h2 {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid var(--hover-color-black-200);
+    padding-bottom: 0.5rem;
+}
+
 .blog-content h3 {
     color: var(--text-color);
-    font-size: 1.5rem;
-    margin-top: 2.5rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -97,23 +123,37 @@
     font-weight: 600;
 }
 
-.blog-content .code-block {
-    display: block;
-    background-color: #1e1e1e; /* Darker bg for code */
-    color: #d4d4d4;
-    padding: 1rem;
+/* Code Block Styling */
+.blog-content pre {
+    background-color: #1e1e1e;
+    padding: 1.2rem;
     border-radius: 8px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 1.5rem;
     overflow-x: auto;
+    margin-bottom: 2rem;
     border: 1px solid var(--text-color-second);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.blog-content code {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+}
+
+/* Inline code */
+.blog-content p code, .blog-content li code {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    color: var(--color-blue-300);
 }
 
 /* Back Button */
 .back-button-container {
-    margin-top: 4rem;
     border-top: 1px solid var(--text-color-second);
     padding-top: 2rem;
+    margin-bottom: 4rem;
+    max-width: 900px;
 }
 
 .btn-back {
@@ -121,23 +161,26 @@
     align-items: center;
     gap: 0.5rem;
     color: var(--text-color);
+    font-weight: 500;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
     cursor: pointer;
+    font-size: 1.1rem;
 }
 
 .btn-back:hover {
-    color: var(--first-color);
+    color: var(--color-blue-400);
+    transform: translateX(-5px);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .blog-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
-
+    
     .blog-hero-image {
-        height: 250px;
+        max-height: 300px;
     }
 
     .blog-meta {
