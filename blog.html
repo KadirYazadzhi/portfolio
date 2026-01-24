@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog Post</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical blog by Kadir Yazadzhi covering Programming, Security, and DevOps.">
+    <meta name="author" content="Kadir Yazadzhi">
+    <meta name="robots" content="index, follow">
+
+    <!-- Fonts and Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="Style/base.css">
+    <link rel="stylesheet" href="Style/Components/navbar.css">
+    <link rel="stylesheet" href="Style/Components/footer.css">
+    
+    <!-- Page Specific Style -->
+    <link rel="stylesheet" href="Style/Blog/blog-post.css">
+
+</head>
+<body class="dark">
+
+    <my-header></my-header>
+
+    <main class="main blog-post-section">
+        <article class="blog-container">
+            <!-- Header: Title & Meta -->
+            <header class="blog-header">
+                <h1 class="blog-title" id="blog-title">Loading...</h1>
+                
+                <div class="blog-meta">
+                    <span id="date-wrapper">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p id="blog-date">...</p>
+                    </span>
+                    
+                    <span id="time-wrapper">
+                        <i class="fa-regular fa-clock"></i>
+                        <p id="blog-read-time">...</p>
+                    </span>
+
+                    <div class="blog-tags" id="blog-tags">
+                        <!-- Tags injected here -->
+                    </div>
+                </div>
+            </header>
+
+            <!-- Hero Image -->
+            <img src="" alt="" class="blog-hero-image" id="blog-image">
+
+            <!-- Content Body -->
+            <div class="blog-content" id="blog-content-body">
+                <!-- Content injected here from JSON -->
+                <p>Loading content...</p>
+            </div>
+
+            <!-- Back Navigation -->
+            <div class="back-button-container">
+                <a href="index.html#blogs" class="btn-back">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Blogs
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <my-footer></my-footer>
+
+</body>
+
+<!-- Scripts -->
+<script src="Script/Components/header.js"></script>
+<script src="Script/Components/footer.js"></script>
+<script src="Script/navbar.js"></script>
+<script src="Script/Blog/blog-post.js"></script>
+
+</html>

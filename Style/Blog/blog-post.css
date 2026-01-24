@@ -1,0 +1,148 @@
+/* Inherit variables from base.css, but add specific blog styling */
+
+/* Main layout container */
+.blog-post-section {
+    padding-top: 100px; /* Account for fixed navbar */
+    min-height: 80vh;
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Header Section */
+.blog-header {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.blog-title {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.blog-meta {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--text-color-second);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.blog-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.blog-tags {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.blog-tag {
+    background-color: var(--card-hover-color);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: var(--first-color);
+    border: 1px solid var(--text-color-second);
+}
+
+/* Featured Image */
+.blog-hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow-medium);
+}
+
+/* Content */
+.blog-content {
+    color: var(--text-color-second);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Styles for injected HTML content */
+.blog-content h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog-content p {
+    margin-bottom: 1.5rem;
+}
+
+.blog-content ul, .blog-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.blog-content li {
+    margin-bottom: 0.5rem;
+}
+
+.blog-content strong {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.blog-content .code-block {
+    display: block;
+    background-color: #1e1e1e; /* Darker bg for code */
+    color: #d4d4d4;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    border: 1px solid var(--text-color-second);
+}
+
+/* Back Button */
+.back-button-container {
+    margin-top: 4rem;
+    border-top: 1px solid var(--text-color-second);
+    padding-top: 2rem;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    color: var(--first-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 1.8rem;
+    }
+
+    .blog-hero-image {
+        height: 250px;
+    }
+
+    .blog-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+}
