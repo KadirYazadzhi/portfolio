@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectsContainer = document.querySelector('.projects-cards');
 
     // The titles of the projects we want to display on the home page
-    const featuredTitles = ["JudgeX", "WebIDE", "Document Converter", "ArtSync"];
+    const featuredTitles = ["JudgeX", "P2PShare", "UniversitySystem", "puppeteer"];
 
     fetch('Json/Projects/projects.json')
         .then(response => response.json())
