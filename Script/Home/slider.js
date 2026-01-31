@@ -2,68 +2,99 @@ document.addEventListener("DOMContentLoaded", () => {
   class CardSlider {
     constructor() {
       this.slider = document.querySelector(".slider");
+      this.container = document.querySelector(".cards-container");
       this.cards = document.querySelectorAll(".slider .card");
       this.prevButton = document.getElementById("prev");
       this.nextButton = document.getElementById("next");
+      
       this.currentIndex = 0;
-      this.cardWidth = 0;
-      this.visibleCards = this.calculateVisibleCards();
-
+      
+      // Bind context
+      this.updateSlider = this.updateSlider.bind(this);
+      this.handleResize = this.handleResize.bind(this);
+      
       this.init();
       this.setupEventListeners();
-      window.addEventListener("resize", this.handleResize.bind(this));
+      window.addEventListener("resize", this.handleResize);
     }
 
     init() {
-      if (this.cards.length > 0) {
-        this.cardWidth = this.cards[0].offsetWidth + 16;
-        this.updateSlider();
-      }
+      if (!this.slider || this.cards.length === 0) return;
+      this.calculateMetrics();
+      this.updateButtons();
     }
 
-    calculateVisibleCards() {
-      const containerWidth = this.slider.parentElement.offsetWidth;
-      const cardComputedStyle = window.getComputedStyle(this.cards[0]);
-      const cardMargin = parseFloat(cardComputedStyle.marginRight) + parseFloat(cardComputedStyle.marginLeft);
-      const cardWidth = this.cards[0].offsetWidth + cardMargin;
-      return Math.max(1, Math.floor(containerWidth / cardWidth));
+    calculateMetrics() {
+        if (this.cards.length === 0) return;
+
+        // Get actual gap from CSS
+        const style = window.getComputedStyle(this.slider);
+        const gap = parseFloat(style.gap) || 0;
+        
+        // Get card width
+        const cardWidth = this.cards[0].offsetWidth;
+        
+        // Total width of one "step"
+        this.stepWidth = cardWidth + gap;
+        
+        // Calculate how many cards fit in the visible container
+        const containerWidth = this.container.offsetWidth;
+        this.visibleCards = Math.floor(containerWidth / this.stepWidth);
+        
+        // Ensure at least one card is considered visible
+        if (this.visibleCards < 1) this.visibleCards = 1;
+
+        // Max index we can scroll to
+        // If we have 10 cards and can see 3, max index is 7 (so 7,8,9 are shown)
+        this.maxIndex = Math.max(0, this.cards.length - this.visibleCards);
     }
 
     updateSlider() {
-      this.slider.style.transform = `translateX(-${this.currentIndex * this.cardWidth}px)`;
+      // Clamp index
+      if (this.currentIndex < 0) this.currentIndex = 0;
+      if (this.currentIndex > this.maxIndex) this.currentIndex = this.maxIndex;
+
+      const translateX = -(this.currentIndex * this.stepWidth);
+      this.slider.style.transform = `translateX(${translateX}px)`;
+      
+      this.updateButtons();
     }
 
-    handlePrevClick() {
-      if (this.currentIndex > 0) {
-        this.currentIndex--;
-        this.updateSlider();
-      }
-    }
+    updateButtons() {
+        if (!this.prevButton || !this.nextButton) return;
 
-    handleNextClick() {
-      const maxIndex = Math.max(this.cards.length - this.visibleCards, 0);
-      if (this.currentIndex < maxIndex) {
-        this.currentIndex++;
-        this.updateSlider();
-      }
+        // Dim buttons if at start or end
+        this.prevButton.style.opacity = this.currentIndex === 0 ? "0.5" : "1";
+        this.prevButton.style.pointerEvents = this.currentIndex === 0 ? "none" : "auto";
+
+        this.nextButton.style.opacity = this.currentIndex >= this.maxIndex ? "0.5" : "1";
+        this.nextButton.style.pointerEvents = this.currentIndex >= this.maxIndex ? "none" : "auto";
     }
 
     handleResize() {
-      const newVisibleCards = this.calculateVisibleCards();
-      if (newVisibleCards !== this.visibleCards) {
-        this.visibleCards = newVisibleCards;
-        this.cardWidth = this.cards[0].offsetWidth + 16;
-        const maxIndex = Math.max(this.cards.length - this.visibleCards, 0);
-        if (this.currentIndex > maxIndex) {
-          this.currentIndex = maxIndex;
-        }
-        this.updateSlider();
-      }
+      // Recalculate dimensions on resize
+      this.calculateMetrics();
+      this.updateSlider(); // Adjust position if bounds changed
     }
 
     setupEventListeners() {
-      this.prevButton.addEventListener("click", this.handlePrevClick.bind(this));
-      this.nextButton.addEventListener("click", this.handleNextClick.bind(this));
+      if (this.prevButton) {
+          this.prevButton.addEventListener("click", () => {
+            if (this.currentIndex > 0) {
+              this.currentIndex--;
+              this.updateSlider();
+            }
+          });
+      }
+
+      if (this.nextButton) {
+          this.nextButton.addEventListener("click", () => {
+            if (this.currentIndex < this.maxIndex) {
+              this.currentIndex++;
+              this.updateSlider();
+            }
+          });
+      }
     }
   }
 
