@@ -7,7 +7,7 @@ class CertificateSlider {
         this.animationId = null;
         this.isHovered = false;
         this.position = 0;
-        this.speed = 0.5;
+        this.speed = 1;
         this.currentIndex = 0;
         this.isMobile = false;
 
