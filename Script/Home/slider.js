@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
       
       this.currentIndex = 0;
       
-      // Bind context
       this.updateSlider = this.updateSlider.bind(this);
       this.handleResize = this.handleResize.bind(this);
       
@@ -24,8 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
       this.updateButtons();
     }
 
+    getVisibleCardsCount() {
+        // Sync with CSS Media Queries
+        if (window.innerWidth <= 600) return 1;
+        if (window.innerWidth <= 1024) return 2;
+        return 3;
+    }
+
     calculateMetrics() {
         if (this.cards.length === 0) return;
+
+        this.visibleCards = this.getVisibleCardsCount();
 
         // Get actual gap from CSS
         const style = window.getComputedStyle(this.slider);
@@ -37,15 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Total width of one "step"
         this.stepWidth = cardWidth + gap;
         
-        // Calculate how many cards fit in the visible container
-        const containerWidth = this.container.offsetWidth;
-        this.visibleCards = Math.floor(containerWidth / this.stepWidth);
-        
-        // Ensure at least one card is considered visible
-        if (this.visibleCards < 1) this.visibleCards = 1;
-
         // Max index we can scroll to
-        // If we have 10 cards and can see 3, max index is 7 (so 7,8,9 are shown)
         this.maxIndex = Math.max(0, this.cards.length - this.visibleCards);
     }
 
@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateButtons() {
         if (!this.prevButton || !this.nextButton) return;
 
-        // Dim buttons if at start or end
         this.prevButton.style.opacity = this.currentIndex === 0 ? "0.5" : "1";
         this.prevButton.style.pointerEvents = this.currentIndex === 0 ? "none" : "auto";
 
@@ -72,9 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     handleResize() {
-      // Recalculate dimensions on resize
       this.calculateMetrics();
-      this.updateSlider(); // Adjust position if bounds changed
+      this.updateSlider();
     }
 
     setupEventListeners() {

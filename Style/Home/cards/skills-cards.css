@@ -2,49 +2,58 @@
     width: 100%;
     overflow: hidden; /* Hide cards outside the view */
     display: flex;
-    justify-content: flex-start; /* Align left initially */
-    padding: 10px 0; /* Add some breathing room for shadows */
+    justify-content: flex-start;
+    padding: 10px 0;
 }
 
 .slider {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem; /* Increased gap for better look */
     transition: transform 0.4s ease-in-out;
     flex-direction: row;
-    width: max-content; /* Allow slider to take necessary width */
+    width: 100%; /* Take full width of parent */
 }
 
 .slider .card {
     /* 
-       Fixed width helps with calculation logic. 
-       Use min-width to ensure they don't shrink.
-       160px is a good base size for icons.
+       Desktop Calculation (3 cards visible):
+       Total width = 100%
+       Gaps = 2 gaps (between 3 cards) of 1.5rem = 3rem total gap space.
+       Actually, if we have flex items, we want each item to be:
+       calc((100% - (2 * 1.5rem)) / 3)
     */
-    width: 160px; 
-    flex: 0 0 auto; /* Don't grow, don't shrink, auto basis */
+    flex: 0 0 calc((100% - 3rem) / 3);
+    
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
-    background: var(--color-black-200); /* Consistent background if needed */
+    padding: 2rem; /* More padding for bigger cards */
+    background: var(--color-black-200);
     border-radius: 6px;
     box-shadow: var(--shadow-medium);
+    aspect-ratio: 1 / 1; /* Make them square-ish or consistent height */
+    min-height: 250px;
 }
 
 .slider .card i {
-    font-size: 5rem;
-    margin-bottom: 0.5rem;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.slider .card:hover i {
+    transform: scale(1.1);
 }
 
 .slider .card h3 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .buttons {
-    display: flex; /* Ensure buttons are visible */
+    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1.5rem;
@@ -52,8 +61,8 @@
 }
 
 .slider-button {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: var(--body-color);
     border: 1px solid var(--text-color-second);
@@ -71,27 +80,35 @@
 }
 
 .slider-button i {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: inherit;
 }
 
-/* Responsive adjustments */
-@media (max-width: 800px) {
-    .slider .card { 
-        width: 140px;
-    }
-    
-    .slider .card i {
-        font-size: 4rem;
+/* Tablet (2 cards visible) */
+@media (max-width: 1024px) {
+    .slider .card {
+        /* 2 cards visible, 1 gap of 1.5rem */
+        flex: 0 0 calc((100% - 1.5rem) / 2);
     }
 }
 
-@media (max-width: 500px) {
-    .slider .card { 
-        width: 120px;
+/* Mobile (1 card visible) */
+@media (max-width: 600px) {
+    .slider .card {
+        /* 1 card visible */
+        flex: 0 0 100%;
+    }
+    
+    .slider {
+        gap: 1rem; /* Smaller gap on mobile if needed, though with 1 card it doesn't matter for width */
+    }
+    
+    .slider .card {
+        padding: 1.5rem;
+        min-height: 200px;
     }
     
     .slider .card i {
-        font-size: 3.5rem;
+        font-size: 5rem;
     }
 }
