@@ -31,7 +31,7 @@ class Footer extends HTMLElement {
                                         <i class="fa-brands fa-github"></i>
                                     </a>
             
-                                    <a aria-label="website" href="" target="_blank" class="social-icon">
+                                    <a aria-label="website" href="kadiryazadzhi.github.io/Digital-Garden/" target="_blank" class="social-icon">
                                         <i class="fa-solid fa-globe"></i>
                                     </a>
             
