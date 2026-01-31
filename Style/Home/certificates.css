@@ -9,7 +9,6 @@
        but keeping it consistent with desktop is okay. Let's stick to existing usually.
        The existing code had margin: 0 2rem. */
     margin: 0 2rem; 
-    transition: transform 0.5s ease-in-out; /* Add transition for button clicks */
 }
 
 .certificate-box {
@@ -97,6 +96,7 @@
     
     .certificates-container {
         margin: 0; /* Remove margin on mobile to use full width */
+        transition: transform 0.5s ease-in-out; /* Enable smooth sliding for button clicks on mobile only */
     }
 }
 
