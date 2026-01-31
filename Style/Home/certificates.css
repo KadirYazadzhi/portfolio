@@ -1,11 +1,15 @@
 .certificates-container {
     display: flex;
-    overflow: visible;
+    overflow: hidden; /* Changed from visible to hidden to clip content */
     width: 100%;
     will-change: transform;
     gap: 1rem;
     padding: 1rem 0;
-    margin: 0 2rem;
+    /* Removed margin: 0 2rem; to align with left side better on mobile if needed, 
+       but keeping it consistent with desktop is okay. Let's stick to existing usually.
+       The existing code had margin: 0 2rem. */
+    margin: 0 2rem; 
+    transition: transform 0.5s ease-in-out; /* Add transition for button clicks */
 }
 
 .certificate-box {
@@ -70,6 +74,11 @@
     align-items: center;
 }
 
+/* Default state: Hide buttons on desktop */
+.certificate-nav-buttons {
+    display: none !important; /* Force hide on desktop */
+}
+
 @media (max-width: 1200px) {
     .certificate-box {
         flex: 0 0 calc(25% - 1rem);
@@ -78,12 +87,21 @@
 
 @media (max-width: 768px) {
     .certificate-box {
-        flex: 0 0 calc(33.333% - 1rem);
+        flex: 0 0 calc(50% - 1rem); /* Changed from 33.333% to 50% for better mobile view */
+    }
+    
+    /* Show buttons on mobile */
+    .certificate-nav-buttons {
+        display: flex !important;
+    }
+    
+    .certificates-container {
+        margin: 0; /* Remove margin on mobile to use full width */
     }
 }
 
 @media (max-width: 576px) {
     .certificate-box {
-        flex: 0 0 calc(80% - 1rem);
+        flex: 0 0 100%; /* Full width cards on very small screens */
     }
 }
