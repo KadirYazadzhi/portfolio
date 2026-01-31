@@ -1,6 +1,6 @@
 .certificates-container {
     display: flex;
-    overflow: hidden; /* Changed from visible to hidden to clip content */
+    overflow: visible; /* Changed back to visible so content hanging off the edge isn't clipped by the track itself */
     width: 100%;
     will-change: transform;
     gap: 1rem;
