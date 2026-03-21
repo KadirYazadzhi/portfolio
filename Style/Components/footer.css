@@ -75,6 +75,16 @@ footer {
     cursor: pointer;
 }
 
+.footer-name-link {
+    color: var(--color-blue-400);
+    text-decoration: none;
+    transition: var(--animation);
+}
+
+.footer-name-link:hover {
+    color: var(--color-blue-300);
+}
+
 .social-icon {
     font-size: 24px;
     border-radius: 50%;

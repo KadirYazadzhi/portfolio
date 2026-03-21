@@ -25,6 +25,57 @@
     box-sizing: border-box;
 }
 
+/* Project Card Base */
+.project-card {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative; /* Base for absolute positioning */
+}
+
+.project-links {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.4rem;
+    z-index: 10;
+}
+
+.project-links a {
+    color: var(--text-color-second);
+    transition: var(--animation);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.project-links a i {
+    color: inherit;
+}
+
+.project-links a:hover {
+    color: var(--color-blue-500);
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.project-card-right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-right-section h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    padding-right: 4rem; /* Space for the absolute links */
+}
+
 .project-card-left-section {
     font-size: 3rem;
 }

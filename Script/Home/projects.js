@@ -76,18 +76,47 @@ function createProjectCard(project) {
         });
     }
 
+    // Links Container (Placed as direct child for absolute positioning)
+    const linksContainer = document.createElement('div');
+    linksContainer.classList.add('project-links');
+
+    // GitHub Icon (Always present if repo exists)
+    if (project.repo_url || project.repo) {
+        const repoUrl = project.repo_url || `https://github.com/KadirYazadzhi/${project.repo}`;
+        const githubLink = document.createElement('a');
+        githubLink.href = repoUrl;
+        githubLink.target = '_blank';
+        githubLink.innerHTML = '<i class="fa-brands fa-github"></i>';
+        githubLink.title = 'View Source Code';
+        githubLink.addEventListener('click', (e) => e.stopPropagation());
+        linksContainer.appendChild(githubLink);
+    }
+
+    // Website Icon (Only if website_url exists)
+    if (project.website_url) {
+        const websiteLink = document.createElement('a');
+        websiteLink.href = project.website_url;
+        websiteLink.target = '_blank';
+        websiteLink.innerHTML = '<i class="fa-solid fa-earth-americas"></i>';
+        websiteLink.title = 'View Live Project';
+        websiteLink.addEventListener('click', (e) => e.stopPropagation());
+        linksContainer.appendChild(websiteLink);
+    }
+
     rightSection.appendChild(title);
     rightSection.appendChild(description);
     rightSection.appendChild(bottomSection);
 
     card.appendChild(leftSection);
     card.appendChild(rightSection);
+    card.appendChild(linksContainer); // Directly to card
 
     // Make card clickable
     card.style.cursor = 'pointer';
     card.addEventListener('click', () => {
-        if (project.repo) {
-             window.open(`https://github.com/KadirYazadzhi/${project.repo}`, '_blank');
+        const repoUrl = project.repo_url || `https://github.com/KadirYazadzhi/${project.repo}`;
+        if (repoUrl) {
+             window.open(repoUrl, '_blank');
         }
     });
 

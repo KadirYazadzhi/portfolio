@@ -3,6 +3,7 @@
     "title": "puppeteer",
     "description": "A sophisticated Linux framework for binary instrumentation and process orchestration, featuring safe memory manipulation and advanced RPC communication channels.",
     "repo": "puppeteer",
+    "repo_url": "https://github.com/KadirYazadzhi/puppeteer",
     "languages": [
       "cplus"
     ],
@@ -12,6 +13,7 @@
     "title": "ZCracker",
     "description": "ZCracker is an ultra-high performance archive cracker utilizing AVX2 SIMD, GPU acceleration, and zero-allocation for extreme speed.",
     "repo": "ZCracker",
+    "repo_url": "https://github.com/KadirYazadzhi/ZCracker",
     "languages": [
       "csharp"
     ],
@@ -21,6 +23,7 @@
     "title": "Pico-Rubber-Ducky",
     "description": "Transform your Raspberry Pi Pico into a powerful Bad USB device with advanced payload control and stealth features.",
     "repo": "Pico-Rubber-Ducky",
+    "repo_url": "https://github.com/KadirYazadzhi/Pico-Rubber-Ducky",
     "languages": [
       "python"
     ],
@@ -30,6 +33,7 @@
     "title": "Home-Lab-Infrastructure",
     "description": "A dedicated DevOps archive for managing a secure, production-grade home lab with automated services and strict private access.",
     "repo": "Home-Lab-Infrastructure",
+    "repo_url": "https://github.com/KadirYazadzhi/Home-Lab-Infrastructure",
     "languages": [
       "shell"
     ],
@@ -39,6 +43,7 @@
     "title": "Informatics-Olympiad-Topics",
     "description": "A comprehensive collection of programming topics and key concepts to prepare for informatics competitions and challenges!",
     "repo": "Informatics-Olympiad-Topics",
+    "repo_url": "https://github.com/KadirYazadzhi/Informatics-Olympiad-Topics",
     "languages": [
       "cplus",
       "html"
@@ -49,6 +54,7 @@
     "title": "Cybersecurity-Fundamentals",
     "description": "Cybersecurity Essentials – A quick guide to core cybersecurity concepts and best practices.",
     "repo": "Cybersecurity-Fundamentals",
+    "repo_url": "https://github.com/KadirYazadzhi/Cybersecurity-Fundamentals",
     "languages": [],
     "category": "Education"
   },
@@ -56,6 +62,7 @@
     "title": "CPlusPlus-KeyConcepts",
     "description": "A complete guide to mastering C++, taking you from basics to advanced engineering topics.",
     "repo": "CPlusPlus---KeyConcepts",
+    "repo_url": "https://github.com/KadirYazadzhi/CPlusPlus---KeyConcepts",
     "languages": [
       "cplus"
     ],
@@ -65,6 +72,7 @@
     "title": "SoftUni",
     "description": "This repository tracks my SoftUni journey through algorithms, data structures, backend architecture, and database management.",
     "repo": "SoftUni",
+    "repo_url": "https://github.com/KadirYazadzhi/SoftUni",
     "languages": [
       "js",
       "css",
@@ -80,6 +88,7 @@
     "title": "CODE-BURGAS-Archive",
     "description": "This repository contains solutions for all CODE@BURGAS competition problems from 2019 to 2025.",
     "repo": "CODE-BURGAS-Archive",
+    "repo_url": "https://github.com/KadirYazadzhi/CODE-BURGAS-Archive",
     "languages": [
       "cplus"
     ],
@@ -89,6 +98,7 @@
     "title": "University-Project-Real-Estate-Agency",
     "description": "This console-based Real Estate Agency Information System provides comprehensive property management with robust data persistence.",
     "repo": "University-Project-Real-Estate-Agency",
+    "repo_url": "https://github.com/KadirYazadzhi/University-Project-Real-Estate-Agency",
     "languages": [
       "cplus"
     ],
@@ -98,6 +108,7 @@
     "title": "Digital-Garden",
     "description": "A living digital garden and personal archive dedicated to exploring the depths of programming, cybersecurity, and technology.",
     "repo": "Digital-Garden",
+    "repo_url": "https://github.com/KadirYazadzhi/Digital-Garden",
     "languages": [
       "html"
     ],
@@ -107,6 +118,7 @@
     "title": "TU-Varna-PO-2025",
     "description": "Resources for my participation in the National University Online Programming Olympiad 2025.",
     "repo": "TU-Varna-PO-2025",
+    "repo_url": "https://github.com/KadirYazadzhi/TU-Varna-PO-2025",
     "languages": [
       "python",
       "csharp",
@@ -118,6 +130,7 @@
     "title": "SoftUni-ASP.NET-Project",
     "description": "Sophisticated online marketplace designed to connect buyers and sellers through a secure, intuitive, and interactive bidding platform.",
     "repo": "SoftUni---ASP.NET-Fundamentals-Project-Assignment",
+    "repo_url": "https://github.com/KadirYazadzhi/SoftUni---ASP.NET-Fundamentals-Project-Assignment",
     "languages": [
       "csharp"
     ],
@@ -127,6 +140,7 @@
     "title": "WebIDE",
     "description": "A modern, web-based IDE for seamless coding directly in your browser.",
     "repo": "WebIDE",
+    "repo_url": "https://github.com/KadirYazadzhi/WebIDE",
     "languages": [
       "js",
       "css",
@@ -139,6 +153,8 @@
     "title": "portfolio",
     "description": "A modern and interactive portfolio showcasing my skills, projects, and professional journey in web development and software engineering!",
     "repo": "portfolio",
+    "repo_url": "https://github.com/KadirYazadzhi/portfolio",
+    "website_url": "https://kadiryazadzhi.com",
     "languages": [
       "js",
       "css",
@@ -150,6 +166,7 @@
     "title": "UniversitySystem",
     "description": "A comprehensive, architectural-grade console application for managing academic, financial, and administrative university operations.",
     "repo": "UniversitySystem",
+    "repo_url": "https://github.com/KadirYazadzhi/UniversitySystem",
     "languages": [
       "csharp"
     ],
@@ -159,6 +176,7 @@
     "title": "JudgeX",
     "description": "JudgeX appears to be an interactive platform designed for mastering coding challenges through a comprehensive set of features.",
     "repo": "JudgeX",
+    "repo_url": "https://github.com/KadirYazadzhi/JudgeX",
     "languages": [
       "js",
       "html",
@@ -170,6 +188,7 @@
     "title": "P2PShare",
     "description": "P2PShare is a fast, secure, and fully decentralized peer-to-peer file sharing system built in modern C++20, powered by DHT-based discovery and encrypted connections.",
     "repo": "P2PShare",
+    "repo_url": "https://github.com/KadirYazadzhi/P2PShare",
     "languages": [
       "cplus"
     ],
@@ -179,6 +198,7 @@
     "title": "Document Converter",
     "description": "The Document Converter is a robust console-based tool that effortlessly extracts text and images from multiple document formats, transforming them into well-structured Markdown (.md) files.",
     "repo": "DocumentConverter",
+    "repo_url": "https://github.com/KadirYazadzhi/DocumentConverter",
     "languages": [
       "csharp"
     ],
@@ -188,6 +208,7 @@
     "title": "ArtSync",
     "description": "ArtSync is a platform where artists share music, photos, and films, connecting with fans through exclusive content and subscriptions.",
     "repo": "ArtSync",
+    "repo_url": "https://github.com/KadirYazadzhi/ArtSync",
     "languages": [
       "html",
       "css",
@@ -200,9 +221,22 @@
     "title": "AleaSim",
     "description": "An advanced casino simulation where behavioral AI dynamically adjusts volatility, RTP, and retention mechanics to optimize player engagement.",
     "repo": "AleaSim",
+    "repo_url": "https://github.com/KadirYazadzhi/AleaSim",
     "languages": [
       "csharp"
     ],
     "category": "Programming"
+  },
+  {
+    "title": "SOP-TU-Varna",
+    "description": "A collection of competitive programming problems and solutions from the Student Programming Olympiad at TU-Varna, implemented in multiple languages.",
+    "repo": "SOP-TU-Varna",
+    "repo_url": "https://github.com/KadirYazadzhi/SOP-TU-Varna",
+    "languages": [
+      "cplus",
+      "csharp",
+      "java"
+    ],
+    "category": "Education"
   }
 ]

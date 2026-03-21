@@ -6,7 +6,9 @@ class Footer extends HTMLElement {
                     <div class="bottom-section">
                         <div class="left-bottom-part">
                             <div class="contact-part">
-                                <h3>KadirYazadzhi</h3>
+                                <a href="https://garden.kadiryazadzhi.tech" target="_blank" class="footer-name-link">
+                                    <h3>KadirYazadzhi</h3>
+                                </a>
             
                                 <div class="icons-box">
                                     <i class="fa-solid fa-location-dot"></i>
@@ -74,7 +76,7 @@ class Footer extends HTMLElement {
             </footer>
         `;
 
-        this.querySelector(".copyright-text").innerHTML = `Copyright © ${new Date().getFullYear()} - All rights reserved || Designed By: Kadir Yazadzhi`;
+        this.querySelector(".copyright-text").innerHTML = `Copyright © ${new Date().getFullYear()} - All rights reserved || Designed By: <a href="https://garden.kadiryazadzhi.tech" target="_blank" class="footer-name-link">Kadir Yazadzhi</a>`;
     }
 }
 customElements.define('my-footer', Footer);
