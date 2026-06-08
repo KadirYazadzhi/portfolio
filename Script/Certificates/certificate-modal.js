@@ -51,6 +51,14 @@ class LightboxManager {
     }
 }
 
+const ORIGINAL_ORDER = [
+    'HTML', 'CSS', 'Bootstrap', 'Javascript', 'Typescript', 'C++', 'C#', 'Python', 'SQL', 'MySQL', 'MSSQL', 'Database', 'Google', 'Microsoft', 'Other'
+];
+
+const INSTITUTION_ORDER = [
+    'SoftUni', 'SWU', 'TU VARNA', 'UniBIT', 'HackerRank', 'Great Learning', 'FreeCodeCamp', 'SoloLearn', 'Simplilearn', 'Udemy', 'Cisco', 'Code@Burgas', 'Google', 'Microsoft', 'Other'
+];
+
 const ICON_MAPPING = {
     'HTML': '<i class="devicon-html5-plain colored"></i>',
     'CSS': '<i class="devicon-css3-plain colored"></i>',
@@ -64,7 +72,6 @@ const ICON_MAPPING = {
     'MySQL': '<i class="devicon-mysql-original"></i>',
     'MSSQL': '<i class="devicon-microsoftsqlserver-plain colored"></i>',
     'Database': '<i class="fa-solid fa-database"></i>',
-    'DataBase': '<i class="fa-solid fa-database"></i>',
     'Google': '<i class="devicon-google-plain colored"></i>',
     'Microsoft': `<div class="microsoft-logo">
                         <div class="square red"></div>
@@ -73,22 +80,19 @@ const ICON_MAPPING = {
                         <div class="square yellow"></div>
                     </div>`,
     'Other': '<i class="fa-solid fa-ellipsis"></i>',
-    'React': '<i class="devicon-react-original colored"></i>',
-    'Cybersecurity': '<i class="fa-solid fa-shield-halved"></i>',
-    'Web Development and Design': '<i class="fa-solid fa-globe"></i>',
-    'Crypto': '<i class="fa-solid fa-bitcoin-sign"></i>',
     // Institutions
-    'SoftUni': '<i class="fa-solid fa-graduation-cap"></i>',
-    'HackerRank': '<i class="fa-brands fa-hackerrank"></i>',
-    'SoloLearn': '<i class="fa-solid fa-code"></i>',
-    'FreeCodeCamp': '<i class="fa-brands fa-free-code-camp"></i>',
-    'Great Learning': '<i class="fa-solid fa-book-open"></i>',
-    'Simplilearn': '<i class="fa-solid fa-book"></i>',
-    'Udemy': '<i class="fa-solid fa-chalkboard-user"></i>',
-    'Cisco': '<i class="fa-solid fa-network-wired"></i>',
-    'SWU': '<i class="fa-solid fa-building-columns"></i>',
-    'UniBIT': '<i class="fa-solid fa-university"></i>',
-    'Code@Burgas': '<i class="fa-solid fa-laptop-code"></i>'
+    'SoftUni': '<i class="fa-solid fa-graduation-cap" style="color: #ed1c24;"></i>',
+    'SWU': '<i class="fa-solid fa-building-columns" style="color: #2c3e50;"></i>',
+    'TU VARNA': '<i class="fa-solid fa-university" style="color: #2980b9;"></i>',
+    'UniBIT': '<i class="fa-solid fa-school" style="color: #16a085;"></i>',
+    'HackerRank': '<i class="devicon-hackerrank-plain colored"></i>',
+    'Great Learning': '<i class="fa-solid fa-book-open" style="color: #3498db;"></i>',
+    'FreeCodeCamp': '<i class="devicon-freecodecamp-plain"></i>',
+    'SoloLearn': '<i class="fa-solid fa-code" style="color: #e67e22;"></i>',
+    'Simplilearn': '<i class="fa-solid fa-certificate" style="color: #f1c40f;"></i>',
+    'Udemy': '<i class="fa-solid fa-chalkboard-user" style="color: #a435f0;"></i>',
+    'Cisco': '<i class="fa-solid fa-network-wired" style="color: #049fd9;"></i>',
+    'Code@Burgas': '<i class="fa-solid fa-laptop-code" style="color: #27ae60;"></i>'
 };
 
 class CertificatesManager {
@@ -194,12 +198,31 @@ class CertificatesManager {
             grouped[key].push(cert);
         });
 
-        // Sort keys: "Other" should be last
-        const keys = Object.keys(grouped).sort((a, b) => {
-            if (a === 'Other') return 1;
-            if (b === 'Other') return -1;
-            return a.localeCompare(b);
-        });
+        let keys;
+        if (this.currentFilter === 'type') {
+            // Use original order for Type, excluding 'Other' for now to ensure it goes last
+            const orderWithoutOther = ORIGINAL_ORDER.filter(k => k !== 'Other');
+            keys = orderWithoutOther.filter(orderKey => grouped[orderKey]);
+            
+            // Add any missing types that might be in the JSON but not in ORIGINAL_ORDER (except 'Other')
+            Object.keys(grouped).forEach(key => {
+                if (!keys.includes(key) && key !== 'Other') keys.push(key);
+            });
+            
+            // ALWAYS put Other at the end if it exists
+            if (grouped['Other']) keys.push('Other');
+        } else {
+            // Use specific institution order
+            const orderWithoutOther = INSTITUTION_ORDER.filter(k => k !== 'Other');
+            keys = orderWithoutOther.filter(orderKey => grouped[orderKey]);
+            
+            // Add any missing institutions that might be in the JSON (alphabetical)
+            Object.keys(grouped).sort().forEach(key => {
+                if (!keys.includes(key) && key !== 'Other') keys.push(key);
+            });
+            
+            if (grouped['Other']) keys.push('Other');
+        }
 
         keys.forEach(key => {
             const card = document.createElement('div');
