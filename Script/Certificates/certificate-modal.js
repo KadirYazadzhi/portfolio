@@ -56,7 +56,7 @@ const ORIGINAL_ORDER = [
 ];
 
 const INSTITUTION_ORDER = [
-    'SoftUni', 'SWU', 'TU VARNA', 'UniBIT', 'HackerRank', 'Great Learning', 'FreeCodeCamp', 'SoloLearn', 'Simplilearn', 'Udemy', 'Cisco', 'Code@Burgas', 'Google', 'Microsoft', 'Other'
+    'SoftUni', 'SWU', 'TU VARNA', 'UniBIT', 'HackerRank', 'Great Learning', 'FreeCodeCamp', 'SoloLearn', 'Simplilearn', 'Udemy', 'Code@Burgas', 'Google', 'Microsoft', 'Other'
 ];
 
 const ICON_MAPPING = {
@@ -80,18 +80,17 @@ const ICON_MAPPING = {
                         <div class="square yellow"></div>
                     </div>`,
     'Other': '<i class="fa-solid fa-ellipsis"></i>',
-    // Institutions
-    'SoftUni': '<i class="fa-solid fa-graduation-cap" style="color: #ed1c24;"></i>',
-    'SWU': '<i class="fa-solid fa-building-columns" style="color: #2c3e50;"></i>',
-    'TU VARNA': '<i class="fa-solid fa-university" style="color: #2980b9;"></i>',
-    'UniBIT': '<i class="fa-solid fa-school" style="color: #16a085;"></i>',
+    // Institutions - Using real logos
+    'SoftUni': '<img src="https://softuni.bg/Content/images/common/softuni-logo.png" alt="SoftUni" style="width: 100px; height: auto;">',
+    'SWU': '<img src="https://www.swu.bg/images/logo_swu_en.png" alt="SWU" style="width: 80px; height: auto;">',
+    'TU VARNA': '<img src="https://tu-varna.bg/images/logo-tu.png" alt="TU Varna" style="width: 80px; height: auto;">',
+    'UniBIT': '<img src="https://www.unibit.bg/sites/default/files/logo_unibit.png" alt="UniBIT" style="width: 80px; height: auto;">',
     'HackerRank': '<i class="devicon-hackerrank-plain colored"></i>',
-    'Great Learning': '<i class="fa-solid fa-book-open" style="color: #3498db;"></i>',
+    'Great Learning': '<img src="https://d1vwxdpzq1dfcy.cloudfront.net/static/images/gl-logo-blue.png" alt="Great Learning" style="width: 100px; height: auto;">',
     'FreeCodeCamp': '<i class="devicon-freecodecamp-plain"></i>',
-    'SoloLearn': '<i class="fa-solid fa-code" style="color: #e67e22;"></i>',
-    'Simplilearn': '<i class="fa-solid fa-certificate" style="color: #f1c40f;"></i>',
-    'Udemy': '<i class="fa-solid fa-chalkboard-user" style="color: #a435f0;"></i>',
-    'Cisco': '<i class="fa-solid fa-network-wired" style="color: #049fd9;"></i>',
+    'SoloLearn': '<img src="https://vignette.wikia.nocookie.net/logopedia/images/e/e0/SoloLearn_2019.png" alt="SoloLearn" style="width: 80px; height: auto;">',
+    'Simplilearn': '<img src="https://www.simplilearn.com/ice9/assets/Logos/simplilearn-logo.png" alt="Simplilearn" style="width: 100px; height: auto;">',
+    'Udemy': '<img src="https://www.udemy.com/static/images/v7/logo-udemy.svg" alt="Udemy" style="width: 80px; height: auto;">',
     'Code@Burgas': '<i class="fa-solid fa-laptop-code" style="color: #27ae60;"></i>'
 };
 

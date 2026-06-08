@@ -168,7 +168,7 @@
         {
           "image": "Image/Certificate/MySQL/Operators%20in%20MySQL.webp",
           "title": "Operators in MySQL",
-          "institution": "SoftUni"
+          "institution": "Other"
         }
       ]
     },
@@ -195,7 +195,7 @@
         {
           "image": "Image/Certificate/Python/Python%20MySQL.webp",
           "title": "Python MySQL",
-          "institution": "SoftUni"
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Python/QR%20code%20in%20Python.webp",
@@ -210,7 +210,7 @@
         {
           "image": "Image/Certificate/Python/Python-Basic.webp",
           "title": "Python Basic",
-          "institution": "SoftUni"
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Python/Programming%20Basics%20-%20Python.webp",
@@ -226,27 +226,27 @@
         {
           "image": "Image/Certificate/C++/C++%20Basic.webp",
           "title": "C++ Basic",
-          "institution": "SoftUni"
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/C++/C++%20Fundamentals.webp",
           "title": "C++ Fundamentals",
-          "institution": "SoftUni"
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/C++/CPlus-Advanced.webp",
           "title": "C++ Advanced",
-          "institution": "SoftUni"
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/C++/C++%20OOP.webp",
           "title": "C++ OOP",
-          "institution": "SoftUni"
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/C++/CPlusPlus-Development.webp",
           "title": "C++ Development",
-          "institution": "SoftUni"
+          "institution": "Other"
         }
       ]
     },
@@ -257,22 +257,22 @@
         {
           "image": "Image/Certificate/C%23/Programming%20Basics%20with%20C%23.webp",
           "title": "C# Basic",
-          "institution": "SoftUni"
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/C%23/CSharp-Fundamentals.webp",
           "title": "Programming Fundamentals with C#",
-          "institution": "SoftUni"
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/C%23/CSharp-Advanced.webp",
           "title": "C# Advanced",
-          "institution": "SoftUni"
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/C%23/CSharp-OOP.webp",
           "title": "C# OOP",
-          "institution": "SoftUni"
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/C%23/Entity-Framework-Core.webp",
@@ -340,7 +340,7 @@
     },
     {
       "id": "cardDataBase",
-      "title": "DataBase",
+      "title": "Database",
       "certificates": [
         {
           "image": "Image/Certificate/Database/Data%20Visualization.webp",
@@ -355,76 +355,6 @@
         {
           "image": "Image/Certificate/Database/Database%20Normalization.webp",
           "title": "Database Normalization",
-          "institution": "Other"
-        }
-      ]
-    },
-    {
-      "id": "cardReact",
-      "title": "React",
-      "certificates": [
-        {
-          "image": "Image/Certificate/React/React%20JS.webp",
-          "title": "React JS",
-          "institution": "Other"
-        }
-      ]
-    },
-    {
-      "id": "cardWebDevelopment",
-      "title": "Web Development and Design",
-      "certificates": [
-        {
-          "image": "Image/Certificate/Web%20Development/Program%20in%20Web%20Development%20With%20jQuery,%20Ajax%20and%20JSON.webp",
-          "title": "Program in Web Development With jQuery, Ajax and JSON",
-          "institution": "Other"
-        },
-        {
-          "image": "Image/Certificate/Web%20Development/Web%20Designing.webp",
-          "title": "Web Designing",
-          "institution": "Other"
-        },
-        {
-          "image": "Image/Certificate/Web%20Development/Web%20Development.webp",
-          "title": "Web Development",
-          "institution": "Other"
-        },
-        {
-          "image": "Image/Certificate/Frond%20End%20Libraries/Front%20End%20Development%20Libraries.webp",
-          "title": "Front End Development Libraries",
-          "institution": "FreeCodeCamp"
-        }
-      ]
-    },
-    {
-      "id": "cardCrypto",
-      "title": "Crypto",
-      "certificates": [
-        {
-          "image": "Image/Certificate/Crypto%20Currency/Bitcoin%20for%20Beginners.webp",
-          "title": "Bitcoin for Beginners",
-          "institution": "Udemy"
-        }
-      ]
-    },
-    {
-      "id": "cardCybersecurity",
-      "image": "Image/cybersecurity.png",
-      "title": "Cybersecurity",
-      "certificates": [
-        {
-          "image": "Image/Certificate/Security%20and%20Hacking/Cybersecurity%20Specialist.webp",
-          "title": "Cybersecurity Specialist",
-          "institution": "Cisco"
-        },
-        {
-          "image": "Image/Certificate/Security%20and%20Hacking/Database%20Security.webp",
-          "title": "Database Security",
-          "institution": "Other"
-        },
-        {
-          "image": "Image/Certificate/Security%20and%20Hacking/Ethical%20Hacking.webp",
-          "title": "Ethical Hacking",
           "institution": "Other"
         }
       ]
@@ -542,6 +472,51 @@
           "image": "Image/Certificate/Other/Certificate of Participation in the National Information Technology Competition - SWU - 2.webp",
           "title": "Certificate of Participation in the National Information Technology Competition - SWU",
           "institution": "SWU"
+        },
+        {
+          "image": "Image/Certificate/React/React%20JS.webp",
+          "title": "React JS",
+          "institution": "Other"
+        },
+        {
+          "image": "Image/Certificate/Web%20Development/Program%20in%20Web%20Development%20With%20jQuery,%20Ajax%20and%20JSON.webp",
+          "title": "Program in Web Development With jQuery, Ajax and JSON",
+          "institution": "Other"
+        },
+        {
+          "image": "Image/Certificate/Web%20Development/Web%20Designing.webp",
+          "title": "Web Designing",
+          "institution": "Other"
+        },
+        {
+          "image": "Image/Certificate/Web%20Development/Web%20Development.webp",
+          "title": "Web Development",
+          "institution": "Other"
+        },
+        {
+          "image": "Image/Certificate/Frond%20End%20Libraries/Front%20End%20Development%20Libraries.webp",
+          "title": "Front End Development Libraries",
+          "institution": "FreeCodeCamp"
+        },
+        {
+          "image": "Image/Certificate/Crypto%20Currency/Bitcoin%20for%20Beginners.webp",
+          "title": "Bitcoin for Beginners",
+          "institution": "Udemy"
+        },
+        {
+          "image": "Image/Certificate/Security%20and%20Hacking/Cybersecurity%20Specialist.webp",
+          "title": "Cybersecurity Specialist",
+          "institution": "Other"
+        },
+        {
+          "image": "Image/Certificate/Security%20and%20Hacking/Database%20Security.webp",
+          "title": "Database Security",
+          "institution": "Other"
+        },
+        {
+          "image": "Image/Certificate/Security%20and%20Hacking/Ethical%20Hacking.webp",
+          "title": "Ethical Hacking",
+          "institution": "Other"
         }
       ]
     }
