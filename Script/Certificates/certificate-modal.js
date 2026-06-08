@@ -51,6 +51,46 @@ class LightboxManager {
     }
 }
 
+const ICON_MAPPING = {
+    'HTML': '<i class="devicon-html5-plain colored"></i>',
+    'CSS': '<i class="devicon-css3-plain colored"></i>',
+    'Bootstrap': '<i class="devicon-bootstrap-plain colored"></i>',
+    'Javascript': '<i class="devicon-javascript-plain colored"></i>',
+    'Typescript': '<i class="devicon-typescript-plain colored"></i>',
+    'C++': '<i class="devicon-cplusplus-plain colored"></i>',
+    'C#': '<i class="devicon-csharp-plain colored"></i>',
+    'Python': '<i class="devicon-python-plain colored"></i>',
+    'SQL': '<i class="devicon-azuresqldatabase-plain colored"></i>',
+    'MySQL': '<i class="devicon-mysql-original"></i>',
+    'MSSQL': '<i class="devicon-microsoftsqlserver-plain colored"></i>',
+    'Database': '<i class="fa-solid fa-database"></i>',
+    'DataBase': '<i class="fa-solid fa-database"></i>',
+    'Google': '<i class="devicon-google-plain colored"></i>',
+    'Microsoft': `<div class="microsoft-logo">
+                        <div class="square red"></div>
+                        <div class="square green"></div>
+                        <div class="square blue"></div>
+                        <div class="square yellow"></div>
+                    </div>`,
+    'Other': '<i class="fa-solid fa-ellipsis"></i>',
+    'React': '<i class="devicon-react-original colored"></i>',
+    'Cybersecurity': '<i class="fa-solid fa-shield-halved"></i>',
+    'Web Development and Design': '<i class="fa-solid fa-globe"></i>',
+    'Crypto': '<i class="fa-solid fa-bitcoin-sign"></i>',
+    // Institutions
+    'SoftUni': '<i class="fa-solid fa-graduation-cap"></i>',
+    'HackerRank': '<i class="fa-brands fa-hackerrank"></i>',
+    'SoloLearn': '<i class="fa-solid fa-code"></i>',
+    'FreeCodeCamp': '<i class="fa-brands fa-free-code-camp"></i>',
+    'Great Learning': '<i class="fa-solid fa-book-open"></i>',
+    'Simplilearn': '<i class="fa-solid fa-book"></i>',
+    'Udemy': '<i class="fa-solid fa-chalkboard-user"></i>',
+    'Cisco': '<i class="fa-solid fa-network-wired"></i>',
+    'SWU': '<i class="fa-solid fa-building-columns"></i>',
+    'UniBIT': '<i class="fa-solid fa-university"></i>',
+    'Code@Burgas': '<i class="fa-solid fa-laptop-code"></i>'
+};
+
 class CertificatesManager {
     constructor(lightboxManager) {
         this.modal = document.getElementById('certificatesModal');
@@ -58,14 +98,27 @@ class CertificatesManager {
         this.certificatesGrid = document.getElementById('certificatesGrid');
         this.closeBtn = document.querySelector('.close-modal');
         this.cardsContainer = document.querySelector('.certificates-cards-modal');
+        this.listViewContainer = document.getElementById('certificates-list-view');
         this.lightboxManager = lightboxManager;
+        
+        // Filter Elements
+        this.filterRadios = document.querySelectorAll('input[name="cert-filter"]');
+        this.searchInput = document.getElementById('cert-search');
+        this.viewToggleBtn = document.getElementById('view-toggle-btn');
+        
         this.certificatesData = null;
+        this.allCertificates = [];
+        this.currentFilter = 'type'; // 'type' or 'institution'
+        this.viewMode = 'categories'; // 'categories' or 'list'
+        this.searchQuery = '';
+        
         this.init();
     }
 
     init() {
         this.loadCertificatesData();
         this.addModalEventListeners();
+        this.addFilterEventListeners();
     }
 
     loadCertificatesData() {
@@ -73,21 +126,111 @@ class CertificatesManager {
             .then(response => response.json())
             .then(data => {
                 this.certificatesData = data.cards;
-                this.addCardClickListeners();
+                this.processCertificates();
+                this.render();
             })
             .catch(error => console.error('Error loading certificates:', error));
     }
 
-    addCardClickListeners() {
-        this.cardsContainer.addEventListener('click', (e) => {
-            const cardElement = e.target.closest('.certificates-card');
-            if (!cardElement) return;
+    processCertificates() {
+        this.allCertificates = [];
+        this.certificatesData.forEach(card => {
+            card.certificates.forEach(cert => {
+                this.allCertificates.push({
+                    ...cert,
+                    type: card.title
+                });
+            });
+        });
+    }
 
-            const cardTitle = cardElement.querySelector('.paragraph').textContent.trim();
-            const cardData = this.certificatesData.find(card => card.title === cardTitle);
-            if (!cardData || cardData.certificates.length === 0) return;
+    addFilterEventListeners() {
+        this.filterRadios.forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                this.currentFilter = e.target.value;
+                this.render();
+            });
+        });
 
-            this.showCertificatesModal(cardData);
+        this.searchInput.addEventListener('input', (e) => {
+            this.searchQuery = e.target.value.toLowerCase();
+            this.render();
+        });
+
+        this.viewToggleBtn.addEventListener('click', () => {
+            this.viewMode = this.viewMode === 'categories' ? 'list' : 'categories';
+            this.viewToggleBtn.classList.toggle('active', this.viewMode === 'list');
+            this.viewToggleBtn.querySelector('i').className = this.viewMode === 'list' ? 'bx bx-grid-alt' : 'bx bx-list-ul';
+            this.render();
+        });
+    }
+
+    render() {
+        const filteredCerts = this.allCertificates.filter(cert => 
+            cert.title.toLowerCase().includes(this.searchQuery) || 
+            cert.institution.toLowerCase().includes(this.searchQuery) ||
+            cert.type.toLowerCase().includes(this.searchQuery)
+        );
+
+        if (this.viewMode === 'categories') {
+            this.cardsContainer.style.display = 'grid';
+            this.listViewContainer.style.display = 'none';
+            this.renderCategoryView(filteredCerts);
+        } else {
+            this.cardsContainer.style.display = 'none';
+            this.listViewContainer.style.display = 'grid';
+            this.renderListView(filteredCerts);
+        }
+    }
+
+    renderCategoryView(filteredCerts) {
+        this.cardsContainer.innerHTML = '';
+        
+        // Group certificates
+        const grouped = {};
+        filteredCerts.forEach(cert => {
+            const key = cert[this.currentFilter];
+            if (!grouped[key]) grouped[key] = [];
+            grouped[key].push(cert);
+        });
+
+        // Sort keys: "Other" should be last
+        const keys = Object.keys(grouped).sort((a, b) => {
+            if (a === 'Other') return 1;
+            if (b === 'Other') return -1;
+            return a.localeCompare(b);
+        });
+
+        keys.forEach(key => {
+            const card = document.createElement('div');
+            card.classList.add('certificates-card', 'card');
+            
+            const iconHtml = ICON_MAPPING[key] || '<i class="fa-solid fa-certificate"></i>';
+            
+            card.innerHTML = `
+                ${iconHtml}
+                <p class="paragraph">${key}</p>
+            `;
+
+            card.addEventListener('click', () => {
+                this.showCertificatesModal(key, grouped[key]);
+            });
+
+            this.cardsContainer.appendChild(card);
+        });
+    }
+
+    renderListView(filteredCerts) {
+        this.listViewContainer.innerHTML = '';
+        
+        if (filteredCerts.length === 0) {
+            this.listViewContainer.innerHTML = '<p class="paragraph">No certificates found.</p>';
+            return;
+        }
+
+        filteredCerts.forEach(cert => {
+            const certCard = this.createCertificateCard(cert);
+            this.listViewContainer.appendChild(certCard);
         });
     }
 
@@ -106,8 +249,15 @@ class CertificatesManager {
         name.classList.add('certificate-name', 'paragraph');
         name.textContent = cert.title;
 
+        const inst = document.createElement('span');
+        inst.classList.add('certificate-institution');
+        inst.style.fontSize = '0.8rem';
+        inst.style.opacity = '0.7';
+        inst.textContent = cert.institution;
+
         certCard.appendChild(img);
         certCard.appendChild(name);
+        certCard.appendChild(inst);
 
         certCard.addEventListener('click', () => {
             this.lightboxManager.open(cert.image, cert.title);
@@ -116,11 +266,11 @@ class CertificatesManager {
         return certCard;
     }
 
-    showCertificatesModal(cardData) {
+    showCertificatesModal(title, certificates) {
         this.certificatesGrid.innerHTML = '';
-        this.modalTitle.textContent = `${cardData.title} Certificates`;
+        this.modalTitle.textContent = `${title} Certificates`;
 
-        cardData.certificates.forEach(cert => {
+        certificates.forEach(cert => {
             if (cert.image && cert.title) {
                 const certCard = this.createCertificateCard(cert);
                 this.certificatesGrid.appendChild(certCard);

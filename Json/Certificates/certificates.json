@@ -6,19 +6,23 @@
       "certificates": [
         {
           "image": "Image/Certificate/HTML/Front%20End%20Development%20-%20HTML.webp",
-          "title": "Front End Development-HTML"
+          "title": "Front End Development-HTML",
+          "institution": "Great Learning"
         },
         {
           "image": "Image/Certificate/HTML/HTML%20Attributes%20and%20Tags.webp",
-          "title": "HTML Attributes and Tags"
+          "title": "HTML Attributes and Tags",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/HTML/Responsive%20Web%20Design.webp",
-          "title": "Responsive Web Design"
+          "title": "Responsive Web Design",
+          "institution": "FreeCodeCamp"
         },
         {
           "image": "Image/Certificate/HTML/Program%20in%20HTML,%20CSS%20and%20JavaScript%20for%20Web%20Development.webp",
-          "title": "Program in HTML, CSS and JavaScript for Web Development"
+          "title": "Program in HTML, CSS and JavaScript for Web Development",
+          "institution": "Other"
         }
       ]
     },
@@ -28,19 +32,23 @@
       "certificates": [
         {
           "image": "Image/Certificate/CSS/CSS%20(Basic).webp",
-          "title": "CSS (Basic)"
+          "title": "CSS (Basic)",
+          "institution": "HackerRank"
         },
         {
           "image": "Image/Certificate/CSS/CSS%20Properties.webp",
-          "title": "CSS Properties"
+          "title": "CSS Properties",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/CSS/CSS%20Tutorial.webp",
-          "title": "CSS Tutorial"
+          "title": "CSS Tutorial",
+          "institution": "SoloLearn"
         },
         {
           "image": "Image/Certificate/CSS/Front%20End%20Development%20-%20CSS.webp",
-          "title": "Front End Development-CSS"
+          "title": "Front End Development-CSS",
+          "institution": "Great Learning"
         }
       ]
     },
@@ -50,7 +58,8 @@
       "certificates": [
         {
           "image": "Image/Certificate/Bootstrap/Bootstrap.webp",
-          "title": "Bootstrap 4"
+          "title": "Bootstrap 4",
+          "institution": "Other"
         }
       ]
     },
@@ -60,27 +69,33 @@
       "certificates": [
         {
           "image": "Image/Certificate/JavaScript/JavaScript%20(Basic).webp",
-          "title": "JavaScript (Basic)"
+          "title": "JavaScript (Basic)",
+          "institution": "HackerRank"
         },
         {
           "image": "Image/Certificate/JavaScript/JavaScript%20Algorithms%20and%20Data%20Structures%20(Beta).webp",
-          "title": "JavaScript Algorithms and Data Structures (Beta)"
+          "title": "JavaScript Algorithms and Data Structures (Beta)",
+          "institution": "FreeCodeCamp"
         },
         {
           "image": "Image/Certificate/JavaScript/JavaScript%20Algorithms%20and%20Data%20Structures.webp",
-          "title": "JavaScript Algorithms and Data Structures"
+          "title": "JavaScript Algorithms and Data Structures",
+          "institution": "FreeCodeCamp"
         },
         {
           "image": "Image/Certificate/JavaScript/Introduction%20to%20JavaScript.webp",
-          "title": "Introduction to JavaScript"
+          "title": "Introduction to JavaScript",
+          "institution": "Great Learning"
         },
         {
           "image": "Image/Certificate/JavaScript/Javascript%20(Intermediate).webp",
-          "title": "JavaScript (Intermediate)"
+          "title": "JavaScript (Intermediate)",
+          "institution": "HackerRank"
         },
         {
           "image": "Image/Certificate/JavaScript/Javascript%20Tutorial.webp",
-          "title": "Javascript Tutorial"
+          "title": "Javascript Tutorial",
+          "institution": "SoloLearn"
         }
       ]
     },
@@ -90,7 +105,8 @@
       "certificates": [
         {
           "image": "Image/Certificate/TypeScript/TypeScript%20-%20SoftUni.webp",
-          "title": "Typescript"
+          "title": "Typescript",
+          "institution": "SoftUni"
         }
       ]
     },
@@ -100,35 +116,43 @@
       "certificates": [
         {
           "image": "Image/Certificate/SQL/SQL%20(Basic).webp",
-          "title": "SQL (Basic)"
+          "title": "SQL (Basic)",
+          "institution": "HackerRank"
         },
         {
           "image": "Image/Certificate/SQL/Introduction%20to%20Database%20and%20SQL.webp",
-          "title": "Introduction to Database and SQL"
+          "title": "Introduction to Database and SQL",
+          "institution": "Great Learning"
         },
         {
           "image": "Image/Certificate/SQL/Joins%20in%20SQL.webp",
-          "title": "Joins in SQL"
+          "title": "Joins in SQL",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/SQL/What%20is%20SQL%20Triggers.webp",
-          "title": "What is the SQL Triggers"
+          "title": "What is the SQL Triggers",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/SQL/SQL%20Projects%20for%20Beginners.webp",
-          "title": "SQL Projects for Beginners"
+          "title": "SQL Projects for Beginners",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/SQL/Advanced%20SQL.webp",
-          "title": "SQL (Advanced)"
+          "title": "SQL (Advanced)",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/SQL/SQL%20(Intermediate).webp",
-          "title": "SQL (Intermediate)"
+          "title": "SQL (Intermediate)",
+          "institution": "HackerRank"
         },
         {
           "image": "Image/Certificate/SQL/SQL%20for%20Data%20Science.webp",
-          "title": "SQL for Data Science"
+          "title": "SQL for Data Science",
+          "institution": "Simplilearn"
         }
       ]
     },
@@ -138,11 +162,13 @@
       "certificates": [
         {
           "image": "Image/Certificate/MySQL/MySQL%20-%20SoftUni.webp",
-          "title": "MySQL"
+          "title": "MySQL",
+          "institution": "SoftUni"
         },
         {
           "image": "Image/Certificate/MySQL/Operators%20in%20MySQL.webp",
-          "title": "Operators in MySQL"
+          "title": "Operators in MySQL",
+          "institution": "SoftUni"
         }
       ]
     },
@@ -152,7 +178,8 @@
       "certificates": [
         {
           "image": "Image/Certificate/MSSQL/MSSQL-SoftUni.webp",
-          "title": "MS SQL"
+          "title": "MS SQL",
+          "institution": "SoftUni"
         }
       ]
     },
@@ -162,27 +189,33 @@
       "certificates": [
         {
           "image": "Image/Certificate/Python/Functions%20in%20Python.webp",
-          "title": "Function in Python"
+          "title": "Function in Python",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Python/Python%20MySQL.webp",
-          "title": "Python MySQL"
+          "title": "Python MySQL",
+          "institution": "SoftUni"
         },
         {
           "image": "Image/Certificate/Python/QR%20code%20in%20Python.webp",
-          "title": "QR code in Python"
+          "title": "QR code in Python",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Python/Web%20Scraping%20with%20Python.webp",
-          "title": "Web Scraping with Python"
+          "title": "Web Scraping with Python",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Python/Python-Basic.webp",
-          "title": "Python Basic"
+          "title": "Python Basic",
+          "institution": "SoftUni"
         },
         {
           "image": "Image/Certificate/Python/Programming%20Basics%20-%20Python.webp",
-          "title": "Python Basic"
+          "title": "Python Basic",
+          "institution": "Other"
         }
       ]
     },
@@ -192,23 +225,28 @@
       "certificates": [
         {
           "image": "Image/Certificate/C++/C++%20Basic.webp",
-          "title": "C++ Basic"
+          "title": "C++ Basic",
+          "institution": "SoftUni"
         },
         {
           "image": "Image/Certificate/C++/C++%20Fundamentals.webp",
-          "title": "C++ Fundamentals"
+          "title": "C++ Fundamentals",
+          "institution": "SoftUni"
         },
         {
           "image": "Image/Certificate/C++/CPlus-Advanced.webp",
-          "title": "C++ Advanced"
+          "title": "C++ Advanced",
+          "institution": "SoftUni"
         },
         {
           "image": "Image/Certificate/C++/C++%20OOP.webp",
-          "title": "C++ OOP"
+          "title": "C++ OOP",
+          "institution": "SoftUni"
         },
         {
           "image": "Image/Certificate/C++/CPlusPlus-Development.webp",
-          "title": "C++ Development"
+          "title": "C++ Development",
+          "institution": "SoftUni"
         }
       ]
     },
@@ -218,23 +256,28 @@
       "certificates": [
         {
           "image": "Image/Certificate/C%23/Programming%20Basics%20with%20C%23.webp",
-          "title": "C# Basic"
+          "title": "C# Basic",
+          "institution": "SoftUni"
         },
         {
           "image": "Image/Certificate/C%23/CSharp-Fundamentals.webp",
-          "title": "Programming Fundamentals with C#"
+          "title": "Programming Fundamentals with C#",
+          "institution": "SoftUni"
         },
         {
           "image": "Image/Certificate/C%23/CSharp-Advanced.webp",
-          "title": "C# Advanced"
+          "title": "C# Advanced",
+          "institution": "SoftUni"
         },
         {
           "image": "Image/Certificate/C%23/CSharp-OOP.webp",
-          "title": "C# OOP"
+          "title": "C# OOP",
+          "institution": "SoftUni"
         },
         {
           "image": "Image/Certificate/C%23/Entity-Framework-Core.webp",
-          "title": "Entity Framework Core"
+          "title": "Entity Framework Core",
+          "institution": "Other"
         }
       ]
     },
@@ -244,31 +287,38 @@
       "certificates": [
         {
           "image": "Image/Certificate/Google/Google%20Analytics%20for%20Beginners.webp",
-          "title": "Google Analytics for Beginners"
+          "title": "Google Analytics for Beginners",
+          "institution": "Google"
         },
         {
           "image": "Image/Certificate/Google/Advanced%20Google%20Analytics.webp",
-          "title": "Advanced Google Analytics"
+          "title": "Advanced Google Analytics",
+          "institution": "Google"
         },
         {
           "image": "Image/Certificate/Google/Introduction%20to%20Data%20Studio.webp",
-          "title": "Introduction to Data Studio"
+          "title": "Introduction to Data Studio",
+          "institution": "Google"
         },
         {
           "image": "Image/Certificate/Google/Google%20Tag%20Manager%20Fundamentals.webp",
-          "title": "Google Tag Manager Fundamentals"
+          "title": "Google Tag Manager Fundamentals",
+          "institution": "Google"
         },
         {
           "image": "Image/Certificate/Google/Google%20Analytics%20for%20Power%20Users.webp",
-          "title": "Google Analytics for Power Users"
+          "title": "Google Analytics for Power Users",
+          "institution": "Google"
         },
         {
           "image": "Image/Certificate/Google/Getting%20Started%20With%20Google%20Analytics%20360.webp",
-          "title": "Getting Started With Google Analytics 360"
+          "title": "Getting Started With Google Analytics 360",
+          "institution": "Google"
         },
         {
           "image": "Image/Certificate/Google/Google%20Analytics%20Certification.webp",
-          "title": "Google Analytics Certification"
+          "title": "Google Analytics Certification",
+          "institution": "Google"
         }
       ]
     },
@@ -278,11 +328,13 @@
       "certificates": [
         {
           "image": "Image/Certificate/Microsoft/Office%20Excel%202016.webp",
-          "title": "Office Excel 2016"
+          "title": "Office Excel 2016",
+          "institution": "Microsoft"
         },
         {
           "image": "Image/Certificate/Microsoft/Microsoft%20Cognitive%20Toolkit.webp",
-          "title": "Microsoft Cognitive Toolkit"
+          "title": "Microsoft Cognitive Toolkit",
+          "institution": "Microsoft"
         }
       ]
     },
@@ -292,15 +344,18 @@
       "certificates": [
         {
           "image": "Image/Certificate/Database/Data%20Visualization.webp",
-          "title": "Data Visualization"
+          "title": "Data Visualization",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Database/Database%20Management%20System.webp",
-          "title": "Database Management System"
+          "title": "Database Management System",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Database/Database%20Normalization.webp",
-          "title": "Database Normalization"
+          "title": "Database Normalization",
+          "institution": "Other"
         }
       ]
     },
@@ -310,7 +365,8 @@
       "certificates": [
         {
           "image": "Image/Certificate/React/React%20JS.webp",
-          "title": "React JS"
+          "title": "React JS",
+          "institution": "Other"
         }
       ]
     },
@@ -320,19 +376,23 @@
       "certificates": [
         {
           "image": "Image/Certificate/Web%20Development/Program%20in%20Web%20Development%20With%20jQuery,%20Ajax%20and%20JSON.webp",
-          "title": "Program in Web Development With jQuery, Ajax and JSON"
+          "title": "Program in Web Development With jQuery, Ajax and JSON",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Web%20Development/Web%20Designing.webp",
-          "title": "Web Designing"
+          "title": "Web Designing",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Web%20Development/Web%20Development.webp",
-          "title": "Web Development"
+          "title": "Web Development",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Frond%20End%20Libraries/Front%20End%20Development%20Libraries.webp",
-          "title": "Front End Development Libraries"
+          "title": "Front End Development Libraries",
+          "institution": "FreeCodeCamp"
         }
       ]
     },
@@ -342,7 +402,8 @@
       "certificates": [
         {
           "image": "Image/Certificate/Crypto%20Currency/Bitcoin%20for%20Beginners.webp",
-          "title": "Bitcoin for Beginners"
+          "title": "Bitcoin for Beginners",
+          "institution": "Udemy"
         }
       ]
     },
@@ -353,15 +414,18 @@
       "certificates": [
         {
           "image": "Image/Certificate/Security%20and%20Hacking/Cybersecurity%20Specialist.webp",
-          "title": "Cybersecurity Specialist"
+          "title": "Cybersecurity Specialist",
+          "institution": "Cisco"
         },
         {
           "image": "Image/Certificate/Security%20and%20Hacking/Database%20Security.webp",
-          "title": "Database Security"
+          "title": "Database Security",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Security%20and%20Hacking/Ethical%20Hacking.webp",
-          "title": "Ethical Hacking"
+          "title": "Ethical Hacking",
+          "institution": "Other"
         }
       ]
     },
@@ -371,91 +435,113 @@
       "certificates": [
         {
           "image": "Image/Certificate/Other/Software%20Engineer%20Intern.webp",
-          "title": "Software Engineer Intern"
+          "title": "Software Engineer Intern",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/Problem%20Solving%20(Basic).webp",
-          "title": "Problem Solving (Basic)"
+          "title": "Problem Solving (Basic)",
+          "institution": "HackerRank"
         },
         {
           "image": "Image/Certificate/Other/Linux%20Tutorial.webp",
-          "title": "Linux Tutorial"
+          "title": "Linux Tutorial",
+          "institution": "SoloLearn"
         },
         {
           "image": "Image/Certificate/Other/NFT%20Domains.webp",
-          "title": "NFT Domains"
+          "title": "NFT Domains",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/PyCharm%20for%20Beginners.webp",
-          "title": "PyCharm for Beginners"
+          "title": "PyCharm for Beginners",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/Visual%20Studio%20Online.webp",
-          "title": "Visual Studio Online"
+          "title": "Visual Studio Online",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/Certificate%20of%20programming%20with%20Visual%20Basic.NET.webp",
-          "title": "Programming with Visual Basic.NET"
+          "title": "Programming with Visual Basic.NET",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/Digital%20Competence%20Assessment.webp",
-          "title": "Digital Competence Assessment"
+          "title": "Digital Competence Assessment",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/Diploma%20for%20contribution%20to%20raising%20the%20authority%20of%20the%20school.webp",
-          "title": "Diploma for contribution to raising the authority of the school"
+          "title": "Diploma for contribution to raising the authority of the school",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/Global%20Entrepreneurship%20Week.webp",
-          "title": "Global Entrepreneurship Week"
+          "title": "Global Entrepreneurship Week",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/Khan%20Academy%20-%20Certificate.webp",
-          "title": "Khan Academy"
+          "title": "Khan Academy",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/Web%20Programming%2016+%20-%20Certificate.webp",
-          "title": "Web Programming 16+"
+          "title": "Web Programming 16+",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/Certificate of Participation in the National Information Technology Competition.webp",
-          "title": "Certificate of Participation in the National Information Technology Competition"
+          "title": "Certificate of Participation in the National Information Technology Competition",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/Certificate of Participation in the National Information Technology Competition - UNIBIT.webp",
-          "title": "Certificate of Participation in the National Information Technology Competition - UniBIT"
+          "title": "Certificate of Participation in the National Information Technology Competition - UniBIT",
+          "institution": "UniBIT"
         },
         {
           "image": "",
-          "title": "TU VARNA"
+          "title": "TU VARNA",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/SWU%20Neofit%20Rilski%20-%20certificate.webp",
-          "title": "SWU Neofit Rilski - Blagoevgrad"
+          "title": "SWU Neofit Rilski - Blagoevgrad",
+          "institution": "SWU"
         },
         {
           "image": "Image/Certificate/Other/CODE@BURGAS%20-%20Certificate%20(PNG).webp",
-          "title": "CODE@BURGAS 2024 - Certificate"
+          "title": "CODE@BURGAS 2024 - Certificate",
+          "institution": "Code@Burgas"
         },
         {
           "image": "Image/Certificate/Other/CODE@BURGAS%20-%20Diploma%20(PNG).webp",
-          "title": "CODE@BURGAS 2024 - Diploma"
+          "title": "CODE@BURGAS 2024 - Diploma",
+          "institution": "Code@Burgas"
         },
         {
           "image": "Image/Certificate/Other/European%20Statistics%20Olympiad.webp",
-          "title": "European Statistics Olympiad"
+          "title": "European Statistics Olympiad",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/Certificate for First Place in the National Information Technology Competition - Website Category.webp",
-          "title": "Certificate for First Place in the National Information Technology Competition - Website Category"
+          "title": "Certificate for First Place in the National Information Technology Competition - Website Category",
+          "institution": "Other"
         },
         {
           "image": "Image/Certificate/Other/Certificate of Participation in the National Information Technology Competition - SWU - 1.webp",
-          "title": "Certificate of Participation in the National Information Technology Competition - SWU"
+          "title": "Certificate of Participation in the National Information Technology Competition - SWU",
+          "institution": "SWU"
         },
         {
           "image": "Image/Certificate/Other/Certificate of Participation in the National Information Technology Competition - SWU - 2.webp",
-          "title": "Certificate of Participation in the National Information Technology Competition - SWU"
+          "title": "Certificate of Participation in the National Information Technology Competition - SWU",
+          "institution": "SWU"
         }
       ]
     }

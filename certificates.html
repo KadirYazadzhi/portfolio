@@ -41,6 +41,27 @@
     <div class="container center">
         <h2 class="heading-sm">Certificates</h2>
 
+        <div class="filter-bar-container">
+            <div class="filter-left">
+                <div class="filter-toggle">
+                    <input type="radio" id="filter-type" name="cert-filter" value="type" checked>
+                    <label for="filter-type">Type</label>
+                    <input type="radio" id="filter-institution" name="cert-filter" value="institution">
+                    <label for="filter-institution">Institution</label>
+                    <div class="toggle-slider"></div>
+                </div>
+            </div>
+            <div class="filter-right">
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <input type="text" id="cert-search" placeholder="Search certificates...">
+                </div>
+                <button id="view-toggle-btn" class="view-btn" title="Toggle List View">
+                    <i class='bx bx-list-ul'></i>
+                </button>
+            </div>
+        </div>
+
         <main class="main-modal">
             <div class="certificates-modal section" id="certificatesModal">
                 <div class="modal-content container">
@@ -50,87 +71,10 @@
                 </div>
             </div>
 
+            <div id="certificates-list-view" class="certificates-list-container" style="display: none;"></div>
+
             <div class="certificates-cards-modal">
-                <div class="certificates-card card">
-                    <i class="devicon-html5-plain colored"></i>
-                    <p class="paragraph">HTML</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="devicon-css3-plain colored"></i>
-                    <p class="paragraph">CSS</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="devicon-bootstrap-plain colored"></i>
-                    <p class="paragraph">Bootstrap</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <p class="paragraph">Javascript</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="devicon-typescript-plain colored"></i>
-                    <p class="paragraph">Typescript</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="devicon-cplusplus-plain colored"></i>
-                    <p class="paragraph">C++</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="devicon-csharp-plain colored"></i>
-                    <p class="paragraph">C#</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="devicon-python-plain colored"></i>
-                    <p class="paragraph">Python</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="devicon-azuresqldatabase-plain colored"></i>
-                    <p class="paragraph">SQL</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="devicon-mysql-original"></i>
-                    <p class="paragraph">MySQL</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="devicon-microsoftsqlserver-plain colored"></i>
-                    <p class="paragraph">MSSQL</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="fa-solid fa-database"></i>
-                    <p class="paragraph">Database</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="devicon-google-plain colored"></i>
-                    <p class="paragraph">Google</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <div class="microsoft-logo">
-                        <div class="square red"></div>
-                        <div class="square green"></div>
-                        <div class="square blue"></div>
-                        <div class="square yellow"></div>
-                    </div>
-
-                    <p class="paragraph">Microsoft</p>
-                </div>
-
-                <div class="certificates-card card">
-                    <i class="fa-solid fa-ellipsis"></i>
-                    <p class="paragraph">Other</p>
-                </div>
+                <!-- Cards will be dynamically populated by JavaScript -->
             </div>
         </main>
     </div>
