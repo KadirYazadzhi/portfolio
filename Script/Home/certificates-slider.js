@@ -3,19 +3,22 @@ class CertificateSlider {
         this.container = document.querySelector(containerSelector);
         this.prevBtn = document.getElementById('cert-prev');
         this.nextBtn = document.getElementById('cert-next');
-        
+
         this.animationId = null;
         this.isHovered = false;
         this.position = 0;
         this.speed = 1;
         this.currentIndex = 0;
         this.isMobile = false;
+        this.resizeTimeout = null;
 
         // Bind methods
         this.animate = this.animate.bind(this);
         this.handleResize = this.handleResize.bind(this);
         this.nextSlide = this.nextSlide.bind(this);
         this.prevSlide = this.prevSlide.bind(this);
+        this.onMouseEnter = () => this.isHovered = true;
+        this.onMouseLeave = () => this.isHovered = false;
 
         if (!this.container) {
             console.warn('Slider container not found');
@@ -28,8 +31,9 @@ class CertificateSlider {
 
     init() {
         // Get fresh reference to original boxes only (exclude clones if any exist)
-        this.boxes = Array.from(this.container.querySelectorAll('.certificate-box')).filter(box => !box.classList.contains('clone'));
-        
+        this.boxes = Array.from(this.container.querySelectorAll('.certificate-box'))
+            .filter(box => !box.classList.contains('clone'));
+
         if (this.boxes.length === 0) return;
 
         this.isMobile = window.innerWidth <= 768;
@@ -42,12 +46,16 @@ class CertificateSlider {
     }
 
     handleResize() {
-        const newIsMobile = window.innerWidth <= 768;
-        // Re-init if switching modes or if we are in mobile (to recalculate widths)
-        if (this.isMobile !== newIsMobile || this.isMobile) {
-            this.cleanup();
-            this.init();
-        }
+        // Debounce resize events to prevent performance lag during active scaling
+        clearTimeout(this.resizeTimeout);
+        this.resizeTimeout = setTimeout(() => {
+            const newIsMobile = window.innerWidth <= 768;
+            // Re-init if switching modes or if we are in mobile (to recalculate widths)
+            if (this.isMobile !== newIsMobile || this.isMobile) {
+                this.cleanup();
+                this.init();
+            }
+        }, 150);
     }
 
     cleanup() {
@@ -57,29 +65,19 @@ class CertificateSlider {
         }
 
         // Remove clones
-        const clones = this.container.querySelectorAll('.clone');
-        clones.forEach(clone => clone.remove());
+        this.container.querySelectorAll('.clone').forEach(clone => clone.remove());
 
         // Reset style
         this.container.style.transform = 'translateX(0)';
         this.position = 0;
 
-        // Remove button listeners (cloning node is a dirty trick to wipe listeners, 
-        // but simple reassignment or just ignoring listeners in desktop mode is easier. 
-        // We'll manage listeners by checking isMobile inside them or re-adding them.)
-        
-        // Actually, easiest way to clear listeners is to clone the button nodes? 
-        // Or just let them be active but do nothing if !isMobile.
-        if (this.prevBtn) {
-            const newPrev = this.prevBtn.cloneNode(true);
-            this.prevBtn.parentNode.replaceChild(newPrev, this.prevBtn);
-            this.prevBtn = newPrev;
-        }
-        if (this.nextBtn) {
-            const newNext = this.nextBtn.cloneNode(true);
-            this.nextBtn.parentNode.replaceChild(newNext, this.nextBtn);
-            this.nextBtn = newNext;
-        }
+        // Clean up desktop event listeners properly using method references
+        this.container.removeEventListener('mouseenter', this.onMouseEnter);
+        this.container.removeEventListener('mouseleave', this.onMouseLeave);
+
+        // Remove button listeners cleanly without dirty node-cloning tricks
+        if (this.prevBtn) this.prevBtn.removeEventListener('click', this.prevSlide);
+        if (this.nextBtn) this.nextBtn.removeEventListener('click', this.nextSlide);
     }
 
     /* ================= DESKTOP LOGIC ================= */
@@ -87,36 +85,37 @@ class CertificateSlider {
     setupDesktop() {
         this.createClones();
         this.calculateDimensions();
-        this.setupDesktopEvents();
+
+        this.container.addEventListener('mouseenter', this.onMouseEnter);
+        this.container.addEventListener('mouseleave', this.onMouseLeave);
+
         this.startAnimation();
     }
 
     createClones() {
-        // Double the content for smooth infinite scroll
+        // Double the content for smooth infinite scroll using a DocumentFragment for better performance
+        const fragment = document.createDocumentFragment();
         this.boxes.forEach(box => {
             const clone = box.cloneNode(true);
             clone.classList.add('clone');
-            this.container.appendChild(clone);
+            fragment.appendChild(clone);
         });
+        this.container.appendChild(fragment);
     }
 
     calculateDimensions() {
         if (!this.boxes[0]) return;
         const containerStyle = getComputedStyle(this.container);
-        this.boxWidth = this.boxes[0].offsetWidth + parseFloat(containerStyle.gap || 0);
+        const gap = parseFloat(containerStyle.gap) || 0;
+
+        // Use getBoundingClientRect to calculate layout precise fraction pixels regardless of CSS unit scales
+        this.boxWidth = this.boxes[0].getBoundingClientRect().width + gap;
         this.originalWidth = this.boxWidth * this.boxes.length;
     }
 
-    setupDesktopEvents() {
-        this.container.onmouseenter = () => this.isHovered = true;
-        this.container.onmouseleave = () => this.isHovered = false;
-        // Clear touch events for desktop mode to avoid conflict if hybrid device
-        this.container.ontouchstart = null;
-        this.container.ontouchend = null;
-    }
-
     startAnimation() {
-        this.animate();
+        if (this.animationId) cancelAnimationFrame(this.animationId);
+        this.animationId = requestAnimationFrame(this.animate);
     }
 
     animate() {
@@ -143,8 +142,8 @@ class CertificateSlider {
     }
 
     getItemsPerSlide() {
-        if (window.innerWidth <= 576) return 1;
-        return 2; // Matches CSS media query for tablet/mobile
+        // Matches CSS media query for tablet/mobile
+        return window.innerWidth <= 576 ? 1 : 2;
     }
 
     updateMobileSlider() {
@@ -159,21 +158,22 @@ class CertificateSlider {
         // Calculate dimensions
         if (!this.boxes[0]) return;
         const containerStyle = getComputedStyle(this.container);
-        const gap = parseFloat(containerStyle.gap || 0);
-        const itemWidth = this.boxes[0].offsetWidth;
-        
+        const gap = parseFloat(containerStyle.gap) || 0;
+        const itemWidth = this.boxes[0].getBoundingClientRect().width;
+
         const moveAmount = (itemWidth + gap) * this.currentIndex;
         this.container.style.transform = `translateX(-${moveAmount}px)`;
 
         // Update Button States
-        if (this.prevBtn) {
-            this.prevBtn.style.opacity = this.currentIndex === 0 ? '0.3' : '1';
-            this.prevBtn.style.pointerEvents = this.currentIndex === 0 ? 'none' : 'auto';
-        }
-        if (this.nextBtn) {
-            this.nextBtn.style.opacity = this.currentIndex === maxIndex ? '0.3' : '1';
-            this.nextBtn.style.pointerEvents = this.currentIndex === maxIndex ? 'none' : 'auto';
-        }
+        this.toggleButtonState(this.prevBtn, this.currentIndex === 0);
+        this.toggleButtonState(this.nextBtn, this.currentIndex === maxIndex);
+    }
+
+    toggleButtonState(btn, isDisabled) {
+        if (!btn) return;
+        btn.style.opacity = isDisabled ? '0.3' : '1';
+        btn.style.pointerEvents = isDisabled ? 'none' : 'auto';
+        btn.setAttribute('aria-disabled', isDisabled); // Accessibility support bonus
     }
 
     prevSlide() {
