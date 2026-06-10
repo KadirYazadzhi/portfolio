@@ -85,7 +85,11 @@
     height: 15px;
     border-radius: 50%;
     background-color: var(--nav-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
+body.dark .language {
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-card-right-section-bottom {
@@ -96,6 +100,7 @@
     gap: 1.5rem;
     flex-wrap: wrap;
     margin-top: auto;
+    padding-top: 0.5rem;
     /* Push to bottom if we want */
 }
 
@@ -116,6 +121,11 @@
     align-items: center;
     justify-content: flex-start;
     gap: 0.5rem;
+}
+
+.project-card .paragraph {
+    flex: initial; /* Връща стандартното поведение на текста */
+    margin-bottom: 1rem; /* Дава нормално отстояние до долните икони/технологии */
 }
 
 .html {
@@ -144,4 +154,20 @@
 
 .python {
     background-color: #3776AB;
+}
+
+.java {
+    background-color: #b07219;
+}
+
+.sql {
+    background-color: #e38c00;
+}
+
+.shell {
+    background-color: #89e051;
+}
+
+.All {
+    background-color: var(--text-color);
 }

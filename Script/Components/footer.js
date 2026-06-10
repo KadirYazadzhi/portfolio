@@ -33,7 +33,7 @@ class Footer extends HTMLElement {
                                         <i class="fa-brands fa-github"></i>
                                     </a>
             
-                                    <a aria-label="website" href="kadiryazadzhi.github.io/Digital-Garden/" target="_blank" class="social-icon">
+                                    <a aria-label="website" href="https://garden.kadiryazadzhi.tech" target="_blank" class="social-icon">
                                         <i class="fa-solid fa-globe"></i>
                                     </a>
             
@@ -52,19 +52,15 @@ class Footer extends HTMLElement {
                                 <a href="https://www.hackthebox.eu" target="_blank" class="paragraph">Hack The Box</a>
                                 <a href="https://leetcode.com" target="_blank" class="paragraph">LeetCode</a>
                                 <a href="https://www.codewars.com" target="_blank" class="paragraph">CodeWars</a>
-                                <a href="https://www.hackerank.com" target="_blank" class="paragraph">HackerRank</a>
+                                <a href="https://www.hackerrank.com" target="_blank" class="paragraph">HackerRank</a>
                             </div>
                         </div>
             
                         <div class="footer-items">
                             <h3>Blog Articles</h3>
                         
-                            <div class="items">
-                                <a href="#" target="_blank" class="paragraph">Understanding Ethical Hacking</a>
-                                <a href="#" target="_blank" class="paragraph">How to Prepare for Penetration Testing</a>
-                                <a href="#" target="_blank" class="paragraph">Clean Code Principles</a>
-                                <a href="#" target="_blank" class="paragraph">Best Practices for Web Security</a>
-                                <a href="#" target="_blank" class="paragraph">The Importance of Cryptography in Modern Security</a>
+                            <div class="items" id="footer-blog-links">
+                                <!-- Blogs will be dynamically loaded here -->
                             </div>
                         </div>
                         </div>
@@ -77,6 +73,25 @@ class Footer extends HTMLElement {
         `;
 
         this.querySelector(".copyright-text").innerHTML = `Copyright © ${new Date().getFullYear()} - All rights reserved || Designed By: <a href="https://garden.kadiryazadzhi.tech" target="_blank" class="footer-name-link">Kadir Yazadzhi</a>`;
+        
+        this.loadFooterBlogs();
+    }
+
+    loadFooterBlogs() {
+        const blogContainer = this.querySelector("#footer-blog-links");
+        fetch('Json/Blog/blogs.json')
+            .then(response => response.json())
+            .then(blogs => {
+                // Show up to 5 latest blogs
+                const latestBlogs = blogs.slice(0, 5);
+                blogContainer.innerHTML = latestBlogs.map(blog => `
+                    <a href="blog.html?id=${blog.id}" class="paragraph">${blog.title}</a>
+                `).join('');
+            })
+            .catch(error => {
+                console.error('Error loading footer blogs:', error);
+                blogContainer.innerHTML = '<p class="paragraph">Unable to load blogs.</p>';
+            });
     }
 }
 customElements.define('my-footer', Footer);

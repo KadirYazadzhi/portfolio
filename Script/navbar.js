@@ -18,9 +18,15 @@ class NavbarManager {
     // Apply the saved theme mode from local storage
     applySavedMode() {
         const getMode = localStorage.getItem("mode");
-        if (getMode && getMode === "dark-mode") {
+        
+        // If the saved mode is light, remove the default 'dark' class
+        if (getMode === "light-mode") {
+            this.body.classList.remove("dark");
+            this.modeToggle.classList.remove("active");
+        } else {
+            // Default to dark mode if no preference or explicitly saved as dark
             this.body.classList.add("dark");
-            this.modeToggle.classList.toggle("active");
+            this.modeToggle.classList.add("active");
         }
     }
 

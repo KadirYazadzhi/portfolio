@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const categoriesContainer = document.getElementById('categories-container');
+    const languageFilterContainer = document.getElementById('language-filter-container');
     const projectsDisplayArea = document.getElementById('projects-display-area');
 
     // Icon mapping for categories
@@ -12,12 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     let allProjects = [];
+    let currentCategory = 'Programming';
+    let currentLanguage = 'All';
 
     fetch('Json/Projects/projects.json')
         .then(response => response.json())
         .then(projects => {
             allProjects = projects;
-            const uniqueCategories = [...new Set(projects.map(p => p.category))].sort();
+
+            const uniqueCategories = [...new Set(projects.flatMap(p => p.categories || []))].sort();
 
             // Render Category Cards
             uniqueCategories.forEach(category => {
@@ -25,9 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 categoriesContainer.appendChild(catCard);
 
                 // Set 'Programming' as default active category
-                if (category === 'Programming') {
+                if (category === currentCategory) {
                     catCard.classList.add('active');
-                    renderProjects(category);
+                    updateLanguageFilters(category);
+                    renderProjects();
                 }
             });
 
@@ -50,32 +55,79 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         catCard.addEventListener('click', () => {
-            // Remove active class from all
-            document.querySelectorAll('.category-card').forEach(c => {
-                c.classList.remove('active');
-            });
-
-            // Add active class to current
+            document.querySelectorAll('.category-card').forEach(c => c.classList.remove('active'));
             catCard.classList.add('active');
 
-            renderProjects(category);
+            currentCategory = category;
+            currentLanguage = 'All'; // Reset language filter when category changes
+            updateLanguageFilters(category);
+            renderProjects();
         });
 
         return catCard;
     }
 
-    function renderProjects(category) {
-        projectsDisplayArea.innerHTML = ''; // Clear current
+    function updateLanguageFilters(category) {
+        languageFilterContainer.innerHTML = '';
+        
+        let filteredProjects = category === 'All' 
+            ? allProjects 
+            : allProjects.filter(p => p.categories && p.categories.includes(category));
 
-        // Filter projects
-        let filteredProjects;
-        if (category === 'All') {
-            filteredProjects = allProjects;
+        const languages = [...new Set(filteredProjects.flatMap(p => p.languages || []))].sort();
+
+        if (languages.length > 0) {
+            languageFilterContainer.style.display = 'flex';
+            
+            // Add "All" pill
+            const allPill = createLanguagePill('All');
+            allPill.classList.add('active');
+            languageFilterContainer.appendChild(allPill);
+
+            languages.forEach(lang => {
+                const pill = createLanguagePill(lang);
+                languageFilterContainer.appendChild(pill);
+            });
         } else {
-            filteredProjects = allProjects.filter(p => p.category === category);
+            languageFilterContainer.style.display = 'none';
+        }
+    }
+
+    function createLanguagePill(lang) {
+        const pill = document.createElement('div');
+        pill.classList.add('language-pill');
+        
+        let displayName = lang === 'All' ? 'All' : lang.toUpperCase();
+        if (lang === 'csharp') displayName = 'C#';
+        if (lang === 'cplus') displayName = 'C++';
+        if (lang === 'javascript' || lang === 'js') displayName = 'JavaScript';
+
+        pill.innerHTML = `
+            <span class="lang-dot language ${lang}"></span>
+            <span>${displayName}</span>
+        `;
+
+        pill.addEventListener('click', () => {
+            document.querySelectorAll('.language-pill').forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
+            currentLanguage = lang;
+            renderProjects();
+        });
+
+        return pill;
+    }
+
+    function renderProjects() {
+        projectsDisplayArea.innerHTML = '';
+
+        let filteredProjects = currentCategory === 'All'
+            ? allProjects
+            : allProjects.filter(p => p.categories && p.categories.includes(currentCategory));
+
+        if (currentLanguage !== 'All') {
+            filteredProjects = filteredProjects.filter(p => p.languages && p.languages.includes(currentLanguage));
         }
 
-        // Create Grid Container
         const grid = document.createElement('div');
         grid.classList.add('cards', 'projects-cards');
 
@@ -154,7 +206,7 @@ function createProjectCard(project) {
     // Website Icon (Only if website_url exists)
     if (project.website_url) {
         const websiteLink = document.createElement('a');
-        websiteLink.href = project.website_url;
+        websiteLink.href = websiteLink.href = project.website_url;
         websiteLink.target = '_blank';
         websiteLink.innerHTML = '<i class="fa-solid fa-earth-americas"></i>';
         websiteLink.title = 'View Live Project';

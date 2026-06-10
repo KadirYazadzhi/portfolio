@@ -44,14 +44,26 @@
     "name": "Entity Framework Core"
   },
   "12": {
+    "image": "Image/Certificate/C%23/ASP.NET-Fundamentals.webp",
+    "name": "ASP.NET Fundamentals"
+  },
+  "13": {
+    "image": "Image/Certificate/C%23/ASP.NET-Advanced.webp",
+    "name": "ASP.NET Advanced"
+  },
+  "14": {
+    "image": "Image/Certificate/C%23/Diploma-for-Back-End-Software-Engineer-with-CSharp.webp",
+    "name": "Diploma for Back End Software Engineer with C#"
+  },
+  "15": {
     "image": "Image/Home/Certificates/Typescript/TypeScript - SoftUni.webp",
     "name": "Typescript"
   },
-  "13": {
+  "16": {
     "image": "Image/Home/Certificates/MySQL/MySQL - SoftUni.webp",
     "name": "MySQL"
   },
-  "14": {
+  "17": {
     "image": "Image/Certificate/MSSQL/MSSQL-SoftUni.webp",
     "name": "MS SQL"
   }

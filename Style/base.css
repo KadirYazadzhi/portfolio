@@ -83,7 +83,7 @@ img {
 
 .paragraph {
     font-size: clamp(1rem, 2vw, 1.125rem);
-    text-wrap: balance;
+    text-wrap: wrap;
     color: var(--text-color-second);
 }
 

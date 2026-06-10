@@ -6,6 +6,10 @@ footer {
     flex-direction: column;
 }
 
+footer.section {
+    padding: 1rem 0 1rem;
+}
+
 .footer {
     width: 100%;
     align-items: center;
@@ -76,12 +80,20 @@ footer {
 }
 
 .footer-name-link {
-    color: var(--color-blue-400);
+    color: var(--text-color);
     text-decoration: none;
     transition: var(--animation);
 }
 
 .footer-name-link:hover {
+    color: var(--color-blue-600);
+}
+
+body.dark .footer-name-link {
+    color: var(--color-blue-400);
+}
+
+body.dark .footer-name-link:hover {
     color: var(--color-blue-300);
 }
 

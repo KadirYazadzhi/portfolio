@@ -24,11 +24,18 @@
     align-items: center;
     justify-content: center;
     padding: 1.5rem 1rem; /* Adjusted padding for rectangular shape */
-    background: var(--color-black-200);
+    background: var(--body-color);
+    border: 1px solid var(--text-color-second);
     border-radius: 6px;
     box-shadow: var(--shadow-medium);
     /* Removed aspect-ratio to keep it rectangular */
     min-height: 180px; /* Reduced height to avoid cube look */
+    transition: var(--animation);
+}
+
+.slider .card:hover {
+    background-color: var(--card-hover-color);
+    border-color: var(--text-color);
 }
 
 .slider .card i {
